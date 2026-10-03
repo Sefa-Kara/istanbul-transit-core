@@ -2,13 +2,7 @@
 """
 app.py
 ================================================================================
-Hugging Face Spaces (Gradio SDK) Entrypoint for Istanbul Transit Core
-================================================================================
-This script:
-1. Automatically downloads the official OpenTripPlanner 2.6.0 shaded jar if missing.
-2. Starts OpenTripPlanner on background port 8080.
-3. Launches our full FastAPI & Leaflet interactive transit map on port 7860
-   via Gradio/Uvicorn, completely free on Hugging Face Spaces.
+Hugging Face Spaces (Gradio SDK / ZeroGPU) Entrypoint for Istanbul Transit Core
 ================================================================================
 """
 
@@ -20,9 +14,21 @@ import threading
 import urllib.request
 from pathlib import Path
 
+# 0. ZeroGPU Probe (Satisfies Hugging Face ZeroGPU runtime check if space runs on ZeroGPU)
+try:
+    import spaces
+    @spaces.GPU
+    def _zerogpu_probe():
+        """Satisfies Hugging Face ZeroGPU startup probe."""
+        return True
+except Exception:
+    pass
+
 BASE_DIR = Path(__file__).resolve().parent
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
+
+STATIC_DIR = BASE_DIR / "static"
 
 def start_background_otp():
     otp_jar = BASE_DIR / "bin" / "otp-2.6.0-shaded.jar"
@@ -64,39 +70,36 @@ def start_background_otp():
 # Launch OTP in background daemon thread
 threading.Thread(target=start_background_otp, daemon=True).start()
 
-# Import our FastAPI application
+# Import Gradio and FastAPI dependencies
+import gradio as gr
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from src.api.main import app as fastapi_app
 
-try:
-    import gradio as gr
-    # In Gradio 6.0, css parameter was moved from Blocks to launch().
-    with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
-        gr.HTML("""
-        <iframe src="/static/index.html" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
-        """)
+# Define Gradio Blocks interface embedding the interactive Leaflet web UI
+with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
+    gr.HTML("""
+    <iframe src="/map" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
+    """)
 
-    # Mount Gradio onto our FastAPI application
-    app = gr.mount_gradio_app(fastapi_app, demo, path="/gradio")
-except ImportError:
-    app = fastapi_app
+# Mount vendor assets directly onto Gradio's internal FastAPI app
+demo.app.mount("/vendor", StaticFiles(directory=str(STATIC_DIR / "vendor")), name="vendor")
+
+# Route for rendering the interactive map HTML
+@demo.app.get("/map")
+def get_map():
+    return FileResponse(str(STATIC_DIR / "index.html"))
+
+# Forward all /api/ endpoints from our core router into Gradio's FastAPI app
+for route in fastapi_app.routes:
+    if getattr(route, "path", "").startswith("/api"):
+        demo.app.routes.insert(0, route)
 
 if __name__ == "__main__":
-    import uvicorn
-    import socket
     port = int(os.environ.get("PORT", 7860))
-    print(f"🚀 Preparing Istanbul Transit Core Web Gateway on 0.0.0.0:{port}...")
-
-    # Ensure port is released if previous instance was shutting down
-    for attempt in range(1, 6):
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            try:
-                s.bind(("0.0.0.0", port))
-                break
-            except OSError:
-                print(f"⏳ Waiting for port {port} to clear (attempt {attempt}/5)...")
-                time.sleep(2)
-
-    print(f"🚀 Starting Istanbul Transit Core Web Gateway on 0.0.0.0:{port}...")
-    uvicorn.run(app, host="0.0.0.0", port=port)
-
+    print(f"🚀 Starting Istanbul Transit Core on 0.0.0.0:{port}...")
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=port,
+        css="footer {visibility: hidden}"
+    )
