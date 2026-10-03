@@ -13,7 +13,7 @@
 
 *An ad-free, privacy-preserving, zero-cloud-cost routing engine built specifically to solve Istanbul's complex multimodal transit grid (Metro, Metrobüs, Marmaray, Tram, Ferries, İETT Buses, and Havaist).*
 
-[Live Demo](#hugging-face-spaces-deployment) • [Architecture](#system-architecture) • [Benchmark Report](#the-1000-route-forensic-benchmark) • [API Docs](#rest-api-reference-for-mobile--web-developers) • [Quickstart](#quickstart)
+[🇹🇷 Türkçe Dokümantasyon](README_TR.md) • [🇬🇧 English Documentation](README.md) • [Live Demo](#hugging-face-spaces-deployment) • [Architecture](#system-architecture) • [Benchmark Report](#the-1000-route-forensic-benchmark) • [API Docs](#rest-api-reference-for-mobile--web-developers) • [Quickstart](#quickstart)
 
 </div>
 
@@ -133,20 +133,20 @@ docker compose up -d --build
 
 ---
 
-## ☁️ Hugging Face Spaces Deployment
+## ☁️ Hugging Face Spaces Deployment (100% Free Gradio SDK)
 
-You can host this engine **completely free** on Hugging Face Spaces using their Free CPU tier (**2 vCPUs & 16 GB RAM**).
+You can host this engine **completely free** on Hugging Face Spaces using their Free CPU tier (**2 vCPUs & 16 GB RAM**):
 
 1. Go to [Hugging Face Spaces](https://huggingface.co/spaces) and click **Create new Space**.
 2. Set Space Name: `istanbul-transit-core`.
-3. Select **Docker** as Space SDK (Blank template).
+3. Select **Gradio** as Space SDK (Blank template). *(100% Free on CPU Basic)*.
 4. Choose the **Free 16 GB RAM CPU** hardware.
-5. Push this repository to your Hugging Face Space Git repository:
+5. Our included `packages.txt` automatically installs OpenJDK 17 via Debian apt, and `app.py` boots OpenTripPlanner and the full interactive web UI.
+6. Push this repository to your Hugging Face Space Git repository:
    ```bash
    git remote add space https://huggingface.co/spaces/<your-username>/istanbul-transit-core
    git push space main
    ```
-6. The provided `Dockerfile` and `bin/entrypoint.sh` automatically detect port `7860` and launch both the OTP graph engine and FastAPI backend.
 
 ---
 
