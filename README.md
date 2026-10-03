@@ -1,3 +1,15 @@
+---
+title: Istanbul Transit Core
+emoji: 🚆
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+app_file: app.py
+pinned: false
+license: mit
+short_description: İstanbul için sıfır bulut maliyetli yerel multimodal toplu taşıma motoru
+---
+
 <div align="center">
 
 # 🚆 Istanbul Transit Navigator (Core Engine)
