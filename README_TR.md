@@ -9,11 +9,11 @@
 [![Lisans: MIT](https://img.shields.io/badge/Lisans-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB.svg?logo=python&logoColor=white)](https://python.org)
 [![Docker](https://img.shields.io/badge/Docker-Hazır-2496ED.svg?logo=docker&logoColor=white)](https://www.docker.com/)
-[![Sıfır Ücretli API](https://img.shields.io/badge/API-100%25%20Ücretsiz%20%26%20Yerel-success.svg)](#sıfır-maliyetli-mimari)
+[![Sıfır Ücretli API](https://img.shields.io/badge/API-100%25%20Ücretsiz%20%26%20Yerel-success.svg)](#temel-özellikler-ve-inovasyonlar)
 
 *İstanbul'un karmaşık toplu taşıma ağını (Metro, Metrobüs, Marmaray, Tramvay, Şehir Hatları Vapurları, İETT Otobüsleri ve Havaist) ücretli bulut API'lerine (Google Maps, Moovit vb.) kuruş ödemeden, gizliliği koruyarak ve sıfır gecikmeyle çözen açık kaynaklı navigasyon platformu.*
 
-[🇹🇷 Türkçe Dokümantasyon](README_TR.md) • [🇬🇧 English Documentation](README.md)
+[🇹🇷 Türkçe Dokümantasyon](README_TR.md) • [🇬🇧 English Documentation](README.md) • [🚀 Canlı Demo](https://th3g3nt13man-istanbul-transit-core.hf.space) • [📊 Benchmark Raporu](#1000-rotalık-ve-canlı-adli-kıyaslama-raporu) • [⚡ Hızlı Kurulum](#hızlı-başlangıç-kurulum) • [📱 REST API](#mobil-web-geliştiricileri-için-rest-api-referansı)
 
 </div>
 

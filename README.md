@@ -1,15 +1,3 @@
----
-title: Istanbul Transit Core
-emoji: 🚆
-colorFrom: blue
-colorTo: indigo
-sdk: gradio
-app_file: app.py
-pinned: false
-license: mit
-short_description: İstanbul için yerel toplu taşıma navigasyon motoru
----
-
 <div align="center">
 
 # 🚆 Istanbul Transit Navigator (Core Engine)
@@ -21,11 +9,11 @@ short_description: İstanbul için yerel toplu taşıma navigasyon motoru
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB.svg?logo=python&logoColor=white)](https://python.org)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker&logoColor=white)](https://www.docker.com/)
-[![Zero Paid APIs](https://img.shields.io/badge/APIs-100%25%20Free%20%26%20Local-success.svg)](#zero-cost-architecture)
+[![Zero Paid APIs](https://img.shields.io/badge/APIs-100%25%20Free%20%26%20Local-success.svg)](#system-architecture)
 
 *An ad-free, privacy-preserving, zero-cloud-cost routing engine built specifically to solve Istanbul's complex multimodal transit grid (Metro, Metrobüs, Marmaray, Tram, Ferries, İETT Buses, and Havaist).*
 
-[🇹🇷 Türkçe Dokümantasyon](README_TR.md) • [🇬🇧 English Documentation](README.md) • [Live Demo](#hugging-face-spaces-deployment) • [Architecture](#system-architecture) • [Benchmark Report](#the-1000-route-forensic-benchmark) • [API Docs](#rest-api-reference-for-mobile--web-developers) • [Quickstart](#quickstart)
+[🇹🇷 Türkçe Dokümantasyon](README_TR.md) • [🇬🇧 English Documentation](README.md) • [🚀 Live Demo](https://th3g3nt13man-istanbul-transit-core.hf.space) • [🏗️ Architecture](#system-architecture) • [📊 Benchmark Report](#the-1000-route-forensic-benchmark) • [📱 API Docs](#rest-api-reference-for-mobile-web-developers) • [⚡ Quickstart](#quickstart)
 
 </div>
 
