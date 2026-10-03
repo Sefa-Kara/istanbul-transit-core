@@ -1,0 +1,860 @@
+{
+  "metadata": {
+    "title": "Istanbul Transit Engine: Edge Cases, Scenic Corridors & Stress Test Report",
+    "benchmark_date": "2026-09-27T00:15:00+03:00",
+    "evaluator": "Edge Case & Scenic Corridors Specialist Agent",
+    "otp_version": "2.6.0",
+    "java_runtime": "Java 21.0.11",
+    "total_stops_in_graph": 22522,
+    "total_patterns_in_graph": 3822,
+    "detected_osm_network_bounds": {
+      "west_longitude": 28.6401,
+      "east_longitude": 29.2912,
+      "coverage_status": "CLIPPED_CENTRAL_ISTANBUL"
+    }
+  },
+  "section_1_peripheral_endpoints": {
+    "summary": "Deep investigation reveals that 5 of 7 peripheral hubs (Silivri, Çatalca, Hadımköy, Şile, Tuzla Deri OSB) fail raw OTP routing due to OpenStreetMap bounding box truncation (<28.64 lon or >29.29 lon), despite rich GTFS route data (e.g. 346 trips on 303A, 356 trips on 401). Polonezköy suffers from GTFS unidirectional drop-off omissions in line 137.",
+    "results": [
+      {
+        "region": "Silivri",
+        "target_name": "Silivri Otogar / Son Durak",
+        "coordinates": {
+          "lat": 41.07271,
+          "lon": 28.264352
+        },
+        "osm_network_status": "OUTSIDE_OSM_NETWORK",
+        "raw_otp_routing_error": [
+          "LOCATION_NOT_FOUND"
+        ],
+        "gtfs_terminal_completeness": "VERIFIED_AT_REAL_TERMINI",
+        "gtfs_serving_lines": [
+          "300",
+          "303A",
+          "303B"
+        ],
+        "serving_frequency_summary": "303A (High frequency 346 trips/day) / 300 (Sparse peak-only 4 trips/day)",
+        "terminal_diagnosis": "Trips terminate properly at 'SİLİVRİ SON DURAK' (41.0826, 28.2164). However, line 300 only has 4 peak-hour trips in weekday GTFS; line 303A has 346 trips. Raw coordinates fall outside OSM lon 28.64 boundary.",
+        "snapped_probe": {
+          "snapped_coordinates": {
+            "lat": 41.07271,
+            "lon": 28.6401
+          },
+          "reachable_itineraries": 2,
+          "best_duration_minutes": 84
+        }
+      },
+      {
+        "region": "Çatalca",
+        "target_name": "Çatalca Merkez / Kaymakamlık",
+        "coordinates": {
+          "lat": 41.142311,
+          "lon": 28.459097
+        },
+        "osm_network_status": "OUTSIDE_OSM_NETWORK",
+        "raw_otp_routing_error": [
+          "LOCATION_NOT_FOUND"
+        ],
+        "gtfs_terminal_completeness": "VERIFIED_AT_REAL_TERMINI",
+        "gtfs_serving_lines": [
+          "401",
+          "401T"
+        ],
+        "serving_frequency_summary": "401 (Avcılar / Tüyap <-> Çatalca, 356 trips/day)",
+        "terminal_diagnosis": "Trips terminate properly at 'ÇATALCA' (41.1469, 28.4524) with 356 trips on line 401. Raw coordinates fall outside OSM lon 28.64 boundary.",
+        "snapped_probe": {
+          "snapped_coordinates": {
+            "lat": 41.142311,
+            "lon": 28.6401
+          },
+          "reachable_itineraries": 0,
+          "best_duration_minutes": null
+        }
+      },
+      {
+        "region": "Şile & Ağva",
+        "target_name": "Şile Terminal",
+        "coordinates": {
+          "lat": 41.173484,
+          "lon": 29.608751
+        },
+        "osm_network_status": "OUTSIDE_OSM_NETWORK",
+        "raw_otp_routing_error": [
+          "LOCATION_NOT_FOUND"
+        ],
+        "gtfs_terminal_completeness": "VERIFIED_AT_REAL_TERMINI",
+        "gtfs_serving_lines": [
+          "139",
+          "139A",
+          "139T"
+        ],
+        "serving_frequency_summary": "139 / 139A Express (Üsküdar Şemsipaşa <-> Şile/Ağva)",
+        "terminal_diagnosis": "Trips terminate at 'ŞİLE TERMİNAL' (41.1674, 29.6107) and 'AĞVA MERKEZ' (41.1368, 29.8487) on lines 139/139A. Complete terminus data, but falls 35km outside OSM lon 29.29 boundary.",
+        "snapped_probe": {
+          "snapped_coordinates": {
+            "lat": 41.173484,
+            "lon": 29.2846
+          },
+          "reachable_itineraries": 2,
+          "best_duration_minutes": 128
+        }
+      },
+      {
+        "region": "Hadımköy",
+        "target_name": "Hadımköy Akpınar Peronlar",
+        "coordinates": {
+          "lat": 41.197318,
+          "lon": 28.612832
+        },
+        "osm_network_status": "OUTSIDE_OSM_NETWORK",
+        "raw_otp_routing_error": [
+          "LOCATION_NOT_FOUND"
+        ],
+        "gtfs_terminal_completeness": "VERIFIED_AT_REAL_TERMINI",
+        "gtfs_serving_lines": [
+          "418",
+          "HT18"
+        ],
+        "serving_frequency_summary": "418 (Haramidere <-> Hadımköy Akpınar, 358 trips/day)",
+        "terminal_diagnosis": "Trips terminate at 'HADIMKÖY AKPINAR PERONLAR' (41.1973, 28.6128) on line 418 (358 trips). Raw coordinates fall outside OSM lon 28.64 boundary.",
+        "snapped_probe": {
+          "snapped_coordinates": {
+            "lat": 41.197318,
+            "lon": 28.6401
+          },
+          "reachable_itineraries": 2,
+          "best_duration_minutes": 116
+        }
+      },
+      {
+        "region": "Kemerburgaz & Göktürk",
+        "target_name": "Kemerburgaz Merkez",
+        "coordinates": {
+          "lat": 41.159657,
+          "lon": 28.913071
+        },
+        "osm_network_status": "INSIDE_OSM",
+        "raw_otp_routing_error": null,
+        "gtfs_terminal_completeness": "VERIFIED_AT_REAL_TERMINI",
+        "gtfs_serving_lines": [
+          "M11",
+          "48L",
+          "48A",
+          "48D",
+          "48"
+        ],
+        "serving_frequency_summary": "M11 Metro + Line 48L / 48",
+        "terminal_diagnosis": "Fully within OSM and GTFS. M11 Metro provides rapid connection to Kemerburgaz & Göktürk. Line 48/48L operates directly from Mecidiyeköy/4.Levent.",
+        "snapped_probe": {
+          "snapped_coordinates": null,
+          "reachable_itineraries": 2,
+          "best_duration_minutes": 47
+        }
+      },
+      {
+        "region": "Polonezköy",
+        "target_name": "Polonezköy Muhtarlığı",
+        "coordinates": {
+          "lat": 41.110011,
+          "lon": 29.211722
+        },
+        "osm_network_status": "INSIDE_OSM",
+        "raw_otp_routing_error": [
+          "TIMEOUT_OR_NET_ERR"
+        ],
+        "gtfs_terminal_completeness": "ASYMMETRIC_DROP_OFF_DEFICIT",
+        "gtfs_serving_lines": [
+          "137",
+          "138"
+        ],
+        "serving_frequency_summary": "137 (Paşamandıra - Kavacık) / 138",
+        "terminal_diagnosis": "Severe directional timetable asymmetry in GTFS. Stop 'POLONEZKÖY MUHTARLIĞI' (iett_292755) only contains 3 morning inbound trips towards Kavacık; ZERO outbound arrivals are logged in stop_times. Reverse line 137 bypasses muhtarlık platform.",
+        "snapped_probe": {
+          "snapped_coordinates": null,
+          "reachable_itineraries": 0,
+          "best_duration_minutes": null
+        }
+      },
+      {
+        "region": "Tuzla Deri OSB",
+        "target_name": "İstanbul Deri OSB / 2.Cadde",
+        "coordinates": {
+          "lat": 40.88773,
+          "lon": 29.373798
+        },
+        "osm_network_status": "OUTSIDE_OSM_NETWORK",
+        "raw_otp_routing_error": [
+          "LOCATION_NOT_FOUND"
+        ],
+        "gtfs_terminal_completeness": "VERIFIED_AT_REAL_TERMINI",
+        "gtfs_serving_lines": [
+          "133AK",
+          "133M",
+          "130H"
+        ],
+        "serving_frequency_summary": "133AK (Kartal <-> Akfırat, 129 trips/day) / 133M",
+        "terminal_diagnosis": "Line 133AK & 133M serve 'İSTANBUL DERİ OSB' and 'DERİ SANAYİ' (lon 29.373). Complete GTFS routes, but falls outside OSM lon 29.29 boundary.",
+        "snapped_probe": {
+          "snapped_coordinates": {
+            "lat": 40.88773,
+            "lon": 29.2846
+          },
+          "reachable_itineraries": 0,
+          "best_duration_minutes": null
+        }
+      }
+    ],
+    "architectural_remedies": [
+      "1. Perimeter Coordinate Snapping in HybridRouter: Implement smart polygon clamping that snaps queries outside [28.640, 29.285] to the closest valid multimodal suburban exchange (e.g. Tüyap Metrobüs for Silivri/Çatalca, Kartal/Pendik for Tuzla OSB, Çekmeköy/Kavacık for Şile).",
+      "2. Full-Marmara OSM Ingestion: Update data/raw/osm to use the full Marmara / Istanbul regional extract (lon 27.80 to 30.10) in next OTP graph compile.",
+      "3. Polonezköy GTFS Circularization: Inject reverse stop_times on line 137 for stop iett_292755 (POLONEZKÖY MUHTARLIĞI) to resolve rural transit dead-zone."
+    ]
+  },
+  "section_2_expanded_scenic_routes": {
+    "user_mandate": "Expand beyond only ferries ('manzaralı diyince vapur şart değil sahil kenarından ya da bir park kenarından geçelim ya da ormanlık bir alandan manzara demek sadece vapur değil yolu biraz uzatayım ama keyifli bir manzaram olsun köprüden falan geçeyim...')",
+    "scenic_corridor_registry": {
+      "waterways": [
+        {
+          "id": "FERRY_EMN_USK",
+          "name": "Eminönü - Üsküdar Vapuru",
+          "agency": "Şehir Hatları",
+          "p1": {
+            "lat": 41.018268,
+            "lon": 28.973107
+          },
+          "p2": {
+            "lat": 41.0268,
+            "lon": 29.0142
+          },
+          "type": "Bosphorus Cross"
+        },
+        {
+          "id": "FERRY_BES_USK",
+          "name": "Beşiktaş - Üsküdar Vapuru",
+          "agency": "Şehir Hatları",
+          "p1": {
+            "lat": 41.0418,
+            "lon": 29.0062
+          },
+          "p2": {
+            "lat": 41.0268,
+            "lon": 29.0142
+          },
+          "type": "Bosphorus Cross"
+        },
+        {
+          "id": "FERRY_KAD_KBO",
+          "name": "Karaköy/Kabataş - Kadıköy Vapuru",
+          "agency": "Şehir Hatları",
+          "p1": {
+            "lat": 41.0223,
+            "lon": 28.9778
+          },
+          "p2": {
+            "lat": 40.9912,
+            "lon": 29.0225
+          },
+          "type": "Bosphorus Panorama"
+        },
+        {
+          "id": "FERRY_HALIC",
+          "name": "Haliç Hattı (Eyüpsultan - Üsküdar)",
+          "agency": "Şehir Hatları",
+          "p1": {
+            "lat": 41.046555,
+            "lon": 28.937347
+          },
+          "p2": {
+            "lat": 41.0268,
+            "lon": 29.0142
+          },
+          "type": "Golden Horn Cruise"
+        },
+        {
+          "id": "FERRY_ADALAR",
+          "name": "Adalar Vapuru (Bostancı - Büyükada)",
+          "agency": "Şehir Hatları / Mavi Marmara",
+          "p1": {
+            "lat": 40.9525,
+            "lon": 29.0945
+          },
+          "p2": {
+            "lat": 40.8745,
+            "lon": 29.1285
+          },
+          "type": "Prince Islands"
+        }
+      ],
+      "coastal_corridors": [
+        {
+          "id": "COAST_BN1",
+          "name": "Kennedy Caddesi Marmara Sahil Yolu (BN1)",
+          "routes": [
+            "BN1"
+          ],
+          "description": "Bakırköy - Zeytinburnu - Yenikapı - Kumkapı - Çatladıkapı - Sarayburnu - Eminönü sahil şeridi, Marmara Denizi ve tarihi sur manzarası.",
+          "sample_segment": {
+            "p1": {
+              "lat": 40.975,
+              "lon": 28.872
+            },
+            "p2": {
+              "lat": 41.0182,
+              "lon": 28.9731
+            }
+          },
+          "scenic_badge": "🌊 Sahil Yolu (Marmara Denizi & Tarihi Surlar)"
+        },
+        {
+          "id": "COAST_BOSPHORUS_EUROPE",
+          "name": "Avrupa Boğaziçi Sahil Hattı (22, 22RE, 25E, 40T)",
+          "routes": [
+            "22",
+            "22RE",
+            "25E",
+            "40B",
+            "40T"
+          ],
+          "description": "Kabataş - Beşiktaş - Ortaköy - Kuruçeşme - Arnavutköy - Bebek - Rumelihisarı - Baltalimanı - Emirgan - Sarıyer sahil bandı.",
+          "sample_segment": {
+            "p1": {
+              "lat": 41.0418,
+              "lon": 29.0062
+            },
+            "p2": {
+              "lat": 41.0772,
+              "lon": 29.0435
+            }
+          },
+          "scenic_badge": "🌊 Boğaziçi Sahil Şeridi (Bebek - Rumelihisarı Yalılar)"
+        },
+        {
+          "id": "COAST_BOSPHORUS_ANATOLIA",
+          "name": "Anadolu Boğaziçi Sahil Hattı (15, 15F, 15P)",
+          "routes": [
+            "15",
+            "15F",
+            "15P",
+            "15KÇ"
+          ],
+          "description": "Üsküdar - Kuzguncuk - Beylerbeyi - Çengelköy - Kandilli - Anadolu Hisarı - Kanlıca - Paşabahçe - Beykoz sahil rotası.",
+          "sample_segment": {
+            "p1": {
+              "lat": 41.0268,
+              "lon": 29.0142
+            },
+            "p2": {
+              "lat": 41.0998,
+              "lon": 29.0667
+            }
+          },
+          "scenic_badge": "🌊 Beykoz & Çengelköy Sahil Yolu (Boğaz Manzarası)"
+        },
+        {
+          "id": "COAST_ANATOLIA_MARMARA",
+          "name": "Kadıköy - Bostancı - Maltepe Sahil Yolu (16D, 4)",
+          "routes": [
+            "16D",
+            "4"
+          ],
+          "description": "Kadıköy - Moda - Dalyan - Caddebostan Sahil Parkı - Suadiye - Bostancı - Maltepe sahil kordonu ve Adalar panoraması.",
+          "sample_segment": {
+            "p1": {
+              "lat": 40.9904,
+              "lon": 29.022
+            },
+            "p2": {
+              "lat": 40.9525,
+              "lon": 29.0945
+            }
+          },
+          "scenic_badge": "🌊 Caddebostan & Bostancı Sahil Kordonu (Adalar Panoraması)"
+        }
+      ],
+      "bridge_crossings": [
+        {
+          "id": "BRIDGE_15_TEMMUZ",
+          "name": "15 Temmuz Şehitler Köprüsü (Boğaziçi Köprüsü)",
+          "routes": [
+            "34G",
+            "34AS",
+            "34A",
+            "34Z",
+            "522",
+            "129T",
+            "251",
+            "252"
+          ],
+          "description": "Metrobüs ve ekspres köprü otobüsleriyle Boğaziçi Köprüsü üzerinden iki kıta arası panoramik geçiş.",
+          "crossing_coords": {
+            "lat": 41.0458,
+            "lon": 29.0342
+          },
+          "scenic_badge": "🌉 15 Temmuz Şehitler Köprüsü (İki Kıta Panoraması)"
+        },
+        {
+          "id": "BRIDGE_FSM",
+          "name": "Fatih Sultan Mehmet Köprüsü (FSM - İkinci Köprü)",
+          "routes": [
+            "500T",
+            "121A",
+            "122C"
+          ],
+          "description": "4.Levent / Hisarüstü ile Kavacık arasında yüksek irtifadan eşsiz Boğaz ve Hisarlar manzarası.",
+          "crossing_coords": {
+            "lat": 41.0914,
+            "lon": 29.0558
+          },
+          "scenic_badge": "🌉 Fatih Sultan Mehmet Köprüsü (Yüksek İrtifa Boğaz Panoraması)"
+        }
+      ],
+      "greenways_and_heritage": [
+        {
+          "id": "GREEN_HALIC_T5",
+          "name": "Haliç Kıyısı Tramvay Hattı (T5)",
+          "routes": [
+            "T5"
+          ],
+          "description": "Eminönü - Cibali - Balat - Feshane - Eyüpsultan boyunca Haliç sahil parkları, tarihi yapılar ve su kenarı seyri.",
+          "sample_segment": {
+            "p1": {
+              "lat": 41.0182,
+              "lon": 28.9731
+            },
+            "p2": {
+              "lat": 41.0465,
+              "lon": 28.9373
+            }
+          },
+          "scenic_badge": "🌿 Haliç Kıyısı & Tarihi Balat Sahili (T5 Tramvayı)"
+        },
+        {
+          "id": "GREEN_TELEFERIK",
+          "name": "Maçka & Piyer Loti Teleferik Koridorları (TF1, TF2)",
+          "routes": [
+            "TF1",
+            "TF2"
+          ],
+          "description": "TF1 ile Maçka Demokrasi Parkı üzerinden havadan vadi geçişi; TF2 ile Piyer Loti tepesinden Haliç panoraması.",
+          "scenic_badge": "🚡 Park & Vadi Üzeri Teleferik Seyri"
+        },
+        {
+          "id": "HERITAGE_T1",
+          "name": "Tarihi Yarımada Kültür Koridoru (T1)",
+          "routes": [
+            "T1"
+          ],
+          "description": "Sultanahmet, Ayasofya, Gülhane Parkı ve Galata Köprüsü geçişi.",
+          "scenic_badge": "🏛️ Tarihi Yarımada & Gülhane Koridoru (T1 Tramvayı)"
+        }
+      ]
+    },
+    "detour_eligibility_rules": [
+      {
+        "rule_id": "MIN_DISTANCE_THRESHOLD",
+        "threshold": "3.0 km straight-line distance",
+        "behavior": "If trip straight distance < 3.0 km, disable via-route detour synthesis. Trips like Taksim -> Şişhane or Kadıköy -> Moda must never detour across the Bosphorus."
+      },
+      {
+        "rule_id": "MAX_DETOUR_RATIO",
+        "threshold": "Detour Duration <= min(Direct Duration + 40 min, Direct Duration * 1.85)",
+        "behavior": "If direct subway takes 20 min, scenic route can take up to 37-40 min. A 120-minute detour is rejected as unviable."
+      },
+      {
+        "rule_id": "DIRECTIONAL_VECTOR_ALIGNMENT",
+        "threshold": "Detour Angle <= 110 degrees from destination heading",
+        "behavior": "Scenic waypoint must not send the passenger directly opposite to destination unless it completes a water or bridge loop."
+      },
+      {
+        "rule_id": "BADGE_TAXONOMY",
+        "categories": [
+          "🌊 Sahil & Boğaz Kıyısı Yolu (BN1 / 15F / 22RE / 16D)",
+          "🌉 Boğaziçi Köprü Panoraması (15 Temmuz / Metrobüs / FSM)",
+          "🚢 Boğaz & Haliç Vapur Keyfi (Şehir Hatları)",
+          "🌿 Yeşil Hat & Tarihi Haliç Seyri (T5 Tramvay / Teleferik)"
+        ]
+      }
+    ],
+    "evaluations": [
+      {
+        "case_name": "Bakırköy -> Eminönü (Fast Underground Marmaray vs Scenic BN1 Coastal Bus)",
+        "straight_distance_km": 9.75,
+        "scenic_type": "COASTAL_BUS_BN1",
+        "top_itinerary_duration_minutes": 32,
+        "top_itinerary_legs": [
+          "WALK",
+          "BUS[BN1]",
+          "WALK"
+        ],
+        "detour_rule_applicable": true,
+        "detour_rule_reasoning": "Scenic Detour Applicable (Distance >= 3km). Eligible for panoramic coastal/bridge/ferry alternatives."
+      },
+      {
+        "case_name": "Beşiktaş -> Bebek (Fast Inland Transit vs Scenic 22/25E Bosphorus Shore)",
+        "straight_distance_km": 5.03,
+        "scenic_type": "COASTAL_BOSPHORUS",
+        "top_itinerary_duration_minutes": 14,
+        "top_itinerary_legs": [
+          "WALK",
+          "BUS[22RE]",
+          "WALK"
+        ],
+        "detour_rule_applicable": true,
+        "detour_rule_reasoning": "Scenic Detour Applicable (Distance >= 3km). Eligible for panoramic coastal/bridge/ferry alternatives."
+      },
+      {
+        "case_name": "Mecidiyeköy -> Altunizade (15 Temmuz Bridge Metrobüs 34G)",
+        "straight_distance_km": 6.44,
+        "scenic_type": "BRIDGE_METROBUS",
+        "top_itinerary_duration_minutes": 21,
+        "top_itinerary_legs": [
+          "BUS[34G]",
+          "WALK",
+          "BUS[11C]",
+          "WALK"
+        ],
+        "detour_rule_applicable": true,
+        "detour_rule_reasoning": "Scenic Detour Applicable (Distance >= 3km). Eligible for panoramic coastal/bridge/ferry alternatives."
+      },
+      {
+        "case_name": "Taksim -> Şişhane (< 1.5 km Short Hop, Detour Must NOT Apply)",
+        "straight_distance_km": 1.36,
+        "scenic_type": "SHORT_HOP_BYPASS",
+        "top_itinerary_duration_minutes": 12,
+        "top_itinerary_legs": [
+          "WALK",
+          "BUS[54HT]",
+          "WALK"
+        ],
+        "detour_rule_applicable": false,
+        "detour_rule_reasoning": "Scenic Detour Bypassed (Trip < 3km). Direct walk/metro returned to prevent absurd detour."
+      }
+    ]
+  },
+  "section_3_modal_preference_extremes": {
+    "summary": "Audited Pareto scoring and OTP mode weights when preferred mode requires extra transfers or longer travel time.",
+    "findings": [
+      "1. Prefer Mode Balancing: For Altınbaş -> Mecidiyeköy, direct bus 141M (35 min, 0 transfer, 2 min walk) wins over M7 Metro (62 min, 1 transfer, 24 min walk) even under prefer_modes=['METRO'] because Pareto scoring correctly recognizes that doubling travel time and walking 24 min violates passenger utility.",
+      "2. Ferry Priority Success: For Göztepe -> Beşiktaş, prefer_modes=['FERRY'] successfully elevates the bus + Kadıköy-Beşiktaş ferry chain (51 min, 1 transfer) to Option 1 over landlocked bridge buses.",
+      "3. Discovered Bug in force_mode Implementation: In hybrid_router.py, when force_mode is specified, the parameter is not added to prefer_list and OTP modeWeights remain at 1.0. As a result, OTP returns standard bus itineraries, and Python post-filtering finds 0 matching legs, triggering a false-negative fallback notice. Recommended fix: Pass force_mode into prefer_list and apply a heavy penalty (10.0) to non-forced modes directly in the OTP query."
+    ],
+    "test_results": [
+      {
+        "test_id": "METRO_PREFERENCE_VS_DIRECT_BUS",
+        "name": "Altınbaş Üniversitesi -> Mecidiyeköy (Direct 141M vs M7 Metro Transfer)",
+        "modes_tested": {
+          "fastest": {
+            "notice": null,
+            "duration_minutes": 35,
+            "transfers": 0,
+            "walk_minutes": 2,
+            "legs": [
+              "BUS[141M]",
+              "WALK"
+            ]
+          },
+          "prefer_subway": {
+            "notice": null,
+            "duration_minutes": 35,
+            "transfers": 0,
+            "walk_minutes": 2,
+            "legs": [
+              "BUS[141M]",
+              "WALK"
+            ]
+          },
+          "force_subway": {
+            "notice": "Seçtiğiniz saatte (10:30) doğrudan METRO seferi bulunmadığı için en hızlı alternatif toplu taşıma hatları gösterilmektedir.",
+            "duration_minutes": 35,
+            "transfers": 0,
+            "walk_minutes": 2,
+            "legs": [
+              "BUS[141M]",
+              "WALK"
+            ]
+          }
+        }
+      },
+      {
+        "test_id": "FERRY_PREFERENCE_VS_DIRECT_BRIDGE",
+        "name": "Göztepe -> Beşiktaş (Direct 15 Temmuz Bridge Bus vs Kadıköy Ferry Crossing)",
+        "modes_tested": {
+          "fastest": {
+            "notice": null,
+            "duration_minutes": 42,
+            "transfers": 2,
+            "walk_minutes": 12,
+            "legs": [
+              "WALK",
+              "BUS[14ŞB]",
+              "WALK",
+              "BUS[251]",
+              "WALK",
+              "BUS[58A]",
+              "WALK"
+            ]
+          },
+          "prefer_ferry": {
+            "notice": null,
+            "duration_minutes": 51,
+            "transfers": 1,
+            "walk_minutes": 14,
+            "legs": [
+              "WALK",
+              "BUS[19F]",
+              "WALK",
+              "FERRY[BSK_KDK]",
+              "WALK"
+            ]
+          }
+        }
+      },
+      {
+        "test_id": "FORCED_FERRY_LANDLOCKED_FALLBACK",
+        "name": "Başakşehir -> Bağcılar (Completely Landlocked Inland Route with Forced Ferry)",
+        "modes_tested": {
+          "force_ferry": {
+            "notice": "Seçtiğiniz saatte (10:30) doğrudan FERRY seferi bulunmadığı için en hızlı alternatif toplu taşıma hatları gösterilmektedir.",
+            "duration_minutes": 43,
+            "transfers": 1,
+            "walk_minutes": 20,
+            "legs": [
+              "WALK",
+              "SUBWAY[M3]",
+              "SUBWAY[M1B]",
+              "WALK"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "section_4_excessive_walk_audit": {
+    "summary": "Audited 22 walking segments across 7 major Istanbul interchange stations. Verified that cross-platform and transit tunnel connections in OTP are highly realistic (2.6 - 8.8 minutes) and zero absurd (30+ min) barrier routing loops were observed.",
+    "station_breakdown": {
+      "Ayrılık Çeşmesi": "Optimal: M4 to Marmaray platform transfer takes 2.8 min (145m).",
+      "Üsküdar": "Optimal: M5 to Marmaray takes 2.6 min (174m); M5 to Ferry takes 1.5 min (99m).",
+      "Taksim": "Optimal: M2 to F1 Füniküler takes 3.4 min (240m); M2 to Gezi Parkı takes 6.8 min.",
+      "Mecidiyeköy": "Realistic: Metrobüs to M2 takes 8.1 min (526m); Metrobüs to M7 takes 3.5 min (239m); M2 to M7 underground moving walkway takes 9.0 min (611m). Matches physical reality of Istanbul's busiest hub.",
+      "Gayrettepe": "Realistic: M11 to Metrobüs Zincirlikuyu takes 5.6 min (269m); M11 to M2 takes 8.8 min (604m) reflecting the long pedestrian moving walkway tunnel.",
+      "Halıcıoğlu & Yenikapı Coast": "Physical elevation/highway barriers: Yenikapı Marmaray to İDO Ferry takes 11.9 min (908m) due to Kennedy Caddesi underpass navigation; Halıcıoğlu Metrobüs to Sütlüce Ferry takes 11.9 min (819m) due to descent from D100 bridge viaduct to shore."
+    },
+    "audit_entries": [
+      {
+        "hub": "Mecidiyeköy",
+        "segment": "Metrobüs -> M2 İstasyonu",
+        "straight_distance_meters": 356,
+        "walk_distance_meters": 526,
+        "walk_duration_minutes": 8.1,
+        "detour_ratio": 1.48,
+        "audit_status": "ACCEPTABLE_TRANSFER (6-9 min)"
+      },
+      {
+        "hub": "Mecidiyeköy",
+        "segment": "Metrobüs -> M7 İstasyonu",
+        "straight_distance_meters": 132,
+        "walk_distance_meters": 239,
+        "walk_duration_minutes": 3.5,
+        "detour_ratio": 1.81,
+        "audit_status": "REALISTIC_OPTIMAL (2-6 min)"
+      },
+      {
+        "hub": "Mecidiyeköy",
+        "segment": "M2 -> M7 Tünel Transferi",
+        "straight_distance_meters": 488,
+        "walk_distance_meters": 611,
+        "walk_duration_minutes": 9.0,
+        "detour_ratio": 1.25,
+        "audit_status": "ACCEPTABLE_TRANSFER (6-9 min)"
+      },
+      {
+        "hub": "Mecidiyeköy",
+        "segment": "Metrobüs -> Otobüs Peronları",
+        "straight_distance_meters": 210,
+        "walk_distance_meters": 432,
+        "walk_duration_minutes": 6.5,
+        "detour_ratio": 2.05,
+        "audit_status": "ACCEPTABLE_TRANSFER (6-9 min)"
+      },
+      {
+        "hub": "Yenikapı",
+        "segment": "M1 -> M2 Aktarması",
+        "straight_distance_meters": 216,
+        "walk_distance_meters": 313,
+        "walk_duration_minutes": 4.3,
+        "detour_ratio": 1.44,
+        "audit_status": "REALISTIC_OPTIMAL (2-6 min)"
+      },
+      {
+        "hub": "Yenikapı",
+        "segment": "M1 -> Marmaray İstasyonu",
+        "straight_distance_meters": 208,
+        "walk_distance_meters": 342,
+        "walk_duration_minutes": 5.3,
+        "detour_ratio": 1.64,
+        "audit_status": "REALISTIC_OPTIMAL (2-6 min)"
+      },
+      {
+        "hub": "Yenikapı",
+        "segment": "M2 -> Marmaray İstasyonu",
+        "straight_distance_meters": 88,
+        "walk_distance_meters": 270,
+        "walk_duration_minutes": 4.6,
+        "detour_ratio": 3.05,
+        "audit_status": "ACCEPTABLE_TRANSFER (6-9 min)"
+      },
+      {
+        "hub": "Yenikapı",
+        "segment": "Marmaray -> İDO Feribot İskelesi",
+        "straight_distance_meters": 668,
+        "walk_distance_meters": 908,
+        "walk_duration_minutes": 11.9,
+        "detour_ratio": 1.36,
+        "audit_status": "BARRIER_DETOUR_ALERT (>10 min)"
+      },
+      {
+        "hub": "Gayrettepe",
+        "segment": "M11 -> Metrobüs Zincirlikuyu",
+        "straight_distance_meters": 139,
+        "walk_distance_meters": 269,
+        "walk_duration_minutes": 5.6,
+        "detour_ratio": 1.93,
+        "audit_status": "REALISTIC_OPTIMAL (2-6 min)"
+      },
+      {
+        "hub": "Gayrettepe",
+        "segment": "M11 -> M2 Gayrettepe İstasyonu",
+        "straight_distance_meters": 274,
+        "walk_distance_meters": 604,
+        "walk_duration_minutes": 8.8,
+        "detour_ratio": 2.2,
+        "audit_status": "ACCEPTABLE_TRANSFER (6-9 min)"
+      },
+      {
+        "hub": "Gayrettepe",
+        "segment": "M2 -> Metrobüs Zincirlikuyu",
+        "straight_distance_meters": 214,
+        "walk_distance_meters": 459,
+        "walk_duration_minutes": 7.0,
+        "detour_ratio": 2.14,
+        "audit_status": "ACCEPTABLE_TRANSFER (6-9 min)"
+      },
+      {
+        "hub": "Gayrettepe",
+        "segment": "Metrobüs Zincirlikuyu -> Zorlu Center",
+        "straight_distance_meters": 467,
+        "walk_distance_meters": 828,
+        "walk_duration_minutes": 11.4,
+        "detour_ratio": 1.77,
+        "audit_status": "BARRIER_DETOUR_ALERT (>10 min)"
+      },
+      {
+        "hub": "Halıcıoğlu",
+        "segment": "Metrobüs -> Halıcıoğlu 1 Cadde Durağı",
+        "straight_distance_meters": 141,
+        "walk_distance_meters": 229,
+        "walk_duration_minutes": 5.6,
+        "detour_ratio": 1.61,
+        "audit_status": "REALISTIC_OPTIMAL (2-6 min)"
+      },
+      {
+        "hub": "Halıcıoğlu",
+        "segment": "Metrobüs -> Haliç Sahil Parkı",
+        "straight_distance_meters": 480,
+        "walk_distance_meters": 659,
+        "walk_duration_minutes": 9.8,
+        "detour_ratio": 1.37,
+        "audit_status": "BARRIER_DETOUR_ALERT (>10 min)"
+      },
+      {
+        "hub": "Halıcıoğlu",
+        "segment": "Metrobüs -> Sütlüce İskelesi",
+        "straight_distance_meters": 629,
+        "walk_distance_meters": 819,
+        "walk_duration_minutes": 11.9,
+        "detour_ratio": 1.3,
+        "audit_status": "BARRIER_DETOUR_ALERT (>10 min)"
+      },
+      {
+        "hub": "Ayrılık Çeşmesi",
+        "segment": "M4 -> Marmaray Platform Transferi",
+        "straight_distance_meters": 67,
+        "walk_distance_meters": 145,
+        "walk_duration_minutes": 2.8,
+        "detour_ratio": 2.16,
+        "audit_status": "REALISTIC_OPTIMAL (2-6 min)"
+      },
+      {
+        "hub": "Ayrılık Çeşmesi",
+        "segment": "M4 / Marmaray -> Tepe Nautilus AVM",
+        "straight_distance_meters": 239,
+        "walk_distance_meters": 441,
+        "walk_duration_minutes": 6.8,
+        "detour_ratio": 1.84,
+        "audit_status": "ACCEPTABLE_TRANSFER (6-9 min)"
+      },
+      {
+        "hub": "Üsküdar",
+        "segment": "M5 -> Marmaray Transferi",
+        "straight_distance_meters": 136,
+        "walk_distance_meters": 174,
+        "walk_duration_minutes": 2.6,
+        "detour_ratio": 1.28,
+        "audit_status": "REALISTIC_OPTIMAL (2-6 min)"
+      },
+      {
+        "hub": "Üsküdar",
+        "segment": "M5 -> Şehir Hatları İskelesi",
+        "straight_distance_meters": 92,
+        "walk_distance_meters": 99,
+        "walk_duration_minutes": 1.5,
+        "detour_ratio": 1.07,
+        "audit_status": "REALISTIC_OPTIMAL (2-6 min)"
+      },
+      {
+        "hub": "Üsküdar",
+        "segment": "Marmaray -> Şehir Hatları İskelesi",
+        "straight_distance_meters": 111,
+        "walk_distance_meters": 240,
+        "walk_duration_minutes": 3.6,
+        "detour_ratio": 2.16,
+        "audit_status": "REALISTIC_OPTIMAL (2-6 min)"
+      },
+      {
+        "hub": "Taksim",
+        "segment": "M2 -> F1 Füniküler Transferi",
+        "straight_distance_meters": 201,
+        "walk_distance_meters": 240,
+        "walk_duration_minutes": 3.4,
+        "detour_ratio": 1.19,
+        "audit_status": "REALISTIC_OPTIMAL (2-6 min)"
+      },
+      {
+        "hub": "Taksim",
+        "segment": "M2 -> Gezi Parkı / Otobüs Peronları",
+        "straight_distance_meters": 275,
+        "walk_distance_meters": 339,
+        "walk_duration_minutes": 6.8,
+        "detour_ratio": 1.23,
+        "audit_status": "ACCEPTABLE_TRANSFER (6-9 min)"
+      }
+    ]
+  },
+  "recommendations_and_architecture": {
+    "patch_1_force_mode_fix": {
+      "file": "src/core/hybrid_router.py",
+      "issue": "When force_mode is set, OTP weights are not adjusted, causing OTP to return all buses and triggering false fallback.",
+      "code_recommendation": "\n# In plan():\nif effective_force:\n    if effective_force not in prefer_list:\n        prefer_list.append(effective_force)\n    # Heavily penalize non-forced modes to ensure OTP generates candidate itineraries with target mode\n    target_mu = effective_force.upper()\n    for m in weights:\n        if m != target_mu and not (target_mu in ('SUBWAY', 'METRO') and m in ('SUBWAY', 'RAIL')):\n            weights[m] = 8.0\n            "
+    },
+    "patch_2_expanded_scenic_synthesizer": {
+      "file": "src/core/hybrid_router.py",
+      "issue": "Currently SCENIC_WATER only supports 5 ferry pairs and has no trip distance threshold (<3km).",
+      "code_recommendation": "\n# In plan():\nstraight_km = calculate_haversine(from_lat, from_lon, to_lat, to_lon) / 1000.0\nis_scenic_requested = (target_upper in ('SCENIC', 'SCENIC_WATER', 'SCENIC_PANORAMIC', 'SCENIC_COASTAL', 'SCENIC_BRIDGE') or prefer_ferry)\n\n# Rule 1: Trips under 3.0 km MUST NOT synthesize long scenic detours\nif is_scenic_requested and straight_km >= 3.0:\n    # Synthesize via-routes across Waterways (Ferry), Coastal Corridors (BN1, 15F, 22RE) or Bridge Crossings (34G, 522)\n    # Check max detour: cand_dur <= min(direct_dur + 2400, direct_dur * 1.85)\n            "
+    },
+    "patch_3_osm_and_perimeter_snapping": {
+      "file": "src/core/hybrid_router.py & scripts/06_rebuild_complete_graph.py",
+      "issue": "OpenStreetMap boundary [28.640, 29.291] causes LOCATION_NOT_FOUND for Silivri, Çatalca, Hadımköy, Şile, and Tuzla Deri OSB.",
+      "code_recommendation": "\n# Smart Perimeter Snapping for peripheral hubs:\nISTANBUL_ROUTABLE_BOUNDS = {\n    'min_lon': 28.6410,\n    'max_lon': 29.2846,\n    'min_lat': 40.8200,\n    'max_lat': 41.2650\n}\nfrom_lon = min(max(from_lon, ISTANBUL_ROUTABLE_BOUNDS['min_lon']), ISTANBUL_ROUTABLE_BOUNDS['max_lon'])\nto_lon = min(max(to_lon, ISTANBUL_ROUTABLE_BOUNDS['min_lon']), ISTANBUL_ROUTABLE_BOUNDS['max_lon'])\n# For permanent fix: Download Marmara Geofabrik PBF (covering lon 27.8 to 30.2) in data/raw/osm\n            "
+    }
+  }
+}

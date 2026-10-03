@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>İstanbul Transit Navigator | Akıllı Şehir İçi Rota & Ulaşım Rehberi</title>
+  
+  <!-- Local Leaflet Assets (Zero-CDN) -->
+  <link rel="stylesheet" href="/vendor/leaflet/leaflet.css" />
+  <script src="/vendor/leaflet/leaflet.js"></script>
+  
+  <!-- Local Design Stylesheet -->
+  <link rel="stylesheet" href="/vendor/app.css" />
+  
+  <!-- Tailwind CSS CDN with graceful local styling fallback -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 flex flex-col h-screen overflow-hidden font-sans select-none antialiased">
+
+  <!-- Top Global Header -->
+  <header class="glass-header px-4 py-2.5 flex items-center justify-between shrink-0 shadow-lg z-30 relative">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-black text-white shadow-cyan-500/25 shadow-md text-sm tracking-wider">
+        İT
+      </div>
+      <div>
+        <h1 class="text-sm sm:text-base font-bold tracking-wide text-white flex items-center gap-2">
+          İstanbul Transit Navigator
+          <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-cyan-950/80 text-cyan-400 border border-cyan-800/80 hidden sm:inline">v3.5 Pro</span>
+        </h1>
+        <p class="text-[11px] text-slate-400 hidden xs:block">Doğrulanmış GTFS • Canlı İETT Radarı • Reklamsız & Bağımsız</p>
+      </div>
+    </div>
+    
+    <div class="flex items-center gap-2 sm:gap-3">
+      <button id="locateMeBtn" title="Canlı GPS Konumunu Al" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-cyan-400 hover:text-cyan-300 text-xs font-semibold border border-slate-700/80 transition shadow active:scale-95">
+        <span class="text-sm">🎯</span>
+        <span class="hidden sm:inline">Mevcut</span> Konumum
+      </button>
+      
+      <!-- Mobile Drawer Toggle -->
+      <button id="toggleSidebarBtn" aria-label="Menüyü Aç/Kapat" class="md:hidden flex items-center justify-center w-8 h-8 rounded-lg bg-slate-800/90 border border-slate-700 text-slate-200 text-sm">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Application Body: Floating Drawer + Fullscreen Map -->
+  <div class="flex flex-1 overflow-hidden relative">
+
+    <!-- Left Navigation Control Panel / Mobile Bottom Sheet -->
+    <aside id="sidebar" class="glass-panel w-full md:w-[460px] lg:w-[490px] flex flex-col shrink-0 z-20 overflow-hidden md:m-3 md:rounded-2xl transition-all duration-300">
+      
+      <!-- Mobile Grab Handle -->
+      <div id="sheetHandle" class="sheet-handle hidden md:hidden w-full pt-2.5 pb-1 flex items-center justify-center cursor-pointer select-none">
+        <div class="w-12 h-1.5 rounded-full bg-slate-500/70"></div>
+      </div>
+
+      <!-- Input Controls Section -->
+      <div class="p-3.5 sm:p-4 border-b border-slate-800/80 space-y-3 shrink-0">
+        
+        <!-- From & To Search Bars with Swap Button -->
+        <div class="relative flex items-center gap-2">
+          <div class="flex-1 space-y-2">
+            
+            <!-- Origin Input -->
+            <div class="relative">
+              <div class="flex items-center gap-2 bg-slate-900/90 rounded-xl px-3 py-2 border border-slate-700/80 focus-within:border-emerald-500 focus-within:ring-1 focus-within:ring-emerald-500/30 transition shadow-inner">
+                <span class="text-emerald-400 text-xs shrink-0 font-bold">🟢</span>
+                <input id="fromInput" type="text" placeholder="Nereden? (İsim, Durak, Metro, AVM...)"
+                       autocomplete="off"
+                       class="bg-transparent text-xs sm:text-sm w-full outline-none text-slate-100 placeholder-slate-400">
+                <button id="clearFromBtn" class="hidden text-slate-400 hover:text-slate-100 text-xs px-1.5 py-0.5 rounded transition">✕</button>
+                <button id="fromLocateBtn" title="Başlangıç olarak konumumu kullan" class="text-slate-400 hover:text-cyan-400 text-xs px-1 transition">🎯</button>
+              </div>
+              <div id="fromDropdown" class="absolute left-0 right-0 top-full mt-1 bg-slate-900/98 backdrop-blur-xl border border-slate-700/80 rounded-xl shadow-2xl max-h-64 overflow-y-auto z-50 hidden divide-y divide-slate-800"></div>
+            </div>
+
+            <!-- Destination Input -->
+            <div class="relative">
+              <div class="flex items-center gap-2 bg-slate-900/90 rounded-xl px-3 py-2 border border-slate-700/80 focus-within:border-rose-500 focus-within:ring-1 focus-within:ring-rose-500/30 transition shadow-inner">
+                <span class="text-rose-400 text-xs shrink-0 font-bold">🔴</span>
+                <input id="toInput" type="text" placeholder="Nereye? (İsim, Durak, Vapur, Meydan...)"
+                       autocomplete="off"
+                       class="bg-transparent text-xs sm:text-sm w-full outline-none text-slate-100 placeholder-slate-400">
+                <button id="clearToBtn" class="hidden text-slate-400 hover:text-slate-100 text-xs px-1.5 py-0.5 rounded transition">✕</button>
+              </div>
+              <div id="toDropdown" class="absolute left-0 right-0 top-full mt-1 bg-slate-900/98 backdrop-blur-xl border border-slate-700/80 rounded-xl shadow-2xl max-h-64 overflow-y-auto z-50 hidden divide-y divide-slate-800"></div>
+            </div>
+
+          </div>
+
+          <!-- Swap Coordinates Button -->
+          <button id="swapBtn" title="Başlangıç ve Varış Noktalarını Değiştir"
+                  class="spin-on-click w-9 h-16 rounded-xl bg-slate-800/90 hover:bg-slate-700 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-cyan-400 transition shadow active:scale-95 shrink-0 text-base">
+            ⇅
+          </button>
+        </div>
+
+        <!-- Strategy Pill Bar ('⚡ En Hızlı', '🌊 Manzaralı / Vapur', '🚶 Az Yürüme', '🔁 Az Aktarma') -->
+        <div class="pt-0.5 flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
+          <button class="target-pill px-3 py-1.5 rounded-lg text-[11px] font-semibold border transition shrink-0 bg-cyan-600 text-white border-cyan-400 shadow-sm" data-target="FASTEST">
+            ⚡ En Hızlı
+          </button>
+          <button class="target-pill px-3 py-1.5 rounded-lg text-[11px] font-semibold border transition shrink-0 bg-slate-800/80 text-slate-300 border-slate-700/80 hover:border-slate-500" data-target="SCENIC_WATER">
+            🌊 Manzaralı / Vapur
+          </button>
+          <button class="target-pill px-3 py-1.5 rounded-lg text-[11px] font-semibold border transition shrink-0 bg-slate-800/80 text-slate-300 border-slate-700/80 hover:border-slate-500" data-target="LEAST_TRANSFERS">
+            🔁 Az Aktarma
+          </button>
+          <button class="target-pill px-3 py-1.5 rounded-lg text-[11px] font-semibold border transition shrink-0 bg-slate-800/80 text-slate-300 border-slate-700/80 hover:border-slate-500" data-target="LEAST_WALKING">
+            🚶 Az Yürüme
+          </button>
+        </div>
+
+        <!-- Modern Datetime Picker Chips ('Şimdi', 'Bugün 18:00', 'Gece 01:00', 'Yarın 08:30') -->
+        <div class="flex items-center gap-1.5 overflow-x-auto text-[11px] pb-1 no-scrollbar">
+          <span class="text-slate-400 shrink-0 font-medium text-[10px]">⏰ Zaman:</span>
+          
+          <button type="button" class="time-quick-chip px-2.5 py-1 rounded-md text-[11px] font-medium border transition shrink-0 bg-cyan-600 text-white border-cyan-500" data-type="DEPART_NOW">
+            ⚡ Şimdi
+          </button>
+          
+          <button type="button" class="time-quick-chip px-2.5 py-1 rounded-md text-[11px] font-medium border border-slate-700 bg-slate-800/80 text-slate-300 hover:border-slate-500 transition shrink-0" data-type="DEPART_AT" data-days="0" data-time="18:00">
+            🌆 Bugün 18:00
+          </button>
+          
+          <button type="button" class="time-quick-chip px-2.5 py-1 rounded-md text-[11px] font-medium border border-slate-700 bg-slate-800/80 text-slate-300 hover:border-slate-500 transition shrink-0" data-type="DEPART_AT" data-days="0" data-time="01:00">
+            🌙 Gece 01:00
+          </button>
+          
+          <button type="button" class="time-quick-chip px-2.5 py-1 rounded-md text-[11px] font-medium border border-slate-700 bg-slate-800/80 text-slate-300 hover:border-slate-500 transition shrink-0" data-type="DEPART_AT" data-days="1" data-time="08:30">
+            🌅 Yarın 08:30
+          </button>
+          
+          <button type="button" id="toggleCustomTimeBtn" class="px-2 py-1 rounded-md text-[11px] border border-slate-700/80 text-slate-400 hover:text-cyan-400 hover:border-cyan-600 transition shrink-0">
+            ⚙️ Özel
+          </button>
+        </div>
+
+        <!-- Expandable Temporal Journey Picker Suite -->
+        <div id="temporalPickerArea" class="hidden p-3 bg-slate-900/90 rounded-xl border border-cyan-800/60 space-y-2.5 transition-all">
+          <div class="flex items-center justify-between text-xs text-cyan-400 font-semibold">
+            <span id="temporalLabel">📅 Kalkış Tarihi ve Saati:</span>
+            <button id="resetNowBtn" type="button" class="text-[10px] text-slate-400 hover:text-white px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition">Şimdiye Dön</button>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <label class="text-[10px] text-slate-400 block mb-1">Tarih</label>
+              <input type="date" id="journeyDate" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-white outline-none focus:border-cyan-500">
+            </div>
+            <div>
+              <label class="text-[10px] text-slate-400 block mb-1">Saat</label>
+              <input type="time" id="journeyTime" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-white outline-none focus:border-cyan-500">
+            </div>
+          </div>
+        </div>
+
+        <!-- Mode Chips Filter Bar -->
+        <div class="pt-0.5 flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
+          <button class="mode-chip px-2.5 py-1 rounded-md text-[11px] font-medium border border-slate-700 bg-slate-800/80 text-slate-300 hover:border-slate-500 transition shrink-0" data-mode="SUBWAY">
+            🚇 Metro
+          </button>
+          
+          <button class="mode-chip px-2.5 py-1 rounded-md text-[11px] font-medium border border-slate-700 bg-slate-800/80 text-slate-300 hover:border-slate-500 transition shrink-0" data-mode="MARMARAY">
+            🚆 Marmaray
+          </button>
+
+          <button class="mode-chip px-2.5 py-1 rounded-md text-[11px] font-medium border border-slate-700 bg-slate-800/80 text-slate-300 hover:border-slate-500 transition shrink-0" data-mode="FERRY">
+            🚢 Vapur
+          </button>
+
+          <button class="mode-chip px-2.5 py-1 rounded-md text-[11px] font-medium border border-slate-700 bg-slate-800/80 text-slate-300 hover:border-slate-500 transition shrink-0" data-mode="METROBUS">
+            🚎 Metrobüs
+          </button>
+
+          <button class="mode-chip px-2.5 py-1 rounded-md text-[11px] font-medium border border-slate-700 bg-slate-800/80 text-slate-300 hover:border-slate-500 transition shrink-0" data-mode="BUS">
+            🚌 Otobüs
+          </button>
+
+          <!-- Minibus Toggle -->
+          <label class="flex items-center gap-1.5 ml-auto pl-2 border-l border-slate-800 cursor-pointer shrink-0" title="Minibüs ve Dolmuş Hatları Dahil">
+            <span class="text-[11px] text-slate-400">Minibüs</span>
+            <input type="checkbox" id="minibusToggle" class="sr-only peer">
+            <div class="w-6 h-3.5 bg-slate-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[1px] after:left-[1px] after:bg-white after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-amber-600 relative"></div>
+          </label>
+        </div>
+
+        <!-- Find Routes Button -->
+        <button id="searchBtn" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-cyan-600 via-sky-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 font-bold text-xs sm:text-sm text-white shadow-lg shadow-cyan-600/30 active:scale-[0.98] transition flex items-center justify-center gap-2">
+          <span>🔍</span> En Uygun Rotaları Hesapla
+        </button>
+
+      </div>
+
+      <!-- Results & Itineraries Area -->
+      <div id="resultsArea" class="flex-1 overflow-y-auto p-3.5 sm:p-4 space-y-3">
+        <div id="placeholderMsg" class="h-full flex flex-col items-center justify-center text-center p-6 text-slate-500 space-y-3">
+          <div class="text-5xl opacity-40">🧭</div>
+          <div class="space-y-1">
+            <p class="text-sm font-semibold text-slate-200">İstanbul Ulaşım Rehberi</p>
+            <p class="text-xs text-slate-400">Nereden ve nereye gideceğinizi yazın veya haritadan tıklayın.</p>
+          </div>
+          
+          <div class="pt-3 flex flex-wrap justify-center gap-1.5 text-xs max-w-sm">
+            <span class="text-[11px] text-slate-400 w-full mb-1">Popüler Güzergahlar:</span>
+            <button class="quick-chip px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 hover:text-cyan-400 hover:bg-slate-700/80 border border-slate-700 transition" data-from="Kadıköy Rıhtım / Meydan" data-to="Beşiktaş İskele">Kadıköy ➔ Beşiktaş</button>
+            <button class="quick-chip px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 hover:text-cyan-400 hover:bg-slate-700/80 border border-slate-700 transition" data-from="Üsküdar Meydan / Marmaray" data-to="Taksim Meydanı / Metro">Üsküdar ➔ Taksim</button>
+            <button class="quick-chip px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 hover:text-cyan-400 hover:bg-slate-700/80 border border-slate-700 transition" data-from="Mecidiyeköy Metrobüs & M2" data-to="Kadıköy Rıhtım / Meydan">Mecidiyeköy ➔ Kadıköy</button>
+            <button class="quick-chip px-2.5 py-1 rounded-lg bg-slate-800/80 text-slate-300 hover:text-cyan-400 hover:bg-slate-700/80 border border-slate-700 transition" data-from="Bostancı İskele & Marmaray" data-to="Beşiktaş İskele">Bostancı ➔ Beşiktaş</button>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- Map Canvas View -->
+    <main class="flex-1 h-full relative" role="region" aria-label="Harita Görünümü">
+      <div id="map"></div>
+      
+      <!-- Live Map Toast Notification -->
+      <div id="mapToast" class="absolute bottom-5 right-5 bg-slate-900/90 backdrop-blur-md border border-slate-700 text-slate-200 text-xs px-3.5 py-2 rounded-xl shadow-2xl z-20 hidden flex items-center gap-2">
+        <span class="pulse-dot bg-emerald-400"></span>
+        <span id="mapToastText">Pini sürükleyerek rotayı güncelleyebilirsiniz.</span>
+      </div>
+    </main>
+
+  </div>
+
+  <script>
+    let map;
+    let fromMarker = null, toMarker = null;
+    let activeRouteLayers = [];
+    let busMarkers = [];
+    let selectedFrom = null; // { lat, lon, name }
+    let selectedTo = null;   // { lat, lon, name }
+    let preferredModes = new Set();
+    let currentTarget = 'FASTEST';
+    let currentTimeType = 'DEPART_NOW';
+    let searchDebounceTimer = null;
+
+    // Polyline Decoder for Google Encoded Polylines
+    function decodePolyline(str, precision) {
+      let index = 0, lat = 0, lng = 0, coordinates = [], shift = 0, result = 0, byte = null, latitude_change, longitude_change, factor = Math.pow(10, precision || 5);
+      while (index < str.length) {
+        byte = null; shift = 0; result = 0;
+        do { byte = str.charCodeAt(index++) - 63; result |= (byte & 0x1f) << shift; shift += 5; } while (byte >= 0x20);
+        latitude_change = ((result & 1) ? ~(result >> 1) : (result >> 1));
+        shift = 0; result = 0;
+        do { byte = str.charCodeAt(index++) - 63; result |= (byte & 0x1f) << shift; shift += 5; } while (byte >= 0x20);
+        longitude_change = ((result & 1) ? ~(result >> 1) : (result >> 1));
+        lat += latitude_change; lng += longitude_change;
+        coordinates.push([lat / factor, lng / factor]);
+      }
+      return coordinates;
+    }
+
+    // Official Istanbul Transit Color & Mode Theme Matcher
+    function getTransitTheme(leg) {
+      const mode = (leg.mode || '').toUpperCase();
+      const route = (leg.route_short_name || leg.route_long_name || '').toUpperCase();
+
+      if (mode === 'WALK') {
+        return { color: '#64748b', bgClass: 'bg-slate-700', icon: '🚶', name: 'Yürüme', isWalk: true };
+      }
+      if (mode === 'FERRY' || route.includes('VAPUR') || route.includes('KADIKOY-BESIKTAS') || route.includes('USKUDAR') || route.includes('BOSTANCI')) {
+        return { color: '#0284c7', bgClass: 'bg-sky-600', icon: '🚢', name: 'Vapur' };
+      }
+      if (route.includes('M11')) {
+        return { color: '#9e1b32', bgClass: 'bg-rose-900', icon: '🚇', name: 'M11 Metro' };
+      }
+      if (route.includes('M2')) {
+        return { color: '#00965e', bgClass: 'bg-emerald-600', icon: '🚇', name: 'M2 Metro' };
+      }
+      if (route.includes('M7')) {
+        return { color: '#a52a2a', bgClass: 'bg-amber-900', icon: '🚇', name: 'M7 Metro' };
+      }
+      if (route.includes('MARMARAY') || mode === 'RAIL') {
+        return { color: '#008080', bgClass: 'bg-teal-700', icon: '🚆', name: 'Marmaray' };
+      }
+      if (route.includes('34') || route.includes('METROB') || mode === 'METROBUS') {
+        return { color: '#e60000', bgClass: 'bg-red-600', icon: '🚎', name: 'Metrobüs' };
+      }
+      if (route.startsWith('T') || mode === 'TRAM') {
+        return { color: '#8b5cf6', bgClass: 'bg-purple-600', icon: '🚊', name: 'Tramvay' };
+      }
+      if (mode === 'SUBWAY') {
+        return { color: '#00965e', bgClass: 'bg-emerald-600', icon: '🚇', name: 'Metro' };
+      }
+      return { color: '#d97706', bgClass: 'bg-amber-600', icon: '🚌', name: 'İETT Otobüs' };
+    }
+
+    // Multi-source Resilient Tile Initialization
+    function initMap() {
+      if (typeof L === 'undefined') {
+        alert("Harita kütüphanesi yüklenemedi. Lütfen sayfayı yenileyin.");
+        return;
+      }
+
+      map = L.map('map', { 
+        zoomControl: false,
+        attributionControl: false 
+      }).setView([41.025, 29.015], 12);
+
+      L.control.zoom({ position: 'topright' }).addTo(map);
+      L.control.attribution({ position: 'bottomright' }).addTo(map);
+
+      // 1. Ultra-clean Esri World Light Gray Canvas (Default: Zero yellow clutter, crystal-clear labels)
+      const esriCanvasLight = L.layerGroup([
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+          maxZoom: 16,
+          attribution: 'Tiles &copy; Esri &mdash; Light Canvas'
+        }),
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+          maxZoom: 16
+        })
+      ]);
+
+      // 2. Esri World Dark Gray Canvas (Night navigation mode)
+      const esriCanvasDark = L.layerGroup([
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+          maxZoom: 16,
+          attribution: 'Tiles &copy; Esri &mdash; Dark Canvas'
+        }),
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+          maxZoom: 16
+        })
+      ]);
+
+      // 3. Esri World Street Map (Detailed street-level view)
+      const esriStreet = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 19,
+        attribution: 'Tiles &copy; Esri &mdash; World Street'
+      });
+
+      // 4. Clean Grayscale OpenStreetMap (Normalized fallback)
+      const osmClean = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        className: 'osm-clean-tiles',
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>'
+      });
+
+      // Add default tile layer
+      esriCanvasLight.addTo(map);
+
+      // Layer Switcher in Top Right
+      L.control.layers({
+        "🏙️ Açık & Sade (Canvas)": esriCanvasLight,
+        "🌙 Gece Modu (Dark)": esriCanvasDark,
+        "🗺️ Sokak Detayı (Street)": esriStreet,
+        "🌐 Standart OSM (Sade)": osmClean
+      }, null, { position: 'topright', collapsed: true }).addTo(map);
+
+      // Invalidate map size on window resize
+      window.addEventListener('resize', () => {
+        if (map) map.invalidateSize();
+      });
+
+      // Interactive Map Click Context Menu
+      map.on('click', function(e) {
+        const lat = e.latlng.lat;
+        const lon = e.latlng.lng;
+        const popupContent = document.createElement('div');
+        popupContent.className = 'space-y-2 p-1 text-xs';
+        popupContent.innerHTML = `
+          <div class="font-bold text-slate-100 flex items-center gap-1.5">
+            <span>📍</span> Seçilen Koordinat
+          </div>
+          <p class="text-[11px] text-slate-400">${lat.toFixed(4)}, ${lon.toFixed(4)}</p>
+          <div class="flex gap-2 pt-1">
+            <button id="setOriginBtn" class="px-2.5 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-[11px] font-bold shadow transition">🟢 Başlangıç</button>
+            <button id="setDestBtn" class="px-2.5 py-1 bg-rose-600 hover:bg-rose-500 text-white rounded-lg text-[11px] font-bold shadow transition">🔴 Varış</button>
+          </div>
+        `;
+
+        const popup = L.popup().setLatLng(e.latlng).setContent(popupContent).openOn(map);
+
+        setTimeout(() => {
+          const originBtn = document.getElementById('setOriginBtn');
+          const destBtn = document.getElementById('setDestBtn');
+          if (originBtn) {
+            originBtn.addEventListener('click', () => {
+              selectOrigin(lat, lon, `Haritadan Seçilen Nokta (${lat.toFixed(3)}, ${lon.toFixed(3)})`);
+              map.closePopup();
+            });
+          }
+          if (destBtn) {
+            destBtn.addEventListener('click', () => {
+              selectDestination(lat, lon, `Haritadan Seçilen Nokta (${lat.toFixed(3)}, ${lon.toFixed(3)})`);
+              map.closePopup();
+            });
+          }
+        }, 50);
+      });
+    }
+
+    // Origin Selection with Draggable Retina Pin
+    function selectOrigin(lat, lon, name) {
+      selectedFrom = { lat, lon, name };
+      document.getElementById('fromInput').value = name;
+      document.getElementById('clearFromBtn').classList.remove('hidden');
+
+      if (fromMarker) map.removeLayer(fromMarker);
+      fromMarker = L.marker([lat, lon], {
+        draggable: true,
+        icon: L.divIcon({
+          className: 'origin-pin-container',
+          html: '<div class="origin-pin"></div>',
+          iconSize: [24, 24],
+          iconAnchor: [12, 24],
+          popupAnchor: [0, -24]
+        })
+      }).addTo(map).bindPopup(`
+        <div class="text-xs font-semibold text-emerald-400">🟢 Başlangıç Noktası</div>
+        <div class="text-[11px] text-slate-200 mt-0.5">${name}</div>
+        <div class="text-[9px] text-slate-400 mt-1 italic">Konumu değiştirmek için pini sürükleyebilirsiniz.</div>
+      `);
+
+      fromMarker.on('dragend', function(e) {
+        const p = e.target.getLatLng();
+        selectedFrom = { lat: p.lat, lon: p.lng, name: `Taşınan Başlangıç (${p.lat.toFixed(3)}, ${p.lng.toFixed(3)})` };
+        document.getElementById('fromInput').value = selectedFrom.name;
+        if (selectedTo) executeRouteSearch();
+      });
+
+      map.panTo([lat, lon]);
+
+      if (!selectedTo) {
+        setTimeout(() => document.getElementById('toInput').focus(), 150);
+      } else {
+        setTimeout(() => executeRouteSearch(), 200);
+      }
+    }
+
+    // Destination Selection with Draggable Retina Pin
+    function selectDestination(lat, lon, name) {
+      selectedTo = { lat, lon, name };
+      document.getElementById('toInput').value = name;
+      document.getElementById('clearToBtn').classList.remove('hidden');
+
+      if (toMarker) map.removeLayer(toMarker);
+      toMarker = L.marker([lat, lon], {
+        draggable: true,
+        icon: L.divIcon({
+          className: 'dest-pin-container',
+          html: '<div class="dest-pin"></div>',
+          iconSize: [24, 24],
+          iconAnchor: [12, 24],
+          popupAnchor: [0, -24]
+        })
+      }).addTo(map).bindPopup(`
+        <div class="text-xs font-semibold text-rose-400">🔴 Varış Noktası</div>
+        <div class="text-[11px] text-slate-200 mt-0.5">${name}</div>
+        <div class="text-[9px] text-slate-400 mt-1 italic">Konumu değiştirmek için pini sürükleyebilirsiniz.</div>
+      `);
+
+      toMarker.on('dragend', function(e) {
+        const p = e.target.getLatLng();
+        selectedTo = { lat: p.lat, lon: p.lng, name: `Taşınan Varış (${p.lat.toFixed(3)}, ${p.lng.toFixed(3)})` };
+        document.getElementById('toInput').value = selectedTo.name;
+        if (selectedFrom) executeRouteSearch();
+      });
+
+      if (selectedFrom) {
+        setTimeout(() => executeRouteSearch(), 200);
+      }
+    }
+
+    function clearOrigin() {
+      selectedFrom = null;
+      document.getElementById('fromInput').value = '';
+      document.getElementById('clearFromBtn').classList.add('hidden');
+      if (fromMarker) map.removeLayer(fromMarker);
+      fromMarker = null;
+      clearRouteMap();
+    }
+
+    function clearDestination() {
+      selectedTo = null;
+      document.getElementById('toInput').value = '';
+      document.getElementById('clearToBtn').classList.add('hidden');
+      if (toMarker) map.removeLayer(toMarker);
+      toMarker = null;
+      clearRouteMap();
+    }
+
+    function clearRouteMap() {
+      activeRouteLayers.forEach(l => map.removeLayer(l));
+      activeRouteLayers = [];
+      busMarkers.forEach(b => map.removeLayer(b));
+      busMarkers = [];
+    }
+
+    // Autocomplete Handler with Arrow Key & Enter Support
+    function setupAutocomplete(inputId, dropdownId, onSelect) {
+      const input = document.getElementById(inputId);
+      const dropdown = document.getElementById(dropdownId);
+      let focusedIndex = -1;
+
+      input.addEventListener('input', () => {
+        clearTimeout(searchDebounceTimer);
+        const q = input.value.trim();
+        if (q.length < 2) {
+          dropdown.classList.add('hidden');
+          dropdown.innerHTML = '';
+          return;
+        }
+
+        searchDebounceTimer = setTimeout(async () => {
+          try {
+            const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`);
+            const data = await res.json();
+            focusedIndex = -1;
+            renderDropdown(dropdown, data.results || [], onSelect);
+          } catch (e) {
+            console.error("Arama hatası:", e);
+          }
+        }, 180);
+      });
+
+      input.addEventListener('keydown', (e) => {
+        const options = dropdown.querySelectorAll('.dropdown-option');
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          if (options.length > 0) {
+            focusedIndex = (focusedIndex + 1) % options.length;
+            highlightOption(options, focusedIndex);
+          }
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          if (options.length > 0) {
+            focusedIndex = (focusedIndex - 1 + options.length) % options.length;
+            highlightOption(options, focusedIndex);
+          }
+        } else if (e.key === 'Enter') {
+          e.preventDefault();
+          if (focusedIndex >= 0 && options[focusedIndex]) {
+            options[focusedIndex].click();
+          } else if (options.length > 0 && !dropdown.classList.contains('hidden')) {
+            options[0].click();
+          } else if (selectedFrom && selectedTo) {
+            executeRouteSearch();
+          }
+        } else if (e.key === 'Escape') {
+          dropdown.classList.add('hidden');
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!input.contains(e.target) && !dropdown.contains(e.target)) {
+          dropdown.classList.add('hidden');
+        }
+      });
+    }
+
+    function highlightOption(options, idx) {
+      options.forEach((opt, i) => {
+        if (i === idx) {
+          opt.classList.add('bg-slate-700/80');
+          opt.scrollIntoView({ block: 'nearest' });
+        } else {
+          opt.classList.remove('bg-slate-700/80');
+        }
+      });
+    }
+
+    function renderDropdown(dropdown, items, onSelect) {
+      dropdown.innerHTML = '';
+      if (items.length === 0) {
+        dropdown.innerHTML = '<div class="p-3 text-xs text-slate-400 text-center">Eşleşen durak veya mekan bulunamadı</div>';
+        dropdown.classList.remove('hidden');
+        return;
+      }
+
+      items.forEach(item => {
+        const row = document.createElement('div');
+        row.className = "dropdown-option p-2.5 hover:bg-slate-800 flex items-center gap-3 cursor-pointer transition";
+        row.innerHTML = `
+          <span class="text-base shrink-0 p-1.5 rounded-lg bg-slate-800/80 border border-slate-700/50">${item.icon}</span>
+          <div class="min-w-0 flex-1">
+            <p class="text-xs sm:text-sm font-semibold text-slate-100 truncate">${item.title}</p>
+            <p class="text-[11px] text-slate-400 truncate">${item.subtitle}</p>
+          </div>
+        `;
+        row.addEventListener('click', () => {
+          dropdown.classList.add('hidden');
+          onSelect(item.lat, item.lon, item.title);
+        });
+        dropdown.appendChild(row);
+      });
+      dropdown.classList.remove('hidden');
+    }
+
+    // Geolocation Handler
+    function triggerGeolocation() {
+      if (!navigator.geolocation) {
+        alert("Tarayıcınız canlı konum servisini desteklemiyor.");
+        return;
+      }
+      const btn = document.getElementById('locateMeBtn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = `<span class="w-3 h-3 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></span> Konum alınıyor...`;
+
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          btn.innerHTML = originalText;
+          selectOrigin(pos.coords.latitude, pos.coords.longitude, "Mevcut Konumum (Canlı GPS)");
+          document.getElementById('toInput').focus();
+        },
+        (err) => {
+          btn.innerHTML = originalText;
+          alert("Konum alınamadı: " + err.message + ". Lütfen tarayıcı konum iznini onaylayın.");
+        },
+        { enableHighAccuracy: true, timeout: 8000 }
+      );
+    }
+
+    document.getElementById('locateMeBtn').addEventListener('click', triggerGeolocation);
+    document.getElementById('fromLocateBtn').addEventListener('click', triggerGeolocation);
+
+    // Strategy Pills Handler
+    document.querySelectorAll('.target-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        document.querySelectorAll('.target-pill').forEach(p => {
+          p.classList.remove('bg-cyan-600', 'text-white', 'border-cyan-400', 'shadow-sm');
+          p.classList.add('bg-slate-800/80', 'text-slate-300', 'border-slate-700/80');
+        });
+        pill.classList.remove('bg-slate-800/80', 'text-slate-300', 'border-slate-700/80');
+        pill.classList.add('bg-cyan-600', 'text-white', 'border-cyan-400', 'shadow-sm');
+        currentTarget = pill.dataset.target;
+        if (selectedFrom && selectedTo) executeRouteSearch();
+      });
+    });
+
+    // Mode chips toggle
+    document.querySelectorAll('.mode-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const mode = chip.getAttribute('data-mode');
+        if (preferredModes.has(mode)) {
+          preferredModes.delete(mode);
+          chip.classList.remove('bg-cyan-600', 'text-white', 'border-cyan-400');
+          chip.classList.add('bg-slate-800/80', 'text-slate-300', 'border-slate-700');
+        } else {
+          preferredModes.add(mode);
+          chip.classList.remove('bg-slate-800/80', 'text-slate-300', 'border-slate-700');
+          chip.classList.add('bg-cyan-600', 'text-white', 'border-cyan-400');
+        }
+        if (selectedFrom && selectedTo) executeRouteSearch();
+      });
+    });
+
+    // Minibus Toggle
+    document.getElementById('minibusToggle').addEventListener('change', () => {
+      if (selectedFrom && selectedTo) executeRouteSearch();
+    });
+
+    // Swap button
+    document.getElementById('swapBtn').addEventListener('click', () => {
+      if (!selectedFrom && !selectedTo) return;
+      const temp = selectedFrom;
+      selectedFrom = selectedTo;
+      selectedTo = temp;
+
+      if (selectedFrom) selectOrigin(selectedFrom.lat, selectedFrom.lon, selectedFrom.name);
+      else clearOrigin();
+
+      if (selectedTo) selectDestination(selectedTo.lat, selectedTo.lon, selectedTo.name);
+      else clearDestination();
+
+      if (selectedFrom && selectedTo) executeRouteSearch();
+    });
+
+    document.getElementById('clearFromBtn').addEventListener('click', clearOrigin);
+    document.getElementById('clearToBtn').addEventListener('click', clearDestination);
+
+    // Quick chips
+    document.querySelectorAll('.quick-chip').forEach(chip => {
+      chip.addEventListener('click', async () => {
+        const fromName = chip.getAttribute('data-from');
+        const toName = chip.getAttribute('data-to');
+        const rFrom = await fetch(`/api/search?q=${encodeURIComponent(fromName)}`).then(r => r.json());
+        const rTo = await fetch(`/api/search?q=${encodeURIComponent(toName)}`).then(r => r.json());
+        if (rFrom.results && rFrom.results.length > 0) {
+          selectOrigin(rFrom.results[0].lat, rFrom.results[0].lon, rFrom.results[0].title);
+        }
+        if (rTo.results && rTo.results.length > 0) {
+          selectDestination(rTo.results[0].lat, rTo.results[0].lon, rTo.results[0].title);
+        }
+      });
+    });
+
+    document.getElementById('searchBtn').addEventListener('click', async () => {
+      // Auto-resolve typed text if user didn't click dropdown option
+      const fromVal = document.getElementById('fromInput').value.trim();
+      const toVal = document.getElementById('toInput').value.trim();
+
+      if (!selectedFrom && fromVal) {
+        try {
+          const rFrom = await fetch(`/api/search?q=${encodeURIComponent(fromVal)}`).then(r => r.json());
+          if (rFrom.results && rFrom.results.length > 0) {
+            selectOrigin(rFrom.results[0].lat, rFrom.results[0].lon, rFrom.results[0].title);
+          }
+        } catch (e) {}
+      }
+      if (!selectedTo && toVal) {
+        try {
+          const rTo = await fetch(`/api/search?q=${encodeURIComponent(toVal)}`).then(r => r.json());
+          if (rTo.results && rTo.results.length > 0) {
+            selectDestination(rTo.results[0].lat, rTo.results[0].lon, rTo.results[0].title);
+          }
+        } catch (e) {}
+      }
+      executeRouteSearch();
+    });
+
+    // Route Search Execution
+    async function executeRouteSearch() {
+      if (!selectedFrom || !selectedTo) {
+        alert("Lütfen başlangıç ve varış noktalarını belirleyin!");
+        return;
+      }
+
+      const resultsArea = document.getElementById('resultsArea');
+      resultsArea.innerHTML = `
+        <div class="h-64 flex flex-col items-center justify-center text-slate-400 gap-3">
+          <div class="w-10 h-10 border-4 border-cyan-500 border-t-transparent rounded-full animate-spin"></div>
+          <div class="text-center space-y-1">
+            <p class="text-sm font-semibold text-slate-200">En uygun rotalar hesaplanıyor...</p>
+            <p class="text-xs text-slate-400">RAPTOR matrisi taranıyor & İETT canlı GPS telemetrisi çekiliyor</p>
+          </div>
+        </div>
+      `;
+
+      clearRouteMap();
+
+      const allowMinibus = document.getElementById('minibusToggle').checked;
+      let dateStr = null;
+      let timeStr = null;
+
+      if (currentTimeType !== 'DEPART_NOW') {
+        const rawDate = document.getElementById('journeyDate').value;
+        const rawTime = document.getElementById('journeyTime').value;
+        if (rawDate && rawTime) {
+          dateStr = rawDate;
+          timeStr = rawTime.length === 5 ? rawTime + ':00' : rawTime;
+        }
+      }
+
+      const payload = {
+        from_lat: selectedFrom.lat,
+        from_lon: selectedFrom.lon,
+        to_lat: selectedTo.lat,
+        to_lon: selectedTo.lon,
+        prefer_modes: Array.from(preferredModes),
+        allow_minibus: allowMinibus,
+        target: currentTarget,
+        time_type: currentTimeType,
+        date_str: dateStr,
+        time_str: timeStr,
+        num_itineraries: 4
+      };
+
+      try {
+        const res = await fetch('/api/plan', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        renderResults(data);
+      } catch (e) {
+        resultsArea.innerHTML = `
+          <div class="p-4 bg-rose-950/80 border border-rose-800 text-rose-200 rounded-xl text-xs space-y-1">
+            <p class="font-bold">Rota Bulunamadı veya Sunucu Hatası</p>
+            <p>${e.message}</p>
+          </div>
+        `;
+      }
+    }
+
+    // Render Itinerary Cards and Polyline on Leaflet
+    function renderResults(data) {
+      const resultsArea = document.getElementById('resultsArea');
+      resultsArea.innerHTML = '';
+
+      if (!data.itineraries || data.itineraries.length === 0) {
+        resultsArea.innerHTML = `
+          <div class="p-8 text-center text-slate-400 text-xs space-y-2">
+            <div class="text-4xl opacity-70">⚠️</div>
+            <p class="font-bold text-slate-200 text-sm">Uygun rota bulunamadı</p>
+            <p class="text-slate-400">Filtreleri gevşetmeyi veya minibüs seçeneğini açmayı deneyebilirsiniz.</p>
+          </div>
+        `;
+        return;
+      }
+
+      data.itineraries.forEach((itin, index) => {
+        const card = document.createElement('div');
+        const isFirst = index === 0;
+        card.className = `glass-card p-4 space-y-3 cursor-pointer ${isFirst ? 'active-card' : ''}`;
+
+        // Horizontal Timeline Badge Flow: [🚶 3m] -> [M11] -> [🚶 4m] -> [34G] -> [🚶 2m]
+        let flowBadges = '';
+        itin.legs.forEach((leg, legIdx) => {
+          const theme = getTransitTheme(leg);
+          if (legIdx > 0) {
+            flowBadges += `<span class="text-slate-500 text-xs font-bold">➔</span>`;
+          }
+
+          if (leg.mode === 'WALK') {
+            flowBadges += `
+              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold bg-slate-800/90 text-slate-300 border border-slate-700/60 shadow-sm">
+                <span>🚶</span> <span>${leg.duration_minutes}m</span>
+              </span>
+            `;
+          } else {
+            flowBadges += `
+              <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-bold text-white shadow-sm truncate max-w-[240px]" style="background-color: ${theme.color}">
+                <span>${theme.icon}</span> <span>${leg.route_short_name || theme.name}</span>
+              </span>
+            `;
+          }
+        });
+
+        // Step-by-step detail rows with intermediate stops accordion
+        let stepsHtml = '';
+        itin.legs.forEach(leg => {
+          const theme = getTransitTheme(leg);
+
+          // Intermediate stops accordion
+          let intermediateHtml = '';
+          if (leg.intermediate_stops && leg.intermediate_stops.length > 0) {
+            const stopItems = leg.intermediate_stops.map(s => `
+              <div class="flex items-center gap-2 text-[11px] text-slate-400 py-0.5">
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background-color: ${theme.color}"></span>
+                <span class="truncate">${s.name}</span>
+              </div>
+            `).join('');
+
+            intermediateHtml = `
+              <details class="mt-1 text-xs">
+                <summary class="text-[11px] text-cyan-400 hover:text-cyan-300 font-medium cursor-pointer flex items-center gap-1 select-none">
+                  <span>${leg.stop_count || leg.intermediate_stops.length} Durak (${leg.duration_minutes} dk)</span>
+                  <span class="text-[9px]">▼</span>
+                </summary>
+                <div class="pl-2 pt-1 pb-1 space-y-0.5 border-l border-slate-700 mt-1 max-h-36 overflow-y-auto">
+                  ${stopItems}
+                </div>
+              </details>
+            `;
+          }
+
+          // Live IETT Radar Badge
+          let realtimeBadge = '';
+          if (leg.realtime && leg.realtime.target_vehicle) {
+            const isCatchable = leg.realtime.status === 'CATCHABLE';
+            const badgeBg = isCatchable ? 'bg-emerald-950/90 border-emerald-700 text-emerald-300' : 'bg-rose-950/90 border-rose-700 text-rose-300';
+            realtimeBadge = `
+              <div class="mt-2 text-[11px] p-2.5 rounded-xl border ${badgeBg} space-y-1 shadow-md">
+                <div class="flex items-center justify-between font-bold">
+                  <span class="flex items-center gap-1.5">
+                    <span class="pulse-dot" style="background:${isCatchable ? '#10b981' : '#f43f5e'}"></span>
+                    <span>CANLI RADAR: Araç ${leg.realtime.target_vehicle}</span>
+                  </span>
+                  <span class="text-[10px] opacity-80">~${leg.realtime.distance_meters}m geride</span>
+                </div>
+                <p class="text-[11px] opacity-90">${leg.realtime.message}</p>
+              </div>
+            `;
+          }
+
+          // Traffic Delay Badge
+          let trafficBadge = '';
+          if (leg.traffic) {
+            if (leg.traffic.delay_seconds > 0) {
+              trafficBadge = `
+                <div class="mt-1.5 text-[11px] px-2.5 py-1 rounded-lg bg-amber-950/80 border border-amber-700/80 text-amber-300 flex items-center justify-between shadow-sm">
+                  <span class="flex items-center gap-1">🚗 <b>+${Math.round(leg.traffic.delay_seconds / 60)} dk</b> trafik gecikmesi</span>
+                  <span class="text-[10px] text-amber-400 font-semibold">${leg.traffic.status}</span>
+                </div>
+              `;
+            } else if (!leg.traffic.is_surface_traffic && leg.mode !== 'WALK') {
+              trafficBadge = `
+                <div class="mt-1 text-[10px] px-2 py-0.5 rounded-md bg-emerald-950/60 border border-emerald-800/60 text-emerald-400 flex items-center gap-1 font-medium">
+                  <span>⚡</span> <span>Trafikten İzole Koridor</span>
+                </div>
+              `;
+            }
+          }
+
+          stepsHtml += `
+            <div class="relative pl-5 pb-3 border-l-2 last:border-l-0 last:pb-0" style="border-color: ${theme.color}66">
+              <span class="absolute -left-[10px] top-0 w-5 h-5 rounded-full bg-slate-900 border flex items-center justify-center text-[10px] shadow" style="border-color: ${theme.color}">
+                ${theme.icon}
+              </span>
+              <div class="flex items-center justify-between text-xs">
+                <span class="font-semibold text-slate-100">${leg.from_stop} ➔ ${leg.to_stop}</span>
+                <span class="text-slate-400 font-bold text-[11px]">~${leg.duration_minutes} dk</span>
+              </div>
+              ${leg.alternative_lines_notice ? `
+                <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-cyan-950/80 border border-cyan-800 text-[11px] text-cyan-300 font-medium mt-1">
+                  <span>ℹ️</span> <span>${leg.alternative_lines_notice}</span>
+                </div>
+              ` : (leg.route_short_name ? `
+                <p class="text-[11px] text-slate-400 truncate mt-0.5">${leg.route_long_name || leg.agency_name || ''}</p>
+              ` : '')}
+              ${intermediateHtml}
+              ${trafficBadge}
+              ${realtimeBadge}
+            </div>
+          `;
+        });
+
+        // Fare, Eco and Traffic summary
+        const fare = itin.fare || { standard_tl: 0, student_tl: 0 };
+        const co2 = itin.co2_saved_kg || 0;
+        const trafficDelay = itin.traffic_delay_minutes || 0;
+
+        card.innerHTML = `
+          ${itin.is_scenic_detour ? `
+            <div class="px-3 py-1.5 rounded-xl bg-gradient-to-r from-sky-950/90 to-cyan-950/90 border border-sky-500/70 text-sky-200 text-xs flex items-center justify-between shadow-md">
+              <span class="font-bold flex items-center gap-1.5">${itin.scenic_badge || '🌊 Boğaz & Vapur Deneyimi'}</span>
+              <span class="text-[10px] font-semibold text-sky-300 px-2 py-0.5 rounded-full bg-sky-900/60">Özel Deniz Rotası</span>
+            </div>
+            ${itin.scenic_description ? `<p class="text-[11px] text-sky-300/90 italic pl-1">${itin.scenic_description}</p>` : ''}
+          ` : ''}
+
+          <div class="flex items-center justify-between">
+            <div class="flex items-baseline gap-2">
+              <span class="text-3xl font-black text-cyan-400 tracking-tight">${itin.total_duration_minutes} <span class="text-xs font-semibold text-slate-400">dk</span></span>
+              
+              <span class="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase ${itin.transfers === 0 ? 'bg-emerald-950 text-emerald-400 border border-emerald-800' : 'bg-slate-800 text-slate-300 border border-slate-700'}">
+                ${itin.transfers === 0 ? 'Aktarmasız' : `${itin.transfers} Aktarma`}
+              </span>
+              
+              ${trafficDelay > 0 ? `
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-amber-950 text-amber-400 border border-amber-800 font-semibold">
+                  +${trafficDelay} dk trafik
+                </span>
+              ` : ''}
+            </div>
+
+            <div class="text-right text-[11px] text-slate-400 leading-tight">
+              <p class="font-medium text-slate-200">💳 ~${fare.standard_tl} TL <span class="text-slate-400">(${fare.student_tl} TL Öğr.)</span></p>
+              <p class="text-[10px] text-emerald-400 font-semibold mt-0.5">🌱 ${co2} kg CO₂ tasarrufu</p>
+            </div>
+          </div>
+
+          <div class="flex items-center flex-wrap gap-1.5 py-1">
+            ${flowBadges}
+          </div>
+
+          <div class="pt-2 border-t border-slate-700/60">
+            ${stepsHtml}
+          </div>
+        `;
+
+        card.addEventListener('click', () => {
+          document.querySelectorAll('.itinerary-card, .glass-card').forEach(c => c.classList.remove('active-card'));
+          card.classList.add('active-card');
+          drawRouteOnMap(itin);
+        });
+
+        resultsArea.appendChild(card);
+      });
+
+      drawRouteOnMap(data.itineraries[0]);
+    }
+
+    // Draw Polylines and Intermediate Station Circles
+    function drawRouteOnMap(itin) {
+      clearRouteMap();
+      let allCoords = [];
+
+      itin.legs.forEach(leg => {
+        let coords = [];
+        if (leg.polyline) {
+          coords = decodePolyline(leg.polyline, 5);
+        } else if (leg.from_coords && leg.to_coords && leg.from_coords.lat && leg.to_coords.lat) {
+          coords = [[leg.from_coords.lat, leg.from_coords.lon], [leg.to_coords.lat, leg.to_coords.lon]];
+        }
+
+        if (coords.length > 0) {
+          allCoords = allCoords.concat(coords);
+          const theme = getTransitTheme(leg);
+
+          // 1. Underlay Shadow Line for visual depth
+          if (!theme.isWalk) {
+            const shadowLine = L.polyline(coords, {
+              color: 'rgba(15, 23, 42, 0.35)',
+              weight: 9,
+              lineCap: 'round',
+              lineJoin: 'round',
+              opacity: 0.6
+            }).addTo(map);
+            activeRouteLayers.push(shadowLine);
+          }
+
+          // 2. Main Transit Polyline
+          const mainLine = L.polyline(coords, {
+            color: theme.color,
+            weight: theme.isWalk ? 4 : 5.5,
+            opacity: 0.95,
+            dashArray: theme.isWalk ? '6, 8' : null,
+            lineCap: 'round',
+            lineJoin: 'round'
+          }).addTo(map);
+          activeRouteLayers.push(mainLine);
+
+          // 3. Add station badge for boarding stop
+          if (!theme.isWalk && leg.from_coords && leg.from_coords.lat) {
+            const stopPin = L.marker([leg.from_coords.lat, leg.from_coords.lon], {
+              icon: L.divIcon({
+                className: 'transfer-station-pin',
+                html: `<div style="--st-color: ${theme.color}; width:22px; height:22px; border-radius:50%; background:#ffffff; border:2.5px solid ${theme.color}; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 6px rgba(0,0,0,0.35); font-size:10px;">${theme.icon}</div>`,
+                iconSize: [22, 22],
+                iconAnchor: [11, 11]
+              })
+            }).addTo(map).bindPopup(`
+              <div class="text-xs font-bold text-white">${leg.from_stop}</div>
+              <div class="text-[11px] font-semibold text-cyan-300 mt-0.5">${theme.icon} ${leg.route_short_name || theme.name}</div>
+              ${leg.departure_time ? `<div class="text-[10px] text-slate-400 mt-0.5">Kalkış: ${leg.departure_time}</div>` : ''}
+            `);
+            activeRouteLayers.push(stopPin);
+          }
+
+          // 4. Add dots for intermediate stops along the line
+          if (leg.intermediate_stops) {
+            leg.intermediate_stops.forEach(s => {
+              if (s.lat && s.lon) {
+                const dot = L.circleMarker([s.lat, s.lon], {
+                  radius: 3.5,
+                  fillColor: theme.color,
+                  color: '#ffffff',
+                  weight: 1.5,
+                  opacity: 1,
+                  fillOpacity: 1
+                }).addTo(map).bindPopup(`
+                  <div class="text-xs font-semibold text-white">${s.name}</div>
+                  <div class="text-[10px] text-slate-400">${leg.route_short_name || theme.name}</div>
+                `);
+                activeRouteLayers.push(dot);
+              }
+            });
+          }
+        }
+
+        // 5. Live IETT Bus Radar Marker
+        if (leg.realtime && leg.realtime.target_vehicle_lat && leg.realtime.target_vehicle_lon) {
+          const busMarker = L.marker([leg.realtime.target_vehicle_lat, leg.realtime.target_vehicle_lon], {
+            icon: L.divIcon({
+              className: 'live-bus-pin',
+              html: `
+                <span class="pulse-dot" style="background:#10b981; width:7px; height:7px;"></span>
+                <span>🚌 ${leg.realtime.target_vehicle}</span>
+              `,
+              iconSize: [85, 26],
+              iconAnchor: [42, 13]
+            })
+          }).addTo(map).bindPopup(`
+            <div class="text-xs font-bold text-amber-300 flex items-center gap-1.5">
+              <span class="pulse-dot" style="background:#10b981; width:6px; height:6px;"></span>
+              CANLI İETT ARAÇ RADARI
+            </div>
+            <div class="text-xs text-white mt-1 font-semibold">Araç: ${leg.realtime.target_vehicle}</div>
+            <div class="text-[11px] text-slate-300 mt-0.5">${leg.realtime.message}</div>
+          `);
+          busMarkers.push(busMarker);
+        }
+      });
+
+      if (allCoords.length > 0) {
+        map.fitBounds(allCoords, { padding: [50, 50] });
+      }
+    }
+
+    // Datetime Picker Setup
+    function initTemporalPicker() {
+      const pickerArea = document.getElementById('temporalPickerArea');
+      const label = document.getElementById('temporalLabel');
+      const dateInput = document.getElementById('journeyDate');
+      const timeInput = document.getElementById('journeyTime');
+      const resetBtn = document.getElementById('resetNowBtn');
+      const toggleCustomBtn = document.getElementById('toggleCustomTimeBtn');
+
+      function formatYMD(d) {
+        return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+      }
+
+      function formatHM(d) {
+        return String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+      }
+
+      function setNowDefaults() {
+        const now = new Date();
+        now.setMinutes(now.getMinutes() + 5);
+        dateInput.value = formatYMD(now);
+        timeInput.value = formatHM(now);
+      }
+
+      setNowDefaults();
+
+      toggleCustomBtn.addEventListener('click', () => {
+        pickerArea.classList.toggle('hidden');
+      });
+
+      resetBtn.addEventListener('click', () => {
+        currentTimeType = 'DEPART_NOW';
+        pickerArea.classList.add('hidden');
+        setNowDefaults();
+        
+        document.querySelectorAll('.time-quick-chip').forEach(c => {
+          c.classList.remove('bg-cyan-600', 'text-white', 'border-cyan-500');
+          c.classList.add('bg-slate-800/80', 'text-slate-300', 'border-slate-700');
+        });
+        const nowChip = document.querySelector('.time-quick-chip[data-type="DEPART_NOW"]');
+        if (nowChip) {
+          nowChip.classList.remove('bg-slate-800/80', 'text-slate-300', 'border-slate-700');
+          nowChip.classList.add('bg-cyan-600', 'text-white', 'border-cyan-500');
+        }
+
+        if (selectedFrom && selectedTo) executeRouteSearch();
+      });
+
+      dateInput.addEventListener('change', () => {
+        currentTimeType = 'DEPART_AT';
+        document.querySelectorAll('.time-quick-chip').forEach(c => {
+          c.classList.remove('bg-cyan-600', 'text-white', 'border-cyan-500');
+          c.classList.add('bg-slate-800/80', 'text-slate-300', 'border-slate-700');
+        });
+        if (selectedFrom && selectedTo) executeRouteSearch();
+      });
+
+      timeInput.addEventListener('change', () => {
+        currentTimeType = 'DEPART_AT';
+        document.querySelectorAll('.time-quick-chip').forEach(c => {
+          c.classList.remove('bg-cyan-600', 'text-white', 'border-cyan-500');
+          c.classList.add('bg-slate-800/80', 'text-slate-300', 'border-slate-700');
+        });
+        if (selectedFrom && selectedTo) executeRouteSearch();
+      });
+
+      // Quick time preset chips ('Şimdi', 'Bugün 18:00', 'Gece 01:00', 'Yarın 08:30')
+      document.querySelectorAll('.time-quick-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          document.querySelectorAll('.time-quick-chip').forEach(c => {
+            c.classList.remove('bg-cyan-600', 'text-white', 'border-cyan-500');
+            c.classList.add('bg-slate-800/80', 'text-slate-300', 'border-slate-700');
+          });
+          chip.classList.remove('bg-slate-800/80', 'text-slate-300', 'border-slate-700');
+          chip.classList.add('bg-cyan-600', 'text-white', 'border-cyan-500');
+
+          const tType = chip.dataset.type;
+          currentTimeType = tType;
+
+          if (tType === 'DEPART_NOW') {
+            pickerArea.classList.add('hidden');
+            setNowDefaults();
+          } else {
+            const days = parseInt(chip.dataset.days || '0', 10);
+            const tStr = chip.dataset.time || '18:00';
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + days);
+            dateInput.value = formatYMD(targetDate);
+            timeInput.value = tStr;
+            pickerArea.classList.remove('hidden');
+          }
+
+          if (selectedFrom && selectedTo) executeRouteSearch();
+        });
+      });
+    }
+
+    // Startup Initialization
+    window.addEventListener('DOMContentLoaded', () => {
+      initMap();
+      setupAutocomplete('fromInput', 'fromDropdown', selectOrigin);
+      setupAutocomplete('toInput', 'toDropdown', selectDestination);
+      initTemporalPicker();
+
+      // Mobile drawer & handle toggle
+      const sidebar = document.getElementById('sidebar');
+      const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+      const sheetHandle = document.getElementById('sheetHandle');
+
+      if (toggleSidebarBtn) {
+        toggleSidebarBtn.addEventListener('click', () => {
+          sidebar.classList.toggle('collapsed');
+          if (map) map.invalidateSize();
+        });
+      }
+
+      if (sheetHandle) {
+        sheetHandle.addEventListener('click', () => {
+          sidebar.classList.toggle('collapsed');
+          if (map) map.invalidateSize();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

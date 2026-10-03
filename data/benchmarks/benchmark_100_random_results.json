@@ -1,0 +1,2500 @@
+[
+  {
+    "index": 1,
+    "from_name": "Büyükçekmece (BAKİ GÜNDÜZ İLKOKULU)",
+    "from_coords": [
+      40.979451,
+      28.608988
+    ],
+    "to_name": "Silivri (HAMİTBEY)",
+    "to_coords": [
+      41.064702,
+      28.319499
+    ],
+    "from_district": "Büyükçekmece",
+    "to_district": "Silivri",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Both Büyükçekmece (28.609E) and Silivri (28.319E) lie outside the clipped OSM street graph boundary."
+  },
+  {
+    "index": 2,
+    "from_name": "Avcılar (BORUSAN OTOMOTİV)",
+    "from_coords": [
+      40.994087,
+      28.716109
+    ],
+    "to_name": "Beylikdüzü (Ali Çebi Cad.)",
+    "to_coords": [
+      41.001511,
+      28.658978
+    ],
+    "from_district": "Avcılar",
+    "to_district": "Beylikdüzü",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 28,
+    "walk_duration_minutes": 18,
+    "transfers": 0,
+    "modes": [
+      "BUS 458"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 3,
+    "from_name": "Arnavutköy (BALCILAR)",
+    "from_coords": [
+      41.159949,
+      28.781007
+    ],
+    "to_name": "Pendik (ERENLER  CADDESİ)",
+    "to_coords": [
+      40.889743,
+      29.23729
+    ],
+    "from_district": "Arnavutköy",
+    "to_district": "Pendik",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 96,
+    "walk_duration_minutes": 1,
+    "transfers": 4,
+    "modes": [
+      "BUS 336M",
+      "BUS 500L",
+      "BUS 27T",
+      "BUS 500T",
+      "BUS 130Ş"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 4,
+    "from_name": "Arnavutköy (GERME)",
+    "from_coords": [
+      41.273692,
+      28.661189
+    ],
+    "to_name": "Avcılar (AVCILAR E5)",
+    "to_coords": [
+      40.997644,
+      28.702416
+    ],
+    "from_district": "Arnavutköy",
+    "to_district": "Avcılar",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 111,
+    "walk_duration_minutes": 4,
+    "transfers": 4,
+    "modes": [
+      "BUS 336K",
+      "BUS H-6",
+      "BUS H-3",
+      "BUS 76O",
+      "BUS 145"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 5,
+    "from_name": "Silivri (TOKİ 3)",
+    "from_coords": [
+      41.108982,
+      28.25768
+    ],
+    "to_name": "Avcılar (AVCILAR ANADOLU LİSESİ)",
+    "to_coords": [
+      40.992058,
+      28.710853
+    ],
+    "from_district": "Silivri",
+    "to_district": "Avcılar",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Silivri (lat: 41.1090, lon: 28.2577) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 6,
+    "from_name": "Sultanbeyli (HAMZALAR SOKAK)",
+    "from_coords": [
+      40.988202,
+      29.283527
+    ],
+    "to_name": "Avcılar (İ.Ü. CERRAHPAŞA AVC. KAMP.)",
+    "to_coords": [
+      40.98781,
+      28.721754
+    ],
+    "from_district": "Sultanbeyli",
+    "to_district": "Avcılar",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 98,
+    "walk_duration_minutes": 7,
+    "transfers": 3,
+    "modes": [
+      "BUS 132M",
+      "BUS 18D",
+      "BUS 251",
+      "BUS 34G"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 7,
+    "from_name": "Sarıyer (HACIOSMAN METRO)",
+    "from_coords": [
+      41.139627,
+      29.030828
+    ],
+    "to_name": "Silivri (ÖZGÜRLÜK CADDESİ)",
+    "to_coords": [
+      41.087505,
+      28.244753
+    ],
+    "from_district": "Sarıyer",
+    "to_district": "Silivri",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Silivri (lat: 41.0875, lon: 28.2448) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 8,
+    "from_name": "Esenyurt (ARMİNA EVLERİ)",
+    "from_coords": [
+      41.104777,
+      28.669073
+    ],
+    "to_name": "Pendik (Farabi Cad.)",
+    "to_coords": [
+      40.887021,
+      29.246464
+    ],
+    "from_district": "Esenyurt",
+    "to_district": "Pendik",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 132,
+    "walk_duration_minutes": 7,
+    "transfers": 5,
+    "modes": [
+      "BUS 144K",
+      "BUS E-59",
+      "BUS 34G",
+      "BUS 522ST",
+      "BUS 500T",
+      "BUS KM25"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 9,
+    "from_name": "Beylikdüzü (BEYLİKDÜZÜ AZEM YÜKSELOĞLU ANADOLU İMAM HATİP LİSESİ)",
+    "from_coords": [
+      40.97804,
+      28.662384
+    ],
+    "to_name": "Avcılar (OKUL CADDESİ)",
+    "to_coords": [
+      41.006868,
+      28.711017
+    ],
+    "from_district": "Beylikdüzü",
+    "to_district": "Avcılar",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 41,
+    "walk_duration_minutes": 6,
+    "transfers": 1,
+    "modes": [
+      "BUS 458",
+      "BUS 142K"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 10,
+    "from_name": "Arnavutköy (ŞÜKÜR SOKAK)",
+    "from_coords": [
+      41.185119,
+      28.744337
+    ],
+    "to_name": "Sultanbeyli (AKŞEMSETTİN)",
+    "to_coords": [
+      40.948096,
+      29.299586
+    ],
+    "from_district": "Arnavutköy",
+    "to_district": "Sultanbeyli",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Sultanbeyli (lat: 40.9481, lon: 29.2996) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 11,
+    "from_name": "Çekmeköy (ÇEKMEKÖY YOLU)",
+    "from_coords": [
+      41.022224,
+      29.168073
+    ],
+    "to_name": "Sarıyer (BALABANDERE CADDESİ GEÇİCİ-1)",
+    "to_coords": [
+      41.1221,
+      29.046552
+    ],
+    "from_district": "Çekmeköy",
+    "to_district": "Sarıyer",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 49,
+    "walk_duration_minutes": 18,
+    "transfers": 1,
+    "modes": [
+      "BUS 522ST",
+      "BUS 29Ş"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 12,
+    "from_name": "Pendik (PENDİK AĞIZ VE DİŞ SAĞLIĞI HASTANESİ)",
+    "from_coords": [
+      40.872299,
+      29.267187
+    ],
+    "to_name": "Büyükçekmece (İstiklal Cad.)",
+    "to_coords": [
+      41.029858,
+      28.548289
+    ],
+    "from_district": "Pendik",
+    "to_district": "Büyükçekmece",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Both Pendik (29.267E) and Büyükçekmece (28.548E) lie outside the clipped OSM street graph boundary."
+  },
+  {
+    "index": 13,
+    "from_name": "Beykoz (YUŞA MEZARLIK ÜSTÜ MEVKİİ)",
+    "from_coords": [
+      41.156639,
+      29.084529
+    ],
+    "to_name": "Sancaktepe (BOZHANE YOLU)",
+    "to_coords": [
+      41.134374,
+      29.277692
+    ],
+    "from_district": "Beykoz",
+    "to_district": "Sancaktepe",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 122,
+    "walk_duration_minutes": 1,
+    "transfers": 3,
+    "modes": [
+      "BUS 15A",
+      "BUS 15BK",
+      "BUS 11ÃœS",
+      "BUS 138"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 14,
+    "from_name": "Arnavutköy (DOĞANER SOKAK)",
+    "from_coords": [
+      41.194796,
+      28.742215
+    ],
+    "to_name": "Çatalca (KUMBURGAZ-ŞEHİT MUSTAFA YILDIRIM)",
+    "to_coords": [
+      41.026333,
+      28.465809
+    ],
+    "from_district": "Arnavutköy",
+    "to_district": "Çatalca",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Çatalca (lat: 41.0263, lon: 28.4658) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 15,
+    "from_name": "Beykoz (YAYLA YOLU)",
+    "from_coords": [
+      41.131799,
+      29.108894
+    ],
+    "to_name": "Arnavutköy (BALABAN YOLU)",
+    "to_coords": [
+      41.31063,
+      28.615037
+    ],
+    "from_district": "Beykoz",
+    "to_district": "Arnavutköy",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Arnavutköy (lat: 41.3106, lon: 28.6150) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 16,
+    "from_name": "Sancaktepe (ADNAN KAHVECİ)",
+    "from_coords": [
+      41.02313,
+      29.235109
+    ],
+    "to_name": "Sarıyer (KOCATAŞ CAMİİ)",
+    "to_coords": [
+      41.168439,
+      29.035044
+    ],
+    "from_district": "Sancaktepe",
+    "to_district": "Sarıyer",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 86,
+    "walk_duration_minutes": 3,
+    "transfers": 3,
+    "modes": [
+      "BUS 131T",
+      "BUS 522ST",
+      "BUS 59RS",
+      "BUS HM1"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 17,
+    "from_name": "Çekmeköy (FATİH CADDESİ)",
+    "from_coords": [
+      40.984798,
+      29.18151
+    ],
+    "to_name": "Esenyurt (HÜSEYİN ERGÜN ULU CAMİİ)",
+    "to_coords": [
+      41.020405,
+      28.694882
+    ],
+    "from_district": "Çekmeköy",
+    "to_district": "Esenyurt",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 127,
+    "walk_duration_minutes": 18,
+    "transfers": 3,
+    "modes": [
+      "BUS 320",
+      "BUS 522",
+      "BUS E-58",
+      "BUS HS2"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 18,
+    "from_name": "Başakşehir (TOKİ FENERTEPE ORTAOKULU)",
+    "from_coords": [
+      41.140133,
+      28.788723
+    ],
+    "to_name": "Beykoz (İSMAİL ÖZSEÇKİN İÖO.)",
+    "to_coords": [
+      41.148568,
+      29.113056
+    ],
+    "from_district": "Başakşehir",
+    "to_district": "Beykoz",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 106,
+    "walk_duration_minutes": 5,
+    "transfers": 3,
+    "modes": [
+      "BUS 98",
+      "BUS 336M",
+      "BUS 121A",
+      "BUS 15D"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 19,
+    "from_name": "Esenyurt (ESENKENT)",
+    "from_coords": [
+      41.057475,
+      28.671499
+    ],
+    "to_name": "Sarıyer (ENKA ATIŞ POLİGONU)",
+    "to_coords": [
+      41.111804,
+      29.039033
+    ],
+    "from_district": "Esenyurt",
+    "to_district": "Sarıyer",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 77,
+    "walk_duration_minutes": 11,
+    "transfers": 2,
+    "modes": [
+      "BUS 147",
+      "BUS E-58",
+      "BUS 29Ş"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 20,
+    "from_name": "Sancaktepe (TEVEZEL GÜLEN KIRAY ANADOLU LISESİ)",
+    "from_coords": [
+      41.037655,
+      29.269015
+    ],
+    "to_name": "Sarıyer (ADNAN KAHVECİ CADDESİ)",
+    "to_coords": [
+      41.136528,
+      29.039449
+    ],
+    "from_district": "Sancaktepe",
+    "to_district": "Sarıyer",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 79,
+    "walk_duration_minutes": 4,
+    "transfers": 2,
+    "modes": [
+      "BUS 522",
+      "BUS 522ST",
+      "BUS 29D"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 21,
+    "from_name": "Avcılar (İ.Ü. CERRAHPAŞA AVC. KAMP.)",
+    "from_coords": [
+      40.986398,
+      28.724075
+    ],
+    "to_name": "Çekmeköy (YEZDA SOKAK)",
+    "to_coords": [
+      41.082154,
+      29.184155
+    ],
+    "from_district": "Avcılar",
+    "to_district": "Çekmeköy",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 107,
+    "walk_duration_minutes": 8,
+    "transfers": 2,
+    "modes": [
+      "BUS 34G",
+      "BUS 121A",
+      "BUS 15KÃ‡"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 22,
+    "from_name": "Çatalca (YAZLIKKÖY)",
+    "from_coords": [
+      41.293879,
+      28.517648
+    ],
+    "to_name": "Sarıyer (PLAJ YOLU)",
+    "to_coords": [
+      41.231058,
+      28.993355
+    ],
+    "from_district": "Çatalca",
+    "to_district": "Sarıyer",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Çatalca (lat: 41.2939, lon: 28.5176) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 23,
+    "from_name": "Sancaktepe (DEVA SOKAK)",
+    "from_coords": [
+      40.997824,
+      29.247148
+    ],
+    "to_name": "Sarıyer (KİREÇBURNU)",
+    "to_coords": [
+      41.147921,
+      29.047119
+    ],
+    "from_district": "Sancaktepe",
+    "to_district": "Sarıyer",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 86,
+    "walk_duration_minutes": 17,
+    "transfers": 2,
+    "modes": [
+      "BUS UM74",
+      "BUS 622",
+      "BUS 40B"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 24,
+    "from_name": "Şile (FİRDEVS SOKAK)",
+    "from_coords": [
+      41.197363,
+      29.425126
+    ],
+    "to_name": "Başakşehir (GÜNEŞPARK EVLERİ)",
+    "to_coords": [
+      41.039902,
+      28.788835
+    ],
+    "from_district": "Şile",
+    "to_district": "Başakşehir",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Şile (lat: 41.1974, lon: 29.4251) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 25,
+    "from_name": "Sancaktepe (Minibüs Durağı)",
+    "from_coords": [
+      40.988392,
+      29.228212
+    ],
+    "to_name": "Tuzla (BUHAR SOKAK)",
+    "to_coords": [
+      40.827069,
+      29.356142
+    ],
+    "from_district": "Sancaktepe",
+    "to_district": "Tuzla",
+    "pair_type": "Peripheral -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Tuzla (lat: 40.8271, lon: 29.3561) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 26,
+    "from_name": "Beylikdüzü (KIRAÇ İLKOKULU)",
+    "from_coords": [
+      41.035573,
+      28.64529
+    ],
+    "to_name": "Sultangazi (CEBECİ KÖYİÇİ)",
+    "to_coords": [
+      41.122702,
+      28.881094
+    ],
+    "from_district": "Beylikdüzü",
+    "to_district": "Sultangazi",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 113,
+    "walk_duration_minutes": 10,
+    "transfers": 3,
+    "modes": [
+      "BUS HT29",
+      "BUS 34G",
+      "BUS 336",
+      "BUS 36CB"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 27,
+    "from_name": "Sarıyer (GÜVENLİK)",
+    "from_coords": [
+      41.198129,
+      29.067708
+    ],
+    "to_name": "Ataşehir (KÜÇÜKBAKKALKÖY)",
+    "to_coords": [
+      40.978395,
+      29.113141
+    ],
+    "from_district": "Sarıyer",
+    "to_district": "Ataşehir",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 80,
+    "walk_duration_minutes": 7,
+    "transfers": 3,
+    "modes": [
+      "BUS 154",
+      "BUS 29C",
+      "BUS 500T",
+      "BUS 319"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 28,
+    "from_name": "Çekmeköy (Cami Cad.)",
+    "from_coords": [
+      41.016687,
+      29.16353
+    ],
+    "to_name": "Sultangazi (PAŞATARLA YOLU)",
+    "to_coords": [
+      41.16743,
+      28.868684
+    ],
+    "from_district": "Çekmeköy",
+    "to_district": "Sultangazi",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 121,
+    "walk_duration_minutes": 7,
+    "transfers": 2,
+    "modes": [
+      "BUS 522",
+      "BUS 48",
+      "BUS 48G"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 29,
+    "from_name": "Tuzla (REZENE SOKAK)",
+    "from_coords": [
+      40.847294,
+      29.404948
+    ],
+    "to_name": "Şişli (DEPO ARKASI)",
+    "to_coords": [
+      41.084365,
+      29.004952
+    ],
+    "from_district": "Tuzla",
+    "to_district": "Şişli",
+    "pair_type": "Peripheral -> Inner",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Tuzla (lat: 40.8473, lon: 29.4049) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 30,
+    "from_name": "Büyükçekmece (GÜZELCE KAPALI PAZAR)",
+    "from_coords": [
+      41.003722,
+      28.513629
+    ],
+    "to_name": "Kağıthane (VATAN CADDESİ)",
+    "to_coords": [
+      41.077328,
+      28.981892
+    ],
+    "from_district": "Büyükçekmece",
+    "to_district": "Kağıthane",
+    "pair_type": "Peripheral -> Inner",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Büyükçekmece (lat: 41.0037, lon: 28.5136) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 31,
+    "from_name": "Sultanbeyli (Emir Sultan Cad.)",
+    "from_coords": [
+      40.928591,
+      29.324121
+    ],
+    "to_name": "Ümraniye (ŞEHİT KÖKSAL KARMİL)",
+    "to_coords": [
+      41.051412,
+      29.095371
+    ],
+    "from_district": "Sultanbeyli",
+    "to_district": "Ümraniye",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 98,
+    "walk_duration_minutes": 7,
+    "transfers": 3,
+    "modes": [
+      "BUS 134",
+      "BUS 132P",
+      "BUS 11ÃœS",
+      "BUS 11ST"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 32,
+    "from_name": "Sancaktepe (AİLE SAĞLIĞI MERKEZİ)",
+    "from_coords": [
+      41.016853,
+      29.249032
+    ],
+    "to_name": "Ümraniye (YEŞİL YAMAÇ)",
+    "to_coords": [
+      41.044712,
+      29.085124
+    ],
+    "from_district": "Sancaktepe",
+    "to_district": "Ümraniye",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 47,
+    "walk_duration_minutes": 0,
+    "transfers": 2,
+    "modes": [
+      "BUS 19S",
+      "BUS 11A",
+      "BUS 14Y"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 33,
+    "from_name": "Sarıyer (ASLAN FİDANLIĞI)",
+    "from_coords": [
+      41.228373,
+      29.038216
+    ],
+    "to_name": "Üsküdar (Minibüs Durağı)",
+    "to_coords": [
+      41.02266,
+      29.046472
+    ],
+    "from_district": "Sarıyer",
+    "to_district": "Üsküdar",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 85,
+    "walk_duration_minutes": 7,
+    "transfers": 5,
+    "modes": [
+      "BUS 151",
+      "BUS 25Y",
+      "BUS 59RS",
+      "BUS 29D",
+      "BUS 34AS",
+      "BUS 14M"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 34,
+    "from_name": "Sarıyer (KEMERBURGAZ YOLU)",
+    "from_coords": [
+      41.173367,
+      28.990463
+    ],
+    "to_name": "Maltepe (Seyrantepe)",
+    "to_coords": [
+      40.950508,
+      29.169877
+    ],
+    "from_district": "Sarıyer",
+    "to_district": "Maltepe",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 93,
+    "walk_duration_minutes": 9,
+    "transfers": 3,
+    "modes": [
+      "BUS 42HM",
+      "BUS 29D",
+      "BUS 500T",
+      "BUS 133N"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 35,
+    "from_name": "Beykoz (OTAĞTEPE CADDESİ)",
+    "from_coords": [
+      41.091034,
+      29.082492
+    ],
+    "to_name": "Bakırköy (YEŞİLYURT)",
+    "to_coords": [
+      40.964586,
+      28.83766
+    ],
+    "from_district": "Beykoz",
+    "to_district": "Bakırköy",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 83,
+    "walk_duration_minutes": 5,
+    "transfers": 2,
+    "modes": [
+      "BUS 121A",
+      "BUS 41AT",
+      "BUS 72T"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 36,
+    "from_name": "Silivri (MİMARSİNAN MAHALLESİ)",
+    "from_coords": [
+      41.081683,
+      28.218728
+    ],
+    "to_name": "Bayrampaşa (BAYRAMPAŞA BELEDİYESİ SPOR TESİSLERİ)",
+    "to_coords": [
+      41.055217,
+      28.897058
+    ],
+    "from_district": "Silivri",
+    "to_district": "Bayrampaşa",
+    "pair_type": "Peripheral -> Inner",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Silivri (lat: 41.0817, lon: 28.2187) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 37,
+    "from_name": "Esenyurt (Minibüs Durağı)",
+    "from_coords": [
+      41.070329,
+      28.647077
+    ],
+    "to_name": "Kadıköy (UZUNÇAYIR METROBÜS)",
+    "to_coords": [
+      40.999885,
+      29.054368
+    ],
+    "from_district": "Esenyurt",
+    "to_district": "Kadıköy",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 95,
+    "walk_duration_minutes": 12,
+    "transfers": 3,
+    "modes": [
+      "BUS 142ES",
+      "BUS 147",
+      "BUS E-58",
+      "BUS 34G"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 38,
+    "from_name": "Beykoz (ÇİFTLİK CADDESİ)",
+    "from_coords": [
+      41.214264,
+      29.236191
+    ],
+    "to_name": "Maltepe (ZÜMRÜTEVLER İLKOKULU)",
+    "to_coords": [
+      40.945567,
+      29.152104
+    ],
+    "from_district": "Beykoz",
+    "to_district": "Maltepe",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 120,
+    "walk_duration_minutes": 9,
+    "transfers": 5,
+    "modes": [
+      "BUS 137",
+      "BUS 136",
+      "BUS 135A",
+      "BUS 136B",
+      "BUS 500T",
+      "BUS KM43"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 39,
+    "from_name": "Beylikdüzü (Mimar Sinan Cad.)",
+    "from_coords": [
+      40.993226,
+      28.62118
+    ],
+    "to_name": "Güngören (Minibüs Durağı)",
+    "to_coords": [
+      41.027641,
+      28.871957
+    ],
+    "from_district": "Beylikdüzü",
+    "to_district": "Güngören",
+    "pair_type": "Peripheral -> Inner",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Beylikdüzü (lat: 40.9932, lon: 28.6212) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 40,
+    "from_name": "Adalar (KINALIADA HALK PLAJI)",
+    "from_coords": [
+      40.906999,
+      29.044768
+    ],
+    "to_name": "Fatih (ŞEHİT YUNUS EMRE EZER)",
+    "to_coords": [
+      41.027383,
+      28.938747
+    ],
+    "from_district": "Adalar",
+    "to_district": "Fatih",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 70,
+    "walk_duration_minutes": 6,
+    "transfers": 3,
+    "modes": [
+      "BUS KA-2",
+      "FERRY EMN-KDK-ADA",
+      "FERRY KDK-EMN",
+      "BUS 36KE"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 41,
+    "from_name": "Silivri (ŞÜHEDA SOKAK)",
+    "from_coords": [
+      41.312402,
+      28.2854
+    ],
+    "to_name": "Beşiktaş (ZİNCİRLİKUYU METROBÜS)",
+    "to_coords": [
+      41.065132,
+      29.012698
+    ],
+    "from_district": "Silivri",
+    "to_district": "Beşiktaş",
+    "pair_type": "Peripheral -> Inner",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Silivri (lat: 41.3124, lon: 28.2854) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 42,
+    "from_name": "Beykoz (KAYMAKDONDURAN SAP.)",
+    "from_coords": [
+      41.147729,
+      29.101602
+    ],
+    "to_name": "Sultangazi (MALKOÇOĞLU)",
+    "to_coords": [
+      41.113668,
+      28.850817
+    ],
+    "from_district": "Beykoz",
+    "to_district": "Sultangazi",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 90,
+    "walk_duration_minutes": 7,
+    "transfers": 2,
+    "modes": [
+      "BUS 136B",
+      "BUS 121A",
+      "BUS 79KM"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 43,
+    "from_name": "Arnavutköy (Arnavutköy Hastane M11)",
+    "from_coords": [
+      41.2052,
+      28.736
+    ],
+    "to_name": "Şişli (AKKİRMAN)",
+    "to_coords": [
+      41.056443,
+      28.996544
+    ],
+    "from_district": "Arnavutköy",
+    "to_district": "Şişli",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 73,
+    "walk_duration_minutes": 15,
+    "transfers": 1,
+    "modes": [
+      "SUBWAY M11",
+      "BUS 26B"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 44,
+    "from_name": "Arnavutköy (KARLIBAYIR MERKEZ CAMİ)",
+    "from_coords": [
+      41.183521,
+      28.712494
+    ],
+    "to_name": "Üsküdar (ÜSKÜDAR)",
+    "to_coords": [
+      41.026269,
+      29.015572
+    ],
+    "from_district": "Arnavutköy",
+    "to_district": "Üsküdar",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 93,
+    "walk_duration_minutes": 17,
+    "transfers": 3,
+    "modes": [
+      "BUS 336H",
+      "BUS 336M",
+      "BUS 34G",
+      "BUS 15R"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 45,
+    "from_name": "Tuzla (Minibüs Durağı)",
+    "from_coords": [
+      40.838462,
+      29.295668
+    ],
+    "to_name": "Üsküdar (ŞİFA KUYUSU)",
+    "to_coords": [
+      41.028535,
+      29.046583
+    ],
+    "from_district": "Tuzla",
+    "to_district": "Üsküdar",
+    "pair_type": "Peripheral -> Inner",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Tuzla (lat: 40.8385, lon: 29.2957) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 46,
+    "from_name": "Adalar (23 NİSAN CADDESİ)",
+    "from_coords": [
+      40.873566,
+      29.12758
+    ],
+    "to_name": "Ümraniye (ÖZKAN SOKAK)",
+    "to_coords": [
+      41.056794,
+      29.083093
+    ],
+    "from_district": "Adalar",
+    "to_district": "Ümraniye",
+    "pair_type": "Peripheral -> Inner",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Adalar (lat: 40.8736, lon: 29.1276) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 47,
+    "from_name": "Başakşehir (FENERTEPE YOLU)",
+    "from_coords": [
+      41.145216,
+      28.795466
+    ],
+    "to_name": "Esenler (DAVUTPAŞA METRO)",
+    "to_coords": [
+      41.019563,
+      28.900129
+    ],
+    "from_district": "Başakşehir",
+    "to_district": "Esenler",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 50,
+    "walk_duration_minutes": 11,
+    "transfers": 1,
+    "modes": [
+      "BUS 336M",
+      "BUS 41AT"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 48,
+    "from_name": "Çekmeköy (ÖZLEM SOKAK)",
+    "from_coords": [
+      41.036256,
+      29.169447
+    ],
+    "to_name": "Bahçelievler (SİNAN ERDEM SPOR SALONU)",
+    "to_coords": [
+      40.987855,
+      28.852081
+    ],
+    "from_district": "Çekmeköy",
+    "to_district": "Bahçelievler",
+    "pair_type": "Peripheral -> Inner",
+    "success": true,
+    "total_duration_minutes": 73,
+    "walk_duration_minutes": 17,
+    "transfers": 2,
+    "modes": [
+      "BUS 522ST",
+      "BUS 34G",
+      "BUS MR20"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 49,
+    "from_name": "Büyükçekmece (KARAAĞAÇ KÖYÜ)",
+    "from_coords": [
+      41.108897,
+      28.59088
+    ],
+    "to_name": "Sultangazi (634 SOKAK)",
+    "to_coords": [
+      41.086772,
+      28.894112
+    ],
+    "from_district": "Büyükçekmece",
+    "to_district": "Sultangazi",
+    "pair_type": "Peripheral -> Inner",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Büyükçekmece (lat: 41.1089, lon: 28.5909) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 50,
+    "from_name": "Şile (KARACAKÖY ZEYTİN BAYIRI)",
+    "from_coords": [
+      41.156706,
+      29.762013
+    ],
+    "to_name": "Fatih (İSKENDERPAŞA)",
+    "to_coords": [
+      41.013959,
+      28.945037
+    ],
+    "from_district": "Şile",
+    "to_district": "Fatih",
+    "pair_type": "Peripheral -> Inner",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Origin in Şile (lat: 41.1567, lon: 29.7620) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 51,
+    "from_name": "Sultangazi (Sultançiftliği)",
+    "from_coords": [
+      41.106256,
+      28.860563
+    ],
+    "to_name": "Avcılar (Tufan Sk.)",
+    "to_coords": [
+      40.973059,
+      28.738187
+    ],
+    "from_district": "Sultangazi",
+    "to_district": "Avcılar",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 83,
+    "walk_duration_minutes": 13,
+    "transfers": 1,
+    "modes": [
+      "BUS 78C",
+      "BUS 76O"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 52,
+    "from_name": "Maltepe (AYLA CADDESİ)",
+    "from_coords": [
+      40.931436,
+      29.160407
+    ],
+    "to_name": "Çatalca (İstanbul Cad.)",
+    "to_coords": [
+      41.025874,
+      28.465918
+    ],
+    "from_district": "Maltepe",
+    "to_district": "Çatalca",
+    "pair_type": "Inner -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Çatalca (lat: 41.0259, lon: 28.4659) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 53,
+    "from_name": "Beyoğlu (Kabataş)",
+    "from_coords": [
+      41.034035,
+      28.991938
+    ],
+    "to_name": "Şile (KALE ALTI)",
+    "to_coords": [
+      41.121879,
+      29.505385
+    ],
+    "from_district": "Beyoğlu",
+    "to_district": "Şile",
+    "pair_type": "Inner -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Şile (lat: 41.1219, lon: 29.5054) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 54,
+    "from_name": "Sultangazi (MADEN OCAĞI)",
+    "from_coords": [
+      41.203087,
+      28.84936
+    ],
+    "to_name": "Sarıyer (ÇAYIRBAŞI)",
+    "to_coords": [
+      41.156275,
+      29.035816
+    ],
+    "from_district": "Sultangazi",
+    "to_district": "Sarıyer",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 147,
+    "walk_duration_minutes": 1,
+    "transfers": 1,
+    "modes": [
+      "BUS 48P",
+      "BUS 48D"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 55,
+    "from_name": "Üsküdar (ALTUNİZADE)",
+    "from_coords": [
+      41.022517,
+      29.047945
+    ],
+    "to_name": "Beylikdüzü (1933.SOKAK)",
+    "to_coords": [
+      41.017042,
+      28.662
+    ],
+    "from_district": "Üsküdar",
+    "to_district": "Beylikdüzü",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 88,
+    "walk_duration_minutes": 7,
+    "transfers": 2,
+    "modes": [
+      "BUS 34AS",
+      "BUS 34G",
+      "BUS 142B"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 56,
+    "from_name": "Küçükçekmece (KÜÇÜKÇEKMECE MARMARAY)",
+    "from_coords": [
+      40.989983,
+      28.772208
+    ],
+    "to_name": "Avcılar (POLİS MERKEZİ)",
+    "to_coords": [
+      41.009508,
+      28.707936
+    ],
+    "from_district": "Küçükçekmece",
+    "to_district": "Avcılar",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 27,
+    "walk_duration_minutes": 5,
+    "transfers": 1,
+    "modes": [
+      "BUS 145",
+      "BUS 142F"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 57,
+    "from_name": "Bakırköy (İncirli Cad.)",
+    "from_coords": [
+      40.983298,
+      28.872581
+    ],
+    "to_name": "Başakşehir (MERKEZ KAYAŞEHİR)",
+    "to_coords": [
+      41.107087,
+      28.758804
+    ],
+    "from_district": "Bakırköy",
+    "to_district": "Başakşehir",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 63,
+    "walk_duration_minutes": 1,
+    "transfers": 2,
+    "modes": [
+      "BUS 98TB",
+      "BUS 79FY",
+      "BUS MK11"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 58,
+    "from_name": "Kartal (YUNUS)",
+    "from_coords": [
+      40.882943,
+      29.208499
+    ],
+    "to_name": "Sultanbeyli (HASIRCI SOKAK)",
+    "to_coords": [
+      40.981719,
+      29.28068
+    ],
+    "from_district": "Kartal",
+    "to_district": "Sultanbeyli",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 60,
+    "walk_duration_minutes": 1,
+    "transfers": 2,
+    "modes": [
+      "BUS KM34",
+      "BUS 132S",
+      "BUS 132M"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 59,
+    "from_name": "Bakırköy (Aralık Başı Sk.)",
+    "from_coords": [
+      40.992981,
+      28.882708
+    ],
+    "to_name": "Pendik (KIBRIS SOKAK)",
+    "to_coords": [
+      40.873796,
+      29.258736
+    ],
+    "from_district": "Bakırköy",
+    "to_district": "Pendik",
+    "pair_type": "Inner -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Pendik (lat: 40.8738, lon: 29.2587) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 60,
+    "from_name": "Maltepe (CUMHUR SOKAK)",
+    "from_coords": [
+      40.932064,
+      29.151503
+    ],
+    "to_name": "Büyükçekmece (ALKENT)",
+    "to_coords": [
+      41.077524,
+      28.624822
+    ],
+    "from_district": "Maltepe",
+    "to_district": "Büyükçekmece",
+    "pair_type": "Inner -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Büyükçekmece (lat: 41.0775, lon: 28.6248) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 61,
+    "from_name": "Bağcılar (TEKİN SOKAK)",
+    "from_coords": [
+      41.037822,
+      28.813781
+    ],
+    "to_name": "Büyükçekmece (PTT)",
+    "to_coords": [
+      40.985265,
+      28.603478
+    ],
+    "from_district": "Bağcılar",
+    "to_district": "Büyükçekmece",
+    "pair_type": "Inner -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Büyükçekmece (lat: 40.9853, lon: 28.6035) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 62,
+    "from_name": "Gaziosmanpaşa (SEFA KÖPRÜSÜ)",
+    "from_coords": [
+      41.06781,
+      28.919361
+    ],
+    "to_name": "Pendik (BELEDİYE GARAJI)",
+    "to_coords": [
+      40.889676,
+      29.286123
+    ],
+    "from_district": "Gaziosmanpaşa",
+    "to_district": "Pendik",
+    "pair_type": "Inner -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Pendik (lat: 40.8897, lon: 29.2861) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 63,
+    "from_name": "Eyüpsultan (ALİBEYKÖY ANADOLU LİSESİ)",
+    "from_coords": [
+      41.073944,
+      28.941345
+    ],
+    "to_name": "Sarıyer (MADEN KOCATAŞ)",
+    "to_coords": [
+      41.176885,
+      29.050826
+    ],
+    "from_district": "Eyüpsultan",
+    "to_district": "Sarıyer",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 71,
+    "walk_duration_minutes": 1,
+    "transfers": 2,
+    "modes": [
+      "BUS 50A",
+      "BUS 50H",
+      "BUS 152"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 64,
+    "from_name": "Şişli (BOZKURT)",
+    "from_coords": [
+      41.05339,
+      28.983025
+    ],
+    "to_name": "Pendik (DİLEK SOKAK)",
+    "to_coords": [
+      40.896308,
+      29.214006
+    ],
+    "from_district": "Şişli",
+    "to_district": "Pendik",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 81,
+    "walk_duration_minutes": 11,
+    "transfers": 2,
+    "modes": [
+      "BUS DT2",
+      "BUS 251",
+      "BUS KM34"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 65,
+    "from_name": "Beyoğlu (Minibüs Durağı)",
+    "from_coords": [
+      41.03497,
+      28.96119
+    ],
+    "to_name": "Silivri (ŞÜHEDA SOKAK)",
+    "to_coords": [
+      41.312402,
+      28.2854
+    ],
+    "from_district": "Beyoğlu",
+    "to_district": "Silivri",
+    "pair_type": "Inner -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Silivri (lat: 41.3124, lon: 28.2854) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 66,
+    "from_name": "Sultangazi (GÖKTÜRK CADDESİ)",
+    "from_coords": [
+      41.186069,
+      28.886181
+    ],
+    "to_name": "Esenyurt (ISPARTAKULE)",
+    "to_coords": [
+      41.065953,
+      28.697864
+    ],
+    "from_district": "Sultangazi",
+    "to_district": "Esenyurt",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 75,
+    "walk_duration_minutes": 2,
+    "transfers": 3,
+    "modes": [
+      "BUS 48",
+      "BUS 41ST",
+      "BUS 35D",
+      "BUS E-59"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 67,
+    "from_name": "Küçükçekmece (ŞEHİT MURAT KOCATÜRK)",
+    "from_coords": [
+      40.997448,
+      28.775787
+    ],
+    "to_name": "Başakşehir (FENERTEPE PERONLAR)",
+    "to_coords": [
+      41.14182,
+      28.795469
+    ],
+    "from_district": "Küçükçekmece",
+    "to_district": "Başakşehir",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 79,
+    "walk_duration_minutes": 0,
+    "transfers": 1,
+    "modes": [
+      "BUS 89A",
+      "BUS MK31"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 68,
+    "from_name": "Beyoğlu (KARAKÖY)",
+    "from_coords": [
+      41.022167,
+      28.974404
+    ],
+    "to_name": "Esenyurt (KOZA EVLERİ)",
+    "to_coords": [
+      41.059743,
+      28.709277
+    ],
+    "from_district": "Beyoğlu",
+    "to_district": "Esenyurt",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 30,
+    "walk_duration_minutes": 6,
+    "transfers": 1,
+    "modes": [
+      "BUS 97GE",
+      "BUS E-59"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 69,
+    "from_name": "Zeytinburnu (YUNUS EMRE CADDESİ)",
+    "from_coords": [
+      41.00689,
+      28.910846
+    ],
+    "to_name": "Sarıyer (USKUMRUKÖY YOLU)",
+    "to_coords": [
+      41.220731,
+      29.032583
+    ],
+    "from_district": "Zeytinburnu",
+    "to_district": "Sarıyer",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 109,
+    "walk_duration_minutes": 2,
+    "transfers": 3,
+    "modes": [
+      "BUS MR11",
+      "BUS 41AT",
+      "BUS 59RS",
+      "BUS 151"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 70,
+    "from_name": "Bakırköy (Sporcu Sk.)",
+    "from_coords": [
+      40.977966,
+      28.869564
+    ],
+    "to_name": "Tuzla (Vatan Cad.)",
+    "to_coords": [
+      40.831798,
+      29.301184
+    ],
+    "from_district": "Bakırköy",
+    "to_district": "Tuzla",
+    "pair_type": "Inner -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Tuzla (lat: 40.8318, lon: 29.3012) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 71,
+    "from_name": "Esenler (CEVATPAŞA)",
+    "from_coords": [
+      41.07192,
+      28.882901
+    ],
+    "to_name": "Başakşehir (ORGANİZE SANAYİ SİTESİ)",
+    "to_coords": [
+      41.068048,
+      28.810145
+    ],
+    "from_district": "Esenler",
+    "to_district": "Başakşehir",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 39,
+    "walk_duration_minutes": 4,
+    "transfers": 2,
+    "modes": [
+      "BUS 36CY",
+      "BUS 336G",
+      "BUS 79F"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 72,
+    "from_name": "Üsküdar (TEKEL DEPOSU)",
+    "from_coords": [
+      41.031372,
+      29.020717
+    ],
+    "to_name": "Çatalca (ÇATALCA DEVLET HASTANESİ)",
+    "to_coords": [
+      41.134332,
+      28.467092
+    ],
+    "from_district": "Üsküdar",
+    "to_district": "Çatalca",
+    "pair_type": "Inner -> Peripheral",
+    "success": false,
+    "total_duration_minutes": null,
+    "walk_duration_minutes": null,
+    "transfers": null,
+    "modes": [],
+    "failure_reason": "OSM Boundary Exclusion: Destination in Çatalca (lat: 41.1343, lon: 28.4671) is outside the clipped OSM street graph boundary (no walkable edges)."
+  },
+  {
+    "index": 73,
+    "from_name": "Beyoğlu (AKARCA)",
+    "from_coords": [
+      41.044722,
+      28.982856
+    ],
+    "to_name": "Tuzla (AKFIRAT İGDAŞ)",
+    "to_coords": [
+      40.903605,
+      29.420562
+    ],
+    "from_district": "Beyoğlu",
+    "to_district": "Tuzla",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 81,
+    "walk_duration_minutes": 7,
+    "transfers": 3,
+    "modes": [
+      "BUS DT2",
+      "BUS 251",
+      "BUS 130Ş",
+      "BUS KM25"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 74,
+    "from_name": "Kadıköy (ACIBADEM METRO İST.)",
+    "from_coords": [
+      41.001757,
+      29.045693
+    ],
+    "to_name": "Esenyurt (ERZURUM KONGRE CADDESİ)",
+    "to_coords": [
+      41.045281,
+      28.66719
+    ],
+    "from_district": "Kadıköy",
+    "to_district": "Esenyurt",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 110,
+    "walk_duration_minutes": 15,
+    "transfers": 1,
+    "modes": [
+      "BUS 34G",
+      "BUS 142A"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 75,
+    "from_name": "Şişli (Minibüs Durağı)",
+    "from_coords": [
+      41.066424,
+      28.975001
+    ],
+    "to_name": "Esenyurt (ADİLE NAŞİT CADDESİ)",
+    "to_coords": [
+      41.015269,
+      28.682302
+    ],
+    "from_district": "Şişli",
+    "to_district": "Esenyurt",
+    "pair_type": "Inner -> Peripheral",
+    "success": true,
+    "total_duration_minutes": 47,
+    "walk_duration_minutes": 12,
+    "transfers": 1,
+    "modes": [
+      "BUS 41AT",
+      "BUS 145T"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 76,
+    "from_name": "Şişli (ŞİŞLİ MESLEKİ VE TEKNİK ANADOLU LİSESİ)",
+    "from_coords": [
+      41.067185,
+      28.985244
+    ],
+    "to_name": "Bayrampaşa (Paşa Cad.)",
+    "to_coords": [
+      41.04692,
+      28.899649
+    ],
+    "from_district": "Şişli",
+    "to_district": "Bayrampaşa",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 51,
+    "walk_duration_minutes": 19,
+    "transfers": 1,
+    "modes": [
+      "BUS 46T",
+      "SUBWAY M1B"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 77,
+    "from_name": "Ataşehir (ARAPGİRLİ CAMİ)",
+    "from_coords": [
+      40.984131,
+      29.085931
+    ],
+    "to_name": "Sultangazi (75. YIL İÖO)",
+    "to_coords": [
+      41.103644,
+      28.869105
+    ],
+    "from_district": "Ataşehir",
+    "to_district": "Sultangazi",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 74,
+    "walk_duration_minutes": 13,
+    "transfers": 3,
+    "modes": [
+      "SUBWAY M4",
+      "BUS 500T",
+      "BUS 36L",
+      "BUS 50AT"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 78,
+    "from_name": "Bakırköy (P.BLOK)",
+    "from_coords": [
+      40.982334,
+      28.865907
+    ],
+    "to_name": "Ümraniye (TANTAVİ)",
+    "to_coords": [
+      41.027799,
+      29.080953
+    ],
+    "from_district": "Bakırköy",
+    "to_district": "Ümraniye",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 79,
+    "walk_duration_minutes": 6,
+    "transfers": 3,
+    "modes": [
+      "BUS 50B",
+      "BUS 93M",
+      "BUS 522",
+      "BUS 14R"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 79,
+    "from_name": "Bağcılar (DEVEKALDIRIM CAD.)",
+    "from_coords": [
+      41.044031,
+      28.840571
+    ],
+    "to_name": "Bayrampaşa (KERVAN ÇEŞME)",
+    "to_coords": [
+      41.042932,
+      28.918056
+    ],
+    "from_district": "Bağcılar",
+    "to_district": "Bayrampaşa",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 47,
+    "walk_duration_minutes": 5,
+    "transfers": 2,
+    "modes": [
+      "BUS 92B",
+      "BUS 93M",
+      "BUS 36KE"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 80,
+    "from_name": "Bağcılar (Esenler Cad.)",
+    "from_coords": [
+      41.035026,
+      28.867732
+    ],
+    "to_name": "Sultangazi (GÖKTÜRK CAMİİ)",
+    "to_coords": [
+      41.178638,
+      28.891005
+    ],
+    "from_district": "Bağcılar",
+    "to_district": "Sultangazi",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 84,
+    "walk_duration_minutes": 8,
+    "transfers": 2,
+    "modes": [
+      "BUS 36CY",
+      "BUS 97M",
+      "BUS 48"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 81,
+    "from_name": "Kağıthane (SEYRANTEPE YOLU)",
+    "from_coords": [
+      41.099013,
+      29.006306
+    ],
+    "to_name": "Kartal (CENGİZ TOPEL)",
+    "to_coords": [
+      40.893273,
+      29.192501
+    ],
+    "from_district": "Kağıthane",
+    "to_district": "Kartal",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 62,
+    "walk_duration_minutes": 5,
+    "transfers": 2,
+    "modes": [
+      "BUS 29Ş",
+      "BUS 500T",
+      "BUS KM33"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 82,
+    "from_name": "Bağcılar (Güneştepe)",
+    "from_coords": [
+      41.028975,
+      28.860951
+    ],
+    "to_name": "Şişli (AHİ EVRAN MESLEKİ VE TEKNİK ANADOLU LİSESİ)",
+    "to_coords": [
+      41.062589,
+      28.997768
+    ],
+    "from_district": "Bağcılar",
+    "to_district": "Şişli",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 52,
+    "walk_duration_minutes": 2,
+    "transfers": 1,
+    "modes": [
+      "BUS 92T",
+      "BUS 74A"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 83,
+    "from_name": "Ümraniye (ÖRNEK MAHALLESİ)",
+    "from_coords": [
+      40.995475,
+      29.080186
+    ],
+    "to_name": "Ataşehir (Minibüs Durağı)",
+    "to_coords": [
+      40.981789,
+      29.114035
+    ],
+    "from_district": "Ümraniye",
+    "to_district": "Ataşehir",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 23,
+    "walk_duration_minutes": 11,
+    "transfers": 1,
+    "modes": [
+      "BUS 20K",
+      "BUS 320A"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 84,
+    "from_name": "Üsküdar (NEŞETBEY)",
+    "from_coords": [
+      41.025791,
+      29.051124
+    ],
+    "to_name": "Gaziosmanpaşa (BİLGE HAN CADDESİ)",
+    "to_coords": [
+      41.058786,
+      28.902357
+    ],
+    "from_district": "Üsküdar",
+    "to_district": "Gaziosmanpaşa",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 47,
+    "walk_duration_minutes": 9,
+    "transfers": 3,
+    "modes": [
+      "BUS 34G",
+      "BUS 97M",
+      "BUS 36CY",
+      "BUS 32"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 85,
+    "from_name": "Kağıthane (KARAYOLLARI 1.BL.MD.)",
+    "from_coords": [
+      41.096698,
+      28.960274
+    ],
+    "to_name": "Zeytinburnu (GÖĞÜS HASTANESİ)",
+    "to_coords": [
+      41.001201,
+      28.914196
+    ],
+    "from_district": "Kağıthane",
+    "to_district": "Zeytinburnu",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 52,
+    "walk_duration_minutes": 2,
+    "transfers": 2,
+    "modes": [
+      "BUS 48",
+      "BUS 41ST",
+      "BUS MR11"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 86,
+    "from_name": "Güngören (CEVİZLİK PARKI)",
+    "from_coords": [
+      41.026488,
+      28.878183
+    ],
+    "to_name": "Esenler (B.PAŞA ŞEHİR PARKI)",
+    "to_coords": [
+      41.06622,
+      28.886325
+    ],
+    "from_district": "Güngören",
+    "to_district": "Esenler",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 45,
+    "walk_duration_minutes": 8,
+    "transfers": 1,
+    "modes": [
+      "BUS 92B",
+      "BUS 32A"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 87,
+    "from_name": "Üsküdar (İHSANİYE İSKELE SOKAK)",
+    "from_coords": [
+      41.014941,
+      29.011134
+    ],
+    "to_name": "Esenler (Otogar)",
+    "to_coords": [
+      41.040165,
+      28.894539
+    ],
+    "from_district": "Üsküdar",
+    "to_district": "Esenler",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 55,
+    "walk_duration_minutes": 18,
+    "transfers": 2,
+    "modes": [
+      "BUS 11P",
+      "SUBWAY Marmaray1",
+      "SUBWAY M1A"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 88,
+    "from_name": "Kartal (BÖLGE TRAFİK)",
+    "from_coords": [
+      40.908742,
+      29.203709
+    ],
+    "to_name": "Üsküdar (Gazi Cad.)",
+    "to_coords": [
+      41.024002,
+      29.032134
+    ],
+    "from_district": "Kartal",
+    "to_district": "Üsküdar",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 54,
+    "walk_duration_minutes": 12,
+    "transfers": 2,
+    "modes": [
+      "BUS 132M",
+      "BUS 18V",
+      "BUS 11T"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 89,
+    "from_name": "Kağıthane (Finanskent)",
+    "from_coords": [
+      41.09102,
+      28.938605
+    ],
+    "to_name": "Esenler (OTOGAR)",
+    "to_coords": [
+      41.039844,
+      28.894847
+    ],
+    "from_district": "Kağıthane",
+    "to_district": "Esenler",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 41,
+    "walk_duration_minutes": 9,
+    "transfers": 1,
+    "modes": [
+      "BUS TM17",
+      "BUS 50R"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 90,
+    "from_name": "Beşiktaş (BOĞAZİÇİ ÜNİVERSİTESİ)",
+    "from_coords": [
+      41.079892,
+      29.050452
+    ],
+    "to_name": "Ataşehir (YENİŞEHİR MUHTARLIĞI)",
+    "to_coords": [
+      40.994009,
+      29.145405
+    ],
+    "from_district": "Beşiktaş",
+    "to_district": "Ataşehir",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 66,
+    "walk_duration_minutes": 11,
+    "transfers": 2,
+    "modes": [
+      "BUS 40T",
+      "BUS 34G",
+      "BUS 14ŞB"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 91,
+    "from_name": "Esenler (ATIŞALANI YANYOL)",
+    "from_coords": [
+      41.049528,
+      28.874887
+    ],
+    "to_name": "Maltepe (NERGİZ SOKAK)",
+    "to_coords": [
+      40.927488,
+      29.166175
+    ],
+    "from_district": "Esenler",
+    "to_district": "Maltepe",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 63,
+    "walk_duration_minutes": 11,
+    "transfers": 3,
+    "modes": [
+      "BUS 97M",
+      "BUS 251",
+      "BUS 130Ş",
+      "BUS KM48"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 92,
+    "from_name": "Gaziosmanpaşa (BİLGE HAN CADDESİ)",
+    "from_coords": [
+      41.058682,
+      28.902239
+    ],
+    "to_name": "Kartal (ÇETİN SOKAK)",
+    "to_coords": [
+      40.909931,
+      29.217158
+    ],
+    "from_district": "Gaziosmanpaşa",
+    "to_district": "Kartal",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 92,
+    "walk_duration_minutes": 9,
+    "transfers": 3,
+    "modes": [
+      "BUS 38E",
+      "BUS 36Z",
+      "BUS 500T",
+      "BUS KM21"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 93,
+    "from_name": "Küçükçekmece (GÜMRÜK)",
+    "from_coords": [
+      41.013376,
+      28.768712
+    ],
+    "to_name": "Bayrampaşa (Minibüs Durağı)",
+    "to_coords": [
+      41.028124,
+      28.900986
+    ],
+    "from_district": "Küçükçekmece",
+    "to_district": "Bayrampaşa",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 51,
+    "walk_duration_minutes": 18,
+    "transfers": 1,
+    "modes": [
+      "BUS 79Y",
+      "SUBWAY M1A"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 94,
+    "from_name": "Maltepe (CEVİZLİ İSTASYON)",
+    "from_coords": [
+      40.910874,
+      29.155674
+    ],
+    "to_name": "Bakırköy (ADNAN KAHVECİ BULVARI)",
+    "to_coords": [
+      40.977494,
+      28.851597
+    ],
+    "from_district": "Maltepe",
+    "to_district": "Bakırköy",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 82,
+    "walk_duration_minutes": 16,
+    "transfers": 0,
+    "modes": [
+      "SUBWAY Marmaray"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 95,
+    "from_name": "Fatih (TOPKAPI)",
+    "from_coords": [
+      41.02068,
+      28.925041
+    ],
+    "to_name": "Güngören (BAĞCILAR DEVLET HAST)",
+    "to_coords": [
+      41.028554,
+      28.869913
+    ],
+    "from_district": "Fatih",
+    "to_district": "Güngören",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 23,
+    "walk_duration_minutes": 4,
+    "transfers": 0,
+    "modes": [
+      "BUS 92B"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 96,
+    "from_name": "Maltepe (CEVİZLİ MUHTARLIK)",
+    "from_coords": [
+      40.911549,
+      29.168442
+    ],
+    "to_name": "Bayrampaşa (KOCATEPE METRO)",
+    "to_coords": [
+      41.048965,
+      28.896531
+    ],
+    "from_district": "Maltepe",
+    "to_district": "Bayrampaşa",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 85,
+    "walk_duration_minutes": 16,
+    "transfers": 4,
+    "modes": [
+      "BUS KM34",
+      "SUBWAY M4",
+      "BUS 500T",
+      "BUS 522ST",
+      "BUS 32M"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 97,
+    "from_name": "Bahçelievler (MEVLANA CAMİİ)",
+    "from_coords": [
+      41.009212,
+      28.838924
+    ],
+    "to_name": "Ataşehir (GAZİ MUSTAFA KEMAL CADDESİ)",
+    "to_coords": [
+      40.971428,
+      29.132273
+    ],
+    "from_district": "Bahçelievler",
+    "to_district": "Ataşehir",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 89,
+    "walk_duration_minutes": 7,
+    "transfers": 2,
+    "modes": [
+      "BUS 98M",
+      "BUS 34G",
+      "BUS 19F"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 98,
+    "from_name": "Üsküdar (BÜLBÜL DERESİ)",
+    "from_coords": [
+      41.02708,
+      29.024684
+    ],
+    "to_name": "Fatih (Pazartekke)",
+    "to_coords": [
+      41.018269,
+      28.927102
+    ],
+    "from_district": "Üsküdar",
+    "to_district": "Fatih",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 52,
+    "walk_duration_minutes": 10,
+    "transfers": 1,
+    "modes": [
+      "BUS 2",
+      "BUS 34G"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 99,
+    "from_name": "Kağıthane (KAĞITHANE)",
+    "from_coords": [
+      41.08212,
+      28.972886
+    ],
+    "to_name": "Ataşehir (KOZYATAĞI METRO)",
+    "to_coords": [
+      40.975081,
+      29.098821
+    ],
+    "from_district": "Kağıthane",
+    "to_district": "Ataşehir",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 32,
+    "walk_duration_minutes": 8,
+    "transfers": 2,
+    "modes": [
+      "SUBWAY M11",
+      "BUS 121A",
+      "BUS 500T"
+    ],
+    "failure_reason": null
+  },
+  {
+    "index": 100,
+    "from_name": "Ataşehir (SELVİ SOKAK)",
+    "from_coords": [
+      40.985713,
+      29.157724
+    ],
+    "to_name": "Üsküdar (PAŞAKAPISI)",
+    "to_coords": [
+      41.017182,
+      29.01456
+    ],
+    "from_district": "Ataşehir",
+    "to_district": "Üsküdar",
+    "pair_type": "Inner -> Inner",
+    "success": true,
+    "total_duration_minutes": 51,
+    "walk_duration_minutes": 3,
+    "transfers": 1,
+    "modes": [
+      "BUS 319",
+      "BUS 12"
+    ],
+    "failure_reason": null
+  }
+]

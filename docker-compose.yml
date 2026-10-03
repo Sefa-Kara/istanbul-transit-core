@@ -1,0 +1,11 @@
+services:
+  istanbul-transit:
+    build: .
+    container_name: istanbul-transit-core
+    ports:
+      - "8000:7860"
+      - "8080:8080"
+    environment:
+      - PORT=7860
+      - OTP_GRAPHQL_URL=http://localhost:8080/otp/routers/default/index/graphql
+    restart: unless-stopped

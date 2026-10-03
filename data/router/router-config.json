@@ -1,0 +1,8 @@
+{
+  "transit": {
+    "dynamicSearchWindow": {
+      "minWindow": "PT1H",
+      "maxWindow": "PT4H"
+    }
+  }
+}

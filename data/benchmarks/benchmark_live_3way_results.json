@@ -1,0 +1,6034 @@
+[
+  {
+    "index": 1,
+    "corridor": "Tuzla (Şifa Mahallesi) ➔ Ataşehir (Batı)",
+    "straight_km": 24.8,
+    "from_coords": [
+      40.816472,
+      29.314836
+    ],
+    "to_coords": [
+      40.981051,
+      29.115325
+    ],
+    "delta_vs_moovit_min": -30,
+    "delta_vs_gmaps_min": -17,
+    "our_engine": {
+      "success": true,
+      "elapsed": 5.298,
+      "duration_min": 73,
+      "walk_min": 2,
+      "transfers": 1,
+      "traffic_delay_min": 24,
+      "lines": [
+        "BUS 16D",
+        "BUS KM46"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 18.035,
+      "duration_min": 103,
+      "raw_duration_text": "1 sa 43 dk",
+      "lines": [
+        "Otobüs",
+        "KM12",
+        "B1",
+        "M8"
+      ],
+      "raw_snippet": "Otobüs ➔ KM12 ➔ B1 ➔ M8",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 9
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 7.465,
+      "duration_min": 90,
+      "raw_duration_text": "1 sa. 30 dk.",
+      "lines": [
+        "KM12",
+        "M4",
+        "19SK"
+      ],
+      "raw_snippet": "KM12 ➔ M4 ➔ 19SK",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 2,
+    "corridor": "Küçükçekmece (Sefaköy) ➔ Sarıyer (Hacıosman)",
+    "straight_km": 25.8,
+    "from_coords": [
+      40.997618,
+      28.796746
+    ],
+    "to_coords": [
+      41.142468,
+      29.035818
+    ],
+    "delta_vs_moovit_min": 17,
+    "delta_vs_gmaps_min": -10,
+    "our_engine": {
+      "success": true,
+      "elapsed": 11.361,
+      "duration_min": 102,
+      "walk_min": 18,
+      "transfers": 2,
+      "traffic_delay_min": 21,
+      "lines": [
+        "BUS 34BZ",
+        "BUS 500L",
+        "BUS 29C"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.1,
+      "duration_min": 85,
+      "raw_duration_text": "1 sa 25 dk",
+      "lines": [
+        "34BZ",
+        "M2"
+      ],
+      "raw_snippet": "34BZ ➔ M2",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.811,
+      "duration_min": 112,
+      "raw_duration_text": "1 sa. 52 dk.",
+      "lines": [
+        "89A",
+        "34G",
+        "29C"
+      ],
+      "raw_snippet": "89A ➔ 34G ➔ 29C",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 3,
+    "corridor": "Sancaktepe (Sarıgazi) ➔ Çatalca (Meydan)",
+    "straight_km": 66.7,
+    "from_coords": [
+      40.99737,
+      29.227884
+    ],
+    "to_coords": [
+      41.142074,
+      28.46025
+    ],
+    "delta_vs_moovit_min": -75,
+    "delta_vs_gmaps_min": -110,
+    "our_engine": {
+      "success": true,
+      "elapsed": 9.309,
+      "duration_min": 119,
+      "walk_min": 4,
+      "transfers": 3,
+      "traffic_delay_min": 31,
+      "lines": [
+        "BUS 132YM",
+        "BUS 622",
+        "BUS 41AT",
+        "BUS 145T"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.171,
+      "duration_min": 194,
+      "raw_duration_text": "3 sa 14 dk",
+      "lines": [
+        "M5",
+        "34G",
+        "Otobüs",
+        "401"
+      ],
+      "raw_snippet": "M5 ➔ 34G ➔ Otobüs ➔ 401",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.876,
+      "duration_min": 229,
+      "raw_duration_text": "3 sa. 49 dk.",
+      "lines": [
+        "M5",
+        "34G",
+        "401"
+      ],
+      "raw_snippet": "M5 ➔ 34G ➔ 401",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 4,
+    "corridor": "Büyükçekmece (Sahil) ➔ Kadıköy (Rıhtım İskele)",
+    "straight_km": 37.3,
+    "from_coords": [
+      41.011693,
+      28.575242
+    ],
+    "to_coords": [
+      40.986555,
+      29.016274
+    ],
+    "delta_vs_moovit_min": -76,
+    "delta_vs_gmaps_min": -58,
+    "our_engine": {
+      "success": true,
+      "elapsed": 6.354,
+      "duration_min": 81,
+      "walk_min": 13,
+      "transfers": 3,
+      "traffic_delay_min": 9,
+      "lines": [
+        "BUS 429A",
+        "BUS 145T",
+        "BUS 32",
+        "FERRY K.KOY_KDK"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.208,
+      "duration_min": 157,
+      "raw_duration_text": "2 sa 37 dk",
+      "lines": [
+        "Otobüs",
+        "448\t/\t401T\t/\t401\t/\t303A\t/\tHT48",
+        "34G",
+        "M4"
+      ],
+      "raw_snippet": "Otobüs ➔ 448\t/\t401T\t/\t401\t/\t303A\t/\tHT48 ➔ 34G ➔ M4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.764,
+      "duration_min": 139,
+      "raw_duration_text": "2 sa. 19 dk.",
+      "lines": [
+        "HVL-2",
+        "A43-Avcılar-Kıraç",
+        "A43-Avcılar-Kıraç2",
+        "B1 (Marmaray)",
+        "M4"
+      ],
+      "raw_snippet": "HVL-2 ➔ A43-Avcılar-Kıraç ➔ A43-Avcılar-Kıraç2 ➔ B1 (Marmaray) ➔ M4",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 5,
+    "corridor": "Maltepe (Merkez) ➔ Beylikdüzü (TÜYAP Sondurak)",
+    "straight_km": 44.1,
+    "from_coords": [
+      40.930637,
+      29.14316
+    ],
+    "to_coords": [
+      41.02654,
+      28.636335
+    ],
+    "delta_vs_moovit_min": -29,
+    "delta_vs_gmaps_min": -35,
+    "our_engine": {
+      "success": true,
+      "elapsed": 9.016,
+      "duration_min": 112,
+      "walk_min": 5,
+      "transfers": 3,
+      "traffic_delay_min": 28,
+      "lines": [
+        "BUS 500T",
+        "BUS 500L",
+        "BUS 41AT",
+        "BUS 145T"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.543,
+      "duration_min": 141,
+      "raw_duration_text": "2 sa 21 dk",
+      "lines": [
+        "M4",
+        "34G"
+      ],
+      "raw_snippet": "M4 ➔ 34G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 11
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.76,
+      "duration_min": 147,
+      "raw_duration_text": "2 sa. 27 dk.",
+      "lines": [
+        "C58-Maltepe-Gülensu",
+        "B1 (Marmaray)",
+        "A32-Küçükçekmece-Yeşilkent",
+        "429A"
+      ],
+      "raw_snippet": "C58-Maltepe-Gülensu ➔ B1 (Marmaray) ➔ A32-Küçükçekmece-Yeşilkent ➔ 429A",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 6,
+    "corridor": "Esenyurt (Meydan) ➔ Gaziosmanpaşa (Meydan)",
+    "straight_km": 20.4,
+    "from_coords": [
+      41.028298,
+      28.669797
+    ],
+    "to_coords": [
+      41.049809,
+      28.90982
+    ],
+    "delta_vs_moovit_min": -35,
+    "delta_vs_gmaps_min": -48,
+    "our_engine": {
+      "success": true,
+      "elapsed": 7.238,
+      "duration_min": 61,
+      "walk_min": 12,
+      "transfers": 2,
+      "traffic_delay_min": 10,
+      "lines": [
+        "BUS HT29",
+        "BUS 145T",
+        "BUS 88"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.443,
+      "duration_min": 96,
+      "raw_duration_text": "1 sa 36 dk",
+      "lines": [
+        "Otobüs",
+        "HT29\t/\tES4",
+        "145T",
+        "T4"
+      ],
+      "raw_snippet": "Otobüs ➔ HT29\t/\tES4 ➔ 145T ➔ T4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.753,
+      "duration_min": 109,
+      "raw_duration_text": "1 sa. 49 dk.",
+      "lines": [
+        "A43-Avcılar-Kıraç",
+        "A43-Avcılar-Kıraç2",
+        "34G",
+        "34BZ",
+        "A11-Cevatpaşa-Edirnekapı",
+        "A11-Fabrikalar-Edirnekapi"
+      ],
+      "raw_snippet": "A43-Avcılar-Kıraç ➔ A43-Avcılar-Kıraç2 ➔ 34G ➔ 34BZ ➔ A11-Cevatpaşa-Edirnekapı ➔ A11-Fabrikalar-Edirnekapi",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 7,
+    "corridor": "Güngören (Köyiçi) ➔ Sarıyer (Maslak İTÜ)",
+    "straight_km": 15.7,
+    "from_coords": [
+      41.017513,
+      28.8765
+    ],
+    "to_coords": [
+      41.094631,
+      29.032017
+    ],
+    "delta_vs_moovit_min": 4,
+    "delta_vs_gmaps_min": 19,
+    "our_engine": {
+      "success": true,
+      "elapsed": 12.388,
+      "duration_min": 94,
+      "walk_min": 10,
+      "transfers": 2,
+      "traffic_delay_min": 19,
+      "lines": [
+        "BUS 92T",
+        "BUS DT2",
+        "BUS 58N"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.229,
+      "duration_min": 90,
+      "raw_duration_text": "1 sa 30 dk",
+      "lines": [
+        "T1",
+        "34BZ",
+        "Otobüs",
+        "58N"
+      ],
+      "raw_snippet": "T1 ➔ 34BZ ➔ Otobüs ➔ 58N",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.766,
+      "duration_min": 75,
+      "raw_duration_text": "1 sa. 15 dk.",
+      "lines": [
+        "92T",
+        "DT2",
+        "SRY-10/Baltalimanı-Mecidiyeköy",
+        "58N",
+        "59N"
+      ],
+      "raw_snippet": "92T ➔ DT2 ➔ SRY-10/Baltalimanı-Mecidiyeköy ➔ 58N ➔ 59N",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 8,
+    "corridor": "Küçükçekmece (Halkalı Marmaray) ➔ Esenler (Otogar)",
+    "straight_km": 12.1,
+    "from_coords": [
+      41.016648,
+      28.759887
+    ],
+    "to_coords": [
+      41.03236,
+      28.901371
+    ],
+    "delta_vs_moovit_min": -12,
+    "delta_vs_gmaps_min": -36,
+    "our_engine": {
+      "success": true,
+      "elapsed": 14.178,
+      "duration_min": 89,
+      "walk_min": 50,
+      "transfers": 1,
+      "traffic_delay_min": 6,
+      "lines": [
+        "BUS 79Y",
+        "SUBWAY M1A"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.233,
+      "duration_min": 101,
+      "raw_duration_text": "1 sa 41 dk",
+      "lines": [
+        "Otobüs",
+        "BN1",
+        "B1",
+        "M1A"
+      ],
+      "raw_snippet": "Otobüs ➔ BN1 ➔ B1 ➔ M1A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.775,
+      "duration_min": 125,
+      "raw_duration_text": "2 sa. 5 dk.",
+      "lines": [
+        "98S",
+        "76V",
+        "M1A"
+      ],
+      "raw_snippet": "98S ➔ 76V ➔ M1A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 9,
+    "corridor": "Sarıyer (Maslak İTÜ) ➔ Avcılar (Merkez Metrobüs)",
+    "straight_km": 27.5,
+    "from_coords": [
+      41.101904,
+      29.015454
+    ],
+    "to_coords": [
+      40.991149,
+      28.724145
+    ],
+    "delta_vs_moovit_min": -1,
+    "delta_vs_gmaps_min": -28,
+    "our_engine": {
+      "success": true,
+      "elapsed": 16.1,
+      "duration_min": 110,
+      "walk_min": 35,
+      "transfers": 2,
+      "traffic_delay_min": 20,
+      "lines": [
+        "BUS 500L",
+        "BUS 41AT",
+        "BUS 76D"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.421,
+      "duration_min": 111,
+      "raw_duration_text": "1 sa 51 dk",
+      "lines": [
+        "M2",
+        "34G"
+      ],
+      "raw_snippet": "M2 ➔ 34G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.735,
+      "duration_min": 138,
+      "raw_duration_text": "2 sa. 18 dk.",
+      "lines": [
+        "500L",
+        "76D"
+      ],
+      "raw_snippet": "500L ➔ 76D",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 10,
+    "corridor": "Arnavutköy (İstanbul Havalimanı IST) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 30.2,
+    "from_coords": [
+      41.26044,
+      28.734366
+    ],
+    "to_coords": [
+      41.077359,
+      28.999325
+    ],
+    "delta_vs_moovit_min": -10,
+    "delta_vs_gmaps_min": -13,
+    "our_engine": {
+      "success": true,
+      "elapsed": 4.17,
+      "duration_min": 62,
+      "walk_min": 20,
+      "transfers": 1,
+      "traffic_delay_min": 4,
+      "lines": [
+        "SUBWAY M11",
+        "BUS 65G"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.471,
+      "duration_min": 72,
+      "raw_duration_text": "1 sa 12 dk",
+      "lines": [
+        "M11",
+        "Otobüs",
+        "62\t/\t62G"
+      ],
+      "raw_snippet": "M11 ➔ Otobüs ➔ 62\t/\t62G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.814,
+      "duration_min": 75,
+      "raw_duration_text": "1 sa. 15 dk.",
+      "lines": [
+        "M11",
+        "62",
+        "65G"
+      ],
+      "raw_snippet": "M11 ➔ 62 ➔ 65G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    }
+  },
+  {
+    "index": 11,
+    "corridor": "Kadıköy (Söğütlüçeşme) ➔ Bakırköy (İskele / Meydan)",
+    "straight_km": 15.9,
+    "from_coords": [
+      40.997406,
+      29.047436
+    ],
+    "to_coords": [
+      40.976716,
+      28.861188
+    ],
+    "delta_vs_moovit_min": 24,
+    "delta_vs_gmaps_min": -12,
+    "our_engine": {
+      "success": true,
+      "elapsed": 9.662,
+      "duration_min": 77,
+      "walk_min": 9,
+      "transfers": 1,
+      "traffic_delay_min": 18,
+      "lines": [
+        "BUS 34G",
+        "BUS 72T"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.015,
+      "duration_min": 53,
+      "raw_duration_text": "53 dk",
+      "lines": [
+        "M4",
+        "B1"
+      ],
+      "raw_snippet": "M4 ➔ B1",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 6.078,
+      "duration_min": 89,
+      "raw_duration_text": "1 sa. 29 dk.",
+      "lines": [
+        "34G",
+        "34AS",
+        "72T"
+      ],
+      "raw_snippet": "34G ➔ 34AS ➔ 72T",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    }
+  },
+  {
+    "index": 12,
+    "corridor": "Kağıthane (Merkez) ➔ Arnavutköy (İstanbul Havalimanı IST)",
+    "straight_km": 26.8,
+    "from_coords": [
+      41.091095,
+      28.984497
+    ],
+    "to_coords": [
+      41.256155,
+      28.752089
+    ],
+    "delta_vs_moovit_min": 11,
+    "delta_vs_gmaps_min": -7,
+    "our_engine": {
+      "success": true,
+      "elapsed": 5.704,
+      "duration_min": 70,
+      "walk_min": 36,
+      "transfers": 1,
+      "traffic_delay_min": 2,
+      "lines": [
+        "BUS K1",
+        "SUBWAY M11"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.235,
+      "duration_min": 59,
+      "raw_duration_text": "59 dk",
+      "lines": [
+        "Otobüs",
+        "K3\t/\t63\t/\t41ST\t/\t50D\t/\tK1\t/\t...",
+        "M11"
+      ],
+      "raw_snippet": "Otobüs ➔ K3\t/\t63\t/\t41ST\t/\t50D\t/\tK1\t/\t... ➔ M11",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.743,
+      "duration_min": 77,
+      "raw_duration_text": "1 sa. 17 dk.",
+      "lines": [
+        "63",
+        "K1",
+        "M11"
+      ],
+      "raw_snippet": "63 ➔ K1 ➔ M11",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 13,
+    "corridor": "Maltepe (Merkez) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 20.4,
+    "from_coords": [
+      40.916929,
+      29.13436
+    ],
+    "to_coords": [
+      41.069553,
+      28.998743
+    ],
+    "delta_vs_moovit_min": 8,
+    "delta_vs_gmaps_min": -6,
+    "our_engine": {
+      "success": true,
+      "elapsed": 15.565,
+      "duration_min": 84,
+      "walk_min": 16,
+      "transfers": 2,
+      "traffic_delay_min": 20,
+      "lines": [
+        "BUS 16D",
+        "BUS 10F",
+        "BUS 251"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.678,
+      "duration_min": 76,
+      "raw_duration_text": "1 sa 16 dk",
+      "lines": [
+        "B1",
+        "M2"
+      ],
+      "raw_snippet": "B1 ➔ M2",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.76,
+      "duration_min": 90,
+      "raw_duration_text": "1 sa. 30 dk.",
+      "lines": [
+        "16D",
+        "34AS",
+        "34G"
+      ],
+      "raw_snippet": "16D ➔ 34AS ➔ 34G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 14,
+    "corridor": "Sancaktepe (Sarıgazi) ➔ Gaziosmanpaşa (Meydan)",
+    "straight_km": 28.6,
+    "from_coords": [
+      40.986137,
+      29.241308
+    ],
+    "to_coords": [
+      41.05706,
+      28.915514
+    ],
+    "delta_vs_moovit_min": -21,
+    "delta_vs_gmaps_min": -43,
+    "our_engine": {
+      "success": true,
+      "elapsed": 21.543,
+      "duration_min": 93,
+      "walk_min": 13,
+      "transfers": 3,
+      "traffic_delay_min": 18,
+      "lines": [
+        "BUS UM60",
+        "BUS 622",
+        "BUS 36Z",
+        "BUS 38B"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.482,
+      "duration_min": 114,
+      "raw_duration_text": "1 sa 54 dk",
+      "lines": [
+        "Otobüs",
+        "SM2\t/\tUM60\t/\tKM61",
+        "M5",
+        "34G",
+        "55ET\t/\t55"
+      ],
+      "raw_snippet": "Otobüs ➔ SM2\t/\tUM60\t/\tKM61 ➔ M5 ➔ 34G ➔ 55ET\t/\t55",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 9
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.729,
+      "duration_min": 136,
+      "raw_duration_text": "2 sa. 16 dk.",
+      "lines": [
+        "KM61",
+        "522ST",
+        "DT1",
+        "55T"
+      ],
+      "raw_snippet": "KM61 ➔ 522ST ➔ DT1 ➔ 55T",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 15,
+    "corridor": "Arnavutköy (Merkez) ➔ Bağcılar (Meydan)",
+    "straight_km": 20.2,
+    "from_coords": [
+      41.182518,
+      28.736168
+    ],
+    "to_coords": [
+      41.028376,
+      28.862677
+    ],
+    "delta_vs_moovit_min": 2,
+    "delta_vs_gmaps_min": 13,
+    "our_engine": {
+      "success": true,
+      "elapsed": 16.802,
+      "duration_min": 112,
+      "walk_min": 10,
+      "transfers": 3,
+      "traffic_delay_min": 28,
+      "lines": [
+        "BUS 36C",
+        "BUS 79KT",
+        "BUS HT11",
+        "BUS 92B"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.125,
+      "duration_min": 110,
+      "raw_duration_text": "1 sa 50 dk",
+      "lines": [
+        "0",
+        "ARN6\t/\tARN7",
+        "M11",
+        "M3",
+        "Otobüs",
+        "92B"
+      ],
+      "raw_snippet": "0 ➔ ARN6\t/\tARN7 ➔ M11 ➔ M3 ➔ Otobüs ➔ 92B",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.717,
+      "duration_min": 99,
+      "raw_duration_text": "1 sa. 39 dk.",
+      "lines": [
+        "MK22",
+        "M3",
+        "92B"
+      ],
+      "raw_snippet": "MK22 ➔ M3 ➔ 92B",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 16,
+    "corridor": "Beyoğlu (Taksim) ➔ Üsküdar (Altunizade Metrobüs)",
+    "straight_km": 5.5,
+    "from_coords": [
+      41.03355,
+      28.994547
+    ],
+    "to_coords": [
+      41.023958,
+      29.059111
+    ],
+    "delta_vs_moovit_min": -6,
+    "delta_vs_gmaps_min": -21,
+    "our_engine": {
+      "success": true,
+      "elapsed": 3.696,
+      "duration_min": 30,
+      "walk_min": 12,
+      "transfers": 1,
+      "traffic_delay_min": 4,
+      "lines": [
+        "BUS 58A",
+        "BUS 129T"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.162,
+      "duration_min": 36,
+      "raw_duration_text": "36 dk",
+      "lines": [
+        "Boğaz Hattı",
+        "M5"
+      ],
+      "raw_snippet": "Boğaz Hattı ➔ M5",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.726,
+      "duration_min": 51,
+      "raw_duration_text": "51 dk.",
+      "lines": [
+        "62",
+        "522"
+      ],
+      "raw_snippet": "62 ➔ 522",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 17,
+    "corridor": "Ümraniye (Santral) ➔ Beylikdüzü (TÜYAP Sondurak)",
+    "straight_km": 39.3,
+    "from_coords": [
+      41.025913,
+      29.094114
+    ],
+    "to_coords": [
+      41.022314,
+      28.628655
+    ],
+    "delta_vs_moovit_min": 8,
+    "delta_vs_gmaps_min": -24,
+    "our_engine": {
+      "success": true,
+      "elapsed": 17.459,
+      "duration_min": 129,
+      "walk_min": 6,
+      "transfers": 3,
+      "traffic_delay_min": 43,
+      "lines": [
+        "BUS 522",
+        "BUS 93M",
+        "BUS 145T",
+        "BUS 400A"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.226,
+      "duration_min": 121,
+      "raw_duration_text": "2 sa 1 dk",
+      "lines": [
+        "M5",
+        "34G"
+      ],
+      "raw_snippet": "M5 ➔ 34G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.729,
+      "duration_min": 153,
+      "raw_duration_text": "2 sa. 33 dk.",
+      "lines": [
+        "522",
+        "34G",
+        "34B",
+        "34BZ",
+        "34C"
+      ],
+      "raw_snippet": "522 ➔ 34G ➔ 34B ➔ 34BZ ➔ 34C",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 18,
+    "corridor": "Üsküdar (Altunizade Metrobüs) ➔ Beyoğlu (Taksim)",
+    "straight_km": 6.3,
+    "from_coords": [
+      41.021012,
+      29.057922
+    ],
+    "to_coords": [
+      41.034881,
+      28.984982
+    ],
+    "delta_vs_moovit_min": -1,
+    "delta_vs_gmaps_min": 3,
+    "our_engine": {
+      "success": true,
+      "elapsed": 1.366,
+      "duration_min": 41,
+      "walk_min": 13,
+      "transfers": 0,
+      "traffic_delay_min": 8,
+      "lines": [
+        "BUS 129T"
+      ],
+      "bundled_lines": null,
+      "total_options": 1
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.876,
+      "duration_min": 42,
+      "raw_duration_text": "42 dk",
+      "lines": [
+        "34G",
+        "M2"
+      ],
+      "raw_snippet": "34G ➔ M2",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.732,
+      "duration_min": 38,
+      "raw_duration_text": "38 dk.",
+      "lines": [
+        "129T"
+      ],
+      "raw_snippet": "129T",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    }
+  },
+  {
+    "index": 19,
+    "corridor": "Kağıthane (Merkez) ➔ Çatalca (Meydan)",
+    "straight_km": 44.8,
+    "from_coords": [
+      41.074012,
+      28.981523
+    ],
+    "to_coords": [
+      41.150663,
+      28.459823
+    ],
+    "delta_vs_moovit_min": -78,
+    "delta_vs_gmaps_min": -113,
+    "our_engine": {
+      "success": true,
+      "elapsed": 12.387,
+      "duration_min": 74,
+      "walk_min": 13,
+      "transfers": 1,
+      "traffic_delay_min": 22,
+      "lines": [
+        "BUS 93M",
+        "BUS 145T"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.094,
+      "duration_min": 152,
+      "raw_duration_text": "2 sa 32 dk",
+      "lines": [
+        "34BZ",
+        "Otobüs",
+        "401"
+      ],
+      "raw_snippet": "34BZ ➔ Otobüs ➔ 401",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.756,
+      "duration_min": 187,
+      "raw_duration_text": "3 sa. 7 dk.",
+      "lines": [
+        "34G",
+        "401"
+      ],
+      "raw_snippet": "34G ➔ 401",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 20,
+    "corridor": "Esenyurt (Meydan) ➔ Ümraniye (Santral)",
+    "straight_km": 34.6,
+    "from_coords": [
+      41.040469,
+      28.675028
+    ],
+    "to_coords": [
+      41.013601,
+      29.084162
+    ],
+    "delta_vs_moovit_min": 0,
+    "delta_vs_gmaps_min": 2,
+    "our_engine": {
+      "success": true,
+      "elapsed": 19.295,
+      "duration_min": 135,
+      "walk_min": 11,
+      "transfers": 3,
+      "traffic_delay_min": 42,
+      "lines": [
+        "BUS 146F",
+        "BUS E-58",
+        "BUS 522",
+        "BUS 11L"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.462,
+      "duration_min": 135,
+      "raw_duration_text": "2 sa 15 dk",
+      "lines": [
+        "Otobüs",
+        "76D",
+        "34G",
+        "6"
+      ],
+      "raw_snippet": "Otobüs ➔ 76D ➔ 34G ➔ 6",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.735,
+      "duration_min": 133,
+      "raw_duration_text": "2 sa. 13 dk.",
+      "lines": [
+        "76D",
+        "129T",
+        "6"
+      ],
+      "raw_snippet": "76D ➔ 129T ➔ 6",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 21,
+    "corridor": "Güngören (Köyiçi) ➔ Beşiktaş (Meydan / İskele)",
+    "straight_km": 11.4,
+    "from_coords": [
+      41.01909,
+      28.882341
+    ],
+    "to_coords": [
+      41.037298,
+      29.015582
+    ],
+    "delta_vs_moovit_min": 0,
+    "delta_vs_gmaps_min": -77,
+    "our_engine": {
+      "success": true,
+      "elapsed": 14.188,
+      "duration_min": 75,
+      "walk_min": 8,
+      "transfers": 1,
+      "traffic_delay_min": 15,
+      "lines": [
+        "BUS 33B",
+        "BUS 30D"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.6,
+      "duration_min": 75,
+      "raw_duration_text": "1 sa 15 dk",
+      "lines": [
+        "T1",
+        "Otobüs",
+        "26A\t/\t27E\t/\t62\t/\t58N\t/\t29C\t/\t..."
+      ],
+      "raw_snippet": "T1 ➔ Otobüs ➔ 26A\t/\t27E\t/\t62\t/\t58N\t/\t29C\t/\t...",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.73,
+      "duration_min": 152,
+      "raw_duration_text": "2 sa. 32 dk.",
+      "lines": [
+        "92B",
+        "28T"
+      ],
+      "raw_snippet": "92B ➔ 28T",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 22,
+    "corridor": "Sancaktepe (Sarıgazi) ➔ Kadıköy (Söğütlüçeşme)",
+    "straight_km": 17.1,
+    "from_coords": [
+      41.004152,
+      29.242901
+    ],
+    "to_coords": [
+      41.002258,
+      29.039907
+    ],
+    "delta_vs_moovit_min": -8,
+    "delta_vs_gmaps_min": 7,
+    "our_engine": {
+      "success": true,
+      "elapsed": 16.899,
+      "duration_min": 70,
+      "walk_min": 13,
+      "transfers": 0,
+      "traffic_delay_min": 17,
+      "lines": [
+        "BUS 19A / 19EK"
+      ],
+      "bundled_lines": [
+        "19A",
+        "19EK"
+      ],
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.263,
+      "duration_min": 78,
+      "raw_duration_text": "1 sa 18 dk",
+      "lines": [
+        "Otobüs",
+        "SM14",
+        "M5",
+        "M8",
+        "M4"
+      ],
+      "raw_snippet": "Otobüs ➔ SM14 ➔ M5 ➔ M8 ➔ M4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.722,
+      "duration_min": 63,
+      "raw_duration_text": "1 sa. 3 dk.",
+      "lines": [
+        "19A"
+      ],
+      "raw_snippet": "19A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 23,
+    "corridor": "Tuzla (Şifa Mahallesi) ➔ Küçükçekmece (Halkalı Marmaray)",
+    "straight_km": 52.1,
+    "from_coords": [
+      40.831267,
+      29.323337
+    ],
+    "to_coords": [
+      41.026499,
+      28.76212
+    ],
+    "delta_vs_moovit_min": -2,
+    "delta_vs_gmaps_min": -8,
+    "our_engine": {
+      "success": true,
+      "elapsed": 10.562,
+      "duration_min": 144,
+      "walk_min": 35,
+      "transfers": 1,
+      "traffic_delay_min": 3,
+      "lines": [
+        "SUBWAY Marmaray",
+        "BUS 98S"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.523,
+      "duration_min": 146,
+      "raw_duration_text": "2 sa 26 dk",
+      "lines": [
+        "B1",
+        "Otobüs",
+        "79Y\t/\tMR51\t/\t98S"
+      ],
+      "raw_snippet": "B1 ➔ Otobüs ➔ 79Y\t/\tMR51\t/\t98S",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.746,
+      "duration_min": 152,
+      "raw_duration_text": "2 sa. 32 dk.",
+      "lines": [
+        "B1 (Marmaray)",
+        "A36-Küçükçekmece-BÇSŞH"
+      ],
+      "raw_snippet": "B1 (Marmaray) ➔ A36-Küçükçekmece-BÇSŞH",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 24,
+    "corridor": "Fatih (Eminönü) ➔ Pendik (Sabiha Gökçen SAW)",
+    "straight_km": 31.6,
+    "from_coords": [
+      41.007108,
+      28.96186
+    ],
+    "to_coords": [
+      40.91254,
+      29.315602
+    ],
+    "delta_vs_moovit_min": 13,
+    "delta_vs_gmaps_min": -25,
+    "our_engine": {
+      "success": true,
+      "elapsed": 11.892,
+      "duration_min": 109,
+      "walk_min": 15,
+      "transfers": 2,
+      "traffic_delay_min": 0,
+      "lines": [
+        "TRAM T1",
+        "FERRY EMN-ADA",
+        "SUBWAY M4"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.63,
+      "duration_min": 96,
+      "raw_duration_text": "1 sa 36 dk",
+      "lines": [
+        "B1",
+        "M4"
+      ],
+      "raw_snippet": "B1 ➔ M4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 4
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.75,
+      "duration_min": 134,
+      "raw_duration_text": "2 sa. 14 dk.",
+      "lines": [
+        "T1",
+        "Kadıköy-Karaköy-Eminönü",
+        "M4"
+      ],
+      "raw_snippet": "T1 ➔ Kadıköy-Karaköy-Eminönü ➔ M4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 25,
+    "corridor": "Üsküdar (Altunizade Metrobüs) ➔ Silivri (Otogar)",
+    "straight_km": 67.9,
+    "from_coords": [
+      41.01897,
+      29.037688
+    ],
+    "to_coords": [
+      41.084059,
+      28.237239
+    ],
+    "delta_vs_moovit_min": -45,
+    "delta_vs_gmaps_min": -90,
+    "our_engine": {
+      "success": true,
+      "elapsed": 10.395,
+      "duration_min": 122,
+      "walk_min": 12,
+      "transfers": 1,
+      "traffic_delay_min": 33,
+      "lines": [
+        "BUS 11C",
+        "BUS 34G"
+      ],
+      "bundled_lines": null,
+      "total_options": 3
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.662,
+      "duration_min": 167,
+      "raw_duration_text": "2 sa 47 dk",
+      "lines": [
+        "M5",
+        "B1",
+        "0",
+        "Otobüs",
+        "303B"
+      ],
+      "raw_snippet": "M5 ➔ B1 ➔ 0 ➔ Otobüs ➔ 303B",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.756,
+      "duration_min": 212,
+      "raw_duration_text": "3 sa. 32 dk.",
+      "lines": [
+        "5",
+        "B1 (Marmaray)",
+        "145",
+        "303A"
+      ],
+      "raw_snippet": "5 ➔ B1 (Marmaray) ➔ 145 ➔ 303A",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 26,
+    "corridor": "Başakşehir (Metrokent) ➔ Gaziosmanpaşa (Meydan)",
+    "straight_km": 10.3,
+    "from_coords": [
+      41.094431,
+      28.805179
+    ],
+    "to_coords": [
+      41.060401,
+      28.918411
+    ],
+    "delta_vs_moovit_min": -4,
+    "delta_vs_gmaps_min": -1,
+    "our_engine": {
+      "success": true,
+      "elapsed": 12.778,
+      "duration_min": 76,
+      "walk_min": 14,
+      "transfers": 1,
+      "traffic_delay_min": 19,
+      "lines": [
+        "BUS 79T",
+        "BUS 88A"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.667,
+      "duration_min": 80,
+      "raw_duration_text": "1 sa 20 dk",
+      "lines": [
+        "Otobüs",
+        "79B\t/\t98KM\t/\t78Ş\t/\t78G\t/\t79T",
+        "M3",
+        "M7",
+        "TM14"
+      ],
+      "raw_snippet": "Otobüs ➔ 79B\t/\t98KM\t/\t78Ş\t/\t78G\t/\t79T ➔ M3 ➔ M7 ➔ TM14",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.721,
+      "duration_min": 77,
+      "raw_duration_text": "1 sa. 17 dk.",
+      "lines": [
+        "78G",
+        "146B",
+        "88A"
+      ],
+      "raw_snippet": "78G ➔ 146B ➔ 88A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 27,
+    "corridor": "Gaziosmanpaşa (Meydan) ➔ Fatih (Eminönü)",
+    "straight_km": 8.3,
+    "from_coords": [
+      41.061361,
+      28.903865
+    ],
+    "to_coords": [
+      41.007998,
+      28.972787
+    ],
+    "delta_vs_moovit_min": -4,
+    "delta_vs_gmaps_min": 1,
+    "our_engine": {
+      "success": true,
+      "elapsed": 6.982,
+      "duration_min": 44,
+      "walk_min": 8,
+      "transfers": 1,
+      "traffic_delay_min": 7,
+      "lines": [
+        "BUS 38",
+        "TRAM T1"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.865,
+      "duration_min": 48,
+      "raw_duration_text": "48 dk",
+      "lines": [
+        "T4",
+        "T1"
+      ],
+      "raw_snippet": "T4 ➔ T1",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.709,
+      "duration_min": 43,
+      "raw_duration_text": "43 dk.",
+      "lines": [
+        "38B",
+        "T1"
+      ],
+      "raw_snippet": "38B ➔ T1",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 28,
+    "corridor": "Pendik (YHT Garı) ➔ Kağıthane (Merkez)",
+    "straight_km": 32.9,
+    "from_coords": [
+      40.877788,
+      29.235769
+    ],
+    "to_coords": [
+      41.092019,
+      28.965432
+    ],
+    "delta_vs_moovit_min": 2,
+    "delta_vs_gmaps_min": -35,
+    "our_engine": {
+      "success": true,
+      "elapsed": 8.153,
+      "duration_min": 108,
+      "walk_min": 21,
+      "transfers": 2,
+      "traffic_delay_min": 10,
+      "lines": [
+        "SUBWAY Marmaray",
+        "BUS 34G",
+        "BUS 79KM"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.101,
+      "duration_min": 106,
+      "raw_duration_text": "1 sa 46 dk",
+      "lines": [
+        "B1",
+        "M2",
+        "Otobüs",
+        "M7",
+        "TM2\t/\t62H\t/\t62G"
+      ],
+      "raw_snippet": "B1 ➔ M2 ➔ Otobüs ➔ M7 ➔ TM2\t/\t62H\t/\t62G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.719,
+      "duration_min": 143,
+      "raw_duration_text": "2 sa. 23 dk.",
+      "lines": [
+        "251",
+        "48"
+      ],
+      "raw_snippet": "251 ➔ 48",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 29,
+    "corridor": "Zeytinburnu (Cevizlibağ) ➔ Arnavutköy (Merkez)",
+    "straight_km": 22.3,
+    "from_coords": [
+      41.017418,
+      28.906256
+    ],
+    "to_coords": [
+      41.18193,
+      28.753904
+    ],
+    "delta_vs_moovit_min": -16,
+    "delta_vs_gmaps_min": -30,
+    "our_engine": {
+      "success": true,
+      "elapsed": 16.66,
+      "duration_min": 85,
+      "walk_min": 15,
+      "transfers": 3,
+      "traffic_delay_min": 16,
+      "lines": [
+        "BUS 41AT",
+        "BUS 336Y",
+        "BUS 79KT",
+        "BUS 336H"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.051,
+      "duration_min": 101,
+      "raw_duration_text": "1 sa 41 dk",
+      "lines": [
+        "34BZ",
+        "M11"
+      ],
+      "raw_snippet": "34BZ ➔ M11",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 4
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.729,
+      "duration_min": 115,
+      "raw_duration_text": "1 sa. 55 dk.",
+      "lines": [
+        "82",
+        "36AY"
+      ],
+      "raw_snippet": "82 ➔ 36AY",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 30,
+    "corridor": "Üsküdar (Altunizade Metrobüs) ➔ Bağcılar (Meydan)",
+    "straight_km": 15.6,
+    "from_coords": [
+      41.031009,
+      29.03915
+    ],
+    "to_coords": [
+      41.024299,
+      28.854705
+    ],
+    "delta_vs_moovit_min": -9,
+    "delta_vs_gmaps_min": -5,
+    "our_engine": {
+      "success": true,
+      "elapsed": 15.724,
+      "duration_min": 74,
+      "walk_min": 17,
+      "transfers": 1,
+      "traffic_delay_min": 17,
+      "lines": [
+        "BUS 34G",
+        "BUS 98D"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.495,
+      "duration_min": 83,
+      "raw_duration_text": "1 sa 23 dk",
+      "lines": [
+        "Otobüs",
+        "15F\t/\t14M",
+        "34G",
+        "M3"
+      ],
+      "raw_snippet": "Otobüs ➔ 15F\t/\t14M ➔ 34G ➔ M3",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 9
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.724,
+      "duration_min": 79,
+      "raw_duration_text": "1 sa. 19 dk.",
+      "lines": [
+        "15F",
+        "34G",
+        "92"
+      ],
+      "raw_snippet": "15F ➔ 34G ➔ 92",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 31,
+    "corridor": "Eyüpsultan (Teleferik) ➔ Kadıköy (Söğütlüçeşme)",
+    "straight_km": 11.4,
+    "from_coords": [
+      41.046146,
+      28.929339
+    ],
+    "to_coords": [
+      40.990171,
+      29.042038
+    ],
+    "delta_vs_moovit_min": 3,
+    "delta_vs_gmaps_min": -5,
+    "our_engine": {
+      "success": true,
+      "elapsed": 5.668,
+      "duration_min": 66,
+      "walk_min": 21,
+      "transfers": 1,
+      "traffic_delay_min": 14,
+      "lines": [
+        "BUS 33ES",
+        "BUS 34G"
+      ],
+      "bundled_lines": null,
+      "total_options": 2
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.445,
+      "duration_min": 63,
+      "raw_duration_text": "1 sa 3 dk",
+      "lines": [
+        "Otobüs",
+        "55",
+        "34G"
+      ],
+      "raw_snippet": "Otobüs ➔ 55 ➔ 34G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 9
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.733,
+      "duration_min": 71,
+      "raw_duration_text": "1 sa. 11 dk.",
+      "lines": [
+        "55",
+        "34G"
+      ],
+      "raw_snippet": "55 ➔ 34G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 32,
+    "corridor": "Bakırköy (İskele / Meydan) ➔ Esenyurt (Meydan)",
+    "straight_km": 17.9,
+    "from_coords": [
+      40.967892,
+      28.875517
+    ],
+    "to_coords": [
+      41.045994,
+      28.690518
+    ],
+    "delta_vs_moovit_min": -18,
+    "delta_vs_gmaps_min": -9,
+    "our_engine": {
+      "success": true,
+      "elapsed": 14.255,
+      "duration_min": 80,
+      "walk_min": 22,
+      "transfers": 2,
+      "traffic_delay_min": 16,
+      "lines": [
+        "BUS MR20",
+        "BUS 76D",
+        "BUS 142F"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.581,
+      "duration_min": 98,
+      "raw_duration_text": "1 sa 38 dk",
+      "lines": [
+        "M3",
+        "Otobüs",
+        "76D",
+        "HS2"
+      ],
+      "raw_snippet": "M3 ➔ Otobüs ➔ 76D ➔ HS2",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.736,
+      "duration_min": 89,
+      "raw_duration_text": "1 sa. 29 dk.",
+      "lines": [
+        "HVL-4-A",
+        "76D",
+        "142F"
+      ],
+      "raw_snippet": "HVL-4-A ➔ 76D ➔ 142F",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 33,
+    "corridor": "Pendik (Sabiha Gökçen SAW) ➔ Tuzla (Şifa Mahallesi)",
+    "straight_km": 10.5,
+    "from_coords": [
+      40.908793,
+      29.30883
+    ],
+    "to_coords": [
+      40.815273,
+      29.328063
+    ],
+    "delta_vs_moovit_min": -78,
+    "delta_vs_gmaps_min": -82,
+    "our_engine": {
+      "success": true,
+      "elapsed": 3.874,
+      "duration_min": 23,
+      "walk_min": 0,
+      "transfers": 0,
+      "traffic_delay_min": 7,
+      "lines": [
+        "BUS KM27 / 132 +2"
+      ],
+      "bundled_lines": [
+        "KM27",
+        "132",
+        "132H",
+        "132P"
+      ],
+      "total_options": 2
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.209,
+      "duration_min": 101,
+      "raw_duration_text": "1 sa 41 dk",
+      "lines": [
+        "M4",
+        "Otobüs",
+        "KM12"
+      ],
+      "raw_snippet": "M4 ➔ Otobüs ➔ KM12",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.72,
+      "duration_min": 105,
+      "raw_duration_text": "1 sa. 45 dk.",
+      "lines": [
+        "133K",
+        "KM12"
+      ],
+      "raw_snippet": "133K ➔ KM12",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 34,
+    "corridor": "Bağcılar (Meydan) ➔ Üsküdar (Marmaray Meydan)",
+    "straight_km": 14.5,
+    "from_coords": [
+      41.026153,
+      28.849121
+    ],
+    "to_coords": [
+      41.027389,
+      29.020994
+    ],
+    "delta_vs_moovit_min": 48,
+    "delta_vs_gmaps_min": 10,
+    "our_engine": {
+      "success": true,
+      "elapsed": 13.644,
+      "duration_min": 105,
+      "walk_min": 14,
+      "transfers": 3,
+      "traffic_delay_min": 27,
+      "lines": [
+        "BUS HT11",
+        "BUS 97M",
+        "BUS 34G",
+        "BUS 11C"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.714,
+      "duration_min": 57,
+      "raw_duration_text": "57 dk",
+      "lines": [
+        "M3",
+        "B1",
+        "Otobüs",
+        "2\t/\t11L\t/\t11C\t/\t11Ü\t/\t12A\t/\t..."
+      ],
+      "raw_snippet": "M3 ➔ B1 ➔ Otobüs ➔ 2\t/\t11L\t/\t11C\t/\t11Ü\t/\t12A\t/\t...",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.722,
+      "duration_min": 95,
+      "raw_duration_text": "1 sa. 35 dk.",
+      "lines": [
+        "M3",
+        "82",
+        "97A",
+        "Üsküdar-Karaköy-Eminönü"
+      ],
+      "raw_snippet": "M3 ➔ 82 ➔ 97A ➔ Üsküdar-Karaköy-Eminönü",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 35,
+    "corridor": "Arnavutköy (İstanbul Havalimanı IST) ➔ Beykoz (Ortaçeşme)",
+    "straight_km": 33.6,
+    "from_coords": [
+      41.262143,
+      28.742054
+    ],
+    "to_coords": [
+      41.1219,
+      29.095207
+    ],
+    "delta_vs_moovit_min": 60,
+    "delta_vs_gmaps_min": 28,
+    "our_engine": {
+      "success": true,
+      "elapsed": 9.685,
+      "duration_min": 149,
+      "walk_min": 13,
+      "transfers": 4,
+      "traffic_delay_min": 36,
+      "lines": [
+        "BUS H-1",
+        "BUS 89C",
+        "BUS 97M",
+        "BUS 121A",
+        "BUS 136B"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.739,
+      "duration_min": 89,
+      "raw_duration_text": "1 sa 29 dk",
+      "lines": [
+        "Otobüs",
+        "HVL-9",
+        "500T\t/\tE-3",
+        "121BS"
+      ],
+      "raw_snippet": "Otobüs ➔ HVL-9 ➔ 500T\t/\tE-3 ➔ 121BS",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.714,
+      "duration_min": 121,
+      "raw_duration_text": "2 sa. 1 dk.",
+      "lines": [
+        "M11",
+        "121A"
+      ],
+      "raw_snippet": "M11 ➔ 121A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 36,
+    "corridor": "Bayrampaşa (Yıldırım) ➔ Bakırköy (İskele / Meydan)",
+    "straight_km": 8.5,
+    "from_coords": [
+      41.061562,
+      28.893212
+    ],
+    "to_coords": [
+      40.98734,
+      28.869687
+    ],
+    "delta_vs_moovit_min": -7,
+    "delta_vs_gmaps_min": -13,
+    "our_engine": {
+      "success": true,
+      "elapsed": 10.71,
+      "duration_min": 55,
+      "walk_min": 8,
+      "transfers": 1,
+      "traffic_delay_min": 14,
+      "lines": [
+        "BUS 36CY",
+        "BUS 98G"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.204,
+      "duration_min": 62,
+      "raw_duration_text": "1 sa 2 dk",
+      "lines": [
+        "Otobüs",
+        "HT5",
+        "M1A",
+        "76V\t/\t146\t/\t98T\t/\t98\t/\t98H\t/\t..."
+      ],
+      "raw_snippet": "Otobüs ➔ HT5 ➔ M1A ➔ 76V\t/\t146\t/\t98T\t/\t98\t/\t98H\t/\t...",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.717,
+      "duration_min": 68,
+      "raw_duration_text": "1 sa. 8 dk.",
+      "lines": [
+        "A11-Cevatpaşa-Edirnekapı",
+        "32T",
+        "D11"
+      ],
+      "raw_snippet": "A11-Cevatpaşa-Edirnekapı ➔ 32T ➔ D11",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 37,
+    "corridor": "Ataşehir (Batı) ➔ Bağcılar (Meydan)",
+    "straight_km": 21.3,
+    "from_coords": [
+      40.992379,
+      29.103674
+    ],
+    "to_coords": [
+      41.041083,
+      28.858949
+    ],
+    "delta_vs_moovit_min": -9,
+    "delta_vs_gmaps_min": 0,
+    "our_engine": {
+      "success": true,
+      "elapsed": 22.363,
+      "duration_min": 101,
+      "walk_min": 9,
+      "transfers": 2,
+      "traffic_delay_min": 26,
+      "lines": [
+        "BUS 16M",
+        "BUS 251",
+        "BUS 92Ş"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.837,
+      "duration_min": 110,
+      "raw_duration_text": "1 sa 50 dk",
+      "lines": [
+        "Otobüs",
+        "16M",
+        "34G",
+        "92Ş"
+      ],
+      "raw_snippet": "Otobüs ➔ 16M ➔ 34G ➔ 92Ş",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.722,
+      "duration_min": 101,
+      "raw_duration_text": "1 sa. 41 dk.",
+      "lines": [
+        "16M",
+        "34AS",
+        "92Ş"
+      ],
+      "raw_snippet": "16M ➔ 34AS ➔ 92Ş",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 38,
+    "corridor": "Beşiktaş (Meydan / İskele) ➔ Ataşehir (Batı)",
+    "straight_km": 13.4,
+    "from_coords": [
+      41.049224,
+      28.999534
+    ],
+    "to_coords": [
+      40.97312,
+      29.123195
+    ],
+    "delta_vs_moovit_min": 9,
+    "delta_vs_gmaps_min": 1,
+    "our_engine": {
+      "success": true,
+      "elapsed": 17.288,
+      "duration_min": 73,
+      "walk_min": 13,
+      "transfers": 2,
+      "traffic_delay_min": 17,
+      "lines": [
+        "BUS 30M",
+        "BUS 251",
+        "BUS 19"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.42,
+      "duration_min": 64,
+      "raw_duration_text": "1 sa 4 dk",
+      "lines": [
+        "Beşiktaş - Kadıköy",
+        "M4",
+        "M8"
+      ],
+      "raw_snippet": "Beşiktaş - Kadıköy ➔ M4 ➔ M8",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.72,
+      "duration_min": 72,
+      "raw_duration_text": "1 sa. 12 dk.",
+      "lines": [
+        "30M",
+        "251",
+        "19"
+      ],
+      "raw_snippet": "30M ➔ 251 ➔ 19",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 39,
+    "corridor": "Eyüpsultan (Teleferik) ➔ Beylikdüzü (TÜYAP Sondurak)",
+    "straight_km": 26.3,
+    "from_coords": [
+      41.052408,
+      28.944057
+    ],
+    "to_coords": [
+      41.029226,
+      28.633615
+    ],
+    "delta_vs_moovit_min": -42,
+    "delta_vs_gmaps_min": -65,
+    "our_engine": {
+      "success": true,
+      "elapsed": 8.6,
+      "duration_min": 46,
+      "walk_min": 8,
+      "transfers": 1,
+      "traffic_delay_min": 13,
+      "lines": [
+        "BUS 93M",
+        "BUS 145T"
+      ],
+      "bundled_lines": null,
+      "total_options": 3
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.157,
+      "duration_min": 88,
+      "raw_duration_text": "1 sa 28 dk",
+      "lines": [
+        "34BZ",
+        "Otobüs",
+        "144H\t/\t429A\t/\t418\t/\t144\t/\tES3"
+      ],
+      "raw_snippet": "34BZ ➔ Otobüs ➔ 144H\t/\t429A\t/\t418\t/\t144\t/\tES3",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.724,
+      "duration_min": 111,
+      "raw_duration_text": "1 sa. 51 dk.",
+      "lines": [
+        "34G",
+        "34BZ",
+        "418",
+        "429A"
+      ],
+      "raw_snippet": "34G ➔ 34BZ ➔ 418 ➔ 429A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 40,
+    "corridor": "Esenyurt (Meydan) ➔ Sarıyer (Hacıosman)",
+    "straight_km": 31.7,
+    "from_coords": [
+      41.033188,
+      28.679315
+    ],
+    "to_coords": [
+      41.147112,
+      29.024407
+    ],
+    "delta_vs_moovit_min": 10,
+    "delta_vs_gmaps_min": 2,
+    "our_engine": {
+      "success": true,
+      "elapsed": 15.51,
+      "duration_min": 146,
+      "walk_min": 18,
+      "transfers": 3,
+      "traffic_delay_min": 42,
+      "lines": [
+        "BUS 146F",
+        "BUS E-58",
+        "BUS 500L",
+        "BUS 29D"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.592,
+      "duration_min": 136,
+      "raw_duration_text": "2 sa 16 dk",
+      "lines": [
+        "Otobüs",
+        "76D",
+        "M1A",
+        "M2"
+      ],
+      "raw_snippet": "Otobüs ➔ 76D ➔ M1A ➔ M2",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.73,
+      "duration_min": 144,
+      "raw_duration_text": "2 sa. 24 dk.",
+      "lines": [
+        "76D",
+        "500L",
+        "59RS",
+        "SRY-8/Sarıyer-HaciOsman-Beşiktaş"
+      ],
+      "raw_snippet": "76D ➔ 500L ➔ 59RS ➔ SRY-8/Sarıyer-HaciOsman-Beşiktaş",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 41,
+    "corridor": "Arnavutköy (Merkez) ➔ Sarıyer (Maslak İTÜ)",
+    "straight_km": 26.2,
+    "from_coords": [
+      41.178552,
+      28.732477
+    ],
+    "to_coords": [
+      41.117169,
+      29.032469
+    ],
+    "delta_vs_moovit_min": null,
+    "delta_vs_gmaps_min": null,
+    "our_engine": {
+      "success": false,
+      "elapsed": 0.066,
+      "error": "No route found"
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.221,
+      "duration_min": 122,
+      "raw_duration_text": "2 sa 2 dk",
+      "lines": [
+        "Otobüs",
+        "M11",
+        "29"
+      ],
+      "raw_snippet": "Otobüs ➔ M11 ➔ 29",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.734,
+      "duration_min": 125,
+      "raw_duration_text": "2 sa. 5 dk.",
+      "lines": [
+        "ARN6",
+        "M11",
+        "SRY-4/Pinar-Zincirlikuyu"
+      ],
+      "raw_snippet": "ARN6 ➔ M11 ➔ SRY-4/Pinar-Zincirlikuyu",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 42,
+    "corridor": "Maltepe (Merkez) ➔ Arnavutköy (Merkez)",
+    "straight_km": 45.7,
+    "from_coords": [
+      40.932342,
+      29.152457
+    ],
+    "to_coords": [
+      41.194331,
+      28.7352
+    ],
+    "delta_vs_moovit_min": 29,
+    "delta_vs_gmaps_min": 15,
+    "our_engine": {
+      "success": true,
+      "elapsed": 21.836,
+      "duration_min": 157,
+      "walk_min": 16,
+      "transfers": 3,
+      "traffic_delay_min": 41,
+      "lines": [
+        "BUS 500T",
+        "BUS 500L",
+        "BUS 336M",
+        "BUS 336K"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.111,
+      "duration_min": 128,
+      "raw_duration_text": "2 sa 8 dk",
+      "lines": [
+        "M4",
+        "34Z",
+        "M11",
+        "0",
+        "ARN5\t/\tARN9\t/\tARN7"
+      ],
+      "raw_snippet": "M4 ➔ 34Z ➔ M11 ➔ 0 ➔ ARN5\t/\tARN9\t/\tARN7",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.725,
+      "duration_min": 142,
+      "raw_duration_text": "2 sa. 22 dk.",
+      "lines": [
+        "130Ş",
+        "34AS",
+        "M11",
+        "ARN9"
+      ],
+      "raw_snippet": "130Ş ➔ 34AS ➔ M11 ➔ ARN9",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 43,
+    "corridor": "Sultanbeyli (Merkez) ➔ Üsküdar (Marmaray Meydan)",
+    "straight_km": 20.4,
+    "from_coords": [
+      40.969468,
+      29.259846
+    ],
+    "to_coords": [
+      41.014803,
+      29.025237
+    ],
+    "delta_vs_moovit_min": -8,
+    "delta_vs_gmaps_min": -10,
+    "our_engine": {
+      "success": true,
+      "elapsed": 10.062,
+      "duration_min": 58,
+      "walk_min": 10,
+      "transfers": 1,
+      "traffic_delay_min": 19,
+      "lines": [
+        "BUS 18M",
+        "BUS 15F"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.049,
+      "duration_min": 66,
+      "raw_duration_text": "1 sa 6 dk",
+      "lines": [
+        "M5",
+        "Otobüs",
+        "14R\t/\tMR9\t/\t13\t/\t12A\t/\t13B\t/\t..."
+      ],
+      "raw_snippet": "M5 ➔ Otobüs ➔ 14R\t/\tMR9\t/\t13\t/\t12A\t/\t13B\t/\t...",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 9
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.814,
+      "duration_min": 68,
+      "raw_duration_text": "1 sa. 8 dk.",
+      "lines": [
+        "M5",
+        "13",
+        "14R",
+        "14Y"
+      ],
+      "raw_snippet": "M5 ➔ 13 ➔ 14R ➔ 14Y",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 44,
+    "corridor": "Silivri (Otogar) ➔ Pendik (Sabiha Gökçen SAW)",
+    "straight_km": 91.9,
+    "from_coords": [
+      41.067622,
+      28.256048
+    ],
+    "to_coords": [
+      40.903463,
+      29.323641
+    ],
+    "delta_vs_moovit_min": -134,
+    "delta_vs_gmaps_min": -174,
+    "our_engine": {
+      "success": true,
+      "elapsed": 16.811,
+      "duration_min": 145,
+      "walk_min": 13,
+      "transfers": 3,
+      "traffic_delay_min": 25,
+      "lines": [
+        "BUS 429A",
+        "BUS 145T",
+        "BUS 34G",
+        "SUBWAY M4"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.613,
+      "duration_min": 279,
+      "raw_duration_text": "4 sa 39 dk",
+      "lines": [
+        "Otobüs",
+        "303A",
+        "34G",
+        "M4"
+      ],
+      "raw_snippet": "Otobüs ➔ 303A ➔ 34G ➔ M4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.719,
+      "duration_min": 319,
+      "raw_duration_text": "5 sa. 19 dk.",
+      "lines": [
+        "303A",
+        "A43-Avcılar-Haramidere",
+        "B1 (Marmaray)",
+        "C84-Pendik-Kimya"
+      ],
+      "raw_snippet": "303A ➔ A43-Avcılar-Haramidere ➔ B1 (Marmaray) ➔ C84-Pendik-Kimya",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 45,
+    "corridor": "Beylikdüzü (TÜYAP Sondurak) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 31.4,
+    "from_coords": [
+      41.017608,
+      28.637584
+    ],
+    "to_coords": [
+      41.072424,
+      29.00287
+    ],
+    "delta_vs_moovit_min": 8,
+    "delta_vs_gmaps_min": -16,
+    "our_engine": {
+      "success": true,
+      "elapsed": 7.486,
+      "duration_min": 107,
+      "walk_min": 14,
+      "transfers": 0,
+      "traffic_delay_min": 31,
+      "lines": [
+        "BUS 34G"
+      ],
+      "bundled_lines": null,
+      "total_options": 1
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.152,
+      "duration_min": 99,
+      "raw_duration_text": "1 sa 39 dk",
+      "lines": [
+        "34BZ"
+      ],
+      "raw_snippet": "34BZ",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.735,
+      "duration_min": 123,
+      "raw_duration_text": "2 sa. 3 dk.",
+      "lines": [
+        "76G",
+        "448",
+        "BL100-Büyükçekmece-Beykent",
+        "BL101-Büyükçekmece-Zafer",
+        "BL109/3-Büyükçekmece-Kavaklı",
+        "34G",
+        "34BZ",
+        "B33-Şişli-YahyaKemal"
+      ],
+      "raw_snippet": "76G ➔ 448 ➔ BL100-Büyükçekmece-Beykent ➔ BL101-Büyükçekmece-Zafer ➔ BL109/3-Büyükçekmece-Kavaklı ➔ 34G ➔ 34BZ ➔ B33-Şişli-YahyaKemal",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 46,
+    "corridor": "Beyoğlu (Taksim) ➔ Bakırköy (İskele / Meydan)",
+    "straight_km": 11.8,
+    "from_coords": [
+      41.047514,
+      28.985674
+    ],
+    "to_coords": [
+      40.978566,
+      28.879817
+    ],
+    "delta_vs_moovit_min": 9,
+    "delta_vs_gmaps_min": 1,
+    "our_engine": {
+      "success": true,
+      "elapsed": 13.182,
+      "duration_min": 59,
+      "walk_min": 6,
+      "transfers": 1,
+      "traffic_delay_min": 15,
+      "lines": [
+        "BUS 70KY",
+        "BUS BN1"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.414,
+      "duration_min": 50,
+      "raw_duration_text": "50 dk",
+      "lines": [
+        "M2",
+        "B1"
+      ],
+      "raw_snippet": "M2 ➔ B1",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.781,
+      "duration_min": 58,
+      "raw_duration_text": "58 dk.",
+      "lines": [
+        "72T"
+      ],
+      "raw_snippet": "72T",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 47,
+    "corridor": "Beykoz (Ortaçeşme) ➔ Gaziosmanpaşa (Meydan)",
+    "straight_km": 17.1,
+    "from_coords": [
+      41.138288,
+      29.097445
+    ],
+    "to_coords": [
+      41.058676,
+      28.923221
+    ],
+    "delta_vs_moovit_min": -14,
+    "delta_vs_gmaps_min": 5,
+    "our_engine": {
+      "success": true,
+      "elapsed": 24.377,
+      "duration_min": 122,
+      "walk_min": 15,
+      "transfers": 4,
+      "traffic_delay_min": 37,
+      "lines": [
+        "BUS 15TY",
+        "BUS 121A",
+        "BUS 29B",
+        "BUS 50Z",
+        "BUS 50A"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.474,
+      "duration_min": 136,
+      "raw_duration_text": "2 sa 16 dk",
+      "lines": [
+        "Otobüs",
+        "121A",
+        "50Z",
+        "50A\t/\tTM16\t/\tTM13"
+      ],
+      "raw_snippet": "Otobüs ➔ 121A ➔ 50Z ➔ 50A\t/\tTM16\t/\tTM13",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.737,
+      "duration_min": 117,
+      "raw_duration_text": "1 sa. 57 dk.",
+      "lines": [
+        "121A",
+        "41AT",
+        "50P"
+      ],
+      "raw_snippet": "121A ➔ 41AT ➔ 50P",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 48,
+    "corridor": "Fatih (Eminönü) ➔ Büyükçekmece (Sahil)",
+    "straight_km": 32.1,
+    "from_coords": [
+      41.019803,
+      28.96679
+    ],
+    "to_coords": [
+      41.012128,
+      28.586454
+    ],
+    "delta_vs_moovit_min": -56,
+    "delta_vs_gmaps_min": -78,
+    "our_engine": {
+      "success": true,
+      "elapsed": 15.466,
+      "duration_min": 58,
+      "walk_min": 1,
+      "transfers": 1,
+      "traffic_delay_min": 15,
+      "lines": [
+        "BUS 93",
+        "BUS 145T"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.354,
+      "duration_min": 114,
+      "raw_duration_text": "1 sa 54 dk",
+      "lines": [
+        "Otobüs",
+        "50P\t/\t336E\t/\t36KE\t/\t32\t/\t90\t/\t...",
+        "145T",
+        "303A\t/\tHT48"
+      ],
+      "raw_snippet": "Otobüs ➔ 50P\t/\t336E\t/\t36KE\t/\t32\t/\t90\t/\t... ➔ 145T ➔ 303A\t/\tHT48",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.711,
+      "duration_min": 136,
+      "raw_duration_text": "2 sa. 16 dk.",
+      "lines": [
+        "31E",
+        "76D",
+        "HT29",
+        "303A"
+      ],
+      "raw_snippet": "31E ➔ 76D ➔ HT29 ➔ 303A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 49,
+    "corridor": "Beşiktaş (Meydan / İskele) ➔ Pendik (Sabiha Gökçen SAW)",
+    "straight_km": 30.6,
+    "from_coords": [
+      41.040268,
+      28.996477
+    ],
+    "to_coords": [
+      40.899376,
+      29.308452
+    ],
+    "delta_vs_moovit_min": 8,
+    "delta_vs_gmaps_min": -83,
+    "our_engine": {
+      "success": true,
+      "elapsed": 16.003,
+      "duration_min": 96,
+      "walk_min": 11,
+      "transfers": 2,
+      "traffic_delay_min": 10,
+      "lines": [
+        "BUS DT2",
+        "BUS 251",
+        "SUBWAY M4"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.346,
+      "duration_min": 88,
+      "raw_duration_text": "1 sa 28 dk",
+      "lines": [
+        "Otobüs",
+        "30A",
+        "Beşiktaş - Kadıköy",
+        "M4"
+      ],
+      "raw_snippet": "Otobüs ➔ 30A ➔ Beşiktaş - Kadıköy ➔ M4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.727,
+      "duration_min": 179,
+      "raw_duration_text": "2 sa. 59 dk.",
+      "lines": [
+        "Üsküdar-Kabataş",
+        "B1 (Marmaray)",
+        "KM27",
+        "C89-Pendik-Ramazanoğlu"
+      ],
+      "raw_snippet": "Üsküdar-Kabataş ➔ B1 (Marmaray) ➔ KM27 ➔ C89-Pendik-Ramazanoğlu",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 50,
+    "corridor": "Silivri (Otogar) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 62.1,
+    "from_coords": [
+      41.08233,
+      28.258685
+    ],
+    "to_coords": [
+      41.077691,
+      28.994918
+    ],
+    "delta_vs_moovit_min": -143,
+    "delta_vs_gmaps_min": -142,
+    "our_engine": {
+      "success": true,
+      "elapsed": 9.414,
+      "duration_min": 82,
+      "walk_min": 8,
+      "transfers": 2,
+      "traffic_delay_min": 29,
+      "lines": [
+        "BUS 429A",
+        "BUS 145T",
+        "BUS 41ST"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.595,
+      "duration_min": 225,
+      "raw_duration_text": "3 sa 45 dk",
+      "lines": [
+        "Otobüs",
+        "303A",
+        "34BZ",
+        "62G\t/\t62"
+      ],
+      "raw_snippet": "Otobüs ➔ 303A ➔ 34BZ ➔ 62G\t/\t62",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.754,
+      "duration_min": 224,
+      "raw_duration_text": "3 sa. 44 dk.",
+      "lines": [
+        "303A",
+        "34G",
+        "34BZ",
+        "B33-Şişli-YahyaKemal"
+      ],
+      "raw_snippet": "303A ➔ 34G ➔ 34BZ ➔ B33-Şişli-YahyaKemal",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 51,
+    "corridor": "Maltepe (Merkez) ➔ Arnavutköy (Merkez)",
+    "straight_km": 44.9,
+    "from_coords": [
+      40.917129,
+      29.135721
+    ],
+    "to_coords": [
+      41.191083,
+      28.743742
+    ],
+    "delta_vs_moovit_min": 37,
+    "delta_vs_gmaps_min": 19,
+    "our_engine": {
+      "success": true,
+      "elapsed": 27.695,
+      "duration_min": 166,
+      "walk_min": 15,
+      "transfers": 5,
+      "traffic_delay_min": 43,
+      "lines": [
+        "BUS 4",
+        "BUS 129T",
+        "BUS 500T",
+        "BUS 36Z",
+        "BUS TM18",
+        "BUS 36TC"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.478,
+      "duration_min": 129,
+      "raw_duration_text": "2 sa 9 dk",
+      "lines": [
+        "B1",
+        "34G",
+        "M11",
+        "0",
+        "ARN4"
+      ],
+      "raw_snippet": "B1 ➔ 34G ➔ M11 ➔ 0 ➔ ARN4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.919,
+      "duration_min": 147,
+      "raw_duration_text": "2 sa. 27 dk.",
+      "lines": [
+        "16D",
+        "34AS",
+        "M11",
+        "ARN4"
+      ],
+      "raw_snippet": "16D ➔ 34AS ➔ M11 ➔ ARN4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 52,
+    "corridor": "Fatih (Yenikapı Marmaray) ➔ Arnavutköy (İstanbul Havalimanı IST)",
+    "straight_km": 33.6,
+    "from_coords": [
+      41.003552,
+      28.939212
+    ],
+    "to_coords": [
+      41.261643,
+      28.731099
+    ],
+    "delta_vs_moovit_min": 20,
+    "delta_vs_gmaps_min": -25,
+    "our_engine": {
+      "success": true,
+      "elapsed": 4.742,
+      "duration_min": 100,
+      "walk_min": 24,
+      "transfers": 2,
+      "traffic_delay_min": 13,
+      "lines": [
+        "BUS 35C",
+        "BUS DT2",
+        "SUBWAY M11"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.989,
+      "duration_min": 80,
+      "raw_duration_text": "1 sa 20 dk",
+      "lines": [
+        "Otobüs",
+        "80T",
+        "HVL1"
+      ],
+      "raw_snippet": "Otobüs ➔ 80T ➔ HVL1",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.741,
+      "duration_min": 125,
+      "raw_duration_text": "2 sa. 5 dk.",
+      "lines": [
+        "BN1",
+        "M11"
+      ],
+      "raw_snippet": "BN1 ➔ M11",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 53,
+    "corridor": "Avcılar (Merkez Metrobüs) ➔ Başakşehir (Metrokent)",
+    "straight_km": 11.9,
+    "from_coords": [
+      40.995193,
+      28.740203
+    ],
+    "to_coords": [
+      41.088836,
+      28.809266
+    ],
+    "delta_vs_moovit_min": -8,
+    "delta_vs_gmaps_min": -24,
+    "our_engine": {
+      "success": true,
+      "elapsed": 4.039,
+      "duration_min": 77,
+      "walk_min": 37,
+      "transfers": 1,
+      "traffic_delay_min": 12,
+      "lines": [
+        "BUS 34G",
+        "BUS 79B"
+      ],
+      "bundled_lines": null,
+      "total_options": 3
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.159,
+      "duration_min": 85,
+      "raw_duration_text": "1 sa 25 dk",
+      "lines": [
+        "34BZ",
+        "Otobüs",
+        "79B\t/\t79F",
+        "98H\t/\t78H"
+      ],
+      "raw_snippet": "34BZ ➔ Otobüs ➔ 79B\t/\t79F ➔ 98H\t/\t78H",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 4
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.712,
+      "duration_min": 101,
+      "raw_duration_text": "1 sa. 41 dk.",
+      "lines": [
+        "34AS",
+        "98H"
+      ],
+      "raw_snippet": "34AS ➔ 98H",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 54,
+    "corridor": "Bakırköy (İskele / Meydan) ➔ Ümraniye (Santral)",
+    "straight_km": 20.4,
+    "from_coords": [
+      40.9887,
+      28.86348
+    ],
+    "to_coords": [
+      41.023457,
+      29.100994
+    ],
+    "delta_vs_moovit_min": 45,
+    "delta_vs_gmaps_min": 46,
+    "our_engine": {
+      "success": true,
+      "elapsed": 20.654,
+      "duration_min": 115,
+      "walk_min": 15,
+      "transfers": 2,
+      "traffic_delay_min": 47,
+      "lines": [
+        "BUS 50B",
+        "BUS 93M",
+        "BUS 522"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.601,
+      "duration_min": 70,
+      "raw_duration_text": "1 sa 10 dk",
+      "lines": [
+        "Otobüs",
+        "98B\t/\t98AB\t/\t76V\t/\t98H\t/\t98A\t/\t...",
+        "B1",
+        "M5"
+      ],
+      "raw_snippet": "Otobüs ➔ 98B\t/\t98AB\t/\t76V\t/\t98H\t/\t98A\t/\t... ➔ B1 ➔ M5",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.738,
+      "duration_min": 69,
+      "raw_duration_text": "1 sa. 9 dk.",
+      "lines": [
+        "98T",
+        "98B",
+        "98H",
+        "98Y",
+        "146",
+        "B1 (Marmaray)",
+        "M5"
+      ],
+      "raw_snippet": "98T ➔ 98B ➔ 98H ➔ 98Y ➔ 146 ➔ B1 (Marmaray) ➔ M5",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 55,
+    "corridor": "Beşiktaş (Meydan / İskele) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 3.3,
+    "from_coords": [
+      41.039705,
+      28.995025
+    ],
+    "to_coords": [
+      41.067626,
+      28.982038
+    ],
+    "delta_vs_moovit_min": 0,
+    "delta_vs_gmaps_min": 8,
+    "our_engine": {
+      "success": true,
+      "elapsed": 6.47,
+      "duration_min": 32,
+      "walk_min": 5,
+      "transfers": 1,
+      "traffic_delay_min": 11,
+      "lines": [
+        "BUS DT2",
+        "BUS 77A"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.198,
+      "duration_min": 32,
+      "raw_duration_text": "32 dk",
+      "lines": [
+        "Otobüs",
+        "50T\t/\t50L\t/\t48T",
+        "77A"
+      ],
+      "raw_snippet": "Otobüs ➔ 50T\t/\t50L\t/\t48T ➔ 77A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.757,
+      "duration_min": 24,
+      "raw_duration_text": "24 dk.",
+      "lines": [
+        "DT2",
+        "77A"
+      ],
+      "raw_snippet": "DT2 ➔ 77A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    }
+  },
+  {
+    "index": 56,
+    "corridor": "Beyoğlu (Taksim) ➔ Bağcılar (Meydan)",
+    "straight_km": 11.5,
+    "from_coords": [
+      41.025548,
+      28.990256
+    ],
+    "to_coords": [
+      41.04319,
+      28.855814
+    ],
+    "delta_vs_moovit_min": -12,
+    "delta_vs_gmaps_min": -92,
+    "our_engine": {
+      "success": true,
+      "elapsed": 15.699,
+      "duration_min": 77,
+      "walk_min": 20,
+      "transfers": 1,
+      "traffic_delay_min": 10,
+      "lines": [
+        "TRAM T1",
+        "BUS 97G"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.549,
+      "duration_min": 89,
+      "raw_duration_text": "1 sa 29 dk",
+      "lines": [
+        "T1",
+        "Otobüs",
+        "HT1\t/\t92B"
+      ],
+      "raw_snippet": "T1 ➔ Otobüs ➔ HT1\t/\t92B",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.908,
+      "duration_min": 169,
+      "raw_duration_text": "2 sa. 49 dk.",
+      "lines": [
+        "92"
+      ],
+      "raw_snippet": "92",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 57,
+    "corridor": "Çekmeköy (Madenler) ➔ Esenler (Otogar)",
+    "straight_km": 22.6,
+    "from_coords": [
+      41.023013,
+      29.166778
+    ],
+    "to_coords": [
+      41.030858,
+      28.898885
+    ],
+    "delta_vs_moovit_min": 11,
+    "delta_vs_gmaps_min": -4,
+    "our_engine": {
+      "success": true,
+      "elapsed": 18.837,
+      "duration_min": 96,
+      "walk_min": 21,
+      "transfers": 1,
+      "traffic_delay_min": 23,
+      "lines": [
+        "BUS 522ST",
+        "BUS 33M"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.385,
+      "duration_min": 85,
+      "raw_duration_text": "1 sa 25 dk",
+      "lines": [
+        "M5",
+        "B1",
+        "M1A"
+      ],
+      "raw_snippet": "M5 ➔ B1 ➔ M1A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.77,
+      "duration_min": 100,
+      "raw_duration_text": "1 sa. 40 dk.",
+      "lines": [
+        "522",
+        "33M"
+      ],
+      "raw_snippet": "522 ➔ 33M",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 58,
+    "corridor": "Ataşehir (Batı) ➔ Kadıköy (Bostancı İskele)",
+    "straight_km": 5.4,
+    "from_coords": [
+      40.99581,
+      29.114734
+    ],
+    "to_coords": [
+      40.948842,
+      29.10043
+    ],
+    "delta_vs_moovit_min": -5,
+    "delta_vs_gmaps_min": 21,
+    "our_engine": {
+      "success": true,
+      "elapsed": 5.232,
+      "duration_min": 59,
+      "walk_min": 21,
+      "transfers": 0,
+      "traffic_delay_min": 16,
+      "lines": [
+        "BUS KM46 / 10"
+      ],
+      "bundled_lines": [
+        "KM46",
+        "10"
+      ],
+      "total_options": 3
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.253,
+      "duration_min": 64,
+      "raw_duration_text": "1 sa 4 dk",
+      "lines": [
+        "Otobüs",
+        "10"
+      ],
+      "raw_snippet": "Otobüs ➔ 10",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.782,
+      "duration_min": 38,
+      "raw_duration_text": "38 dk.",
+      "lines": [
+        "10A",
+        "KM46",
+        "10"
+      ],
+      "raw_snippet": "10A ➔ KM46 ➔ 10",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 59,
+    "corridor": "Sultanbeyli (Merkez) ➔ Kadıköy (Söğütlüçeşme)",
+    "straight_km": 18.8,
+    "from_coords": [
+      40.974998,
+      29.264378
+    ],
+    "to_coords": [
+      40.980342,
+      29.04169
+    ],
+    "delta_vs_moovit_min": -27,
+    "delta_vs_gmaps_min": -25,
+    "our_engine": {
+      "success": true,
+      "elapsed": 11.093,
+      "duration_min": 58,
+      "walk_min": 5,
+      "transfers": 2,
+      "traffic_delay_min": 18,
+      "lines": [
+        "BUS 18M",
+        "BUS 19T",
+        "BUS ER1"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.183,
+      "duration_min": 85,
+      "raw_duration_text": "1 sa 25 dk",
+      "lines": [
+        "Otobüs",
+        "18D",
+        "15BK",
+        "16D"
+      ],
+      "raw_snippet": "Otobüs ➔ 18D ➔ 15BK ➔ 16D",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.727,
+      "duration_min": 83,
+      "raw_duration_text": "1 sa. 23 dk.",
+      "lines": [
+        "132M",
+        "320A",
+        "19F"
+      ],
+      "raw_snippet": "132M ➔ 320A ➔ 19F",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 60,
+    "corridor": "Ataşehir (Batı) ➔ Zeytinburnu (Cevizlibağ)",
+    "straight_km": 18.3,
+    "from_coords": [
+      40.986723,
+      29.124035
+    ],
+    "to_coords": [
+      41.019625,
+      28.910938
+    ],
+    "delta_vs_moovit_min": 9,
+    "delta_vs_gmaps_min": 24,
+    "our_engine": {
+      "success": true,
+      "elapsed": 16.89,
+      "duration_min": 108,
+      "walk_min": 15,
+      "transfers": 2,
+      "traffic_delay_min": 34,
+      "lines": [
+        "BUS 19T",
+        "BUS 500T",
+        "BUS 41AT"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.261,
+      "duration_min": 99,
+      "raw_duration_text": "1 sa 39 dk",
+      "lines": [
+        "Otobüs",
+        "KM46\t/\t10",
+        "M4",
+        "34G"
+      ],
+      "raw_snippet": "Otobüs ➔ KM46\t/\t10 ➔ M4 ➔ 34G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.729,
+      "duration_min": 84,
+      "raw_duration_text": "1 sa. 24 dk.",
+      "lines": [
+        "19T",
+        "34AS",
+        "34G"
+      ],
+      "raw_snippet": "19T ➔ 34AS ➔ 34G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 61,
+    "corridor": "Küçükçekmece (Halkalı Marmaray) ➔ Tuzla (Şifa Mahallesi)",
+    "straight_km": 50.9,
+    "from_coords": [
+      41.014385,
+      28.776961
+    ],
+    "to_coords": [
+      40.829805,
+      29.329674
+    ],
+    "delta_vs_moovit_min": -10,
+    "delta_vs_gmaps_min": -14,
+    "our_engine": {
+      "success": true,
+      "elapsed": 2.63,
+      "duration_min": 116,
+      "walk_min": 21,
+      "transfers": 0,
+      "traffic_delay_min": 0,
+      "lines": [
+        "SUBWAY Marmaray"
+      ],
+      "bundled_lines": null,
+      "total_options": 2
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.906,
+      "duration_min": 126,
+      "raw_duration_text": "2 sa 6 dk",
+      "lines": [
+        "B1"
+      ],
+      "raw_snippet": "B1",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.744,
+      "duration_min": 130,
+      "raw_duration_text": "2 sa. 10 dk.",
+      "lines": [
+        "B1 (Marmaray)"
+      ],
+      "raw_snippet": "B1 (Marmaray)",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 62,
+    "corridor": "Şişli (Mecidiyeköy) ➔ Üsküdar (Altunizade Metrobüs)",
+    "straight_km": 4.6,
+    "from_coords": [
+      41.064266,
+      29.004258
+    ],
+    "to_coords": [
+      41.031863,
+      29.038491
+    ],
+    "delta_vs_moovit_min": -10,
+    "delta_vs_gmaps_min": -9,
+    "our_engine": {
+      "success": true,
+      "elapsed": 4.86,
+      "duration_min": 27,
+      "walk_min": 22,
+      "transfers": 0,
+      "traffic_delay_min": 3,
+      "lines": [
+        "BUS 522 / 256 / 251"
+      ],
+      "bundled_lines": [
+        "522",
+        "256",
+        "251"
+      ],
+      "total_options": 2
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.129,
+      "duration_min": 37,
+      "raw_duration_text": "37 dk",
+      "lines": [
+        "Otobüs",
+        "251\t/\t522\t/\t256",
+        "14M\t/\t15F"
+      ],
+      "raw_snippet": "Otobüs ➔ 251\t/\t522\t/\t256 ➔ 14M\t/\t15F",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.727,
+      "duration_min": 36,
+      "raw_duration_text": "36 dk.",
+      "lines": [
+        "251",
+        "15F"
+      ],
+      "raw_snippet": "251 ➔ 15F",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 63,
+    "corridor": "Pendik (YHT Garı) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 29.6,
+    "from_coords": [
+      40.871716,
+      29.225078
+    ],
+    "to_coords": [
+      41.078361,
+      29.002518
+    ],
+    "delta_vs_moovit_min": -30,
+    "delta_vs_gmaps_min": -32,
+    "our_engine": {
+      "success": true,
+      "elapsed": 5.615,
+      "duration_min": 76,
+      "walk_min": 23,
+      "transfers": 2,
+      "traffic_delay_min": 6,
+      "lines": [
+        "BUS 132SP",
+        "SUBWAY M4",
+        "BUS 500T"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.784,
+      "duration_min": 106,
+      "raw_duration_text": "1 sa 46 dk",
+      "lines": [
+        "Otobüs",
+        "16D\t/\tKM33\t/\t132H\t/\t251",
+        "B1",
+        "M2",
+        "65G"
+      ],
+      "raw_snippet": "Otobüs ➔ 16D\t/\tKM33\t/\t132H\t/\t251 ➔ B1 ➔ M2 ➔ 65G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.727,
+      "duration_min": 108,
+      "raw_duration_text": "1 sa. 48 dk.",
+      "lines": [
+        "132SP",
+        "132H",
+        "KM24",
+        "KM26",
+        "KM27",
+        "81459",
+        "B1 (Marmaray)",
+        "34G",
+        "34AS",
+        "34Z",
+        "B33-Vadi-Nobel"
+      ],
+      "raw_snippet": "132SP ➔ 132H ➔ KM24 ➔ KM26 ➔ KM27 ➔ 81459 ➔ B1 (Marmaray) ➔ 34G ➔ 34AS ➔ 34Z ➔ B33-Vadi-Nobel",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 64,
+    "corridor": "Sarıyer (Maslak İTÜ) ➔ Tuzla (Şifa Mahallesi)",
+    "straight_km": 42.2,
+    "from_coords": [
+      41.11734,
+      29.013342
+    ],
+    "to_coords": [
+      40.819413,
+      29.323903
+    ],
+    "delta_vs_moovit_min": -15,
+    "delta_vs_gmaps_min": -49,
+    "our_engine": {
+      "success": true,
+      "elapsed": 18.687,
+      "duration_min": 114,
+      "walk_min": 17,
+      "transfers": 4,
+      "traffic_delay_min": 33,
+      "lines": [
+        "BUS 29D",
+        "BUS 500T",
+        "BUS 16S",
+        "BUS KM25",
+        "BUS 133KT"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.114,
+      "duration_min": 129,
+      "raw_duration_text": "2 sa 9 dk",
+      "lines": [
+        "Otobüs",
+        "41N",
+        "M2",
+        "B1",
+        "KM12"
+      ],
+      "raw_snippet": "Otobüs ➔ 41N ➔ M2 ➔ B1 ➔ KM12",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.72,
+      "duration_min": 163,
+      "raw_duration_text": "2 sa. 43 dk.",
+      "lines": [
+        "SRY-9/VadiIstanbul-Maslak",
+        "SRY-7/Tarabya-Beşiktaş",
+        "SRY-8/Sarıyer-HaciOsman-Beşiktaş",
+        "251",
+        "KM12"
+      ],
+      "raw_snippet": "SRY-9/VadiIstanbul-Maslak ➔ SRY-7/Tarabya-Beşiktaş ➔ SRY-8/Sarıyer-HaciOsman-Beşiktaş ➔ 251 ➔ KM12",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 65,
+    "corridor": "Pendik (YHT Garı) ➔ Arnavutköy (İstanbul Havalimanı IST)",
+    "straight_km": 60.4,
+    "from_coords": [
+      40.87949,
+      29.239587
+    ],
+    "to_coords": [
+      41.263371,
+      28.731849
+    ],
+    "delta_vs_moovit_min": 20,
+    "delta_vs_gmaps_min": -29,
+    "our_engine": {
+      "success": true,
+      "elapsed": 9.945,
+      "duration_min": 130,
+      "walk_min": 22,
+      "transfers": 2,
+      "traffic_delay_min": 6,
+      "lines": [
+        "SUBWAY Marmaray",
+        "BUS 34G",
+        "SUBWAY M11"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.338,
+      "duration_min": 110,
+      "raw_duration_text": "1 sa 50 dk",
+      "lines": [
+        "B1",
+        "Otobüs",
+        "HVL-13"
+      ],
+      "raw_snippet": "B1 ➔ Otobüs ➔ HVL-13",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 4
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.749,
+      "duration_min": 159,
+      "raw_duration_text": "2 sa. 39 dk.",
+      "lines": [
+        "16A",
+        "34AS",
+        "M11"
+      ],
+      "raw_snippet": "16A ➔ 34AS ➔ M11",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 66,
+    "corridor": "Çatalca (Meydan) ➔ Beyoğlu (Taksim)",
+    "straight_km": 45.2,
+    "from_coords": [
+      41.136674,
+      28.454764
+    ],
+    "to_coords": [
+      41.045241,
+      28.976406
+    ],
+    "delta_vs_moovit_min": -81,
+    "delta_vs_gmaps_min": -123,
+    "our_engine": {
+      "success": true,
+      "elapsed": 12.553,
+      "duration_min": 88,
+      "walk_min": 2,
+      "transfers": 2,
+      "traffic_delay_min": 25,
+      "lines": [
+        "BUS 429A",
+        "BUS 145T",
+        "BUS 70KY"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.001,
+      "duration_min": 169,
+      "raw_duration_text": "2 sa 49 dk",
+      "lines": [
+        "Otobüs",
+        "401",
+        "145T",
+        "70KE"
+      ],
+      "raw_snippet": "Otobüs ➔ 401 ➔ 145T ➔ 70KE",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 2
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.726,
+      "duration_min": 211,
+      "raw_duration_text": "3 sa. 31 dk.",
+      "lines": [
+        "401",
+        "34G",
+        "34BZ",
+        "34C",
+        "73",
+        "70KY"
+      ],
+      "raw_snippet": "401 ➔ 34G ➔ 34BZ ➔ 34C ➔ 73 ➔ 70KY",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 67,
+    "corridor": "Şişli (Mecidiyeköy) ➔ Avcılar (Merkez Metrobüs)",
+    "straight_km": 24.0,
+    "from_coords": [
+      41.056839,
+      28.987006
+    ],
+    "to_coords": [
+      40.978751,
+      28.722244
+    ],
+    "delta_vs_moovit_min": 15,
+    "delta_vs_gmaps_min": 1,
+    "our_engine": {
+      "success": true,
+      "elapsed": 14.88,
+      "duration_min": 95,
+      "walk_min": 10,
+      "transfers": 2,
+      "traffic_delay_min": 24,
+      "lines": [
+        "BUS 30M",
+        "BUS 34G",
+        "BUS 76O"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.364,
+      "duration_min": 80,
+      "raw_duration_text": "1 sa 20 dk",
+      "lines": [
+        "Otobüs",
+        "46T\t/\t48N\t/\t54K\t/\t54Ç\t/\t54ÖR\t/\t...",
+        "34BZ"
+      ],
+      "raw_snippet": "Otobüs ➔ 46T\t/\t48N\t/\t54K\t/\t54Ç\t/\t54ÖR\t/\t... ➔ 34BZ",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 9
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.722,
+      "duration_min": 94,
+      "raw_duration_text": "1 sa. 34 dk.",
+      "lines": [
+        "46Ç",
+        "46T",
+        "54K",
+        "54Ç",
+        "54ÖR",
+        "34AS",
+        "34BZ",
+        "34G"
+      ],
+      "raw_snippet": "46Ç ➔ 46T ➔ 54K ➔ 54Ç ➔ 54ÖR ➔ 34AS ➔ 34BZ ➔ 34G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 68,
+    "corridor": "Fatih (Eminönü) ➔ Zeytinburnu (Cevizlibağ)",
+    "straight_km": 4.4,
+    "from_coords": [
+      41.027777,
+      28.962769
+    ],
+    "to_coords": [
+      41.027827,
+      28.910488
+    ],
+    "delta_vs_moovit_min": -15,
+    "delta_vs_gmaps_min": -1,
+    "our_engine": {
+      "success": true,
+      "elapsed": 6.307,
+      "duration_min": 37,
+      "walk_min": 12,
+      "transfers": 1,
+      "traffic_delay_min": 8,
+      "lines": [
+        "BUS 99A",
+        "BUS 50R"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.975,
+      "duration_min": 52,
+      "raw_duration_text": "52 dk",
+      "lines": [
+        "Otobüs",
+        "32\t/\t33\t/\t32T"
+      ],
+      "raw_snippet": "Otobüs ➔ 32\t/\t33\t/\t32T",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.73,
+      "duration_min": 38,
+      "raw_duration_text": "38 dk.",
+      "lines": [
+        "32T"
+      ],
+      "raw_snippet": "32T",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 69,
+    "corridor": "Bayrampaşa (Yıldırım) ➔ Başakşehir (Metrokent)",
+    "straight_km": 8.6,
+    "from_coords": [
+      41.042855,
+      28.886372
+    ],
+    "to_coords": [
+      41.092903,
+      28.808012
+    ],
+    "delta_vs_moovit_min": null,
+    "delta_vs_gmaps_min": null,
+    "our_engine": {
+      "success": false,
+      "elapsed": 0.075,
+      "error": "No route found"
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.826,
+      "duration_min": 66,
+      "raw_duration_text": "1 sa 6 dk",
+      "lines": [
+        "M1B",
+        "M3",
+        "Otobüs",
+        "78G\t/\t98KM\t/\t78Ş\t/\t79B\t/\t79T"
+      ],
+      "raw_snippet": "M1B ➔ M3 ➔ Otobüs ➔ 78G\t/\t98KM\t/\t78Ş\t/\t79B\t/\t79T",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.736,
+      "duration_min": 79,
+      "raw_duration_text": "1 sa. 19 dk.",
+      "lines": [
+        "76O",
+        "78",
+        "78E",
+        "78F",
+        "78ZB"
+      ],
+      "raw_snippet": "76O ➔ 78 ➔ 78E ➔ 78F ➔ 78ZB",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 70,
+    "corridor": "Gaziosmanpaşa (Meydan) ➔ Büyükçekmece (Sahil)",
+    "straight_km": 28.2,
+    "from_coords": [
+      41.04928,
+      28.913918
+    ],
+    "to_coords": [
+      41.010181,
+      28.583363
+    ],
+    "delta_vs_moovit_min": -63,
+    "delta_vs_gmaps_min": -91,
+    "our_engine": {
+      "success": true,
+      "elapsed": 14.952,
+      "duration_min": 47,
+      "walk_min": 7,
+      "transfers": 1,
+      "traffic_delay_min": 7,
+      "lines": [
+        "TRAM T4",
+        "BUS 145T"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.572,
+      "duration_min": 110,
+      "raw_duration_text": "1 sa 50 dk",
+      "lines": [
+        "T4",
+        "Otobüs",
+        "145T",
+        "303A\t/\tHT48"
+      ],
+      "raw_snippet": "T4 ➔ Otobüs ➔ 145T ➔ 303A\t/\tHT48",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.726,
+      "duration_min": 138,
+      "raw_duration_text": "2 sa. 18 dk.",
+      "lines": [
+        "88",
+        "34BZ",
+        "303A"
+      ],
+      "raw_snippet": "88 ➔ 34BZ ➔ 303A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 71,
+    "corridor": "Arnavutköy (İstanbul Havalimanı IST) ➔ Bayrampaşa (Yıldırım)",
+    "straight_km": 27.0,
+    "from_coords": [
+      41.267146,
+      28.732274
+    ],
+    "to_coords": [
+      41.058379,
+      28.895391
+    ],
+    "delta_vs_moovit_min": 48,
+    "delta_vs_gmaps_min": 2,
+    "our_engine": {
+      "success": true,
+      "elapsed": 14.317,
+      "duration_min": 137,
+      "walk_min": 18,
+      "transfers": 1,
+      "traffic_delay_min": 37,
+      "lines": [
+        "BUS H-2",
+        "BUS 32M"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.637,
+      "duration_min": 89,
+      "raw_duration_text": "1 sa 29 dk",
+      "lines": [
+        "Otobüs",
+        "HVL-13",
+        "41ST",
+        "32M"
+      ],
+      "raw_snippet": "Otobüs ➔ HVL-13 ➔ 41ST ➔ 32M",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.723,
+      "duration_min": 135,
+      "raw_duration_text": "2 sa. 15 dk.",
+      "lines": [
+        "HVL-1",
+        "32M"
+      ],
+      "raw_snippet": "HVL-1 ➔ 32M",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 72,
+    "corridor": "Kadıköy (Bostancı İskele) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 14.1,
+    "from_coords": [
+      40.961352,
+      29.09957
+    ],
+    "to_coords": [
+      41.065531,
+      29.003052
+    ],
+    "delta_vs_moovit_min": -20,
+    "delta_vs_gmaps_min": -15,
+    "our_engine": {
+      "success": true,
+      "elapsed": 12.097,
+      "duration_min": 48,
+      "walk_min": 16,
+      "transfers": 2,
+      "traffic_delay_min": 10,
+      "lines": [
+        "BUS 129T",
+        "BUS 500T",
+        "BUS 27T"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.107,
+      "duration_min": 68,
+      "raw_duration_text": "1 sa 8 dk",
+      "lines": [
+        "M4",
+        "34G"
+      ],
+      "raw_snippet": "M4 ➔ 34G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.754,
+      "duration_min": 63,
+      "raw_duration_text": "1 sa. 3 dk.",
+      "lines": [
+        "251"
+      ],
+      "raw_snippet": "251",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 73,
+    "corridor": "Sarıyer (Maslak İTÜ) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 5.1,
+    "from_coords": [
+      41.111882,
+      29.034017
+    ],
+    "to_coords": [
+      41.075523,
+      28.997891
+    ],
+    "delta_vs_moovit_min": -13,
+    "delta_vs_gmaps_min": -6,
+    "our_engine": {
+      "success": true,
+      "elapsed": 6.709,
+      "duration_min": 42,
+      "walk_min": 14,
+      "transfers": 1,
+      "traffic_delay_min": 10,
+      "lines": [
+        "BUS 29B",
+        "BUS 65A"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.781,
+      "duration_min": 55,
+      "raw_duration_text": "55 dk",
+      "lines": [
+        "Otobüs",
+        "29E",
+        "65A"
+      ],
+      "raw_snippet": "Otobüs ➔ 29E ➔ 65A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.715,
+      "duration_min": 48,
+      "raw_duration_text": "48 dk.",
+      "lines": [
+        "29Ş"
+      ],
+      "raw_snippet": "29Ş",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 74,
+    "corridor": "Esenler (Otogar) ➔ Üsküdar (Altunizade Metrobüs)",
+    "straight_km": 13.5,
+    "from_coords": [
+      41.039387,
+      28.899507
+    ],
+    "to_coords": [
+      41.026924,
+      29.05911
+    ],
+    "delta_vs_moovit_min": 3,
+    "delta_vs_gmaps_min": -4,
+    "our_engine": {
+      "success": true,
+      "elapsed": 15.478,
+      "duration_min": 64,
+      "walk_min": 24,
+      "transfers": 1,
+      "traffic_delay_min": 18,
+      "lines": [
+        "BUS 32M",
+        "BUS 34G"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.518,
+      "duration_min": 61,
+      "raw_duration_text": "1 sa 1 dk",
+      "lines": [
+        "M1A",
+        "B1",
+        "M5"
+      ],
+      "raw_snippet": "M1A ➔ B1 ➔ M5",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.731,
+      "duration_min": 68,
+      "raw_duration_text": "1 sa. 8 dk.",
+      "lines": [
+        "M1B",
+        "M1A",
+        "B1 (Marmaray)",
+        "11C",
+        "11BE"
+      ],
+      "raw_snippet": "M1B ➔ M1A ➔ B1 (Marmaray) ➔ 11C ➔ 11BE",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 75,
+    "corridor": "Esenler (Otogar) ➔ Kartal (Sahil)",
+    "straight_km": 30.7,
+    "from_coords": [
+      41.051025,
+      28.90216
+    ],
+    "to_coords": [
+      40.879673,
+      29.188138
+    ],
+    "delta_vs_moovit_min": 68,
+    "delta_vs_gmaps_min": 19,
+    "our_engine": {
+      "success": true,
+      "elapsed": 22.309,
+      "duration_min": 146,
+      "walk_min": 39,
+      "transfers": 4,
+      "traffic_delay_min": 32,
+      "lines": [
+        "BUS 32M",
+        "BUS 121B",
+        "BUS 500T",
+        "BUS 10B",
+        "BUS 16D"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.198,
+      "duration_min": 78,
+      "raw_duration_text": "1 sa 18 dk",
+      "lines": [
+        "M1A",
+        "B1"
+      ],
+      "raw_snippet": "M1A ➔ B1",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 4
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.736,
+      "duration_min": 127,
+      "raw_duration_text": "2 sa. 7 dk.",
+      "lines": [
+        "32",
+        "Kadıköy-Karaköy-Eminönü",
+        "16D"
+      ],
+      "raw_snippet": "32 ➔ Kadıköy-Karaköy-Eminönü ➔ 16D",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 76,
+    "corridor": "Ataşehir (Batı) ➔ Fatih (Yenikapı Marmaray)",
+    "straight_km": 14.5,
+    "from_coords": [
+      40.984208,
+      29.122088
+    ],
+    "to_coords": [
+      41.010379,
+      28.954108
+    ],
+    "delta_vs_moovit_min": 17,
+    "delta_vs_gmaps_min": -4,
+    "our_engine": {
+      "success": true,
+      "elapsed": 10.221,
+      "duration_min": 87,
+      "walk_min": 21,
+      "transfers": 1,
+      "traffic_delay_min": 9,
+      "lines": [
+        "BUS 10",
+        "SUBWAY Marmaray"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.993,
+      "duration_min": 70,
+      "raw_duration_text": "1 sa 10 dk",
+      "lines": [
+        "Otobüs",
+        "10",
+        "B1"
+      ],
+      "raw_snippet": "Otobüs ➔ 10 ➔ B1",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.729,
+      "duration_min": 91,
+      "raw_duration_text": "1 sa. 31 dk.",
+      "lines": [
+        "10",
+        "522",
+        "M2"
+      ],
+      "raw_snippet": "10 ➔ 522 ➔ M2",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 77,
+    "corridor": "Küçükçekmece (Halkalı Marmaray) ➔ Ümraniye (Santral)",
+    "straight_km": 28.9,
+    "from_coords": [
+      41.019145,
+      28.754194
+    ],
+    "to_coords": [
+      41.022827,
+      29.097299
+    ],
+    "delta_vs_moovit_min": 34,
+    "delta_vs_gmaps_min": -9,
+    "our_engine": {
+      "success": true,
+      "elapsed": 18.044,
+      "duration_min": 132,
+      "walk_min": 35,
+      "transfers": 2,
+      "traffic_delay_min": 10,
+      "lines": [
+        "BUS BN1",
+        "SUBWAY Marmaray",
+        "BUS 11P"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.607,
+      "duration_min": 98,
+      "raw_duration_text": "1 sa 38 dk",
+      "lines": [
+        "Otobüs",
+        "BN1",
+        "B1",
+        "M5"
+      ],
+      "raw_snippet": "Otobüs ➔ BN1 ➔ B1 ➔ M5",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.737,
+      "duration_min": 141,
+      "raw_duration_text": "2 sa. 21 dk.",
+      "lines": [
+        "A36-Küçükçekmece-BÇSŞH",
+        "B1 (Marmaray)",
+        "13"
+      ],
+      "raw_snippet": "A36-Küçükçekmece-BÇSŞH ➔ B1 (Marmaray) ➔ 13",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 78,
+    "corridor": "Güngören (Köyiçi) ➔ Gaziosmanpaşa (Meydan)",
+    "straight_km": 6.5,
+    "from_coords": [
+      41.011461,
+      28.86212
+    ],
+    "to_coords": [
+      41.058534,
+      28.90762
+    ],
+    "delta_vs_moovit_min": 15,
+    "delta_vs_gmaps_min": 12,
+    "our_engine": {
+      "success": true,
+      "elapsed": 6.066,
+      "duration_min": 69,
+      "walk_min": 11,
+      "transfers": 1,
+      "traffic_delay_min": 14,
+      "lines": [
+        "BUS 92",
+        "BUS 36ES"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.23,
+      "duration_min": 54,
+      "raw_duration_text": "54 dk",
+      "lines": [
+        "M3",
+        "M7",
+        "T4"
+      ],
+      "raw_snippet": "M3 ➔ M7 ➔ T4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.735,
+      "duration_min": 57,
+      "raw_duration_text": "57 dk.",
+      "lines": [
+        "M3",
+        "50B",
+        "336E",
+        "36V",
+        "38",
+        "38E"
+      ],
+      "raw_snippet": "M3 ➔ 50B ➔ 336E ➔ 36V ➔ 38 ➔ 38E",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 79,
+    "corridor": "Ümraniye (Santral) ➔ Güngören (Köyiçi)",
+    "straight_km": 19.6,
+    "from_coords": [
+      41.023179,
+      29.103599
+    ],
+    "to_coords": [
+      41.018194,
+      28.871797
+    ],
+    "delta_vs_moovit_min": 3,
+    "delta_vs_gmaps_min": -2,
+    "our_engine": {
+      "success": true,
+      "elapsed": 21.115,
+      "duration_min": 94,
+      "walk_min": 16,
+      "transfers": 2,
+      "traffic_delay_min": 20,
+      "lines": [
+        "BUS 522",
+        "BUS 34G",
+        "BUS 98G"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.543,
+      "duration_min": 91,
+      "raw_duration_text": "1 sa 31 dk",
+      "lines": [
+        "M5",
+        "B1",
+        "T1"
+      ],
+      "raw_snippet": "M5 ➔ B1 ➔ T1",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.738,
+      "duration_min": 96,
+      "raw_duration_text": "1 sa. 36 dk.",
+      "lines": [
+        "522",
+        "41AT",
+        "92T"
+      ],
+      "raw_snippet": "522 ➔ 41AT ➔ 92T",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 80,
+    "corridor": "Avcılar (Merkez Metrobüs) ➔ Eyüpsultan (Teleferik)",
+    "straight_km": 18.7,
+    "from_coords": [
+      40.987857,
+      28.737327
+    ],
+    "to_coords": [
+      41.050402,
+      28.942858
+    ],
+    "delta_vs_moovit_min": 29,
+    "delta_vs_gmaps_min": 14,
+    "our_engine": {
+      "success": true,
+      "elapsed": 7.379,
+      "duration_min": 99,
+      "walk_min": 22,
+      "transfers": 0,
+      "traffic_delay_min": 22,
+      "lines": [
+        "BUS 34 / 34G"
+      ],
+      "bundled_lines": [
+        "34",
+        "34G"
+      ],
+      "total_options": 1
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.159,
+      "duration_min": 70,
+      "raw_duration_text": "1 sa 10 dk",
+      "lines": [
+        "34BZ"
+      ],
+      "raw_snippet": "34BZ",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.724,
+      "duration_min": 85,
+      "raw_duration_text": "1 sa. 25 dk.",
+      "lines": [
+        "34AS"
+      ],
+      "raw_snippet": "34AS",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 81,
+    "corridor": "Beykoz (Ortaçeşme) ➔ Arnavutköy (İstanbul Havalimanı IST)",
+    "straight_km": 33.8,
+    "from_coords": [
+      41.132478,
+      29.107525
+    ],
+    "to_coords": [
+      41.251903,
+      28.738513
+    ],
+    "delta_vs_moovit_min": 56,
+    "delta_vs_gmaps_min": 77,
+    "our_engine": {
+      "success": true,
+      "elapsed": 11.967,
+      "duration_min": 201,
+      "walk_min": 16,
+      "transfers": 5,
+      "traffic_delay_min": 47,
+      "lines": [
+        "BUS 135K",
+        "BUS 136B",
+        "BUS 121B",
+        "BUS 41AT",
+        "BUS 89C",
+        "BUS H-1"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.764,
+      "duration_min": 145,
+      "raw_duration_text": "2 sa 25 dk",
+      "lines": [
+        "Otobüs",
+        "135K",
+        "121BS",
+        "M11"
+      ],
+      "raw_snippet": "Otobüs ➔ 135K ➔ 121BS ➔ M11",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.732,
+      "duration_min": 124,
+      "raw_duration_text": "2 sa. 4 dk.",
+      "lines": [
+        "121BS",
+        "M11"
+      ],
+      "raw_snippet": "121BS ➔ M11",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 82,
+    "corridor": "Sancaktepe (Sarıgazi) ➔ Büyükçekmece (Sahil)",
+    "straight_km": 54.8,
+    "from_coords": [
+      41.00208,
+      29.238204
+    ],
+    "to_coords": [
+      41.010556,
+      28.58922
+    ],
+    "delta_vs_moovit_min": -24,
+    "delta_vs_gmaps_min": -60,
+    "our_engine": {
+      "success": true,
+      "elapsed": 15.384,
+      "duration_min": 157,
+      "walk_min": 12,
+      "transfers": 2,
+      "traffic_delay_min": 38,
+      "lines": [
+        "BUS 622",
+        "BUS 41AT",
+        "BUS 145T"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.401,
+      "duration_min": 181,
+      "raw_duration_text": "3 sa 1 dk",
+      "lines": [
+        "Otobüs",
+        "11SA",
+        "M5",
+        "34G",
+        "142B"
+      ],
+      "raw_snippet": "Otobüs ➔ 11SA ➔ M5 ➔ 34G ➔ 142B",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.724,
+      "duration_min": 217,
+      "raw_duration_text": "3 sa. 37 dk.",
+      "lines": [
+        "14YK",
+        "522",
+        "34BZ",
+        "401T"
+      ],
+      "raw_snippet": "14YK ➔ 522 ➔ 34BZ ➔ 401T",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 83,
+    "corridor": "Kağıthane (Merkez) ➔ Tuzla (Marina)",
+    "straight_km": 39.9,
+    "from_coords": [
+      41.070276,
+      28.976674
+    ],
+    "to_coords": [
+      40.811854,
+      29.304843
+    ],
+    "delta_vs_moovit_min": -23,
+    "delta_vs_gmaps_min": -53,
+    "our_engine": {
+      "success": true,
+      "elapsed": 17.625,
+      "duration_min": 99,
+      "walk_min": 4,
+      "transfers": 5,
+      "traffic_delay_min": 29,
+      "lines": [
+        "BUS 46T",
+        "BUS 29Ş",
+        "BUS 500T",
+        "BUS 16S",
+        "BUS KM25",
+        "BUS 133AK"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.125,
+      "duration_min": 122,
+      "raw_duration_text": "2 sa 2 dk",
+      "lines": [
+        "34G",
+        "B1",
+        "Otobüs",
+        "KM12"
+      ],
+      "raw_snippet": "34G ➔ B1 ➔ Otobüs ➔ KM12",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.719,
+      "duration_min": 152,
+      "raw_duration_text": "2 sa. 32 dk.",
+      "lines": [
+        "50M",
+        "251",
+        "KM12"
+      ],
+      "raw_snippet": "50M ➔ 251 ➔ KM12",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 84,
+    "corridor": "Maltepe (Merkez) ➔ Eyüpsultan (Teleferik)",
+    "straight_km": 21.7,
+    "from_coords": [
+      40.914681,
+      29.139258
+    ],
+    "to_coords": [
+      41.035321,
+      28.937275
+    ],
+    "delta_vs_moovit_min": 19,
+    "delta_vs_gmaps_min": 13,
+    "our_engine": {
+      "success": true,
+      "elapsed": 18.808,
+      "duration_min": 110,
+      "walk_min": 18,
+      "transfers": 4,
+      "traffic_delay_min": 25,
+      "lines": [
+        "BUS 17",
+        "BUS 10F",
+        "BUS 500T",
+        "BUS 500L",
+        "BUS 41AT"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.232,
+      "duration_min": 91,
+      "raw_duration_text": "1 sa 31 dk",
+      "lines": [
+        "B1",
+        "34G"
+      ],
+      "raw_snippet": "B1 ➔ 34G",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 10
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.722,
+      "duration_min": 97,
+      "raw_duration_text": "1 sa. 37 dk.",
+      "lines": [
+        "B1 (Marmaray)",
+        "93M"
+      ],
+      "raw_snippet": "B1 (Marmaray) ➔ 93M",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 85,
+    "corridor": "Şile (Merkez) ➔ Büyükçekmece (Sahil)",
+    "straight_km": 88.7,
+    "from_coords": [
+      41.183549,
+      29.617817
+    ],
+    "to_coords": [
+      41.013851,
+      28.589754
+    ],
+    "delta_vs_moovit_min": -113,
+    "delta_vs_gmaps_min": -173,
+    "our_engine": {
+      "success": true,
+      "elapsed": 12.221,
+      "duration_min": 124,
+      "walk_min": 12,
+      "transfers": 1,
+      "traffic_delay_min": 30,
+      "lines": [
+        "BUS 522ST",
+        "BUS 34G"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.156,
+      "duration_min": 237,
+      "raw_duration_text": "3 sa 57 dk",
+      "lines": [
+        "Otobüs",
+        "139T",
+        "M5",
+        "34G",
+        "142B"
+      ],
+      "raw_snippet": "Otobüs ➔ 139T ➔ M5 ➔ 34G ➔ 142B",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.728,
+      "duration_min": 297,
+      "raw_duration_text": "4 sa. 57 dk.",
+      "lines": [
+        "ŞL16-Şile-ÇekmeköyMetrogarden",
+        "522",
+        "92Ş",
+        "146T",
+        "142B"
+      ],
+      "raw_snippet": "ŞL16-Şile-ÇekmeköyMetrogarden ➔ 522 ➔ 92Ş ➔ 146T ➔ 142B",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 86,
+    "corridor": "Pendik (Sabiha Gökçen SAW) ➔ Silivri (Otogar)",
+    "straight_km": 92.1,
+    "from_coords": [
+      40.898612,
+      29.324576
+    ],
+    "to_coords": [
+      41.068226,
+      28.25611
+    ],
+    "delta_vs_moovit_min": -91,
+    "delta_vs_gmaps_min": -191,
+    "our_engine": {
+      "success": true,
+      "elapsed": 17.205,
+      "duration_min": 142,
+      "walk_min": 8,
+      "transfers": 3,
+      "traffic_delay_min": 27,
+      "lines": [
+        "SUBWAY M4",
+        "BUS 500T",
+        "BUS 41AT",
+        "BUS 145T"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.573,
+      "duration_min": 233,
+      "raw_duration_text": "3 sa 53 dk",
+      "lines": [
+        "Otobüs",
+        "SG-1",
+        "34G",
+        "303A"
+      ],
+      "raw_snippet": "Otobüs ➔ SG-1 ➔ 34G ➔ 303A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.723,
+      "duration_min": 333,
+      "raw_duration_text": "5 sa. 33 dk.",
+      "lines": [
+        "C84-Pendik-Kimya",
+        "B1 (Marmaray)",
+        "146",
+        "303A"
+      ],
+      "raw_snippet": "C84-Pendik-Kimya ➔ B1 (Marmaray) ➔ 146 ➔ 303A",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 87,
+    "corridor": "Arnavutköy (İstanbul Havalimanı IST) ➔ Bakırköy (İskele / Meydan)",
+    "straight_km": 34.0,
+    "from_coords": [
+      41.257237,
+      28.747903
+    ],
+    "to_coords": [
+      40.96714,
+      28.877063
+    ],
+    "delta_vs_moovit_min": 37,
+    "delta_vs_gmaps_min": -11,
+    "our_engine": {
+      "success": true,
+      "elapsed": 2.257,
+      "duration_min": 107,
+      "walk_min": 25,
+      "transfers": 0,
+      "traffic_delay_min": 22,
+      "lines": [
+        "BUS HVİST-10"
+      ],
+      "bundled_lines": null,
+      "total_options": 2
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 9.486,
+      "duration_min": 70,
+      "raw_duration_text": "1 sa 10 dk",
+      "lines": [
+        "Otobüs",
+        "HVL-4"
+      ],
+      "raw_snippet": "Otobüs ➔ HVL-4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 3
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.745,
+      "duration_min": 118,
+      "raw_duration_text": "1 sa. 58 dk.",
+      "lines": [
+        "HVL-4-A"
+      ],
+      "raw_snippet": "HVL-4-A",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 88,
+    "corridor": "Küçükçekmece (Halkalı Marmaray) ➔ Çekmeköy (Madenler)",
+    "straight_km": 33.8,
+    "from_coords": [
+      41.013632,
+      28.772497
+    ],
+    "to_coords": [
+      41.026941,
+      29.172849
+    ],
+    "delta_vs_moovit_min": 4,
+    "delta_vs_gmaps_min": -5,
+    "our_engine": {
+      "success": true,
+      "elapsed": 17.329,
+      "duration_min": 107,
+      "walk_min": 24,
+      "transfers": 2,
+      "traffic_delay_min": 20,
+      "lines": [
+        "BUS 76V",
+        "BUS 34G",
+        "BUS 522ST"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.559,
+      "duration_min": 103,
+      "raw_duration_text": "1 sa 43 dk",
+      "lines": [
+        "Otobüs",
+        "MR52\t/\t79Y",
+        "B1",
+        "139A\t/\t139"
+      ],
+      "raw_snippet": "Otobüs ➔ MR52\t/\t79Y ➔ B1 ➔ 139A\t/\t139",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 10
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.724,
+      "duration_min": 112,
+      "raw_duration_text": "1 sa. 52 dk.",
+      "lines": [
+        "B1 (Marmaray)",
+        "11ÜS"
+      ],
+      "raw_snippet": "B1 (Marmaray) ➔ 11ÜS",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 89,
+    "corridor": "Kadıköy (Bostancı İskele) ➔ Kartal (Sahil)",
+    "straight_km": 10.4,
+    "from_coords": [
+      40.959254,
+      29.103476
+    ],
+    "to_coords": [
+      40.89233,
+      29.189542
+    ],
+    "delta_vs_moovit_min": 35,
+    "delta_vs_gmaps_min": 29,
+    "our_engine": {
+      "success": true,
+      "elapsed": 6.193,
+      "duration_min": 76,
+      "walk_min": 18,
+      "transfers": 1,
+      "traffic_delay_min": 19,
+      "lines": [
+        "BUS 17",
+        "BUS KM34"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.939,
+      "duration_min": 41,
+      "raw_duration_text": "41 dk",
+      "lines": [
+        "B1"
+      ],
+      "raw_snippet": "B1",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.717,
+      "duration_min": 47,
+      "raw_duration_text": "47 dk.",
+      "lines": [
+        "C50-Pendik-Kadıköy"
+      ],
+      "raw_snippet": "C50-Pendik-Kadıköy",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 90,
+    "corridor": "Sultanbeyli (Merkez) ➔ Bağcılar (Meydan)",
+    "straight_km": 35.3,
+    "from_coords": [
+      40.972845,
+      29.256742
+    ],
+    "to_coords": [
+      41.044419,
+      28.8496
+    ],
+    "delta_vs_moovit_min": -9,
+    "delta_vs_gmaps_min": -41,
+    "our_engine": {
+      "success": true,
+      "elapsed": 16.395,
+      "duration_min": 113,
+      "walk_min": 23,
+      "transfers": 3,
+      "traffic_delay_min": 23,
+      "lines": [
+        "BUS 18",
+        "BUS 19T",
+        "BUS 34G",
+        "BUS 92Ş"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.622,
+      "duration_min": 122,
+      "raw_duration_text": "2 sa 2 dk",
+      "lines": [
+        "Otobüs",
+        "18D",
+        "34G",
+        "92Ş"
+      ],
+      "raw_snippet": "Otobüs ➔ 18D ➔ 34G ➔ 92Ş",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.728,
+      "duration_min": 154,
+      "raw_duration_text": "2 sa. 34 dk.",
+      "lines": [
+        "522ST",
+        "92Ş"
+      ],
+      "raw_snippet": "522ST ➔ 92Ş",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 91,
+    "corridor": "Kadıköy (Bostancı İskele) ➔ Sarıyer (Hacıosman)",
+    "straight_km": 21.4,
+    "from_coords": [
+      40.958236,
+      29.09716
+    ],
+    "to_coords": [
+      41.143592,
+      29.02881
+    ],
+    "delta_vs_moovit_min": -31,
+    "delta_vs_gmaps_min": -50,
+    "our_engine": {
+      "success": true,
+      "elapsed": 11.25,
+      "duration_min": 48,
+      "walk_min": 7,
+      "transfers": 2,
+      "traffic_delay_min": 9,
+      "lines": [
+        "BUS 129T",
+        "BUS 500T",
+        "BUS 59RS"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.089,
+      "duration_min": 79,
+      "raw_duration_text": "1 sa 19 dk",
+      "lines": [
+        "B1",
+        "M2"
+      ],
+      "raw_snippet": "B1 ➔ M2",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.723,
+      "duration_min": 98,
+      "raw_duration_text": "1 sa. 38 dk.",
+      "lines": [
+        "10F",
+        "129T",
+        "129L",
+        "500T",
+        "SRY-8/Sarıyer-HaciOsman-Beşiktaş",
+        "59RS"
+      ],
+      "raw_snippet": "10F ➔ 129T ➔ 129L ➔ 500T ➔ SRY-8/Sarıyer-HaciOsman-Beşiktaş ➔ 59RS",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 92,
+    "corridor": "Sultanbeyli (Merkez) ➔ Bayrampaşa (Yıldırım)",
+    "straight_km": 33.4,
+    "from_coords": [
+      40.956701,
+      29.271496
+    ],
+    "to_coords": [
+      41.047507,
+      28.894416
+    ],
+    "delta_vs_moovit_min": 33,
+    "delta_vs_gmaps_min": 20,
+    "our_engine": {
+      "success": true,
+      "elapsed": 19.61,
+      "duration_min": 129,
+      "walk_min": 18,
+      "transfers": 2,
+      "traffic_delay_min": 30,
+      "lines": [
+        "BUS 18D",
+        "BUS 251",
+        "BUS 32M"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.153,
+      "duration_min": 96,
+      "raw_duration_text": "1 sa 36 dk",
+      "lines": [
+        "Otobüs",
+        "M5",
+        "B1",
+        "0"
+      ],
+      "raw_snippet": "Otobüs ➔ M5 ➔ B1 ➔ 0",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 7
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.79,
+      "duration_min": 109,
+      "raw_duration_text": "1 sa. 49 dk.",
+      "lines": [
+        "M5",
+        "B1 (Marmaray)",
+        "M1B",
+        "M1A"
+      ],
+      "raw_snippet": "M5 ➔ B1 (Marmaray) ➔ M1B ➔ M1A",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 93,
+    "corridor": "Şişli (Mecidiyeköy) ➔ Ümraniye (Santral)",
+    "straight_km": 8.7,
+    "from_coords": [
+      41.06982,
+      29.002782
+    ],
+    "to_coords": [
+      41.027936,
+      29.08936
+    ],
+    "delta_vs_moovit_min": -14,
+    "delta_vs_gmaps_min": 0,
+    "our_engine": {
+      "success": true,
+      "elapsed": 5.642,
+      "duration_min": 41,
+      "walk_min": 16,
+      "transfers": 0,
+      "traffic_delay_min": 13,
+      "lines": [
+        "BUS 522"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.175,
+      "duration_min": 55,
+      "raw_duration_text": "55 dk",
+      "lines": [
+        "Otobüs",
+        "522"
+      ],
+      "raw_snippet": "Otobüs ➔ 522",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.716,
+      "duration_min": 41,
+      "raw_duration_text": "41 dk.",
+      "lines": [
+        "522"
+      ],
+      "raw_snippet": "522",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 3
+    }
+  },
+  {
+    "index": 94,
+    "corridor": "Çatalca (Meydan) ➔ Pendik (Sabiha Gökçen SAW)",
+    "straight_km": 76.5,
+    "from_coords": [
+      41.131731,
+      28.449867
+    ],
+    "to_coords": [
+      40.902078,
+      29.305115
+    ],
+    "delta_vs_moovit_min": -169,
+    "delta_vs_gmaps_min": -206,
+    "our_engine": {
+      "success": true,
+      "elapsed": 15.642,
+      "duration_min": 137,
+      "walk_min": 13,
+      "transfers": 3,
+      "traffic_delay_min": 17,
+      "lines": [
+        "BUS 429A",
+        "BUS 145T",
+        "BUS 34G",
+        "SUBWAY M4"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.972,
+      "duration_min": 306,
+      "raw_duration_text": "5 sa 6 dk",
+      "lines": [
+        "Otobüs",
+        "401",
+        "34G",
+        "M4",
+        "KM23"
+      ],
+      "raw_snippet": "Otobüs ➔ 401 ➔ 34G ➔ M4 ➔ KM23",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 5
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.934,
+      "duration_min": 343,
+      "raw_duration_text": "5 sa. 43 dk.",
+      "lines": [
+        "401",
+        "HVL-2",
+        "HVL-11"
+      ],
+      "raw_snippet": "401 ➔ HVL-2 ➔ HVL-11",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 95,
+    "corridor": "Kağıthane (Merkez) ➔ Ataşehir (Batı)",
+    "straight_km": 18.5,
+    "from_coords": [
+      41.093723,
+      28.969439
+    ],
+    "to_coords": [
+      40.975742,
+      29.124436
+    ],
+    "delta_vs_moovit_min": -5,
+    "delta_vs_gmaps_min": -9,
+    "our_engine": {
+      "success": true,
+      "elapsed": 21.413,
+      "duration_min": 77,
+      "walk_min": 6,
+      "transfers": 2,
+      "traffic_delay_min": 21,
+      "lines": [
+        "BUS 62G",
+        "BUS 500T",
+        "BUS 14KS"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.211,
+      "duration_min": 82,
+      "raw_duration_text": "1 sa 22 dk",
+      "lines": [
+        "Otobüs",
+        "TM2\t/\t62G\t/\t62H",
+        "M7",
+        "34G",
+        "M4",
+        "M8"
+      ],
+      "raw_snippet": "Otobüs ➔ TM2\t/\t62G\t/\t62H ➔ M7 ➔ 34G ➔ M4 ➔ M8",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.734,
+      "duration_min": 86,
+      "raw_duration_text": "1 sa. 26 dk.",
+      "lines": [
+        "TM3",
+        "B33-Vadi-Nobel",
+        "251",
+        "19"
+      ],
+      "raw_snippet": "TM3 ➔ B33-Vadi-Nobel ➔ 251 ➔ 19",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 96,
+    "corridor": "Şişli (Mecidiyeköy) ➔ Şile (Merkez)",
+    "straight_km": 55.5,
+    "from_coords": [
+      41.059234,
+      28.983813
+    ],
+    "to_coords": [
+      41.18555,
+      29.620342
+    ],
+    "delta_vs_moovit_min": -124,
+    "delta_vs_gmaps_min": -124,
+    "our_engine": {
+      "success": true,
+      "elapsed": 11.956,
+      "duration_min": 41,
+      "walk_min": 14,
+      "transfers": 1,
+      "traffic_delay_min": 8,
+      "lines": [
+        "BUS DT2",
+        "BUS 522ST"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.999,
+      "duration_min": 165,
+      "raw_duration_text": "2 sa 45 dk",
+      "lines": [
+        "Otobüs",
+        "30M\t/\tDT2\t/\t256\t/\t66",
+        "522ST\t/\t122D\t/\t122M",
+        "139A\t/\t139"
+      ],
+      "raw_snippet": "Otobüs ➔ 30M\t/\tDT2\t/\t256\t/\t66 ➔ 522ST\t/\t122D\t/\t122M ➔ 139A\t/\t139",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 4
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.72,
+      "duration_min": 165,
+      "raw_duration_text": "2 sa. 45 dk.",
+      "lines": [
+        "65G",
+        "522",
+        "ŞL16-Şile-ÇekmeköyMetrogarden"
+      ],
+      "raw_snippet": "65G ➔ 522 ➔ ŞL16-Şile-ÇekmeköyMetrogarden",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 97,
+    "corridor": "Pendik (Sabiha Gökçen SAW) ➔ Küçükçekmece (Halkalı Marmaray)",
+    "straight_km": 48.3,
+    "from_coords": [
+      40.914566,
+      29.320396
+    ],
+    "to_coords": [
+      41.016664,
+      28.763427
+    ],
+    "delta_vs_moovit_min": 21,
+    "delta_vs_gmaps_min": -232,
+    "our_engine": {
+      "success": true,
+      "elapsed": 10.762,
+      "duration_min": 160,
+      "walk_min": 16,
+      "transfers": 5,
+      "traffic_delay_min": 20,
+      "lines": [
+        "SUBWAY M4",
+        "BUS 500T",
+        "BUS 500L",
+        "BUS 41AT",
+        "BUS E-58",
+        "BUS MR54"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 8.408,
+      "duration_min": 139,
+      "raw_duration_text": "2 sa 19 dk",
+      "lines": [
+        "M4",
+        "B1",
+        "Otobüs"
+      ],
+      "raw_snippet": "M4 ➔ B1 ➔ Otobüs",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.735,
+      "duration_min": 392,
+      "raw_duration_text": "6 sa. 32 dk.",
+      "lines": [
+        "UM73",
+        "132",
+        "81031"
+      ],
+      "raw_snippet": "UM73 ➔ 132 ➔ 81031",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 98,
+    "corridor": "Zeytinburnu (Cevizlibağ) ➔ Tuzla (Marina)",
+    "straight_km": 38.7,
+    "from_coords": [
+      41.007514,
+      28.918903
+    ],
+    "to_coords": [
+      40.81898,
+      29.304788
+    ],
+    "delta_vs_moovit_min": -27,
+    "delta_vs_gmaps_min": -24,
+    "our_engine": {
+      "success": true,
+      "elapsed": 7.195,
+      "duration_min": 88,
+      "walk_min": 9,
+      "transfers": 1,
+      "traffic_delay_min": 2,
+      "lines": [
+        "BUS 50K",
+        "SUBWAY Marmaray"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.442,
+      "duration_min": 115,
+      "raw_duration_text": "1 sa 55 dk",
+      "lines": [
+        "Otobüs",
+        "50K",
+        "B1",
+        "KM12"
+      ],
+      "raw_snippet": "Otobüs ➔ 50K ➔ B1 ➔ KM12",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.722,
+      "duration_min": 112,
+      "raw_duration_text": "1 sa. 52 dk.",
+      "lines": [
+        "85C",
+        "B1 (Marmaray)",
+        "133TM"
+      ],
+      "raw_snippet": "85C ➔ B1 (Marmaray) ➔ 133TM",
+      "has_minibus": true,
+      "minibus_filtered": false,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 99,
+    "corridor": "Avcılar (Merkez Metrobüs) ➔ Fatih (Yenikapı Marmaray)",
+    "straight_km": 18.5,
+    "from_coords": [
+      40.995378,
+      28.726662
+    ],
+    "to_coords": [
+      41.011765,
+      28.944591
+    ],
+    "delta_vs_moovit_min": -6,
+    "delta_vs_gmaps_min": -10,
+    "our_engine": {
+      "success": true,
+      "elapsed": 10.814,
+      "duration_min": 64,
+      "walk_min": 20,
+      "transfers": 0,
+      "traffic_delay_min": 11,
+      "lines": [
+        "BUS 76D"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 6.201,
+      "duration_min": 70,
+      "raw_duration_text": "1 sa 10 dk",
+      "lines": [
+        "Otobüs",
+        "76D"
+      ],
+      "raw_snippet": "Otobüs ➔ 76D",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.736,
+      "duration_min": 74,
+      "raw_duration_text": "1 sa. 14 dk.",
+      "lines": [
+        "76D"
+      ],
+      "raw_snippet": "76D",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  },
+  {
+    "index": 100,
+    "corridor": "Sultangazi (Cebeci) ➔ Gaziosmanpaşa (Meydan)",
+    "straight_km": 6.3,
+    "from_coords": [
+      41.094462,
+      28.875594
+    ],
+    "to_coords": [
+      41.049408,
+      28.920504
+    ],
+    "delta_vs_moovit_min": 3,
+    "delta_vs_gmaps_min": 5,
+    "our_engine": {
+      "success": true,
+      "elapsed": 8.977,
+      "duration_min": 36,
+      "walk_min": 6,
+      "transfers": 1,
+      "traffic_delay_min": 6,
+      "lines": [
+        "BUS TM15",
+        "BUS 38B"
+      ],
+      "bundled_lines": null,
+      "total_options": 4
+    },
+    "moovit": {
+      "success": true,
+      "elapsed": 7.687,
+      "duration_min": 33,
+      "raw_duration_text": "33 dk",
+      "lines": [
+        "Otobüs",
+        "HVL3",
+        "T4"
+      ],
+      "raw_snippet": "Otobüs ➔ HVL3 ➔ T4",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 8
+    },
+    "google_maps": {
+      "success": true,
+      "elapsed": 5.914,
+      "duration_min": 31,
+      "raw_duration_text": "31 dk.",
+      "lines": [
+        "36ES",
+        "38B"
+      ],
+      "raw_snippet": "36ES ➔ 38B",
+      "has_minibus": false,
+      "minibus_filtered": true,
+      "total_options": 6
+    }
+  }
+]

@@ -1,0 +1,1017 @@
+[
+  {
+    "corridor": "Tuzla (Şifa Mahallesi) ➔ Ataşehir (Batı)",
+    "straight_km": 24.8,
+    "our_door_to_door_min": 98,
+    "our_in_vehicle_min": 78,
+    "our_curb_wait_min": 4,
+    "our_traffic_delay_min": 10,
+    "our_transfers": 2,
+    "our_lines": [
+      "130Ş",
+      "16D",
+      "10"
+    ],
+    "moovit_duration_min": 103,
+    "moovit_lines": [
+      "Otobüs",
+      "KM12",
+      "B1",
+      "M8"
+    ],
+    "delta_min": -5,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik"
+  },
+  {
+    "corridor": "Sancaktepe (Sarıgazi) ➔ Çatalca (Meydan)",
+    "straight_km": 66.7,
+    "our_door_to_door_min": 187,
+    "our_in_vehicle_min": 156,
+    "our_curb_wait_min": 4,
+    "our_traffic_delay_min": 20,
+    "our_transfers": 3,
+    "our_lines": [
+      "SM3",
+      "622",
+      "34G",
+      "401"
+    ],
+    "moovit_duration_min": 194,
+    "moovit_lines": [
+      "M5",
+      "34G",
+      "Otobüs",
+      "401"
+    ],
+    "delta_min": -7,
+    "diagnosis": "Eşit Aktarma Sayısı (3 aktarma) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti"
+  },
+  {
+    "corridor": "Esenyurt (Meydan) ➔ Gaziosmanpaşa (Meydan)",
+    "straight_km": 20.4,
+    "our_door_to_door_min": 102,
+    "our_in_vehicle_min": 29,
+    "our_curb_wait_min": 34,
+    "our_traffic_delay_min": 0,
+    "our_transfers": 1,
+    "our_lines": [
+      "145T",
+      "T4"
+    ],
+    "moovit_duration_min": 96,
+    "moovit_lines": [
+      "Otobüs",
+      "HT29\t/\tES4",
+      "145T",
+      "T4"
+    ],
+    "delta_min": 6,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 34 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Küçükçekmece (Halkalı Marmaray) ➔ Esenler (Otogar)",
+    "straight_km": 12.1,
+    "our_door_to_door_min": 96,
+    "our_in_vehicle_min": 44,
+    "our_curb_wait_min": 0,
+    "our_traffic_delay_min": 2,
+    "our_transfers": 1,
+    "our_lines": [
+      "79Y",
+      "M1A"
+    ],
+    "moovit_duration_min": 101,
+    "moovit_lines": [
+      "Otobüs",
+      "BN1",
+      "B1",
+      "M1A"
+    ],
+    "delta_min": -5,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Araç hemen geliyor (Durakta bekleme sadece 0 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Sarıyer (Maslak İTÜ) ➔ Avcılar (Merkez Metrobüs)",
+    "straight_km": 27.5,
+    "our_door_to_door_min": 115,
+    "our_in_vehicle_min": 62,
+    "our_curb_wait_min": 6,
+    "our_traffic_delay_min": 7,
+    "our_transfers": 1,
+    "our_lines": [
+      "500L",
+      "34G"
+    ],
+    "moovit_duration_min": 111,
+    "moovit_lines": [
+      "M2",
+      "34G"
+    ],
+    "delta_min": 4,
+    "diagnosis": "Eşit Aktarma Sayısı (1 aktarma) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti"
+  },
+  {
+    "corridor": "Arnavutköy (İstanbul Havalimanı IST) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 30.2,
+    "our_door_to_door_min": 80,
+    "our_in_vehicle_min": 32,
+    "our_curb_wait_min": 11,
+    "our_traffic_delay_min": 0,
+    "our_transfers": 0,
+    "our_lines": [
+      "M11"
+    ],
+    "moovit_duration_min": 72,
+    "moovit_lines": [
+      "M11",
+      "Otobüs",
+      "62\t/\t62G"
+    ],
+    "delta_min": 8,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 2 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 11 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Sancaktepe (Sarıgazi) ➔ Gaziosmanpaşa (Meydan)",
+    "straight_km": 28.6,
+    "our_door_to_door_min": 115,
+    "our_in_vehicle_min": 78,
+    "our_curb_wait_min": 4,
+    "our_traffic_delay_min": 8,
+    "our_transfers": 2,
+    "our_lines": [
+      "18Ü",
+      "34G",
+      "55T"
+    ],
+    "moovit_duration_min": 114,
+    "moovit_lines": [
+      "Otobüs",
+      "SM2\t/\tUM60\t/\tKM61",
+      "M5",
+      "34G",
+      "55ET\t/\t55"
+    ],
+    "delta_min": 1,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 4 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti"
+  },
+  {
+    "corridor": "Beyoğlu (Taksim) ➔ Üsküdar (Altunizade Metrobüs)",
+    "straight_km": 5.5,
+    "our_door_to_door_min": 43,
+    "our_in_vehicle_min": 21,
+    "our_curb_wait_min": 2,
+    "our_traffic_delay_min": 2,
+    "our_transfers": 1,
+    "our_lines": [
+      "58A",
+      "522"
+    ],
+    "moovit_duration_min": 36,
+    "moovit_lines": [
+      "Boğaz Hattı",
+      "M5"
+    ],
+    "delta_min": 7,
+    "diagnosis": "Eşit Aktarma Sayısı (1 aktarma) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik | Araç hemen geliyor (Durakta bekleme sadece 2 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Üsküdar (Altunizade Metrobüs) ➔ Beyoğlu (Taksim)",
+    "straight_km": 6.3,
+    "our_door_to_door_min": 60,
+    "our_in_vehicle_min": 23,
+    "our_curb_wait_min": 21,
+    "our_traffic_delay_min": 3,
+    "our_transfers": 0,
+    "our_lines": [
+      "129T"
+    ],
+    "moovit_duration_min": 42,
+    "moovit_lines": [
+      "34G",
+      "M2"
+    ],
+    "delta_min": 18,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 1 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik | Şu anki saatte durakta 21 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Kağıthane (Merkez) ➔ Çatalca (Meydan)",
+    "straight_km": 44.8,
+    "our_door_to_door_min": 139,
+    "our_in_vehicle_min": 103,
+    "our_curb_wait_min": 2,
+    "our_traffic_delay_min": 15,
+    "our_transfers": 1,
+    "our_lines": [
+      "34G",
+      "401"
+    ],
+    "moovit_duration_min": 152,
+    "moovit_lines": [
+      "34BZ",
+      "Otobüs",
+      "401"
+    ],
+    "delta_min": -13,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 2 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Araç hemen geliyor (Durakta bekleme sadece 2 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Sancaktepe (Sarıgazi) ➔ Kadıköy (Söğütlüçeşme)",
+    "straight_km": 17.1,
+    "our_door_to_door_min": 63,
+    "our_in_vehicle_min": 43,
+    "our_curb_wait_min": 1,
+    "our_traffic_delay_min": 6,
+    "our_transfers": 0,
+    "our_lines": [
+      "19A / 19EK"
+    ],
+    "moovit_duration_min": 78,
+    "moovit_lines": [
+      "Otobüs",
+      "SM14",
+      "M5",
+      "M8",
+      "M4"
+    ],
+    "delta_min": -15,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 4 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik | Araç hemen geliyor (Durakta bekleme sadece 1 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Tuzla (Şifa Mahallesi) ➔ Küçükçekmece (Halkalı Marmaray)",
+    "straight_km": 52.1,
+    "our_door_to_door_min": 211,
+    "our_in_vehicle_min": 145,
+    "our_curb_wait_min": 26,
+    "our_traffic_delay_min": 5,
+    "our_transfers": 2,
+    "our_lines": [
+      "130Ş",
+      "Marmaray",
+      "MR51"
+    ],
+    "moovit_duration_min": 146,
+    "moovit_lines": [
+      "B1",
+      "Otobüs",
+      "79Y\t/\tMR51\t/\t98S"
+    ],
+    "delta_min": 65,
+    "diagnosis": "Eşit Aktarma Sayısı (2 aktarma) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 26 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Üsküdar (Altunizade Metrobüs) ➔ Silivri (Otogar)",
+    "straight_km": 67.9,
+    "our_door_to_door_min": 185,
+    "our_in_vehicle_min": 138,
+    "our_curb_wait_min": 3,
+    "our_traffic_delay_min": 20,
+    "our_transfers": 1,
+    "our_lines": [
+      "34G",
+      "303A"
+    ],
+    "moovit_duration_min": 167,
+    "moovit_lines": [
+      "M5",
+      "B1",
+      "0",
+      "Otobüs",
+      "303B"
+    ],
+    "delta_min": 18,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 4 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Araç hemen geliyor (Durakta bekleme sadece 3 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Başakşehir (Metrokent) ➔ Gaziosmanpaşa (Meydan)",
+    "straight_km": 10.3,
+    "our_door_to_door_min": 87,
+    "our_in_vehicle_min": 63,
+    "our_curb_wait_min": 2,
+    "our_traffic_delay_min": 6,
+    "our_transfers": 2,
+    "our_lines": [
+      "79B",
+      "34G",
+      "55T"
+    ],
+    "moovit_duration_min": 80,
+    "moovit_lines": [
+      "Otobüs",
+      "79B\t/\t98KM\t/\t78Ş\t/\t78G\t/\t79T",
+      "M3",
+      "M7",
+      "TM14"
+    ],
+    "delta_min": 7,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 4 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Araç hemen geliyor (Durakta bekleme sadece 2 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Gaziosmanpaşa (Meydan) ➔ Fatih (Eminönü)",
+    "straight_km": 8.3,
+    "our_door_to_door_min": 61,
+    "our_in_vehicle_min": 36,
+    "our_curb_wait_min": 14,
+    "our_traffic_delay_min": 3,
+    "our_transfers": 1,
+    "our_lines": [
+      "38",
+      "T1"
+    ],
+    "moovit_duration_min": 48,
+    "moovit_lines": [
+      "T4",
+      "T1"
+    ],
+    "delta_min": 13,
+    "diagnosis": "Eşit Aktarma Sayısı (1 aktarma) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 14 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Zeytinburnu (Cevizlibağ) ➔ Arnavutköy (Merkez)",
+    "straight_km": 22.3,
+    "our_door_to_door_min": 101,
+    "our_in_vehicle_min": 68,
+    "our_curb_wait_min": 4,
+    "our_traffic_delay_min": 8,
+    "our_transfers": 1,
+    "our_lines": [
+      "41AT",
+      "336"
+    ],
+    "moovit_duration_min": 101,
+    "moovit_lines": [
+      "34BZ",
+      "M11"
+    ],
+    "delta_min": 0,
+    "diagnosis": "Eşit Aktarma Sayısı (1 aktarma) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik"
+  },
+  {
+    "corridor": "Üsküdar (Altunizade Metrobüs) ➔ Bağcılar (Meydan)",
+    "straight_km": 15.6,
+    "our_door_to_door_min": 95,
+    "our_in_vehicle_min": 47,
+    "our_curb_wait_min": 26,
+    "our_traffic_delay_min": 5,
+    "our_transfers": 1,
+    "our_lines": [
+      "34G",
+      "98Y"
+    ],
+    "moovit_duration_min": 83,
+    "moovit_lines": [
+      "Otobüs",
+      "15F\t/\t14M",
+      "34G",
+      "M3"
+    ],
+    "delta_min": 12,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 26 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Bakırköy (İskele / Meydan) ➔ Esenyurt (Meydan)",
+    "straight_km": 17.9,
+    "our_door_to_door_min": 109,
+    "our_in_vehicle_min": 61,
+    "our_curb_wait_min": 3,
+    "our_traffic_delay_min": 6,
+    "our_transfers": 1,
+    "our_lines": [
+      "MR20",
+      "76D"
+    ],
+    "moovit_duration_min": 98,
+    "moovit_lines": [
+      "M3",
+      "Otobüs",
+      "76D",
+      "HS2"
+    ],
+    "delta_min": 11,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik | Araç hemen geliyor (Durakta bekleme sadece 3 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Pendik (Sabiha Gökçen SAW) ➔ Tuzla (Şifa Mahallesi)",
+    "straight_km": 10.5,
+    "our_door_to_door_min": 67,
+    "our_in_vehicle_min": 46,
+    "our_curb_wait_min": 14,
+    "our_traffic_delay_min": 7,
+    "our_transfers": 1,
+    "our_lines": [
+      "KM27",
+      "130Ş"
+    ],
+    "moovit_duration_min": 101,
+    "moovit_lines": [
+      "M4",
+      "Otobüs",
+      "KM12"
+    ],
+    "delta_min": -34,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 2 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik | Şu anki saatte durakta 14 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Bayrampaşa (Yıldırım) ➔ Bakırköy (İskele / Meydan)",
+    "straight_km": 8.5,
+    "our_door_to_door_min": 76,
+    "our_in_vehicle_min": 42,
+    "our_curb_wait_min": 14,
+    "our_traffic_delay_min": 3,
+    "our_transfers": 1,
+    "our_lines": [
+      "T4",
+      "50B"
+    ],
+    "moovit_duration_min": 62,
+    "moovit_lines": [
+      "Otobüs",
+      "HT5",
+      "M1A",
+      "76V\t/\t146\t/\t98T\t/\t98\t/\t98H\t/\t..."
+    ],
+    "delta_min": 14,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 14 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Ataşehir (Batı) ➔ Bağcılar (Meydan)",
+    "straight_km": 21.3,
+    "our_door_to_door_min": 110,
+    "our_in_vehicle_min": 88,
+    "our_curb_wait_min": 3,
+    "our_traffic_delay_min": 9,
+    "our_transfers": 2,
+    "our_lines": [
+      "8A",
+      "34G",
+      "92Ş"
+    ],
+    "moovit_duration_min": 110,
+    "moovit_lines": [
+      "Otobüs",
+      "16M",
+      "34G",
+      "92Ş"
+    ],
+    "delta_min": 0,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Araç hemen geliyor (Durakta bekleme sadece 3 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Sultanbeyli (Merkez) ➔ Üsküdar (Marmaray Meydan)",
+    "straight_km": 20.4,
+    "our_door_to_door_min": 57,
+    "our_in_vehicle_min": 29,
+    "our_curb_wait_min": 6,
+    "our_traffic_delay_min": 4,
+    "our_transfers": 0,
+    "our_lines": [
+      "18D / 18K +2"
+    ],
+    "moovit_duration_min": 66,
+    "moovit_lines": [
+      "M5",
+      "Otobüs",
+      "14R\t/\tMR9\t/\t13\t/\t12A\t/\t13B\t/\t..."
+    ],
+    "delta_min": -9,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 2 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik"
+  },
+  {
+    "corridor": "Silivri (Otogar) ➔ Pendik (Sabiha Gökçen SAW)",
+    "straight_km": 91.9,
+    "our_door_to_door_min": 247,
+    "our_in_vehicle_min": 199,
+    "our_curb_wait_min": 10,
+    "our_traffic_delay_min": 21,
+    "our_transfers": 2,
+    "our_lines": [
+      "303A",
+      "34G",
+      "M4"
+    ],
+    "moovit_duration_min": 279,
+    "moovit_lines": [
+      "Otobüs",
+      "303A",
+      "34G",
+      "M4"
+    ],
+    "delta_min": -32,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 10 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Beykoz (Ortaçeşme) ➔ Gaziosmanpaşa (Meydan)",
+    "straight_km": 17.1,
+    "our_door_to_door_min": 127,
+    "our_in_vehicle_min": 91,
+    "our_curb_wait_min": 1,
+    "our_traffic_delay_min": 11,
+    "our_transfers": 1,
+    "our_lines": [
+      "121A",
+      "55"
+    ],
+    "moovit_duration_min": 136,
+    "moovit_lines": [
+      "Otobüs",
+      "121A",
+      "50Z",
+      "50A\t/\tTM16\t/\tTM13"
+    ],
+    "delta_min": -9,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik | Araç hemen geliyor (Durakta bekleme sadece 1 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Silivri (Otogar) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 62.1,
+    "our_door_to_door_min": 176,
+    "our_in_vehicle_min": 129,
+    "our_curb_wait_min": 4,
+    "our_traffic_delay_min": 19,
+    "our_transfers": 1,
+    "our_lines": [
+      "303A",
+      "34G"
+    ],
+    "moovit_duration_min": 225,
+    "moovit_lines": [
+      "Otobüs",
+      "303A",
+      "34BZ",
+      "62G\t/\t62"
+    ],
+    "delta_min": -49,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti"
+  },
+  {
+    "corridor": "Avcılar (Merkez Metrobüs) ➔ Başakşehir (Metrokent)",
+    "straight_km": 11.9,
+    "our_door_to_door_min": 128,
+    "our_in_vehicle_min": 53,
+    "our_curb_wait_min": 14,
+    "our_traffic_delay_min": 7,
+    "our_transfers": 0,
+    "our_lines": [
+      "76O"
+    ],
+    "moovit_duration_min": 85,
+    "moovit_lines": [
+      "34BZ",
+      "Otobüs",
+      "79B\t/\t79F",
+      "98H\t/\t78H"
+    ],
+    "delta_min": 43,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik | Şu anki saatte durakta 14 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Beyoğlu (Taksim) ➔ Bağcılar (Meydan)",
+    "straight_km": 11.5,
+    "our_door_to_door_min": 97,
+    "our_in_vehicle_min": 52,
+    "our_curb_wait_min": 22,
+    "our_traffic_delay_min": 3,
+    "our_transfers": 1,
+    "our_lines": [
+      "T1",
+      "97G"
+    ],
+    "moovit_duration_min": 89,
+    "moovit_lines": [
+      "T1",
+      "Otobüs",
+      "HT1\t/\t92B"
+    ],
+    "delta_min": 8,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 2 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 22 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Ataşehir (Batı) ➔ Kadıköy (Bostancı İskele)",
+    "straight_km": 5.4,
+    "our_door_to_door_min": 53,
+    "our_in_vehicle_min": 18,
+    "our_curb_wait_min": 7,
+    "our_traffic_delay_min": 2,
+    "our_transfers": 0,
+    "our_lines": [
+      "10"
+    ],
+    "moovit_duration_min": 64,
+    "moovit_lines": [
+      "Otobüs",
+      "10"
+    ],
+    "delta_min": -11,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 1 aktarma - Konforlu Rota)"
+  },
+  {
+    "corridor": "Sultanbeyli (Merkez) ➔ Kadıköy (Söğütlüçeşme)",
+    "straight_km": 18.8,
+    "our_door_to_door_min": 77,
+    "our_in_vehicle_min": 55,
+    "our_curb_wait_min": 1,
+    "our_traffic_delay_min": 6,
+    "our_transfers": 1,
+    "our_lines": [
+      "18D",
+      "16D"
+    ],
+    "moovit_duration_min": 85,
+    "moovit_lines": [
+      "Otobüs",
+      "18D",
+      "15BK",
+      "16D"
+    ],
+    "delta_min": -8,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | Araç hemen geliyor (Durakta bekleme sadece 1 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Küçükçekmece (Halkalı Marmaray) ➔ Tuzla (Şifa Mahallesi)",
+    "straight_km": 50.9,
+    "our_door_to_door_min": 228,
+    "our_in_vehicle_min": 126,
+    "our_curb_wait_min": 77,
+    "our_traffic_delay_min": 4,
+    "our_transfers": 1,
+    "our_lines": [
+      "Marmaray",
+      "130Ş"
+    ],
+    "moovit_duration_min": 126,
+    "moovit_lines": [
+      "B1"
+    ],
+    "delta_min": 102,
+    "diagnosis": "Fazladan Aktarma (Biz: 1 aktarma vs Moovit: 0 aktarma - Dikkat!) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 77 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Şişli (Mecidiyeköy) ➔ Üsküdar (Altunizade Metrobüs)",
+    "straight_km": 4.6,
+    "our_door_to_door_min": 30,
+    "our_in_vehicle_min": 5,
+    "our_curb_wait_min": 3,
+    "our_traffic_delay_min": 0,
+    "our_transfers": 0,
+    "our_lines": [
+      "522 / 251"
+    ],
+    "moovit_duration_min": 37,
+    "moovit_lines": [
+      "Otobüs",
+      "251\t/\t522\t/\t256",
+      "14M\t/\t15F"
+    ],
+    "delta_min": -7,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 2 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik | Araç hemen geliyor (Durakta bekleme sadece 3 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Pendik (YHT Garı) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 29.6,
+    "our_door_to_door_min": 93,
+    "our_in_vehicle_min": 64,
+    "our_curb_wait_min": 4,
+    "our_traffic_delay_min": 2,
+    "our_transfers": 2,
+    "our_lines": [
+      "KM37",
+      "M4",
+      "500T"
+    ],
+    "moovit_duration_min": 106,
+    "moovit_lines": [
+      "Otobüs",
+      "16D\t/\tKM33\t/\t132H\t/\t251",
+      "B1",
+      "M2",
+      "65G"
+    ],
+    "delta_min": -13,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 4 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti"
+  },
+  {
+    "corridor": "Sarıyer (Maslak İTÜ) ➔ Tuzla (Şifa Mahallesi)",
+    "straight_km": 42.2,
+    "our_door_to_door_min": 167,
+    "our_in_vehicle_min": 129,
+    "our_curb_wait_min": 3,
+    "our_traffic_delay_min": 4,
+    "our_transfers": 2,
+    "our_lines": [
+      "M2",
+      "Marmaray",
+      "130Ş"
+    ],
+    "moovit_duration_min": 129,
+    "moovit_lines": [
+      "Otobüs",
+      "41N",
+      "M2",
+      "B1",
+      "KM12"
+    ],
+    "delta_min": 38,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 4 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Araç hemen geliyor (Durakta bekleme sadece 3 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Çatalca (Meydan) ➔ Beyoğlu (Taksim)",
+    "straight_km": 45.2,
+    "our_door_to_door_min": 148,
+    "our_in_vehicle_min": 100,
+    "our_curb_wait_min": 3,
+    "our_traffic_delay_min": 15,
+    "our_transfers": 1,
+    "our_lines": [
+      "401",
+      "34G"
+    ],
+    "moovit_duration_min": 169,
+    "moovit_lines": [
+      "Otobüs",
+      "401",
+      "145T",
+      "70KE"
+    ],
+    "delta_min": -21,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Araç hemen geliyor (Durakta bekleme sadece 3 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Fatih (Eminönü) ➔ Zeytinburnu (Cevizlibağ)",
+    "straight_km": 4.4,
+    "our_door_to_door_min": 51,
+    "our_in_vehicle_min": 19,
+    "our_curb_wait_min": 8,
+    "our_traffic_delay_min": 3,
+    "our_transfers": 0,
+    "our_lines": [
+      "33"
+    ],
+    "moovit_duration_min": 52,
+    "moovit_lines": [
+      "Otobüs",
+      "32\t/\t33\t/\t32T"
+    ],
+    "delta_min": -1,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 1 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik"
+  },
+  {
+    "corridor": "Kadıköy (Bostancı İskele) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 14.1,
+    "our_door_to_door_min": 85,
+    "our_in_vehicle_min": 22,
+    "our_curb_wait_min": 36,
+    "our_traffic_delay_min": 3,
+    "our_transfers": 0,
+    "our_lines": [
+      "251"
+    ],
+    "moovit_duration_min": 68,
+    "moovit_lines": [
+      "M4",
+      "34G"
+    ],
+    "delta_min": 17,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 1 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik | Şu anki saatte durakta 36 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Sarıyer (Maslak İTÜ) ➔ Şişli (Mecidiyeköy)",
+    "straight_km": 5.1,
+    "our_door_to_door_min": 40,
+    "our_in_vehicle_min": 9,
+    "our_curb_wait_min": 3,
+    "our_traffic_delay_min": 1,
+    "our_transfers": 0,
+    "our_lines": [
+      "29B"
+    ],
+    "moovit_duration_min": 55,
+    "moovit_lines": [
+      "Otobüs",
+      "29E",
+      "65A"
+    ],
+    "delta_min": -15,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 2 aktarma - Konforlu Rota) | Araç hemen geliyor (Durakta bekleme sadece 3 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Kağıthane (Merkez) ➔ Tuzla (Marina)",
+    "straight_km": 39.9,
+    "our_door_to_door_min": 137,
+    "our_in_vehicle_min": 111,
+    "our_curb_wait_min": 3,
+    "our_traffic_delay_min": 8,
+    "our_transfers": 3,
+    "our_lines": [
+      "34G",
+      "M4",
+      "16D",
+      "130Ş"
+    ],
+    "moovit_duration_min": 122,
+    "moovit_lines": [
+      "34G",
+      "B1",
+      "Otobüs",
+      "KM12"
+    ],
+    "delta_min": 15,
+    "diagnosis": "Eşit Aktarma Sayısı (3 aktarma) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Araç hemen geliyor (Durakta bekleme sadece 3 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Pendik (Sabiha Gökçen SAW) ➔ Silivri (Otogar)",
+    "straight_km": 92.1,
+    "our_door_to_door_min": 252,
+    "our_in_vehicle_min": 198,
+    "our_curb_wait_min": 16,
+    "our_traffic_delay_min": 21,
+    "our_transfers": 2,
+    "our_lines": [
+      "M4",
+      "34G",
+      "303A"
+    ],
+    "moovit_duration_min": 233,
+    "moovit_lines": [
+      "Otobüs",
+      "SG-1",
+      "34G",
+      "303A"
+    ],
+    "delta_min": 19,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 16 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Sultanbeyli (Merkez) ➔ Bağcılar (Meydan)",
+    "straight_km": 35.3,
+    "our_door_to_door_min": 132,
+    "our_in_vehicle_min": 86,
+    "our_curb_wait_min": 11,
+    "our_traffic_delay_min": 9,
+    "our_transfers": 2,
+    "our_lines": [
+      "18K",
+      "34G",
+      "92Ş"
+    ],
+    "moovit_duration_min": 122,
+    "moovit_lines": [
+      "Otobüs",
+      "18D",
+      "34G",
+      "92Ş"
+    ],
+    "delta_min": 10,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 11 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Kadıköy (Bostancı İskele) ➔ Sarıyer (Hacıosman)",
+    "straight_km": 21.4,
+    "our_door_to_door_min": 75,
+    "our_in_vehicle_min": 39,
+    "our_curb_wait_min": 6,
+    "our_traffic_delay_min": 3,
+    "our_transfers": 1,
+    "our_lines": [
+      "500T",
+      "29D"
+    ],
+    "moovit_duration_min": 79,
+    "moovit_lines": [
+      "B1",
+      "M2"
+    ],
+    "delta_min": -4,
+    "diagnosis": "Eşit Aktarma Sayısı (1 aktarma) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik"
+  },
+  {
+    "corridor": "Şişli (Mecidiyeköy) ➔ Ümraniye (Santral)",
+    "straight_km": 8.7,
+    "our_door_to_door_min": 48,
+    "our_in_vehicle_min": 16,
+    "our_curb_wait_min": 14,
+    "our_traffic_delay_min": 2,
+    "our_transfers": 0,
+    "our_lines": [
+      "522"
+    ],
+    "moovit_duration_min": 55,
+    "moovit_lines": [
+      "Otobüs",
+      "522"
+    ],
+    "delta_min": -7,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 1 aktarma - Konforlu Rota) | Şu anki saatte durakta 14 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Çatalca (Meydan) ➔ Pendik (Sabiha Gökçen SAW)",
+    "straight_km": 76.5,
+    "our_door_to_door_min": 214,
+    "our_in_vehicle_min": 173,
+    "our_curb_wait_min": 7,
+    "our_traffic_delay_min": 17,
+    "our_transfers": 2,
+    "our_lines": [
+      "401",
+      "34G",
+      "M4"
+    ],
+    "moovit_duration_min": 306,
+    "moovit_lines": [
+      "Otobüs",
+      "401",
+      "34G",
+      "M4",
+      "KM23"
+    ],
+    "delta_min": -92,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 4 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti"
+  },
+  {
+    "corridor": "Kağıthane (Merkez) ➔ Ataşehir (Batı)",
+    "straight_km": 18.5,
+    "our_door_to_door_min": 115,
+    "our_in_vehicle_min": 71,
+    "our_curb_wait_min": 23,
+    "our_traffic_delay_min": 7,
+    "our_transfers": 2,
+    "our_lines": [
+      "48H",
+      "34G",
+      "19K"
+    ],
+    "moovit_duration_min": 82,
+    "moovit_lines": [
+      "Otobüs",
+      "TM2\t/\t62G\t/\t62H",
+      "M7",
+      "34G",
+      "M4",
+      "M8"
+    ],
+    "delta_min": 33,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 5 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 23 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Şişli (Mecidiyeköy) ➔ Şile (Merkez)",
+    "straight_km": 55.5,
+    "our_door_to_door_min": 145,
+    "our_in_vehicle_min": 103,
+    "our_curb_wait_min": 1,
+    "our_traffic_delay_min": 15,
+    "our_transfers": 1,
+    "our_lines": [
+      "522ST",
+      "139A"
+    ],
+    "moovit_duration_min": 165,
+    "moovit_lines": [
+      "Otobüs",
+      "30M\t/\tDT2\t/\t256\t/\t66",
+      "522ST\t/\t122D\t/\t122M",
+      "139A\t/\t139"
+    ],
+    "delta_min": -20,
+    "diagnosis": "Daha Az Aktarma (Biz: 1 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | Moovit Raylı/Metrobüs seçti, biz karayolu ekspres otobüsü tercih ettik | Araç hemen geliyor (Durakta bekleme sadece 1 dk - Sık sefer)"
+  },
+  {
+    "corridor": "Zeytinburnu (Cevizlibağ) ➔ Tuzla (Marina)",
+    "straight_km": 38.7,
+    "our_door_to_door_min": 140,
+    "our_in_vehicle_min": 114,
+    "our_curb_wait_min": 12,
+    "our_traffic_delay_min": 5,
+    "our_transfers": 2,
+    "our_lines": [
+      "50K",
+      "Marmaray",
+      "130Ş"
+    ],
+    "moovit_duration_min": 115,
+    "moovit_lines": [
+      "Otobüs",
+      "50K",
+      "B1",
+      "KM12"
+    ],
+    "delta_min": 25,
+    "diagnosis": "Daha Az Aktarma (Biz: 2 aktarma vs Moovit: 3 aktarma - Konforlu Rota) | İki sistem de Raylı Sistem / Metrobüs omurgasında birleşti | Şu anki saatte durakta 12 dk bekleme süresi var (Seyrek hat)"
+  },
+  {
+    "corridor": "Avcılar (Merkez Metrobüs) ➔ Fatih (Yenikapı Marmaray)",
+    "straight_km": 18.5,
+    "our_door_to_door_min": 70,
+    "our_in_vehicle_min": 36,
+    "our_curb_wait_min": 9,
+    "our_traffic_delay_min": 5,
+    "our_transfers": 0,
+    "our_lines": [
+      "76D"
+    ],
+    "moovit_duration_min": 70,
+    "moovit_lines": [
+      "Otobüs",
+      "76D"
+    ],
+    "delta_min": 0,
+    "diagnosis": "Daha Az Aktarma (Biz: 0 aktarma vs Moovit: 1 aktarma - Konforlu Rota)"
+  }
+]

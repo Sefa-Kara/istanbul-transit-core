@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments & Local Secrets
+.env
+venv/
+env/
+.venv/
+ENV/
+
+# Large Engine Binaries & Graph Cache (GitHub 100MB limit & Git LFS)
+bin/*.jar
+data/router/graph.obj
+data/gtfs_raw/
+data/gtfs_temp/
+data/raw/
+data/**/*.pbf
+data/**/*.sqlite*
+data/**/*.zip
+data/**/*.csv
+
+# Logs & Runtime Caches
+logs/*.log
+cache/*
+!cache/.gitkeep
+
+# Temporary test scripts
+scripts/test_benchmark_diff.py
+
+# Operating System & IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

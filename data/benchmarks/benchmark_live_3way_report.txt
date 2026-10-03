@@ -1,0 +1,2310 @@
+====================================================================================================
+📊 İSTANBUL TRANSIT CORE vs. MOOVIT vs. GOOGLE HARİTALAR CANLI BENCHMARK VERİ RAPORU
+Tarih/Saat: 2026-10-01 18:09:36 | Toplam Rota: 100
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ROTA #0001: Tuzla (Şifa Mahallesi) ➔ Ataşehir (Batı)
+Koordinatlar: (40.816472, 29.314836) ➔ (40.981051, 29.115325) | Kuş Uçuşu: 24.8 km
+Süre Farkı  : Moovit'e Göre: -30 dk | Google Haritalar'a Göre: -17 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 73 dakika (Trafik Gecikmesi: +24 dk)
+   - Yürüme Süresi  : 2 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 16D ➔ BUS KM46
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 103 dakika (Metin: 1 sa 43 dk)
+   - Önerilen Hatlar: Otobüs ➔ KM12 ➔ B1 ➔ M8
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 90 dakika (Metin: 1 sa. 30 dk.)
+   - Önerilen Hatlar: KM12 ➔ M4 ➔ 19SK
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0002: Küçükçekmece (Sefaköy) ➔ Sarıyer (Hacıosman)
+Koordinatlar: (40.997618, 28.796746) ➔ (41.142468, 29.035818) | Kuş Uçuşu: 25.8 km
+Süre Farkı  : Moovit'e Göre: +17 dk | Google Haritalar'a Göre: -10 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 102 dakika (Trafik Gecikmesi: +21 dk)
+   - Yürüme Süresi  : 18 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 34BZ ➔ BUS 500L ➔ BUS 29C
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 85 dakika (Metin: 1 sa 25 dk)
+   - Önerilen Hatlar: 34BZ ➔ M2
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 112 dakika (Metin: 1 sa. 52 dk.)
+   - Önerilen Hatlar: 89A ➔ 34G ➔ 29C
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0003: Sancaktepe (Sarıgazi) ➔ Çatalca (Meydan)
+Koordinatlar: (40.997370, 29.227884) ➔ (41.142074, 28.460250) | Kuş Uçuşu: 66.7 km
+Süre Farkı  : Moovit'e Göre: -75 dk | Google Haritalar'a Göre: -110 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 119 dakika (Trafik Gecikmesi: +31 dk)
+   - Yürüme Süresi  : 4 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 132YM ➔ BUS 622 ➔ BUS 41AT ➔ BUS 145T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 194 dakika (Metin: 3 sa 14 dk)
+   - Önerilen Hatlar: M5 ➔ 34G ➔ Otobüs ➔ 401
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 229 dakika (Metin: 3 sa. 49 dk.)
+   - Önerilen Hatlar: M5 ➔ 34G ➔ 401
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0004: Büyükçekmece (Sahil) ➔ Kadıköy (Rıhtım İskele)
+Koordinatlar: (41.011693, 28.575242) ➔ (40.986555, 29.016274) | Kuş Uçuşu: 37.3 km
+Süre Farkı  : Moovit'e Göre: -76 dk | Google Haritalar'a Göre: -58 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 81 dakika (Trafik Gecikmesi: +9 dk)
+   - Yürüme Süresi  : 13 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 429A ➔ BUS 145T ➔ BUS 32 ➔ FERRY K.KOY_KDK
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 157 dakika (Metin: 2 sa 37 dk)
+   - Önerilen Hatlar: Otobüs ➔ 448	/	401T	/	401	/	303A	/	HT48 ➔ 34G ➔ M4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 139 dakika (Metin: 2 sa. 19 dk.)
+   - Önerilen Hatlar: HVL-2 ➔ A43-Avcılar-Kıraç ➔ A43-Avcılar-Kıraç2 ➔ B1 (Marmaray) ➔ M4
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0005: Maltepe (Merkez) ➔ Beylikdüzü (TÜYAP Sondurak)
+Koordinatlar: (40.930637, 29.143160) ➔ (41.026540, 28.636335) | Kuş Uçuşu: 44.1 km
+Süre Farkı  : Moovit'e Göre: -29 dk | Google Haritalar'a Göre: -35 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 112 dakika (Trafik Gecikmesi: +28 dk)
+   - Yürüme Süresi  : 5 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 500T ➔ BUS 500L ➔ BUS 41AT ➔ BUS 145T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 141 dakika (Metin: 2 sa 21 dk)
+   - Önerilen Hatlar: M4 ➔ 34G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 147 dakika (Metin: 2 sa. 27 dk.)
+   - Önerilen Hatlar: C58-Maltepe-Gülensu ➔ B1 (Marmaray) ➔ A32-Küçükçekmece-Yeşilkent ➔ 429A
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0006: Esenyurt (Meydan) ➔ Gaziosmanpaşa (Meydan)
+Koordinatlar: (41.028298, 28.669797) ➔ (41.049809, 28.909820) | Kuş Uçuşu: 20.4 km
+Süre Farkı  : Moovit'e Göre: -35 dk | Google Haritalar'a Göre: -48 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 61 dakika (Trafik Gecikmesi: +10 dk)
+   - Yürüme Süresi  : 12 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS HT29 ➔ BUS 145T ➔ BUS 88
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 96 dakika (Metin: 1 sa 36 dk)
+   - Önerilen Hatlar: Otobüs ➔ HT29	/	ES4 ➔ 145T ➔ T4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 109 dakika (Metin: 1 sa. 49 dk.)
+   - Önerilen Hatlar: A43-Avcılar-Kıraç ➔ A43-Avcılar-Kıraç2 ➔ 34G ➔ 34BZ ➔ A11-Cevatpaşa-Edirnekapı ➔ A11-Fabrikalar-Edirnekapi
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0007: Güngören (Köyiçi) ➔ Sarıyer (Maslak İTÜ)
+Koordinatlar: (41.017513, 28.876500) ➔ (41.094631, 29.032017) | Kuş Uçuşu: 15.7 km
+Süre Farkı  : Moovit'e Göre: +4 dk | Google Haritalar'a Göre: +19 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 94 dakika (Trafik Gecikmesi: +19 dk)
+   - Yürüme Süresi  : 10 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 92T ➔ BUS DT2 ➔ BUS 58N
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 90 dakika (Metin: 1 sa 30 dk)
+   - Önerilen Hatlar: T1 ➔ 34BZ ➔ Otobüs ➔ 58N
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 75 dakika (Metin: 1 sa. 15 dk.)
+   - Önerilen Hatlar: 92T ➔ DT2 ➔ SRY-10/Baltalimanı-Mecidiyeköy ➔ 58N ➔ 59N
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0008: Küçükçekmece (Halkalı Marmaray) ➔ Esenler (Otogar)
+Koordinatlar: (41.016648, 28.759887) ➔ (41.032360, 28.901371) | Kuş Uçuşu: 12.1 km
+Süre Farkı  : Moovit'e Göre: -12 dk | Google Haritalar'a Göre: -36 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 89 dakika (Trafik Gecikmesi: +6 dk)
+   - Yürüme Süresi  : 50 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 79Y ➔ SUBWAY M1A
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 101 dakika (Metin: 1 sa 41 dk)
+   - Önerilen Hatlar: Otobüs ➔ BN1 ➔ B1 ➔ M1A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 125 dakika (Metin: 2 sa. 5 dk.)
+   - Önerilen Hatlar: 98S ➔ 76V ➔ M1A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0009: Sarıyer (Maslak İTÜ) ➔ Avcılar (Merkez Metrobüs)
+Koordinatlar: (41.101904, 29.015454) ➔ (40.991149, 28.724145) | Kuş Uçuşu: 27.5 km
+Süre Farkı  : Moovit'e Göre: -1 dk | Google Haritalar'a Göre: -28 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 110 dakika (Trafik Gecikmesi: +20 dk)
+   - Yürüme Süresi  : 35 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 500L ➔ BUS 41AT ➔ BUS 76D
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 111 dakika (Metin: 1 sa 51 dk)
+   - Önerilen Hatlar: M2 ➔ 34G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 138 dakika (Metin: 2 sa. 18 dk.)
+   - Önerilen Hatlar: 500L ➔ 76D
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0010: Arnavutköy (İstanbul Havalimanı IST) ➔ Şişli (Mecidiyeköy)
+Koordinatlar: (41.260440, 28.734366) ➔ (41.077359, 28.999325) | Kuş Uçuşu: 30.2 km
+Süre Farkı  : Moovit'e Göre: -10 dk | Google Haritalar'a Göre: -13 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 62 dakika (Trafik Gecikmesi: +4 dk)
+   - Yürüme Süresi  : 20 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : SUBWAY M11 ➔ BUS 65G
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 72 dakika (Metin: 1 sa 12 dk)
+   - Önerilen Hatlar: M11 ➔ Otobüs ➔ 62	/	62G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 75 dakika (Metin: 1 sa. 15 dk.)
+   - Önerilen Hatlar: M11 ➔ 62 ➔ 65G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0011: Kadıköy (Söğütlüçeşme) ➔ Bakırköy (İskele / Meydan)
+Koordinatlar: (40.997406, 29.047436) ➔ (40.976716, 28.861188) | Kuş Uçuşu: 15.9 km
+Süre Farkı  : Moovit'e Göre: +24 dk | Google Haritalar'a Göre: -12 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 77 dakika (Trafik Gecikmesi: +18 dk)
+   - Yürüme Süresi  : 9 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 34G ➔ BUS 72T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 53 dakika (Metin: 53 dk)
+   - Önerilen Hatlar: M4 ➔ B1
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 89 dakika (Metin: 1 sa. 29 dk.)
+   - Önerilen Hatlar: 34G ➔ 34AS ➔ 72T
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0012: Kağıthane (Merkez) ➔ Arnavutköy (İstanbul Havalimanı IST)
+Koordinatlar: (41.091095, 28.984497) ➔ (41.256155, 28.752089) | Kuş Uçuşu: 26.8 km
+Süre Farkı  : Moovit'e Göre: +11 dk | Google Haritalar'a Göre: -7 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 70 dakika (Trafik Gecikmesi: +2 dk)
+   - Yürüme Süresi  : 36 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS K1 ➔ SUBWAY M11
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 59 dakika (Metin: 59 dk)
+   - Önerilen Hatlar: Otobüs ➔ K3	/	63	/	41ST	/	50D	/	K1	/	... ➔ M11
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 77 dakika (Metin: 1 sa. 17 dk.)
+   - Önerilen Hatlar: 63 ➔ K1 ➔ M11
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0013: Maltepe (Merkez) ➔ Şişli (Mecidiyeköy)
+Koordinatlar: (40.916929, 29.134360) ➔ (41.069553, 28.998743) | Kuş Uçuşu: 20.4 km
+Süre Farkı  : Moovit'e Göre: +8 dk | Google Haritalar'a Göre: -6 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 84 dakika (Trafik Gecikmesi: +20 dk)
+   - Yürüme Süresi  : 16 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 16D ➔ BUS 10F ➔ BUS 251
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 76 dakika (Metin: 1 sa 16 dk)
+   - Önerilen Hatlar: B1 ➔ M2
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 90 dakika (Metin: 1 sa. 30 dk.)
+   - Önerilen Hatlar: 16D ➔ 34AS ➔ 34G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0014: Sancaktepe (Sarıgazi) ➔ Gaziosmanpaşa (Meydan)
+Koordinatlar: (40.986137, 29.241308) ➔ (41.057060, 28.915514) | Kuş Uçuşu: 28.6 km
+Süre Farkı  : Moovit'e Göre: -21 dk | Google Haritalar'a Göre: -43 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 93 dakika (Trafik Gecikmesi: +18 dk)
+   - Yürüme Süresi  : 13 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS UM60 ➔ BUS 622 ➔ BUS 36Z ➔ BUS 38B
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 114 dakika (Metin: 1 sa 54 dk)
+   - Önerilen Hatlar: Otobüs ➔ SM2	/	UM60	/	KM61 ➔ M5 ➔ 34G ➔ 55ET	/	55
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 136 dakika (Metin: 2 sa. 16 dk.)
+   - Önerilen Hatlar: KM61 ➔ 522ST ➔ DT1 ➔ 55T
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0015: Arnavutköy (Merkez) ➔ Bağcılar (Meydan)
+Koordinatlar: (41.182518, 28.736168) ➔ (41.028376, 28.862677) | Kuş Uçuşu: 20.2 km
+Süre Farkı  : Moovit'e Göre: +2 dk | Google Haritalar'a Göre: +13 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 112 dakika (Trafik Gecikmesi: +28 dk)
+   - Yürüme Süresi  : 10 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 36C ➔ BUS 79KT ➔ BUS HT11 ➔ BUS 92B
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 110 dakika (Metin: 1 sa 50 dk)
+   - Önerilen Hatlar: 0 ➔ ARN6	/	ARN7 ➔ M11 ➔ M3 ➔ Otobüs ➔ 92B
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 99 dakika (Metin: 1 sa. 39 dk.)
+   - Önerilen Hatlar: MK22 ➔ M3 ➔ 92B
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0016: Beyoğlu (Taksim) ➔ Üsküdar (Altunizade Metrobüs)
+Koordinatlar: (41.033550, 28.994547) ➔ (41.023958, 29.059111) | Kuş Uçuşu: 5.5 km
+Süre Farkı  : Moovit'e Göre: -6 dk | Google Haritalar'a Göre: -21 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 30 dakika (Trafik Gecikmesi: +4 dk)
+   - Yürüme Süresi  : 12 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 58A ➔ BUS 129T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 36 dakika (Metin: 36 dk)
+   - Önerilen Hatlar: Boğaz Hattı ➔ M5
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 51 dakika (Metin: 51 dk.)
+   - Önerilen Hatlar: 62 ➔ 522
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0017: Ümraniye (Santral) ➔ Beylikdüzü (TÜYAP Sondurak)
+Koordinatlar: (41.025913, 29.094114) ➔ (41.022314, 28.628655) | Kuş Uçuşu: 39.3 km
+Süre Farkı  : Moovit'e Göre: +8 dk | Google Haritalar'a Göre: -24 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 129 dakika (Trafik Gecikmesi: +43 dk)
+   - Yürüme Süresi  : 6 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 522 ➔ BUS 93M ➔ BUS 145T ➔ BUS 400A
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 121 dakika (Metin: 2 sa 1 dk)
+   - Önerilen Hatlar: M5 ➔ 34G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 153 dakika (Metin: 2 sa. 33 dk.)
+   - Önerilen Hatlar: 522 ➔ 34G ➔ 34B ➔ 34BZ ➔ 34C
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0018: Üsküdar (Altunizade Metrobüs) ➔ Beyoğlu (Taksim)
+Koordinatlar: (41.021012, 29.057922) ➔ (41.034881, 28.984982) | Kuş Uçuşu: 6.3 km
+Süre Farkı  : Moovit'e Göre: -1 dk | Google Haritalar'a Göre: +3 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 41 dakika (Trafik Gecikmesi: +8 dk)
+   - Yürüme Süresi  : 13 dakika | Aktarma Sayısı: 0
+   - Kullanılan Hat : BUS 129T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 42 dakika (Metin: 42 dk)
+   - Önerilen Hatlar: 34G ➔ M2
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 38 dakika (Metin: 38 dk.)
+   - Önerilen Hatlar: 129T
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0019: Kağıthane (Merkez) ➔ Çatalca (Meydan)
+Koordinatlar: (41.074012, 28.981523) ➔ (41.150663, 28.459823) | Kuş Uçuşu: 44.8 km
+Süre Farkı  : Moovit'e Göre: -78 dk | Google Haritalar'a Göre: -113 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 74 dakika (Trafik Gecikmesi: +22 dk)
+   - Yürüme Süresi  : 13 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 93M ➔ BUS 145T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 152 dakika (Metin: 2 sa 32 dk)
+   - Önerilen Hatlar: 34BZ ➔ Otobüs ➔ 401
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 187 dakika (Metin: 3 sa. 7 dk.)
+   - Önerilen Hatlar: 34G ➔ 401
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0020: Esenyurt (Meydan) ➔ Ümraniye (Santral)
+Koordinatlar: (41.040469, 28.675028) ➔ (41.013601, 29.084162) | Kuş Uçuşu: 34.6 km
+Süre Farkı  : Moovit'e Göre: +0 dk | Google Haritalar'a Göre: +2 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 135 dakika (Trafik Gecikmesi: +42 dk)
+   - Yürüme Süresi  : 11 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 146F ➔ BUS E-58 ➔ BUS 522 ➔ BUS 11L
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 135 dakika (Metin: 2 sa 15 dk)
+   - Önerilen Hatlar: Otobüs ➔ 76D ➔ 34G ➔ 6
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 133 dakika (Metin: 2 sa. 13 dk.)
+   - Önerilen Hatlar: 76D ➔ 129T ➔ 6
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0021: Güngören (Köyiçi) ➔ Beşiktaş (Meydan / İskele)
+Koordinatlar: (41.019090, 28.882341) ➔ (41.037298, 29.015582) | Kuş Uçuşu: 11.4 km
+Süre Farkı  : Moovit'e Göre: +0 dk | Google Haritalar'a Göre: -77 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 75 dakika (Trafik Gecikmesi: +15 dk)
+   - Yürüme Süresi  : 8 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 33B ➔ BUS 30D
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 75 dakika (Metin: 1 sa 15 dk)
+   - Önerilen Hatlar: T1 ➔ Otobüs ➔ 26A	/	27E	/	62	/	58N	/	29C	/	...
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 152 dakika (Metin: 2 sa. 32 dk.)
+   - Önerilen Hatlar: 92B ➔ 28T
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0022: Sancaktepe (Sarıgazi) ➔ Kadıköy (Söğütlüçeşme)
+Koordinatlar: (41.004152, 29.242901) ➔ (41.002258, 29.039907) | Kuş Uçuşu: 17.1 km
+Süre Farkı  : Moovit'e Göre: -8 dk | Google Haritalar'a Göre: +7 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 70 dakika (Trafik Gecikmesi: +17 dk)
+   - Yürüme Süresi  : 13 dakika | Aktarma Sayısı: 0
+   - Kullanılan Hat : BUS 19A / 19EK
+   - Demetlenen Hat : 19A, 19EK
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 78 dakika (Metin: 1 sa 18 dk)
+   - Önerilen Hatlar: Otobüs ➔ SM14 ➔ M5 ➔ M8 ➔ M4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 63 dakika (Metin: 1 sa. 3 dk.)
+   - Önerilen Hatlar: 19A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0023: Tuzla (Şifa Mahallesi) ➔ Küçükçekmece (Halkalı Marmaray)
+Koordinatlar: (40.831267, 29.323337) ➔ (41.026499, 28.762120) | Kuş Uçuşu: 52.1 km
+Süre Farkı  : Moovit'e Göre: -2 dk | Google Haritalar'a Göre: -8 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 144 dakika (Trafik Gecikmesi: +3 dk)
+   - Yürüme Süresi  : 35 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : SUBWAY Marmaray ➔ BUS 98S
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 146 dakika (Metin: 2 sa 26 dk)
+   - Önerilen Hatlar: B1 ➔ Otobüs ➔ 79Y	/	MR51	/	98S
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 152 dakika (Metin: 2 sa. 32 dk.)
+   - Önerilen Hatlar: B1 (Marmaray) ➔ A36-Küçükçekmece-BÇSŞH
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0024: Fatih (Eminönü) ➔ Pendik (Sabiha Gökçen SAW)
+Koordinatlar: (41.007108, 28.961860) ➔ (40.912540, 29.315602) | Kuş Uçuşu: 31.6 km
+Süre Farkı  : Moovit'e Göre: +13 dk | Google Haritalar'a Göre: -25 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 109 dakika (Trafik Gecikmesi: +0 dk)
+   - Yürüme Süresi  : 15 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : TRAM T1 ➔ FERRY EMN-ADA ➔ SUBWAY M4
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 96 dakika (Metin: 1 sa 36 dk)
+   - Önerilen Hatlar: B1 ➔ M4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 134 dakika (Metin: 2 sa. 14 dk.)
+   - Önerilen Hatlar: T1 ➔ Kadıköy-Karaköy-Eminönü ➔ M4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0025: Üsküdar (Altunizade Metrobüs) ➔ Silivri (Otogar)
+Koordinatlar: (41.018970, 29.037688) ➔ (41.084059, 28.237239) | Kuş Uçuşu: 67.9 km
+Süre Farkı  : Moovit'e Göre: -45 dk | Google Haritalar'a Göre: -90 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 122 dakika (Trafik Gecikmesi: +33 dk)
+   - Yürüme Süresi  : 12 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 11C ➔ BUS 34G
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 167 dakika (Metin: 2 sa 47 dk)
+   - Önerilen Hatlar: M5 ➔ B1 ➔ 0 ➔ Otobüs ➔ 303B
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 212 dakika (Metin: 3 sa. 32 dk.)
+   - Önerilen Hatlar: 5 ➔ B1 (Marmaray) ➔ 145 ➔ 303A
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0026: Başakşehir (Metrokent) ➔ Gaziosmanpaşa (Meydan)
+Koordinatlar: (41.094431, 28.805179) ➔ (41.060401, 28.918411) | Kuş Uçuşu: 10.3 km
+Süre Farkı  : Moovit'e Göre: -4 dk | Google Haritalar'a Göre: -1 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 76 dakika (Trafik Gecikmesi: +19 dk)
+   - Yürüme Süresi  : 14 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 79T ➔ BUS 88A
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 80 dakika (Metin: 1 sa 20 dk)
+   - Önerilen Hatlar: Otobüs ➔ 79B	/	98KM	/	78Ş	/	78G	/	79T ➔ M3 ➔ M7 ➔ TM14
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 77 dakika (Metin: 1 sa. 17 dk.)
+   - Önerilen Hatlar: 78G ➔ 146B ➔ 88A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0027: Gaziosmanpaşa (Meydan) ➔ Fatih (Eminönü)
+Koordinatlar: (41.061361, 28.903865) ➔ (41.007998, 28.972787) | Kuş Uçuşu: 8.3 km
+Süre Farkı  : Moovit'e Göre: -4 dk | Google Haritalar'a Göre: +1 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 44 dakika (Trafik Gecikmesi: +7 dk)
+   - Yürüme Süresi  : 8 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 38 ➔ TRAM T1
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 48 dakika (Metin: 48 dk)
+   - Önerilen Hatlar: T4 ➔ T1
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 43 dakika (Metin: 43 dk.)
+   - Önerilen Hatlar: 38B ➔ T1
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0028: Pendik (YHT Garı) ➔ Kağıthane (Merkez)
+Koordinatlar: (40.877788, 29.235769) ➔ (41.092019, 28.965432) | Kuş Uçuşu: 32.9 km
+Süre Farkı  : Moovit'e Göre: +2 dk | Google Haritalar'a Göre: -35 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 108 dakika (Trafik Gecikmesi: +10 dk)
+   - Yürüme Süresi  : 21 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : SUBWAY Marmaray ➔ BUS 34G ➔ BUS 79KM
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 106 dakika (Metin: 1 sa 46 dk)
+   - Önerilen Hatlar: B1 ➔ M2 ➔ Otobüs ➔ M7 ➔ TM2	/	62H	/	62G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 143 dakika (Metin: 2 sa. 23 dk.)
+   - Önerilen Hatlar: 251 ➔ 48
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0029: Zeytinburnu (Cevizlibağ) ➔ Arnavutköy (Merkez)
+Koordinatlar: (41.017418, 28.906256) ➔ (41.181930, 28.753904) | Kuş Uçuşu: 22.3 km
+Süre Farkı  : Moovit'e Göre: -16 dk | Google Haritalar'a Göre: -30 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 85 dakika (Trafik Gecikmesi: +16 dk)
+   - Yürüme Süresi  : 15 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 41AT ➔ BUS 336Y ➔ BUS 79KT ➔ BUS 336H
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 101 dakika (Metin: 1 sa 41 dk)
+   - Önerilen Hatlar: 34BZ ➔ M11
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 115 dakika (Metin: 1 sa. 55 dk.)
+   - Önerilen Hatlar: 82 ➔ 36AY
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0030: Üsküdar (Altunizade Metrobüs) ➔ Bağcılar (Meydan)
+Koordinatlar: (41.031009, 29.039150) ➔ (41.024299, 28.854705) | Kuş Uçuşu: 15.6 km
+Süre Farkı  : Moovit'e Göre: -9 dk | Google Haritalar'a Göre: -5 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 74 dakika (Trafik Gecikmesi: +17 dk)
+   - Yürüme Süresi  : 17 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 34G ➔ BUS 98D
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 83 dakika (Metin: 1 sa 23 dk)
+   - Önerilen Hatlar: Otobüs ➔ 15F	/	14M ➔ 34G ➔ M3
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 79 dakika (Metin: 1 sa. 19 dk.)
+   - Önerilen Hatlar: 15F ➔ 34G ➔ 92
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0031: Eyüpsultan (Teleferik) ➔ Kadıköy (Söğütlüçeşme)
+Koordinatlar: (41.046146, 28.929339) ➔ (40.990171, 29.042038) | Kuş Uçuşu: 11.4 km
+Süre Farkı  : Moovit'e Göre: +3 dk | Google Haritalar'a Göre: -5 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 66 dakika (Trafik Gecikmesi: +14 dk)
+   - Yürüme Süresi  : 21 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 33ES ➔ BUS 34G
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 63 dakika (Metin: 1 sa 3 dk)
+   - Önerilen Hatlar: Otobüs ➔ 55 ➔ 34G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 71 dakika (Metin: 1 sa. 11 dk.)
+   - Önerilen Hatlar: 55 ➔ 34G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0032: Bakırköy (İskele / Meydan) ➔ Esenyurt (Meydan)
+Koordinatlar: (40.967892, 28.875517) ➔ (41.045994, 28.690518) | Kuş Uçuşu: 17.9 km
+Süre Farkı  : Moovit'e Göre: -18 dk | Google Haritalar'a Göre: -9 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 80 dakika (Trafik Gecikmesi: +16 dk)
+   - Yürüme Süresi  : 22 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS MR20 ➔ BUS 76D ➔ BUS 142F
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 98 dakika (Metin: 1 sa 38 dk)
+   - Önerilen Hatlar: M3 ➔ Otobüs ➔ 76D ➔ HS2
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 89 dakika (Metin: 1 sa. 29 dk.)
+   - Önerilen Hatlar: HVL-4-A ➔ 76D ➔ 142F
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0033: Pendik (Sabiha Gökçen SAW) ➔ Tuzla (Şifa Mahallesi)
+Koordinatlar: (40.908793, 29.308830) ➔ (40.815273, 29.328063) | Kuş Uçuşu: 10.5 km
+Süre Farkı  : Moovit'e Göre: -78 dk | Google Haritalar'a Göre: -82 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 23 dakika (Trafik Gecikmesi: +7 dk)
+   - Yürüme Süresi  : 0 dakika | Aktarma Sayısı: 0
+   - Kullanılan Hat : BUS KM27 / 132 +2
+   - Demetlenen Hat : KM27, 132, 132H, 132P
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 101 dakika (Metin: 1 sa 41 dk)
+   - Önerilen Hatlar: M4 ➔ Otobüs ➔ KM12
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 105 dakika (Metin: 1 sa. 45 dk.)
+   - Önerilen Hatlar: 133K ➔ KM12
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0034: Bağcılar (Meydan) ➔ Üsküdar (Marmaray Meydan)
+Koordinatlar: (41.026153, 28.849121) ➔ (41.027389, 29.020994) | Kuş Uçuşu: 14.5 km
+Süre Farkı  : Moovit'e Göre: +48 dk | Google Haritalar'a Göre: +10 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 105 dakika (Trafik Gecikmesi: +27 dk)
+   - Yürüme Süresi  : 14 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS HT11 ➔ BUS 97M ➔ BUS 34G ➔ BUS 11C
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 57 dakika (Metin: 57 dk)
+   - Önerilen Hatlar: M3 ➔ B1 ➔ Otobüs ➔ 2	/	11L	/	11C	/	11Ü	/	12A	/	...
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 95 dakika (Metin: 1 sa. 35 dk.)
+   - Önerilen Hatlar: M3 ➔ 82 ➔ 97A ➔ Üsküdar-Karaköy-Eminönü
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0035: Arnavutköy (İstanbul Havalimanı IST) ➔ Beykoz (Ortaçeşme)
+Koordinatlar: (41.262143, 28.742054) ➔ (41.121900, 29.095207) | Kuş Uçuşu: 33.6 km
+Süre Farkı  : Moovit'e Göre: +60 dk | Google Haritalar'a Göre: +28 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 149 dakika (Trafik Gecikmesi: +36 dk)
+   - Yürüme Süresi  : 13 dakika | Aktarma Sayısı: 4
+   - Kullanılan Hat : BUS H-1 ➔ BUS 89C ➔ BUS 97M ➔ BUS 121A ➔ BUS 136B
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 89 dakika (Metin: 1 sa 29 dk)
+   - Önerilen Hatlar: Otobüs ➔ HVL-9 ➔ 500T	/	E-3 ➔ 121BS
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 121 dakika (Metin: 2 sa. 1 dk.)
+   - Önerilen Hatlar: M11 ➔ 121A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0036: Bayrampaşa (Yıldırım) ➔ Bakırköy (İskele / Meydan)
+Koordinatlar: (41.061562, 28.893212) ➔ (40.987340, 28.869687) | Kuş Uçuşu: 8.5 km
+Süre Farkı  : Moovit'e Göre: -7 dk | Google Haritalar'a Göre: -13 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 55 dakika (Trafik Gecikmesi: +14 dk)
+   - Yürüme Süresi  : 8 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 36CY ➔ BUS 98G
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 62 dakika (Metin: 1 sa 2 dk)
+   - Önerilen Hatlar: Otobüs ➔ HT5 ➔ M1A ➔ 76V	/	146	/	98T	/	98	/	98H	/	...
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 68 dakika (Metin: 1 sa. 8 dk.)
+   - Önerilen Hatlar: A11-Cevatpaşa-Edirnekapı ➔ 32T ➔ D11
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0037: Ataşehir (Batı) ➔ Bağcılar (Meydan)
+Koordinatlar: (40.992379, 29.103674) ➔ (41.041083, 28.858949) | Kuş Uçuşu: 21.3 km
+Süre Farkı  : Moovit'e Göre: -9 dk | Google Haritalar'a Göre: +0 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 101 dakika (Trafik Gecikmesi: +26 dk)
+   - Yürüme Süresi  : 9 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 16M ➔ BUS 251 ➔ BUS 92Ş
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 110 dakika (Metin: 1 sa 50 dk)
+   - Önerilen Hatlar: Otobüs ➔ 16M ➔ 34G ➔ 92Ş
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 101 dakika (Metin: 1 sa. 41 dk.)
+   - Önerilen Hatlar: 16M ➔ 34AS ➔ 92Ş
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0038: Beşiktaş (Meydan / İskele) ➔ Ataşehir (Batı)
+Koordinatlar: (41.049224, 28.999534) ➔ (40.973120, 29.123195) | Kuş Uçuşu: 13.4 km
+Süre Farkı  : Moovit'e Göre: +9 dk | Google Haritalar'a Göre: +1 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 73 dakika (Trafik Gecikmesi: +17 dk)
+   - Yürüme Süresi  : 13 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 30M ➔ BUS 251 ➔ BUS 19
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 64 dakika (Metin: 1 sa 4 dk)
+   - Önerilen Hatlar: Beşiktaş - Kadıköy ➔ M4 ➔ M8
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 72 dakika (Metin: 1 sa. 12 dk.)
+   - Önerilen Hatlar: 30M ➔ 251 ➔ 19
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0039: Eyüpsultan (Teleferik) ➔ Beylikdüzü (TÜYAP Sondurak)
+Koordinatlar: (41.052408, 28.944057) ➔ (41.029226, 28.633615) | Kuş Uçuşu: 26.3 km
+Süre Farkı  : Moovit'e Göre: -42 dk | Google Haritalar'a Göre: -65 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 46 dakika (Trafik Gecikmesi: +13 dk)
+   - Yürüme Süresi  : 8 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 93M ➔ BUS 145T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 88 dakika (Metin: 1 sa 28 dk)
+   - Önerilen Hatlar: 34BZ ➔ Otobüs ➔ 144H	/	429A	/	418	/	144	/	ES3
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 111 dakika (Metin: 1 sa. 51 dk.)
+   - Önerilen Hatlar: 34G ➔ 34BZ ➔ 418 ➔ 429A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0040: Esenyurt (Meydan) ➔ Sarıyer (Hacıosman)
+Koordinatlar: (41.033188, 28.679315) ➔ (41.147112, 29.024407) | Kuş Uçuşu: 31.7 km
+Süre Farkı  : Moovit'e Göre: +10 dk | Google Haritalar'a Göre: +2 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 146 dakika (Trafik Gecikmesi: +42 dk)
+   - Yürüme Süresi  : 18 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 146F ➔ BUS E-58 ➔ BUS 500L ➔ BUS 29D
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 136 dakika (Metin: 2 sa 16 dk)
+   - Önerilen Hatlar: Otobüs ➔ 76D ➔ M1A ➔ M2
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 144 dakika (Metin: 2 sa. 24 dk.)
+   - Önerilen Hatlar: 76D ➔ 500L ➔ 59RS ➔ SRY-8/Sarıyer-HaciOsman-Beşiktaş
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0041: Arnavutköy (Merkez) ➔ Sarıyer (Maslak İTÜ)
+Koordinatlar: (41.178552, 28.732477) ➔ (41.117169, 29.032469) | Kuş Uçuşu: 26.2 km
+Süre Farkı  : Moovit'e Göre: N/A | Google Haritalar'a Göre: N/A
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : False
+   - Toplam Süre    : None dakika (Trafik Gecikmesi: +0 dk)
+   - Yürüme Süresi  : None dakika | Aktarma Sayısı: None
+   - Kullanılan Hat : 
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 122 dakika (Metin: 2 sa 2 dk)
+   - Önerilen Hatlar: Otobüs ➔ M11 ➔ 29
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 125 dakika (Metin: 2 sa. 5 dk.)
+   - Önerilen Hatlar: ARN6 ➔ M11 ➔ SRY-4/Pinar-Zincirlikuyu
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0042: Maltepe (Merkez) ➔ Arnavutköy (Merkez)
+Koordinatlar: (40.932342, 29.152457) ➔ (41.194331, 28.735200) | Kuş Uçuşu: 45.7 km
+Süre Farkı  : Moovit'e Göre: +29 dk | Google Haritalar'a Göre: +15 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 157 dakika (Trafik Gecikmesi: +41 dk)
+   - Yürüme Süresi  : 16 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 500T ➔ BUS 500L ➔ BUS 336M ➔ BUS 336K
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 128 dakika (Metin: 2 sa 8 dk)
+   - Önerilen Hatlar: M4 ➔ 34Z ➔ M11 ➔ 0 ➔ ARN5	/	ARN9	/	ARN7
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 142 dakika (Metin: 2 sa. 22 dk.)
+   - Önerilen Hatlar: 130Ş ➔ 34AS ➔ M11 ➔ ARN9
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0043: Sultanbeyli (Merkez) ➔ Üsküdar (Marmaray Meydan)
+Koordinatlar: (40.969468, 29.259846) ➔ (41.014803, 29.025237) | Kuş Uçuşu: 20.4 km
+Süre Farkı  : Moovit'e Göre: -8 dk | Google Haritalar'a Göre: -10 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 58 dakika (Trafik Gecikmesi: +19 dk)
+   - Yürüme Süresi  : 10 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 18M ➔ BUS 15F
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 66 dakika (Metin: 1 sa 6 dk)
+   - Önerilen Hatlar: M5 ➔ Otobüs ➔ 14R	/	MR9	/	13	/	12A	/	13B	/	...
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 68 dakika (Metin: 1 sa. 8 dk.)
+   - Önerilen Hatlar: M5 ➔ 13 ➔ 14R ➔ 14Y
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0044: Silivri (Otogar) ➔ Pendik (Sabiha Gökçen SAW)
+Koordinatlar: (41.067622, 28.256048) ➔ (40.903463, 29.323641) | Kuş Uçuşu: 91.9 km
+Süre Farkı  : Moovit'e Göre: -134 dk | Google Haritalar'a Göre: -174 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 145 dakika (Trafik Gecikmesi: +25 dk)
+   - Yürüme Süresi  : 13 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 429A ➔ BUS 145T ➔ BUS 34G ➔ SUBWAY M4
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 279 dakika (Metin: 4 sa 39 dk)
+   - Önerilen Hatlar: Otobüs ➔ 303A ➔ 34G ➔ M4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 319 dakika (Metin: 5 sa. 19 dk.)
+   - Önerilen Hatlar: 303A ➔ A43-Avcılar-Haramidere ➔ B1 (Marmaray) ➔ C84-Pendik-Kimya
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0045: Beylikdüzü (TÜYAP Sondurak) ➔ Şişli (Mecidiyeköy)
+Koordinatlar: (41.017608, 28.637584) ➔ (41.072424, 29.002870) | Kuş Uçuşu: 31.4 km
+Süre Farkı  : Moovit'e Göre: +8 dk | Google Haritalar'a Göre: -16 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 107 dakika (Trafik Gecikmesi: +31 dk)
+   - Yürüme Süresi  : 14 dakika | Aktarma Sayısı: 0
+   - Kullanılan Hat : BUS 34G
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 99 dakika (Metin: 1 sa 39 dk)
+   - Önerilen Hatlar: 34BZ
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 123 dakika (Metin: 2 sa. 3 dk.)
+   - Önerilen Hatlar: 76G ➔ 448 ➔ BL100-Büyükçekmece-Beykent ➔ BL101-Büyükçekmece-Zafer ➔ BL109/3-Büyükçekmece-Kavaklı ➔ 34G ➔ 34BZ ➔ B33-Şişli-YahyaKemal
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0046: Beyoğlu (Taksim) ➔ Bakırköy (İskele / Meydan)
+Koordinatlar: (41.047514, 28.985674) ➔ (40.978566, 28.879817) | Kuş Uçuşu: 11.8 km
+Süre Farkı  : Moovit'e Göre: +9 dk | Google Haritalar'a Göre: +1 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 59 dakika (Trafik Gecikmesi: +15 dk)
+   - Yürüme Süresi  : 6 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 70KY ➔ BUS BN1
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 50 dakika (Metin: 50 dk)
+   - Önerilen Hatlar: M2 ➔ B1
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 58 dakika (Metin: 58 dk.)
+   - Önerilen Hatlar: 72T
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0047: Beykoz (Ortaçeşme) ➔ Gaziosmanpaşa (Meydan)
+Koordinatlar: (41.138288, 29.097445) ➔ (41.058676, 28.923221) | Kuş Uçuşu: 17.1 km
+Süre Farkı  : Moovit'e Göre: -14 dk | Google Haritalar'a Göre: +5 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 122 dakika (Trafik Gecikmesi: +37 dk)
+   - Yürüme Süresi  : 15 dakika | Aktarma Sayısı: 4
+   - Kullanılan Hat : BUS 15TY ➔ BUS 121A ➔ BUS 29B ➔ BUS 50Z ➔ BUS 50A
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 136 dakika (Metin: 2 sa 16 dk)
+   - Önerilen Hatlar: Otobüs ➔ 121A ➔ 50Z ➔ 50A	/	TM16	/	TM13
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 117 dakika (Metin: 1 sa. 57 dk.)
+   - Önerilen Hatlar: 121A ➔ 41AT ➔ 50P
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0048: Fatih (Eminönü) ➔ Büyükçekmece (Sahil)
+Koordinatlar: (41.019803, 28.966790) ➔ (41.012128, 28.586454) | Kuş Uçuşu: 32.1 km
+Süre Farkı  : Moovit'e Göre: -56 dk | Google Haritalar'a Göre: -78 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 58 dakika (Trafik Gecikmesi: +15 dk)
+   - Yürüme Süresi  : 1 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 93 ➔ BUS 145T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 114 dakika (Metin: 1 sa 54 dk)
+   - Önerilen Hatlar: Otobüs ➔ 50P	/	336E	/	36KE	/	32	/	90	/	... ➔ 145T ➔ 303A	/	HT48
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 136 dakika (Metin: 2 sa. 16 dk.)
+   - Önerilen Hatlar: 31E ➔ 76D ➔ HT29 ➔ 303A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0049: Beşiktaş (Meydan / İskele) ➔ Pendik (Sabiha Gökçen SAW)
+Koordinatlar: (41.040268, 28.996477) ➔ (40.899376, 29.308452) | Kuş Uçuşu: 30.6 km
+Süre Farkı  : Moovit'e Göre: +8 dk | Google Haritalar'a Göre: -83 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 96 dakika (Trafik Gecikmesi: +10 dk)
+   - Yürüme Süresi  : 11 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS DT2 ➔ BUS 251 ➔ SUBWAY M4
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 88 dakika (Metin: 1 sa 28 dk)
+   - Önerilen Hatlar: Otobüs ➔ 30A ➔ Beşiktaş - Kadıköy ➔ M4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 179 dakika (Metin: 2 sa. 59 dk.)
+   - Önerilen Hatlar: Üsküdar-Kabataş ➔ B1 (Marmaray) ➔ KM27 ➔ C89-Pendik-Ramazanoğlu
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0050: Silivri (Otogar) ➔ Şişli (Mecidiyeköy)
+Koordinatlar: (41.082330, 28.258685) ➔ (41.077691, 28.994918) | Kuş Uçuşu: 62.1 km
+Süre Farkı  : Moovit'e Göre: -143 dk | Google Haritalar'a Göre: -142 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 82 dakika (Trafik Gecikmesi: +29 dk)
+   - Yürüme Süresi  : 8 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 429A ➔ BUS 145T ➔ BUS 41ST
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 225 dakika (Metin: 3 sa 45 dk)
+   - Önerilen Hatlar: Otobüs ➔ 303A ➔ 34BZ ➔ 62G	/	62
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 224 dakika (Metin: 3 sa. 44 dk.)
+   - Önerilen Hatlar: 303A ➔ 34G ➔ 34BZ ➔ B33-Şişli-YahyaKemal
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0051: Maltepe (Merkez) ➔ Arnavutköy (Merkez)
+Koordinatlar: (40.917129, 29.135721) ➔ (41.191083, 28.743742) | Kuş Uçuşu: 44.9 km
+Süre Farkı  : Moovit'e Göre: +37 dk | Google Haritalar'a Göre: +19 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 166 dakika (Trafik Gecikmesi: +43 dk)
+   - Yürüme Süresi  : 15 dakika | Aktarma Sayısı: 5
+   - Kullanılan Hat : BUS 4 ➔ BUS 129T ➔ BUS 500T ➔ BUS 36Z ➔ BUS TM18 ➔ BUS 36TC
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 129 dakika (Metin: 2 sa 9 dk)
+   - Önerilen Hatlar: B1 ➔ 34G ➔ M11 ➔ 0 ➔ ARN4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 147 dakika (Metin: 2 sa. 27 dk.)
+   - Önerilen Hatlar: 16D ➔ 34AS ➔ M11 ➔ ARN4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0052: Fatih (Yenikapı Marmaray) ➔ Arnavutköy (İstanbul Havalimanı IST)
+Koordinatlar: (41.003552, 28.939212) ➔ (41.261643, 28.731099) | Kuş Uçuşu: 33.6 km
+Süre Farkı  : Moovit'e Göre: +20 dk | Google Haritalar'a Göre: -25 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 100 dakika (Trafik Gecikmesi: +13 dk)
+   - Yürüme Süresi  : 24 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 35C ➔ BUS DT2 ➔ SUBWAY M11
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 80 dakika (Metin: 1 sa 20 dk)
+   - Önerilen Hatlar: Otobüs ➔ 80T ➔ HVL1
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 125 dakika (Metin: 2 sa. 5 dk.)
+   - Önerilen Hatlar: BN1 ➔ M11
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0053: Avcılar (Merkez Metrobüs) ➔ Başakşehir (Metrokent)
+Koordinatlar: (40.995193, 28.740203) ➔ (41.088836, 28.809266) | Kuş Uçuşu: 11.9 km
+Süre Farkı  : Moovit'e Göre: -8 dk | Google Haritalar'a Göre: -24 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 77 dakika (Trafik Gecikmesi: +12 dk)
+   - Yürüme Süresi  : 37 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 34G ➔ BUS 79B
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 85 dakika (Metin: 1 sa 25 dk)
+   - Önerilen Hatlar: 34BZ ➔ Otobüs ➔ 79B	/	79F ➔ 98H	/	78H
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 101 dakika (Metin: 1 sa. 41 dk.)
+   - Önerilen Hatlar: 34AS ➔ 98H
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0054: Bakırköy (İskele / Meydan) ➔ Ümraniye (Santral)
+Koordinatlar: (40.988700, 28.863480) ➔ (41.023457, 29.100994) | Kuş Uçuşu: 20.4 km
+Süre Farkı  : Moovit'e Göre: +45 dk | Google Haritalar'a Göre: +46 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 115 dakika (Trafik Gecikmesi: +47 dk)
+   - Yürüme Süresi  : 15 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 50B ➔ BUS 93M ➔ BUS 522
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 70 dakika (Metin: 1 sa 10 dk)
+   - Önerilen Hatlar: Otobüs ➔ 98B	/	98AB	/	76V	/	98H	/	98A	/	... ➔ B1 ➔ M5
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 69 dakika (Metin: 1 sa. 9 dk.)
+   - Önerilen Hatlar: 98T ➔ 98B ➔ 98H ➔ 98Y ➔ 146 ➔ B1 (Marmaray) ➔ M5
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0055: Beşiktaş (Meydan / İskele) ➔ Şişli (Mecidiyeköy)
+Koordinatlar: (41.039705, 28.995025) ➔ (41.067626, 28.982038) | Kuş Uçuşu: 3.3 km
+Süre Farkı  : Moovit'e Göre: +0 dk | Google Haritalar'a Göre: +8 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 32 dakika (Trafik Gecikmesi: +11 dk)
+   - Yürüme Süresi  : 5 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS DT2 ➔ BUS 77A
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 32 dakika (Metin: 32 dk)
+   - Önerilen Hatlar: Otobüs ➔ 50T	/	50L	/	48T ➔ 77A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 24 dakika (Metin: 24 dk.)
+   - Önerilen Hatlar: DT2 ➔ 77A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0056: Beyoğlu (Taksim) ➔ Bağcılar (Meydan)
+Koordinatlar: (41.025548, 28.990256) ➔ (41.043190, 28.855814) | Kuş Uçuşu: 11.5 km
+Süre Farkı  : Moovit'e Göre: -12 dk | Google Haritalar'a Göre: -92 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 77 dakika (Trafik Gecikmesi: +10 dk)
+   - Yürüme Süresi  : 20 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : TRAM T1 ➔ BUS 97G
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 89 dakika (Metin: 1 sa 29 dk)
+   - Önerilen Hatlar: T1 ➔ Otobüs ➔ HT1	/	92B
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 169 dakika (Metin: 2 sa. 49 dk.)
+   - Önerilen Hatlar: 92
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0057: Çekmeköy (Madenler) ➔ Esenler (Otogar)
+Koordinatlar: (41.023013, 29.166778) ➔ (41.030858, 28.898885) | Kuş Uçuşu: 22.6 km
+Süre Farkı  : Moovit'e Göre: +11 dk | Google Haritalar'a Göre: -4 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 96 dakika (Trafik Gecikmesi: +23 dk)
+   - Yürüme Süresi  : 21 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 522ST ➔ BUS 33M
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 85 dakika (Metin: 1 sa 25 dk)
+   - Önerilen Hatlar: M5 ➔ B1 ➔ M1A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 100 dakika (Metin: 1 sa. 40 dk.)
+   - Önerilen Hatlar: 522 ➔ 33M
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0058: Ataşehir (Batı) ➔ Kadıköy (Bostancı İskele)
+Koordinatlar: (40.995810, 29.114734) ➔ (40.948842, 29.100430) | Kuş Uçuşu: 5.4 km
+Süre Farkı  : Moovit'e Göre: -5 dk | Google Haritalar'a Göre: +21 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 59 dakika (Trafik Gecikmesi: +16 dk)
+   - Yürüme Süresi  : 21 dakika | Aktarma Sayısı: 0
+   - Kullanılan Hat : BUS KM46 / 10
+   - Demetlenen Hat : KM46, 10
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 64 dakika (Metin: 1 sa 4 dk)
+   - Önerilen Hatlar: Otobüs ➔ 10
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 38 dakika (Metin: 38 dk.)
+   - Önerilen Hatlar: 10A ➔ KM46 ➔ 10
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0059: Sultanbeyli (Merkez) ➔ Kadıköy (Söğütlüçeşme)
+Koordinatlar: (40.974998, 29.264378) ➔ (40.980342, 29.041690) | Kuş Uçuşu: 18.8 km
+Süre Farkı  : Moovit'e Göre: -27 dk | Google Haritalar'a Göre: -25 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 58 dakika (Trafik Gecikmesi: +18 dk)
+   - Yürüme Süresi  : 5 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 18M ➔ BUS 19T ➔ BUS ER1
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 85 dakika (Metin: 1 sa 25 dk)
+   - Önerilen Hatlar: Otobüs ➔ 18D ➔ 15BK ➔ 16D
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 83 dakika (Metin: 1 sa. 23 dk.)
+   - Önerilen Hatlar: 132M ➔ 320A ➔ 19F
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0060: Ataşehir (Batı) ➔ Zeytinburnu (Cevizlibağ)
+Koordinatlar: (40.986723, 29.124035) ➔ (41.019625, 28.910938) | Kuş Uçuşu: 18.3 km
+Süre Farkı  : Moovit'e Göre: +9 dk | Google Haritalar'a Göre: +24 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 108 dakika (Trafik Gecikmesi: +34 dk)
+   - Yürüme Süresi  : 15 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 19T ➔ BUS 500T ➔ BUS 41AT
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 99 dakika (Metin: 1 sa 39 dk)
+   - Önerilen Hatlar: Otobüs ➔ KM46	/	10 ➔ M4 ➔ 34G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 84 dakika (Metin: 1 sa. 24 dk.)
+   - Önerilen Hatlar: 19T ➔ 34AS ➔ 34G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0061: Küçükçekmece (Halkalı Marmaray) ➔ Tuzla (Şifa Mahallesi)
+Koordinatlar: (41.014385, 28.776961) ➔ (40.829805, 29.329674) | Kuş Uçuşu: 50.9 km
+Süre Farkı  : Moovit'e Göre: -10 dk | Google Haritalar'a Göre: -14 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 116 dakika (Trafik Gecikmesi: +0 dk)
+   - Yürüme Süresi  : 21 dakika | Aktarma Sayısı: 0
+   - Kullanılan Hat : SUBWAY Marmaray
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 126 dakika (Metin: 2 sa 6 dk)
+   - Önerilen Hatlar: B1
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 130 dakika (Metin: 2 sa. 10 dk.)
+   - Önerilen Hatlar: B1 (Marmaray)
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0062: Şişli (Mecidiyeköy) ➔ Üsküdar (Altunizade Metrobüs)
+Koordinatlar: (41.064266, 29.004258) ➔ (41.031863, 29.038491) | Kuş Uçuşu: 4.6 km
+Süre Farkı  : Moovit'e Göre: -10 dk | Google Haritalar'a Göre: -9 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 27 dakika (Trafik Gecikmesi: +3 dk)
+   - Yürüme Süresi  : 22 dakika | Aktarma Sayısı: 0
+   - Kullanılan Hat : BUS 522 / 256 / 251
+   - Demetlenen Hat : 522, 256, 251
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 37 dakika (Metin: 37 dk)
+   - Önerilen Hatlar: Otobüs ➔ 251	/	522	/	256 ➔ 14M	/	15F
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 36 dakika (Metin: 36 dk.)
+   - Önerilen Hatlar: 251 ➔ 15F
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0063: Pendik (YHT Garı) ➔ Şişli (Mecidiyeköy)
+Koordinatlar: (40.871716, 29.225078) ➔ (41.078361, 29.002518) | Kuş Uçuşu: 29.6 km
+Süre Farkı  : Moovit'e Göre: -30 dk | Google Haritalar'a Göre: -32 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 76 dakika (Trafik Gecikmesi: +6 dk)
+   - Yürüme Süresi  : 23 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 132SP ➔ SUBWAY M4 ➔ BUS 500T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 106 dakika (Metin: 1 sa 46 dk)
+   - Önerilen Hatlar: Otobüs ➔ 16D	/	KM33	/	132H	/	251 ➔ B1 ➔ M2 ➔ 65G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 108 dakika (Metin: 1 sa. 48 dk.)
+   - Önerilen Hatlar: 132SP ➔ 132H ➔ KM24 ➔ KM26 ➔ KM27 ➔ 81459 ➔ B1 (Marmaray) ➔ 34G ➔ 34AS ➔ 34Z ➔ B33-Vadi-Nobel
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0064: Sarıyer (Maslak İTÜ) ➔ Tuzla (Şifa Mahallesi)
+Koordinatlar: (41.117340, 29.013342) ➔ (40.819413, 29.323903) | Kuş Uçuşu: 42.2 km
+Süre Farkı  : Moovit'e Göre: -15 dk | Google Haritalar'a Göre: -49 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 114 dakika (Trafik Gecikmesi: +33 dk)
+   - Yürüme Süresi  : 17 dakika | Aktarma Sayısı: 4
+   - Kullanılan Hat : BUS 29D ➔ BUS 500T ➔ BUS 16S ➔ BUS KM25 ➔ BUS 133KT
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 129 dakika (Metin: 2 sa 9 dk)
+   - Önerilen Hatlar: Otobüs ➔ 41N ➔ M2 ➔ B1 ➔ KM12
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 163 dakika (Metin: 2 sa. 43 dk.)
+   - Önerilen Hatlar: SRY-9/VadiIstanbul-Maslak ➔ SRY-7/Tarabya-Beşiktaş ➔ SRY-8/Sarıyer-HaciOsman-Beşiktaş ➔ 251 ➔ KM12
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0065: Pendik (YHT Garı) ➔ Arnavutköy (İstanbul Havalimanı IST)
+Koordinatlar: (40.879490, 29.239587) ➔ (41.263371, 28.731849) | Kuş Uçuşu: 60.4 km
+Süre Farkı  : Moovit'e Göre: +20 dk | Google Haritalar'a Göre: -29 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 130 dakika (Trafik Gecikmesi: +6 dk)
+   - Yürüme Süresi  : 22 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : SUBWAY Marmaray ➔ BUS 34G ➔ SUBWAY M11
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 110 dakika (Metin: 1 sa 50 dk)
+   - Önerilen Hatlar: B1 ➔ Otobüs ➔ HVL-13
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 159 dakika (Metin: 2 sa. 39 dk.)
+   - Önerilen Hatlar: 16A ➔ 34AS ➔ M11
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0066: Çatalca (Meydan) ➔ Beyoğlu (Taksim)
+Koordinatlar: (41.136674, 28.454764) ➔ (41.045241, 28.976406) | Kuş Uçuşu: 45.2 km
+Süre Farkı  : Moovit'e Göre: -81 dk | Google Haritalar'a Göre: -123 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 88 dakika (Trafik Gecikmesi: +25 dk)
+   - Yürüme Süresi  : 2 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 429A ➔ BUS 145T ➔ BUS 70KY
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 169 dakika (Metin: 2 sa 49 dk)
+   - Önerilen Hatlar: Otobüs ➔ 401 ➔ 145T ➔ 70KE
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 211 dakika (Metin: 3 sa. 31 dk.)
+   - Önerilen Hatlar: 401 ➔ 34G ➔ 34BZ ➔ 34C ➔ 73 ➔ 70KY
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0067: Şişli (Mecidiyeköy) ➔ Avcılar (Merkez Metrobüs)
+Koordinatlar: (41.056839, 28.987006) ➔ (40.978751, 28.722244) | Kuş Uçuşu: 24.0 km
+Süre Farkı  : Moovit'e Göre: +15 dk | Google Haritalar'a Göre: +1 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 95 dakika (Trafik Gecikmesi: +24 dk)
+   - Yürüme Süresi  : 10 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 30M ➔ BUS 34G ➔ BUS 76O
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 80 dakika (Metin: 1 sa 20 dk)
+   - Önerilen Hatlar: Otobüs ➔ 46T	/	48N	/	54K	/	54Ç	/	54ÖR	/	... ➔ 34BZ
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 94 dakika (Metin: 1 sa. 34 dk.)
+   - Önerilen Hatlar: 46Ç ➔ 46T ➔ 54K ➔ 54Ç ➔ 54ÖR ➔ 34AS ➔ 34BZ ➔ 34G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0068: Fatih (Eminönü) ➔ Zeytinburnu (Cevizlibağ)
+Koordinatlar: (41.027777, 28.962769) ➔ (41.027827, 28.910488) | Kuş Uçuşu: 4.4 km
+Süre Farkı  : Moovit'e Göre: -15 dk | Google Haritalar'a Göre: -1 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 37 dakika (Trafik Gecikmesi: +8 dk)
+   - Yürüme Süresi  : 12 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 99A ➔ BUS 50R
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 52 dakika (Metin: 52 dk)
+   - Önerilen Hatlar: Otobüs ➔ 32	/	33	/	32T
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 38 dakika (Metin: 38 dk.)
+   - Önerilen Hatlar: 32T
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0069: Bayrampaşa (Yıldırım) ➔ Başakşehir (Metrokent)
+Koordinatlar: (41.042855, 28.886372) ➔ (41.092903, 28.808012) | Kuş Uçuşu: 8.6 km
+Süre Farkı  : Moovit'e Göre: N/A | Google Haritalar'a Göre: N/A
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : False
+   - Toplam Süre    : None dakika (Trafik Gecikmesi: +0 dk)
+   - Yürüme Süresi  : None dakika | Aktarma Sayısı: None
+   - Kullanılan Hat : 
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 66 dakika (Metin: 1 sa 6 dk)
+   - Önerilen Hatlar: M1B ➔ M3 ➔ Otobüs ➔ 78G	/	98KM	/	78Ş	/	79B	/	79T
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 79 dakika (Metin: 1 sa. 19 dk.)
+   - Önerilen Hatlar: 76O ➔ 78 ➔ 78E ➔ 78F ➔ 78ZB
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0070: Gaziosmanpaşa (Meydan) ➔ Büyükçekmece (Sahil)
+Koordinatlar: (41.049280, 28.913918) ➔ (41.010181, 28.583363) | Kuş Uçuşu: 28.2 km
+Süre Farkı  : Moovit'e Göre: -63 dk | Google Haritalar'a Göre: -91 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 47 dakika (Trafik Gecikmesi: +7 dk)
+   - Yürüme Süresi  : 7 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : TRAM T4 ➔ BUS 145T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 110 dakika (Metin: 1 sa 50 dk)
+   - Önerilen Hatlar: T4 ➔ Otobüs ➔ 145T ➔ 303A	/	HT48
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 138 dakika (Metin: 2 sa. 18 dk.)
+   - Önerilen Hatlar: 88 ➔ 34BZ ➔ 303A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0071: Arnavutköy (İstanbul Havalimanı IST) ➔ Bayrampaşa (Yıldırım)
+Koordinatlar: (41.267146, 28.732274) ➔ (41.058379, 28.895391) | Kuş Uçuşu: 27.0 km
+Süre Farkı  : Moovit'e Göre: +48 dk | Google Haritalar'a Göre: +2 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 137 dakika (Trafik Gecikmesi: +37 dk)
+   - Yürüme Süresi  : 18 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS H-2 ➔ BUS 32M
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 89 dakika (Metin: 1 sa 29 dk)
+   - Önerilen Hatlar: Otobüs ➔ HVL-13 ➔ 41ST ➔ 32M
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 135 dakika (Metin: 2 sa. 15 dk.)
+   - Önerilen Hatlar: HVL-1 ➔ 32M
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0072: Kadıköy (Bostancı İskele) ➔ Şişli (Mecidiyeköy)
+Koordinatlar: (40.961352, 29.099570) ➔ (41.065531, 29.003052) | Kuş Uçuşu: 14.1 km
+Süre Farkı  : Moovit'e Göre: -20 dk | Google Haritalar'a Göre: -15 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 48 dakika (Trafik Gecikmesi: +10 dk)
+   - Yürüme Süresi  : 16 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 129T ➔ BUS 500T ➔ BUS 27T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 68 dakika (Metin: 1 sa 8 dk)
+   - Önerilen Hatlar: M4 ➔ 34G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 63 dakika (Metin: 1 sa. 3 dk.)
+   - Önerilen Hatlar: 251
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0073: Sarıyer (Maslak İTÜ) ➔ Şişli (Mecidiyeköy)
+Koordinatlar: (41.111882, 29.034017) ➔ (41.075523, 28.997891) | Kuş Uçuşu: 5.1 km
+Süre Farkı  : Moovit'e Göre: -13 dk | Google Haritalar'a Göre: -6 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 42 dakika (Trafik Gecikmesi: +10 dk)
+   - Yürüme Süresi  : 14 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 29B ➔ BUS 65A
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 55 dakika (Metin: 55 dk)
+   - Önerilen Hatlar: Otobüs ➔ 29E ➔ 65A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 48 dakika (Metin: 48 dk.)
+   - Önerilen Hatlar: 29Ş
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0074: Esenler (Otogar) ➔ Üsküdar (Altunizade Metrobüs)
+Koordinatlar: (41.039387, 28.899507) ➔ (41.026924, 29.059110) | Kuş Uçuşu: 13.5 km
+Süre Farkı  : Moovit'e Göre: +3 dk | Google Haritalar'a Göre: -4 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 64 dakika (Trafik Gecikmesi: +18 dk)
+   - Yürüme Süresi  : 24 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 32M ➔ BUS 34G
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 61 dakika (Metin: 1 sa 1 dk)
+   - Önerilen Hatlar: M1A ➔ B1 ➔ M5
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 68 dakika (Metin: 1 sa. 8 dk.)
+   - Önerilen Hatlar: M1B ➔ M1A ➔ B1 (Marmaray) ➔ 11C ➔ 11BE
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0075: Esenler (Otogar) ➔ Kartal (Sahil)
+Koordinatlar: (41.051025, 28.902160) ➔ (40.879673, 29.188138) | Kuş Uçuşu: 30.7 km
+Süre Farkı  : Moovit'e Göre: +68 dk | Google Haritalar'a Göre: +19 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 146 dakika (Trafik Gecikmesi: +32 dk)
+   - Yürüme Süresi  : 39 dakika | Aktarma Sayısı: 4
+   - Kullanılan Hat : BUS 32M ➔ BUS 121B ➔ BUS 500T ➔ BUS 10B ➔ BUS 16D
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 78 dakika (Metin: 1 sa 18 dk)
+   - Önerilen Hatlar: M1A ➔ B1
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 127 dakika (Metin: 2 sa. 7 dk.)
+   - Önerilen Hatlar: 32 ➔ Kadıköy-Karaköy-Eminönü ➔ 16D
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0076: Ataşehir (Batı) ➔ Fatih (Yenikapı Marmaray)
+Koordinatlar: (40.984208, 29.122088) ➔ (41.010379, 28.954108) | Kuş Uçuşu: 14.5 km
+Süre Farkı  : Moovit'e Göre: +17 dk | Google Haritalar'a Göre: -4 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 87 dakika (Trafik Gecikmesi: +9 dk)
+   - Yürüme Süresi  : 21 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 10 ➔ SUBWAY Marmaray
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 70 dakika (Metin: 1 sa 10 dk)
+   - Önerilen Hatlar: Otobüs ➔ 10 ➔ B1
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 91 dakika (Metin: 1 sa. 31 dk.)
+   - Önerilen Hatlar: 10 ➔ 522 ➔ M2
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0077: Küçükçekmece (Halkalı Marmaray) ➔ Ümraniye (Santral)
+Koordinatlar: (41.019145, 28.754194) ➔ (41.022827, 29.097299) | Kuş Uçuşu: 28.9 km
+Süre Farkı  : Moovit'e Göre: +34 dk | Google Haritalar'a Göre: -9 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 132 dakika (Trafik Gecikmesi: +10 dk)
+   - Yürüme Süresi  : 35 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS BN1 ➔ SUBWAY Marmaray ➔ BUS 11P
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 98 dakika (Metin: 1 sa 38 dk)
+   - Önerilen Hatlar: Otobüs ➔ BN1 ➔ B1 ➔ M5
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 141 dakika (Metin: 2 sa. 21 dk.)
+   - Önerilen Hatlar: A36-Küçükçekmece-BÇSŞH ➔ B1 (Marmaray) ➔ 13
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0078: Güngören (Köyiçi) ➔ Gaziosmanpaşa (Meydan)
+Koordinatlar: (41.011461, 28.862120) ➔ (41.058534, 28.907620) | Kuş Uçuşu: 6.5 km
+Süre Farkı  : Moovit'e Göre: +15 dk | Google Haritalar'a Göre: +12 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 69 dakika (Trafik Gecikmesi: +14 dk)
+   - Yürüme Süresi  : 11 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 92 ➔ BUS 36ES
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 54 dakika (Metin: 54 dk)
+   - Önerilen Hatlar: M3 ➔ M7 ➔ T4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 57 dakika (Metin: 57 dk.)
+   - Önerilen Hatlar: M3 ➔ 50B ➔ 336E ➔ 36V ➔ 38 ➔ 38E
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0079: Ümraniye (Santral) ➔ Güngören (Köyiçi)
+Koordinatlar: (41.023179, 29.103599) ➔ (41.018194, 28.871797) | Kuş Uçuşu: 19.6 km
+Süre Farkı  : Moovit'e Göre: +3 dk | Google Haritalar'a Göre: -2 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 94 dakika (Trafik Gecikmesi: +20 dk)
+   - Yürüme Süresi  : 16 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 522 ➔ BUS 34G ➔ BUS 98G
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 91 dakika (Metin: 1 sa 31 dk)
+   - Önerilen Hatlar: M5 ➔ B1 ➔ T1
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 96 dakika (Metin: 1 sa. 36 dk.)
+   - Önerilen Hatlar: 522 ➔ 41AT ➔ 92T
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0080: Avcılar (Merkez Metrobüs) ➔ Eyüpsultan (Teleferik)
+Koordinatlar: (40.987857, 28.737327) ➔ (41.050402, 28.942858) | Kuş Uçuşu: 18.7 km
+Süre Farkı  : Moovit'e Göre: +29 dk | Google Haritalar'a Göre: +14 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 99 dakika (Trafik Gecikmesi: +22 dk)
+   - Yürüme Süresi  : 22 dakika | Aktarma Sayısı: 0
+   - Kullanılan Hat : BUS 34 / 34G
+   - Demetlenen Hat : 34, 34G
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 70 dakika (Metin: 1 sa 10 dk)
+   - Önerilen Hatlar: 34BZ
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 85 dakika (Metin: 1 sa. 25 dk.)
+   - Önerilen Hatlar: 34AS
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0081: Beykoz (Ortaçeşme) ➔ Arnavutköy (İstanbul Havalimanı IST)
+Koordinatlar: (41.132478, 29.107525) ➔ (41.251903, 28.738513) | Kuş Uçuşu: 33.8 km
+Süre Farkı  : Moovit'e Göre: +56 dk | Google Haritalar'a Göre: +77 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 201 dakika (Trafik Gecikmesi: +47 dk)
+   - Yürüme Süresi  : 16 dakika | Aktarma Sayısı: 5
+   - Kullanılan Hat : BUS 135K ➔ BUS 136B ➔ BUS 121B ➔ BUS 41AT ➔ BUS 89C ➔ BUS H-1
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 145 dakika (Metin: 2 sa 25 dk)
+   - Önerilen Hatlar: Otobüs ➔ 135K ➔ 121BS ➔ M11
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 124 dakika (Metin: 2 sa. 4 dk.)
+   - Önerilen Hatlar: 121BS ➔ M11
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0082: Sancaktepe (Sarıgazi) ➔ Büyükçekmece (Sahil)
+Koordinatlar: (41.002080, 29.238204) ➔ (41.010556, 28.589220) | Kuş Uçuşu: 54.8 km
+Süre Farkı  : Moovit'e Göre: -24 dk | Google Haritalar'a Göre: -60 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 157 dakika (Trafik Gecikmesi: +38 dk)
+   - Yürüme Süresi  : 12 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 622 ➔ BUS 41AT ➔ BUS 145T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 181 dakika (Metin: 3 sa 1 dk)
+   - Önerilen Hatlar: Otobüs ➔ 11SA ➔ M5 ➔ 34G ➔ 142B
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 217 dakika (Metin: 3 sa. 37 dk.)
+   - Önerilen Hatlar: 14YK ➔ 522 ➔ 34BZ ➔ 401T
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0083: Kağıthane (Merkez) ➔ Tuzla (Marina)
+Koordinatlar: (41.070276, 28.976674) ➔ (40.811854, 29.304843) | Kuş Uçuşu: 39.9 km
+Süre Farkı  : Moovit'e Göre: -23 dk | Google Haritalar'a Göre: -53 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 99 dakika (Trafik Gecikmesi: +29 dk)
+   - Yürüme Süresi  : 4 dakika | Aktarma Sayısı: 5
+   - Kullanılan Hat : BUS 46T ➔ BUS 29Ş ➔ BUS 500T ➔ BUS 16S ➔ BUS KM25 ➔ BUS 133AK
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 122 dakika (Metin: 2 sa 2 dk)
+   - Önerilen Hatlar: 34G ➔ B1 ➔ Otobüs ➔ KM12
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 152 dakika (Metin: 2 sa. 32 dk.)
+   - Önerilen Hatlar: 50M ➔ 251 ➔ KM12
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0084: Maltepe (Merkez) ➔ Eyüpsultan (Teleferik)
+Koordinatlar: (40.914681, 29.139258) ➔ (41.035321, 28.937275) | Kuş Uçuşu: 21.7 km
+Süre Farkı  : Moovit'e Göre: +19 dk | Google Haritalar'a Göre: +13 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 110 dakika (Trafik Gecikmesi: +25 dk)
+   - Yürüme Süresi  : 18 dakika | Aktarma Sayısı: 4
+   - Kullanılan Hat : BUS 17 ➔ BUS 10F ➔ BUS 500T ➔ BUS 500L ➔ BUS 41AT
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 91 dakika (Metin: 1 sa 31 dk)
+   - Önerilen Hatlar: B1 ➔ 34G
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 97 dakika (Metin: 1 sa. 37 dk.)
+   - Önerilen Hatlar: B1 (Marmaray) ➔ 93M
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0085: Şile (Merkez) ➔ Büyükçekmece (Sahil)
+Koordinatlar: (41.183549, 29.617817) ➔ (41.013851, 28.589754) | Kuş Uçuşu: 88.7 km
+Süre Farkı  : Moovit'e Göre: -113 dk | Google Haritalar'a Göre: -173 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 124 dakika (Trafik Gecikmesi: +30 dk)
+   - Yürüme Süresi  : 12 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 522ST ➔ BUS 34G
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 237 dakika (Metin: 3 sa 57 dk)
+   - Önerilen Hatlar: Otobüs ➔ 139T ➔ M5 ➔ 34G ➔ 142B
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 297 dakika (Metin: 4 sa. 57 dk.)
+   - Önerilen Hatlar: ŞL16-Şile-ÇekmeköyMetrogarden ➔ 522 ➔ 92Ş ➔ 146T ➔ 142B
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0086: Pendik (Sabiha Gökçen SAW) ➔ Silivri (Otogar)
+Koordinatlar: (40.898612, 29.324576) ➔ (41.068226, 28.256110) | Kuş Uçuşu: 92.1 km
+Süre Farkı  : Moovit'e Göre: -91 dk | Google Haritalar'a Göre: -191 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 142 dakika (Trafik Gecikmesi: +27 dk)
+   - Yürüme Süresi  : 8 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : SUBWAY M4 ➔ BUS 500T ➔ BUS 41AT ➔ BUS 145T
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 233 dakika (Metin: 3 sa 53 dk)
+   - Önerilen Hatlar: Otobüs ➔ SG-1 ➔ 34G ➔ 303A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 333 dakika (Metin: 5 sa. 33 dk.)
+   - Önerilen Hatlar: C84-Pendik-Kimya ➔ B1 (Marmaray) ➔ 146 ➔ 303A
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0087: Arnavutköy (İstanbul Havalimanı IST) ➔ Bakırköy (İskele / Meydan)
+Koordinatlar: (41.257237, 28.747903) ➔ (40.967140, 28.877063) | Kuş Uçuşu: 34.0 km
+Süre Farkı  : Moovit'e Göre: +37 dk | Google Haritalar'a Göre: -11 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 107 dakika (Trafik Gecikmesi: +22 dk)
+   - Yürüme Süresi  : 25 dakika | Aktarma Sayısı: 0
+   - Kullanılan Hat : BUS HVİST-10
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 70 dakika (Metin: 1 sa 10 dk)
+   - Önerilen Hatlar: Otobüs ➔ HVL-4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 118 dakika (Metin: 1 sa. 58 dk.)
+   - Önerilen Hatlar: HVL-4-A
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0088: Küçükçekmece (Halkalı Marmaray) ➔ Çekmeköy (Madenler)
+Koordinatlar: (41.013632, 28.772497) ➔ (41.026941, 29.172849) | Kuş Uçuşu: 33.8 km
+Süre Farkı  : Moovit'e Göre: +4 dk | Google Haritalar'a Göre: -5 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 107 dakika (Trafik Gecikmesi: +20 dk)
+   - Yürüme Süresi  : 24 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 76V ➔ BUS 34G ➔ BUS 522ST
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 103 dakika (Metin: 1 sa 43 dk)
+   - Önerilen Hatlar: Otobüs ➔ MR52	/	79Y ➔ B1 ➔ 139A	/	139
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 112 dakika (Metin: 1 sa. 52 dk.)
+   - Önerilen Hatlar: B1 (Marmaray) ➔ 11ÜS
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0089: Kadıköy (Bostancı İskele) ➔ Kartal (Sahil)
+Koordinatlar: (40.959254, 29.103476) ➔ (40.892330, 29.189542) | Kuş Uçuşu: 10.4 km
+Süre Farkı  : Moovit'e Göre: +35 dk | Google Haritalar'a Göre: +29 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 76 dakika (Trafik Gecikmesi: +19 dk)
+   - Yürüme Süresi  : 18 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 17 ➔ BUS KM34
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 41 dakika (Metin: 41 dk)
+   - Önerilen Hatlar: B1
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 47 dakika (Metin: 47 dk.)
+   - Önerilen Hatlar: C50-Pendik-Kadıköy
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0090: Sultanbeyli (Merkez) ➔ Bağcılar (Meydan)
+Koordinatlar: (40.972845, 29.256742) ➔ (41.044419, 28.849600) | Kuş Uçuşu: 35.3 km
+Süre Farkı  : Moovit'e Göre: -9 dk | Google Haritalar'a Göre: -41 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 113 dakika (Trafik Gecikmesi: +23 dk)
+   - Yürüme Süresi  : 23 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 18 ➔ BUS 19T ➔ BUS 34G ➔ BUS 92Ş
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 122 dakika (Metin: 2 sa 2 dk)
+   - Önerilen Hatlar: Otobüs ➔ 18D ➔ 34G ➔ 92Ş
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 154 dakika (Metin: 2 sa. 34 dk.)
+   - Önerilen Hatlar: 522ST ➔ 92Ş
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0091: Kadıköy (Bostancı İskele) ➔ Sarıyer (Hacıosman)
+Koordinatlar: (40.958236, 29.097160) ➔ (41.143592, 29.028810) | Kuş Uçuşu: 21.4 km
+Süre Farkı  : Moovit'e Göre: -31 dk | Google Haritalar'a Göre: -50 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 48 dakika (Trafik Gecikmesi: +9 dk)
+   - Yürüme Süresi  : 7 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 129T ➔ BUS 500T ➔ BUS 59RS
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 79 dakika (Metin: 1 sa 19 dk)
+   - Önerilen Hatlar: B1 ➔ M2
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 98 dakika (Metin: 1 sa. 38 dk.)
+   - Önerilen Hatlar: 10F ➔ 129T ➔ 129L ➔ 500T ➔ SRY-8/Sarıyer-HaciOsman-Beşiktaş ➔ 59RS
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0092: Sultanbeyli (Merkez) ➔ Bayrampaşa (Yıldırım)
+Koordinatlar: (40.956701, 29.271496) ➔ (41.047507, 28.894416) | Kuş Uçuşu: 33.4 km
+Süre Farkı  : Moovit'e Göre: +33 dk | Google Haritalar'a Göre: +20 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 129 dakika (Trafik Gecikmesi: +30 dk)
+   - Yürüme Süresi  : 18 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 18D ➔ BUS 251 ➔ BUS 32M
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 96 dakika (Metin: 1 sa 36 dk)
+   - Önerilen Hatlar: Otobüs ➔ M5 ➔ B1 ➔ 0
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 109 dakika (Metin: 1 sa. 49 dk.)
+   - Önerilen Hatlar: M5 ➔ B1 (Marmaray) ➔ M1B ➔ M1A
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0093: Şişli (Mecidiyeköy) ➔ Ümraniye (Santral)
+Koordinatlar: (41.069820, 29.002782) ➔ (41.027936, 29.089360) | Kuş Uçuşu: 8.7 km
+Süre Farkı  : Moovit'e Göre: -14 dk | Google Haritalar'a Göre: +0 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 41 dakika (Trafik Gecikmesi: +13 dk)
+   - Yürüme Süresi  : 16 dakika | Aktarma Sayısı: 0
+   - Kullanılan Hat : BUS 522
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 55 dakika (Metin: 55 dk)
+   - Önerilen Hatlar: Otobüs ➔ 522
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 41 dakika (Metin: 41 dk.)
+   - Önerilen Hatlar: 522
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0094: Çatalca (Meydan) ➔ Pendik (Sabiha Gökçen SAW)
+Koordinatlar: (41.131731, 28.449867) ➔ (40.902078, 29.305115) | Kuş Uçuşu: 76.5 km
+Süre Farkı  : Moovit'e Göre: -169 dk | Google Haritalar'a Göre: -206 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 137 dakika (Trafik Gecikmesi: +17 dk)
+   - Yürüme Süresi  : 13 dakika | Aktarma Sayısı: 3
+   - Kullanılan Hat : BUS 429A ➔ BUS 145T ➔ BUS 34G ➔ SUBWAY M4
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 306 dakika (Metin: 5 sa 6 dk)
+   - Önerilen Hatlar: Otobüs ➔ 401 ➔ 34G ➔ M4 ➔ KM23
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 343 dakika (Metin: 5 sa. 43 dk.)
+   - Önerilen Hatlar: 401 ➔ HVL-2 ➔ HVL-11
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0095: Kağıthane (Merkez) ➔ Ataşehir (Batı)
+Koordinatlar: (41.093723, 28.969439) ➔ (40.975742, 29.124436) | Kuş Uçuşu: 18.5 km
+Süre Farkı  : Moovit'e Göre: -5 dk | Google Haritalar'a Göre: -9 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 77 dakika (Trafik Gecikmesi: +21 dk)
+   - Yürüme Süresi  : 6 dakika | Aktarma Sayısı: 2
+   - Kullanılan Hat : BUS 62G ➔ BUS 500T ➔ BUS 14KS
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 82 dakika (Metin: 1 sa 22 dk)
+   - Önerilen Hatlar: Otobüs ➔ TM2	/	62G	/	62H ➔ M7 ➔ 34G ➔ M4 ➔ M8
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 86 dakika (Metin: 1 sa. 26 dk.)
+   - Önerilen Hatlar: TM3 ➔ B33-Vadi-Nobel ➔ 251 ➔ 19
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0096: Şişli (Mecidiyeköy) ➔ Şile (Merkez)
+Koordinatlar: (41.059234, 28.983813) ➔ (41.185550, 29.620342) | Kuş Uçuşu: 55.5 km
+Süre Farkı  : Moovit'e Göre: -124 dk | Google Haritalar'a Göre: -124 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 41 dakika (Trafik Gecikmesi: +8 dk)
+   - Yürüme Süresi  : 14 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS DT2 ➔ BUS 522ST
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 165 dakika (Metin: 2 sa 45 dk)
+   - Önerilen Hatlar: Otobüs ➔ 30M	/	DT2	/	256	/	66 ➔ 522ST	/	122D	/	122M ➔ 139A	/	139
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 165 dakika (Metin: 2 sa. 45 dk.)
+   - Önerilen Hatlar: 65G ➔ 522 ➔ ŞL16-Şile-ÇekmeköyMetrogarden
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0097: Pendik (Sabiha Gökçen SAW) ➔ Küçükçekmece (Halkalı Marmaray)
+Koordinatlar: (40.914566, 29.320396) ➔ (41.016664, 28.763427) | Kuş Uçuşu: 48.3 km
+Süre Farkı  : Moovit'e Göre: +21 dk | Google Haritalar'a Göre: -232 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 160 dakika (Trafik Gecikmesi: +20 dk)
+   - Yürüme Süresi  : 16 dakika | Aktarma Sayısı: 5
+   - Kullanılan Hat : SUBWAY M4 ➔ BUS 500T ➔ BUS 500L ➔ BUS 41AT ➔ BUS E-58 ➔ BUS MR54
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 139 dakika (Metin: 2 sa 19 dk)
+   - Önerilen Hatlar: M4 ➔ B1 ➔ Otobüs
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 392 dakika (Metin: 6 sa. 32 dk.)
+   - Önerilen Hatlar: UM73 ➔ 132 ➔ 81031
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0098: Zeytinburnu (Cevizlibağ) ➔ Tuzla (Marina)
+Koordinatlar: (41.007514, 28.918903) ➔ (40.818980, 29.304788) | Kuş Uçuşu: 38.7 km
+Süre Farkı  : Moovit'e Göre: -27 dk | Google Haritalar'a Göre: -24 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 88 dakika (Trafik Gecikmesi: +2 dk)
+   - Yürüme Süresi  : 9 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS 50K ➔ SUBWAY Marmaray
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 115 dakika (Metin: 1 sa 55 dk)
+   - Önerilen Hatlar: Otobüs ➔ 50K ➔ B1 ➔ KM12
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 112 dakika (Metin: 1 sa. 52 dk.)
+   - Önerilen Hatlar: 85C ➔ B1 (Marmaray) ➔ 133TM
+   - Minibüs Filtresi: Minibüs İçerir (Alternatif Yok)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0099: Avcılar (Merkez Metrobüs) ➔ Fatih (Yenikapı Marmaray)
+Koordinatlar: (40.995378, 28.726662) ➔ (41.011765, 28.944591) | Kuş Uçuşu: 18.5 km
+Süre Farkı  : Moovit'e Göre: -6 dk | Google Haritalar'a Göre: -10 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 64 dakika (Trafik Gecikmesi: +11 dk)
+   - Yürüme Süresi  : 20 dakika | Aktarma Sayısı: 0
+   - Kullanılan Hat : BUS 76D
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 70 dakika (Metin: 1 sa 10 dk)
+   - Önerilen Hatlar: Otobüs ➔ 76D
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 74 dakika (Metin: 1 sa. 14 dk.)
+   - Önerilen Hatlar: 76D
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+----------------------------------------------------------------------------------------------------
+ROTA #0100: Sultangazi (Cebeci) ➔ Gaziosmanpaşa (Meydan)
+Koordinatlar: (41.094462, 28.875594) ➔ (41.049408, 28.920504) | Kuş Uçuşu: 6.3 km
+Süre Farkı  : Moovit'e Göre: +3 dk | Google Haritalar'a Göre: +5 dk
+
+1. BİZİM MOTOR:
+   - Başarı Durumu  : True
+   - Toplam Süre    : 36 dakika (Trafik Gecikmesi: +6 dk)
+   - Yürüme Süresi  : 6 dakika | Aktarma Sayısı: 1
+   - Kullanılan Hat : BUS TM15 ➔ BUS 38B
+
+2. MOOVIT (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 33 dakika (Metin: 33 dk)
+   - Önerilen Hatlar: Otobüs ➔ HVL3 ➔ T4
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+
+3. GOOGLE HARİTALAR (Web):
+   - Başarı Durumu  : True
+   - Toplam Süre    : 31 dakika (Metin: 31 dk.)
+   - Önerilen Hatlar: 36ES ➔ 38B
+   - Minibüs Filtresi: Uygulandı (Minibüssüz Temiz Rota)
+

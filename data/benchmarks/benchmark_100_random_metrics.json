@@ -1,0 +1,84 @@
+{
+  "benchmark": "100 Random Metropolitan Routes",
+  "timestamp": "2026-09-27T00:18:56Z",
+  "total_routes": 100,
+  "successful_routes": 72,
+  "failed_routes": 28,
+  "overall_success_rate_percent": 72.0,
+  "total_benchmark_time_seconds": 296.18,
+  "avg_query_time_seconds": 2.96,
+  "category_breakdown": {
+    "Inner -> Inner": {
+      "total_tested": 25,
+      "successful": 25,
+      "failed": 0,
+      "success_rate_percent": 100.0,
+      "avg_duration_minutes": 58.1,
+      "avg_walk_minutes": 9.6,
+      "avg_transfers": 1.8
+    },
+    "Inner -> Peripheral": {
+      "total_tested": 25,
+      "successful": 16,
+      "failed": 9,
+      "success_rate_percent": 64.0,
+      "avg_duration_minutes": 74.4,
+      "avg_walk_minutes": 5.5,
+      "avg_transfers": 1.75
+    },
+    "Peripheral -> Inner": {
+      "total_tested": 25,
+      "successful": 16,
+      "failed": 9,
+      "success_rate_percent": 64.0,
+      "avg_duration_minutes": 86.5,
+      "avg_walk_minutes": 9.1,
+      "avg_transfers": 2.69
+    },
+    "Peripheral -> Peripheral": {
+      "total_tested": 25,
+      "successful": 15,
+      "failed": 10,
+      "success_rate_percent": 60.0,
+      "avg_duration_minutes": 89.7,
+      "avg_walk_minutes": 8.5,
+      "avg_transfers": 2.53
+    }
+  },
+  "failure_analysis": {
+    "counts_by_root_cause": {
+      "OSM Street Graph Boundary Exclusion": 28
+    },
+    "failed_district_frequencies": {
+      "Büyükçekmece": 6,
+      "Silivri": 6,
+      "Çatalca": 4,
+      "Tuzla": 4,
+      "Arnavutköy": 3,
+      "Pendik": 3,
+      "Şile": 3,
+      "Sarıyer": 2,
+      "Üsküdar": 2,
+      "Maltepe": 2,
+      "Beyoğlu": 2,
+      "Bakırköy": 2,
+      "Avcılar": 1,
+      "Sultanbeyli": 1,
+      "Beykoz": 1,
+      "Başakşehir": 1,
+      "Sancaktepe": 1,
+      "Şişli": 1,
+      "Kağıthane": 1,
+      "Bayrampaşa": 1,
+      "Beylikdüzü": 1,
+      "Güngören": 1,
+      "Beşiktaş": 1,
+      "Adalar": 1,
+      "Ümraniye": 1,
+      "Sultangazi": 1,
+      "Fatih": 1,
+      "Bağcılar": 1,
+      "Gaziosmanpaşa": 1
+    }
+  }
+}
