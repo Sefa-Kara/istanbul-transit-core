@@ -7,7 +7,7 @@ sdk: gradio
 app_file: app.py
 pinned: false
 license: mit
-short_description: İstanbul için sıfır bulut maliyetli yerel multimodal toplu taşıma motoru
+short_description: İstanbul için yerel toplu taşıma navigasyon motoru
 ---
 
 <div align="center">
