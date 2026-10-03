@@ -9,16 +9,17 @@
 [![Lisans: MIT](https://img.shields.io/badge/Lisans-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB.svg?logo=python&logoColor=white)](https://python.org)
 [![Docker](https://img.shields.io/badge/Docker-Hazır-2496ED.svg?logo=docker&logoColor=white)](https://www.docker.com/)
-[![Sıfır Ücretli API](https://img.shields.io/badge/API-100%25%20Ücretsiz%20%26%20Yerel-success.svg)](#temel-özellikler-ve-inovasyonlar)
+[![Sıfır Ücretli API](https://img.shields.io/badge/API-100%25%20Ücretsiz%20%26%20Yerel-success.svg)](#temel-ozellikler)
 
 *İstanbul'un karmaşık toplu taşıma ağını (Metro, Metrobüs, Marmaray, Tramvay, Şehir Hatları Vapurları, İETT Otobüsleri ve Havaist) ücretli bulut API'lerine (Google Maps, Moovit vb.) kuruş ödemeden, gizliliği koruyarak ve sıfır gecikmeyle çözen açık kaynaklı navigasyon platformu.*
 
-[🇹🇷 Türkçe Dokümantasyon](README_TR.md) • [🇬🇧 English Documentation](README.md) • [🚀 Canlı Demo](https://th3g3nt13man-istanbul-transit-core.hf.space) • [📊 Benchmark Raporu](#1000-rotalık-ve-canlı-adli-kıyaslama-raporu) • [⚡ Hızlı Kurulum](#hızlı-başlangıç-kurulum) • [📱 REST API](#mobil-web-geliştiricileri-için-rest-api-referansı)
+[🇹🇷 Türkçe Dokümantasyon](README_TR.md) • [🇬🇧 English Documentation](README.md) • [🚀 Canlı Demo](https://huggingface.co/spaces/Th3G3nt13man/istanbul-transit-core) • [📊 Benchmark Raporu](#benchmark-raporu) • [⚡ Hızlı Kurulum](#hizli-kurulum) • [📱 REST API](#rest-api-referansi)
 
 </div>
 
 ---
 
+<a id="temel-ozellikler" name="temel-ozellikler"></a>
 ## 🌟 Temel Özellikler ve İnovasyonlar
 
 - **Birleşik Multimodal Ağ Grafı**: 11 Metro hattı, 7/24 Metrobüs, kıtalararası Marmaray omurgası, 5 Tramvay hattı, 4 Füniküler/Teleferik sistemi, Şehir Hatları ve özel Boğaz vapurları (Turyol, Dentur), 800+ İETT otobüs hattı ve Havalimanı servislerini (Havaist ve H-2) tek bir hibrit graf üzerinde birbirine bağlar.
@@ -32,6 +33,7 @@
 
 ---
 
+<a id="benchmark-raporu" name="benchmark-raporu"></a>
 ## 📊 1.000 Rotalık ve Canlı Adli Kıyaslama Raporu
 
 Motorun performansını ve doğruluğunu ölçmek amacıyla; tüm İstanbul il sınırları içinde (Silivri'den Tuzla'ya, Çatalca'dan Pendik'e) rastgele üretilen **1.000 koordinat çiftinde** bizim motorumuz, **Moovit** ve **Google Maps** eşzamanlı olarak test edilmiştir:
@@ -55,6 +57,7 @@ Motorun performansını ve doğruluğunu ölçmek amacıyla; tüm İstanbul il s
 
 ---
 
+<a id="hizli-kurulum" name="hizli-kurulum"></a>
 ## 🚀 Hızlı Başlangıç & Kurulum
 
 ### 1. Yerel Çalıştırma (Mac & Linux)
@@ -109,6 +112,7 @@ Hugging Face Spaces üzerinde **16 GB RAM ve 2 vCPU** kapasitesinde **%100 ücre
 
 ---
 
+<a id="rest-api-referansi" name="rest-api-referansi"></a>
 ## 📱 Mobil & Web Geliştiricileri İçin REST API Referansı
 
 Bu altyapıyı kullanarak Flutter, React Native, Swift veya web tabanlı kendi özel ulaşım uygulamalarınızı geliştirebilirsiniz:
@@ -163,6 +167,7 @@ GET /api/live/buses/{hat_kodu}
 
 ---
 
+<a id="lisans" name="lisans"></a>
 ## ⚖️ Lisans
 
 Bu proje **[MIT Lisansı](LICENSE)** ile lisanslanmıştır. Ticari ve kişisel projelerde serbestçe kullanılabilir, çatallanabilir (fork) ve dağıtılabilir.

@@ -13,12 +13,13 @@
 
 *An ad-free, privacy-preserving, zero-cloud-cost routing engine built specifically to solve Istanbul's complex multimodal transit grid (Metro, Metrobüs, Marmaray, Tram, Ferries, İETT Buses, and Havaist).*
 
-[🇹🇷 Türkçe Dokümantasyon](README_TR.md) • [🇬🇧 English Documentation](README.md) • [🚀 Live Demo](https://th3g3nt13man-istanbul-transit-core.hf.space) • [🏗️ Architecture](#system-architecture) • [📊 Benchmark Report](#the-1000-route-forensic-benchmark) • [📱 API Docs](#rest-api-reference-for-mobile-web-developers) • [⚡ Quickstart](#quickstart)
+[🇹🇷 Türkçe Dokümantasyon](README_TR.md) • [🇬🇧 English Documentation](README.md) • [🚀 Live Demo](https://huggingface.co/spaces/Th3G3nt13man/istanbul-transit-core) • [🏗️ Architecture](#system-architecture) • [📊 Benchmark Report](#the-1000-route-forensic-benchmark) • [📱 API Docs](#rest-api-reference-for-mobile-web-developers) • [⚡ Quickstart](#quickstart)
 
 </div>
 
 ---
 
+<a id="key-features" name="key-features"></a>
 ## 🌟 Key Features & Innovations
 
 - **Unified Multimodal Graph**: Seamlessly connects 11 Metro lines, Metrobüs (24/7), Marmaray (intercontinental rail spine), 5 Tram lines, 4 Funiküler/Teleferik systems, City Ferries (Şehir Hatları, Turyol, Dentur), 800+ İETT bus lines, and Airport Shuttles (Havaist & H-2).
@@ -32,6 +33,7 @@
 
 ---
 
+<a id="the-1000-route-forensic-benchmark" name="the-1000-route-forensic-benchmark"></a>
 ## 📊 The 1000-Route Forensic Benchmark
 
 To objectively verify engine performance against industry leaders, an automated lockstep benchmark was executed across **1,000 randomly generated coordinate pairs** spanning the entire Istanbul metropolitan province (Silivri to Tuzla, Arnavutköy to Pendik), querying our engine, **Moovit**, and **Google Maps** simultaneously.
@@ -73,6 +75,7 @@ Total 1,000 Routes Tested
 
 ---
 
+<a id="system-architecture" name="system-architecture"></a>
 ## 🏗️ System Architecture
 
 ```mermaid
@@ -99,6 +102,7 @@ flowchart TD
 
 ---
 
+<a id="quickstart" name="quickstart"></a>
 ## 🚀 Quickstart
 
 ### Prerequisites
@@ -110,7 +114,7 @@ flowchart TD
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/istanbul-transit-core.git
+git clone https://github.com/Sefa-Kara/istanbul-transit-core.git
 cd istanbul-transit-core
 
 # Install Python dependencies
@@ -133,6 +137,7 @@ docker compose up -d --build
 
 ---
 
+<a id="hugging-face-spaces-deployment" name="hugging-face-spaces-deployment"></a>
 ## ☁️ Hugging Face Spaces Deployment (100% Free Gradio SDK)
 
 You can host this engine **completely free** on Hugging Face Spaces using their Free CPU tier (**2 vCPUs & 16 GB RAM**):
@@ -150,6 +155,7 @@ You can host this engine **completely free** on Hugging Face Spaces using their 
 
 ---
 
+<a id="rest-api-reference-for-mobile-web-developers" name="rest-api-reference-for-mobile-web-developers"></a>
 ## 📱 REST API Reference for Mobile & Web Developers
 
 Build custom mobile apps (Flutter, React Native, Swift, Kotlin) or web applications with our clean REST API.
@@ -242,6 +248,7 @@ Returns live vehicle GPS telemetry, direction, speed, and real-time distance.
 
 ---
 
+<a id="data-sources" name="data-sources"></a>
 ## 🛠️ Data Sources & Updating Schedules
 
 | Feed | Source | Update Method |
@@ -258,6 +265,7 @@ python3 scripts/06_rebuild_complete_graph.py
 
 ---
 
+<a id="license" name="license"></a>
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.

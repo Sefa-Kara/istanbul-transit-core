@@ -69,8 +69,8 @@ from src.api.main import app as fastapi_app
 
 try:
     import gradio as gr
-    # Create Gradio interface embedding our full Leaflet interactive map
-    with gr.Blocks(title="Istanbul Transit Core", fill_height=True, css="footer {visibility: hidden}") as demo:
+    # In Gradio 6.0, css parameter was moved from Blocks to launch().
+    with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
         gr.HTML("""
         <iframe src="/static/index.html" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
         """)
@@ -82,6 +82,21 @@ except ImportError:
 
 if __name__ == "__main__":
     import uvicorn
+    import socket
     port = int(os.environ.get("PORT", 7860))
+    print(f"🚀 Preparing Istanbul Transit Core Web Gateway on 0.0.0.0:{port}...")
+
+    # Ensure port is released if previous instance was shutting down
+    for attempt in range(1, 6):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            try:
+                s.bind(("0.0.0.0", port))
+                break
+            except OSError:
+                print(f"⏳ Waiting for port {port} to clear (attempt {attempt}/5)...")
+                time.sleep(2)
+
     print(f"🚀 Starting Istanbul Transit Core Web Gateway on 0.0.0.0:{port}...")
     uvicorn.run(app, host="0.0.0.0", port=port)
+
