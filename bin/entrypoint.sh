@@ -7,8 +7,15 @@ BASE_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 echo "=========================================================="
 echo "🚀 Istanbul Transit Navigator - Container Bootstrap"
 echo "=========================================================="
-echo "Starting OpenTripPlanner 2.6 on port 8080..."
+# Auto-download OTP shaded JAR if missing (zero-config boot)
+mkdir -p "$BASE_DIR/bin"
+if [ ! -f "$BASE_DIR/bin/otp-2.6.0-shaded.jar" ]; then
+  echo "📥 OTP 2.6.0 shaded JAR not found locally. Downloading from official Maven Central..."
+  curl -L -o "$BASE_DIR/bin/otp-2.6.0-shaded.jar" https://repo1.maven.org/maven2/org/opentripplanner/otp/2.6.0/otp-2.6.0-shaded.jar
+  echo "✔ Download complete!"
+fi
 
+echo "Starting OpenTripPlanner 2.6 on port 8080..."
 # Start OTP
 java -Xmx4G -jar "$BASE_DIR/bin/otp-2.6.0-shaded.jar" --load "$BASE_DIR/data/router" &
 OTP_PID=$!
