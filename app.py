@@ -83,6 +83,8 @@ with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
     <iframe src="/map" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
     """)
 
+os.environ["GRADIO_SSR_MODE"] = "False"
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 7860))
     print(f"🚀 Starting Istanbul Transit Core on 0.0.0.0:{port}...")
@@ -91,6 +93,7 @@ if __name__ == "__main__":
         server_port=port,
         prevent_thread_lock=True,
         show_error=True,
+        ssr_mode=False,
         css="footer {visibility: hidden}"
     )
 
