@@ -74,6 +74,7 @@ threading.Thread(target=start_background_otp, daemon=True).start()
 import gradio as gr
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.routing import Route, Mount
 from src.api.main import app as fastapi_app
 
 # Define Gradio Blocks interface embedding the interactive Leaflet web UI
@@ -82,24 +83,38 @@ with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
     <iframe src="/map" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
     """)
 
-# Mount vendor assets directly onto Gradio's internal FastAPI app
-demo.app.mount("/vendor", StaticFiles(directory=str(STATIC_DIR / "vendor")), name="vendor")
-
-# Route for rendering the interactive map HTML
-@demo.app.get("/map")
-def get_map():
-    return FileResponse(str(STATIC_DIR / "index.html"))
-
-# Forward all /api/ endpoints from our core router into Gradio's FastAPI app
-for route in fastapi_app.routes:
-    if getattr(route, "path", "").startswith("/api"):
-        demo.app.routes.insert(0, route)
-
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 7860))
     print(f"🚀 Starting Istanbul Transit Core on 0.0.0.0:{port}...")
-    demo.launch(
+    server_app, local_url, _ = demo.launch(
         server_name="0.0.0.0",
         server_port=port,
+        prevent_thread_lock=True,
+        show_error=True,
         css="footer {visibility: hidden}"
     )
+
+    # 1. Mount vendor and static assets directly onto the running server_app
+    server_app.routes.insert(0, Mount("/vendor", StaticFiles(directory=str(STATIC_DIR / "vendor")), name="vendor"))
+    server_app.routes.insert(0, Mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static"))
+
+    # 2. Register all API endpoints from our core router at the front of the router
+    for route in reversed(fastapi_app.routes):
+        if getattr(route, "path", "").startswith("/api"):
+            server_app.routes.insert(0, route)
+
+    # 3. Serve the interactive map UI directly at /map and at root /
+    async def serve_index(request):
+        return FileResponse(str(STATIC_DIR / "index.html"))
+
+    server_app.routes.insert(0, Route("/map", serve_index))
+    server_app.routes.insert(0, Route("/", serve_index))
+
+    print("✔ All API routes, static assets, and Map UI bound successfully!")
+
+    # Keep main thread alive
+    try:
+        while True:
+            time.sleep(3600)
+    except (KeyboardInterrupt, SystemExit):
+        demo.close()
