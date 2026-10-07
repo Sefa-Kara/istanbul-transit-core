@@ -10,9 +10,10 @@ env/
 .venv/
 ENV/
 
-# Large Engine Binaries & Graph Cache (GitHub 100MB limit & Git LFS)
+# Large Engine Binaries & Graph Cache
 bin/*.jar
-data/router/graph.obj
+# data/router/graph.obj is tracked on Hugging Face via LFS
+!data/router/graph.obj
 data/gtfs_raw/
 data/gtfs_temp/
 data/raw/
