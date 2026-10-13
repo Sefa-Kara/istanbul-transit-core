@@ -146,7 +146,6 @@ if __name__ == "__main__":
         server_port=port,
         prevent_thread_lock=True,
         show_error=True,
-        ssr_mode=False,
         css="footer {visibility: hidden}"
     )
 
