@@ -31,12 +31,17 @@
    - Çevrimdışı kabuk ve hızlı açılış için `sw.js` Service Worker devreye alındı.
    - Parmakla kaydırılabilen (Swipeable Touch Drag) 3 seviyeli modern Bottom Sheet (`peek`, `half`, `full`) ve yüzen FAB kontrolleri (`mobileLocateFab`, `mobileSheetFab`) eklendi.
    - PWA ve statik endpoint testleri (`tests/test_pwa_integration.py`, `tests/test_api_static_pwa.py`) 100% başarıyla geçti.
+7. **Canlı Hugging Face Space & GitHub Doğrulaması (100% Başarılı):**
+   - GitHub `origin/main` README dosyası YAML tablosundan tamamen arındırıldı; `scripts/verify_github_readme.py` ile görsel olarak temiz (`CLEAN`) olduğu kanıtlandı (`github_readme_view.png`).
+   - Hugging Face Spaces (`space/main`) sıfır hata ile `Stage: RUNNING` durumuna geçti (`dc76231` / `3eac5c3`).
+   - `scripts/test_navigation_buttons.py` ile Playwright üzerinde tüm butonlar (4 strateji pili, 5 mod çipi, 4 zaman çipi, FAB çekmece butonu, tutma kolu ve rota otomatik doldurma) canlı Space üzerinde tek tek tıklanarak %100 doğrulandı (`mobile_pwa_verified.png`).
+   - Canlı `/api/plan` rotalama motoru test edildi ve anlık rota hesaplaması başarıyla teyit edildi.
 
 ---
 
 ## 3. MEVCUT AÇIK GÖREVLER & SIRADAKİ ADIMLAR
-* **Adım 1:** Hugging Face Spaces üzerindeki canlı PWA deneyiminin mobil cihazlarda (iOS Safari / Android Chrome) kullanıcı tarafından test edilmesi.
-* **Adım 2:** İsteğe bağlı push notification (İETT sefer gecikmeleri ve hat uyarıları) altyapısının eklenmesi.
+* **Adım 1:** Kullanıcının telefonundan (iPhone / Android) PWA uygulamasını "Ana Ekrana Ekle" diyerek yerel mobil uygulama olarak deneyimlemesi.
+* **Adım 2:** İsteğe bağlı push notification veya çevrimdışı önbellekleme genişletmeleri.
 
 ---
 
@@ -44,5 +49,6 @@
 * **Sistemi Başlat:** `./start.sh` (OTP 8080 + FastAPI 8000 başlatır)
 * **Sistemi Durdur:** `./stop.sh`
 * **PWA & UI Testleri:** `python3 -m unittest tests/test_pwa_integration.py tests/test_api_static_pwa.py`
-* **Benchmark:** `python3 scripts/benchmark_1000.py`
-* **Deploy Space:** `git push space main`
+* **E2E Dokunmatik Buton Testi:** `python3 scripts/test_navigation_buttons.py`
+* **GitHub Görsel Doğrulama:** `python3 scripts/verify_github_readme.py`
+* **Deploy Space:** `git push space hf-space:main`
