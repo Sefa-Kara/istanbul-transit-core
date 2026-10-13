@@ -126,26 +126,61 @@ threading.Thread(target=start_background_otp, daemon=True).start()
 
 # Import Gradio and FastAPI dependencies
 import gradio as gr
+from fastapi.routing import APIRoute
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from src.api.main import app as fastapi_app
 
-# Define Gradio Blocks interface (ZeroGPU probe / engine fallback)
+# Define Gradio Blocks interface embedding probe button
 with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
-    gr.Markdown("# 🚆 Istanbul Transit Core - Engine Online")
+    gr.HTML("""
+    <iframe src="/map" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
+    """)
     _probe_btn = gr.Button("ZeroGPU Probe", visible=False)
     _probe_btn.click(fn=_zerogpu_probe)
 
-# Remove default static mount from router so Gradio can cleanly register at /gradio
-fastapi_app.router.routes = [r for r in fastapi_app.router.routes if getattr(r, 'path', '') != '']
+# Bypass Gradio's internal loopback probe (which triggers false ValueError in containerized HF Spaces)
+try:
+    import gradio.networking
+    gradio.networking.url_ok = lambda url: True
+except Exception:
+    pass
 
-# Mount Gradio at /gradio
-app = gr.mount_gradio_app(fastapi_app, demo, path="/gradio")
+# Ensure localhost bypasses any proxies for Gradio local URL check
+os.environ["no_proxy"] = "localhost,127.0.0.1,0.0.0.0"
+os.environ["NO_PROXY"] = "localhost,127.0.0.1,0.0.0.0"
 
-# Mount Static Web UI & PWA at "/" (Native zero-iframe Leaflet PWA with manifest.json & sw.js)
-app.mount("/", StaticFiles(directory=str(STATIC_DIR), html=True), name="static")
+# Mount static and vendor assets directly on demo.app
+demo.app.mount("/vendor", StaticFiles(directory=str(STATIC_DIR / "vendor")), name="vendor")
+demo.app.mount("/icons", StaticFiles(directory=str(STATIC_DIR / "icons")), name="icons")
+demo.app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+
+# Handlers for root, map, manifest, and service worker
+def get_root():
+    return FileResponse(str(STATIC_DIR / "index.html"))
+
+def get_manifest():
+    return FileResponse(str(STATIC_DIR / "manifest.json"), media_type="application/manifest+json")
+
+def get_sw():
+    return FileResponse(
+        str(STATIC_DIR / "sw.js"),
+        media_type="application/javascript",
+        headers={"Service-Worker-Allowed": "/", "Cache-Control": "no-cache"}
+    )
+
+# Forward core FastAPI routes into demo.app at highest priority
+for route in reversed(fastapi_app.routes):
+    if getattr(route, "path", "").startswith("/api"):
+        demo.app.routes.insert(0, route)
+
+# Insert root and PWA endpoints at index 0
+demo.app.routes.insert(0, APIRoute("/sw.js", get_sw, methods=["GET", "HEAD"]))
+demo.app.routes.insert(0, APIRoute("/manifest.json", get_manifest, methods=["GET", "HEAD"]))
+demo.app.routes.insert(0, APIRoute("/map", get_root, methods=["GET", "HEAD"]))
+demo.app.routes.insert(0, APIRoute("/", get_root, methods=["GET", "HEAD"]))
 
 if __name__ == "__main__":
     print("🚀 Starting Istanbul Transit Core on Hugging Face Spaces (0.0.0.0:7860)...")
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=7860)
+    demo.launch(server_name="0.0.0.0", server_port=7860)
 
