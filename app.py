@@ -138,6 +138,10 @@ with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
     _probe_btn = gr.Button("ZeroGPU Probe", visible=False)
     _probe_btn.click(fn=_zerogpu_probe)
 
+# Ensure localhost bypasses any proxies for Gradio local URL check
+os.environ["no_proxy"] = "localhost,127.0.0.1,0.0.0.0"
+os.environ["NO_PROXY"] = "localhost,127.0.0.1,0.0.0.0"
+
 # 1. Mount static and vendor assets directly on demo.app
 demo.app.mount("/vendor", StaticFiles(directory=str(STATIC_DIR / "vendor")), name="vendor")
 demo.app.mount("/icons", StaticFiles(directory=str(STATIC_DIR / "icons")), name="icons")
@@ -146,10 +150,6 @@ demo.app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 # 2. Map & PWA endpoints
 @demo.app.get("/map")
 def get_map():
-    return FileResponse(str(STATIC_DIR / "index.html"))
-
-@demo.app.get("/")
-def get_root():
     return FileResponse(str(STATIC_DIR / "index.html"))
 
 @demo.app.get("/manifest.json")
