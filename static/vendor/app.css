@@ -1,4 +1,4 @@
-/* İstanbul Transit Navigator - World-Class Navigation UI Theme */
+/* İstanbul Transit Navigator - World-Class Mobile-First Navigation UI Theme */
 :root {
   --bg-primary: #090d16;
   --bg-surface: #0f172a;
@@ -8,6 +8,12 @@
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --text-dim: #64748b;
+
+  /* Safe Area Insets for iOS & Notch Phones */
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
   
   /* Official Istanbul Transit Palette */
   --m2-color: #00965e;       /* Metro M2 Yenikapı - Hacıosman Green */
@@ -25,16 +31,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
-body {
+html, body {
   background-color: var(--bg-primary);
   color: var(--text-main);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 /* Scrollbars */
@@ -55,18 +64,19 @@ body {
 
 /* Glassmorphic Surfaces */
 .glass-panel {
-  background: rgba(15, 23, 42, 0.88);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .glass-header {
-  background: rgba(15, 23, 42, 0.92);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(15, 23, 42, 0.94);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: max(0.6rem, var(--sat));
 }
 
 .glass-card {
@@ -85,6 +95,10 @@ body {
   box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.55);
 }
 
+.glass-card:active {
+  transform: scale(0.99);
+}
+
 .glass-card.active-card {
   background: rgba(15, 23, 42, 0.96);
   border-color: #0284c7;
@@ -96,7 +110,8 @@ body {
   height: 100%;
   width: 100%;
   z-index: 1;
-  background-color: #eef2f6; /* Crisp clean canvas background */
+  background-color: #eef2f6;
+  touch-action: pan-x pan-y pinch-zoom;
 }
 
 /* Grayscale/Clean filter for standard OSM tiles */
@@ -110,8 +125,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   cursor: grab;
 }
 
@@ -121,13 +136,13 @@ body {
 }
 
 .origin-pin {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   background: #10b981;
   border: 3px solid #ffffff;
   border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.55), 0 2px 6px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,13 +159,13 @@ body {
 }
 
 .dest-pin {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   background: #ef4444;
   border: 3px solid #ffffff;
   border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.55), 0 2px 6px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,6 +179,16 @@ body {
   background: #ffffff;
   border-radius: 50%;
   transform: rotate(45deg);
+}
+
+/* Current GPS live marker */
+.user-gps-marker {
+  width: 20px;
+  height: 20px;
+  background: #0284c7;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(2, 132, 199, 0.35), 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Station Transfer Badges on Map */
@@ -299,28 +324,135 @@ details > summary::-webkit-details-marker {
   transform: rotate(180deg) scale(0.92);
 }
 
-/* Responsive Bottom Sheet for Mobile */
+/* Mobile Floating Controls (FAB) */
+.mobile-fab-container {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  /* Prevent iOS Safari input auto-zoom by enforcing 16px minimum */
+  input[type="text"], input[type="date"], input[type="time"] {
+    font-size: 16px !important;
+  }
+
+  /* Floating Action Buttons over Map */
+  .mobile-fab-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 14px;
+    bottom: 100px;
+    z-index: 25;
+    gap: 10px;
+    pointer-events: auto;
+  }
+
+  .mobile-fab {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: #38bdf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 12px rgba(6, 182, 212, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    font-size: 19px;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+  }
+
+  .mobile-fab:active {
+    transform: scale(0.9);
+    background: rgba(30, 41, 59, 0.98);
+  }
+
+  /* Responsive Swipeable Bottom Sheet for Mobile */
   #sidebar {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100% !important;
-    max-height: 85vh;
-    border-radius: 20px 20px 0 0;
+    height: 88vh;
+    max-height: 88vh;
+    border-radius: 26px 26px 0 0;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: none;
     border-right: none;
-    z-index: 1000;
-    transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
-    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.75);
+    border-bottom: none;
+    z-index: 30;
+    margin: 0 !important;
+    padding-bottom: max(0.75rem, var(--sab));
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
+    touch-action: pan-y;
   }
-  
-  #sidebar.collapsed {
-    transform: translateY(calc(100% - 74px));
+
+  /* Bottom Sheet Snap Positions */
+  /* 1. Peek: Collapsed view (only handle + compact header visible) */
+  #sidebar.sheet-peek {
+    transform: translateY(calc(88vh - 84px - var(--sab)));
   }
-  
+
+  /* 2. Half: Mid-expanded view (showing search inputs and top route) */
+  #sidebar.sheet-half {
+    transform: translateY(calc(88vh - 46vh));
+  }
+
+  /* 3. Full: Fully expanded view (full route details and scrolling) */
+  #sidebar.sheet-full {
+    transform: translateY(0);
+  }
+
+  /* Dragging state removes transition lag for silky smooth 60fps tracking */
+  #sidebar.dragging {
+    transition: none !important;
+  }
+
+  /* Sheet grab handle styling */
   .sheet-handle {
     display: flex !important;
+    width: 100%;
+    padding: 10px 0 8px 0;
+    cursor: grab;
+    touch-action: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sheet-handle:active {
+    cursor: grabbing;
+  }
+
+  .sheet-bar {
+    width: 44px;
+    height: 5px;
+    border-radius: 9999px;
+    background: rgba(148, 163, 184, 0.55);
+    transition: background 0.2s ease, width 0.2s ease;
+  }
+
+  .sheet-handle:hover .sheet-bar,
+  .sheet-handle:active .sheet-bar {
+    background: #38bdf8;
+    width: 52px;
+  }
+
+  /* Leaflet zoom controls on mobile repositioned to avoid overlap */
+  .leaflet-top.leaflet-right {
+    top: 10px;
+    right: 12px;
+  }
+
+  /* Toast notification for mobile positioned right above bottom sheet peek */
+  #mapToast {
+    bottom: 96px !important;
+    right: 12px !important;
+    left: 12px !important;
+    justify-content: center;
+    max-width: calc(100% - 24px);
   }
 }

@@ -1,0 +1,57 @@
+{
+  "name": "İstanbul Transit Navigator",
+  "short_name": "İT Transit",
+  "description": "İstanbul Akıllı Şehir İçi Rota, Canlı İETT Radarı ve Toplu Taşıma Rehberi",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#090d16",
+  "theme_color": "#0f172a",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": [
+    "navigation",
+    "travel",
+    "utilities"
+  ],
+  "shortcuts": [
+    {
+      "name": "Mevcut Konumumdan Rota",
+      "short_name": "Rota Bul",
+      "description": "Canlı GPS konumuyla hemen rota ara",
+      "url": "/?action=locate",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

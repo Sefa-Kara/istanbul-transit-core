@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="m2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="metrobusGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base with Rounded Corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer Glowing Accent Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#accentGrad)" stroke-width="8" opacity="0.4" />
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="8 8" opacity="0.6" />
+
+  <!-- Metro Lines Geometry (Symbolizing Istanbul transit crossroads) -->
+  <!-- Metrobüs Arc -->
+  <path d="M 110 370 Q 256 120 402 370" fill="none" stroke="url(#metrobusGrad)" stroke-width="14" stroke-linecap="round" />
+  
+  <!-- M2 / Marmaray Intersecting Line -->
+  <path d="M 120 200 C 200 340 312 340 392 200" fill="none" stroke="url(#m2Grad)" stroke-width="14" stroke-linecap="round" />
+
+  <!-- Central Navigation Compass / Pin Symbol -->
+  <g transform="translate(256, 256)" filter="url(#glow)">
+    <!-- Central Outer Pulse Circle -->
+    <circle cx="0" cy="0" r="74" fill="#0f172a" stroke="url(#accentGrad)" stroke-width="6" />
+    
+    <!-- Dynamic Transit Arrow / Compass Needle -->
+    <path d="M 0 -52 L 36 34 L 0 18 L -36 34 Z" fill="url(#accentGrad)" />
+    
+    <!-- Central Transit Hub Station Dot -->
+    <circle cx="0" cy="0" r="10" fill="#ffffff" />
+  </g>
+
+  <!-- Transfer Hub Station Nodes -->
+  <circle cx="160" cy="285" r="10" fill="#ffffff" stroke="#10b981" stroke-width="4" />
+  <circle cx="352" cy="285" r="10" fill="#ffffff" stroke="#ef4444" stroke-width="4" />
+  <circle cx="256" cy="180" r="12" fill="#ffffff" stroke="#06b6d4" stroke-width="4" />
+
+  <!-- Modern Monogram Text Badge 'İT' at Bottom -->
+  <rect x="206" y="405" width="100" height="34" rx="17" fill="#1e293b" stroke="#38bdf8" stroke-width="2" opacity="0.9" />
+  <text x="256" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#38bdf8" text-anchor="middle" letter-spacing="3">İSTANBUL</text>
+</svg>

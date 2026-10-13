@@ -2,8 +2,20 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>İstanbul Transit Navigator | Akıllı Şehir İçi Rota & Ulaşım Rehberi</title>
+  
+  <!-- PWA Manifest & Mobile App Meta Tags -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="İT Transit">
+  <link rel="icon" type="image/png" href="/icons/favicon.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512.png">
   
   <!-- Local Leaflet Assets (Zero-CDN) -->
   <link rel="stylesheet" href="/vendor/leaflet/leaflet.css" />
@@ -49,11 +61,11 @@
   <div class="flex flex-1 overflow-hidden relative">
 
     <!-- Left Navigation Control Panel / Mobile Bottom Sheet -->
-    <aside id="sidebar" class="glass-panel w-full md:w-[460px] lg:w-[490px] flex flex-col shrink-0 z-20 overflow-hidden md:m-3 md:rounded-2xl transition-all duration-300">
+    <aside id="sidebar" class="glass-panel w-full md:w-[460px] lg:w-[490px] flex flex-col shrink-0 z-20 overflow-hidden md:m-3 md:rounded-2xl transition-all duration-300 sheet-half">
       
-      <!-- Mobile Grab Handle -->
-      <div id="sheetHandle" class="sheet-handle hidden md:hidden w-full pt-2.5 pb-1 flex items-center justify-center cursor-pointer select-none">
-        <div class="w-12 h-1.5 rounded-full bg-slate-500/70"></div>
+      <!-- Mobile Swipe Grab Handle -->
+      <div id="sheetHandle" class="sheet-handle hidden md:hidden w-full pt-2 pb-1.5 flex items-center justify-center cursor-pointer select-none" aria-label="Kaydırma Tutamacı">
+        <div class="sheet-bar"></div>
       </div>
 
       <!-- Input Controls Section -->
@@ -219,6 +231,16 @@
     <main class="flex-1 h-full relative" role="region" aria-label="Harita Görünümü">
       <div id="map"></div>
       
+      <!-- Mobile Floating Action Buttons (FAB) -->
+      <div class="mobile-fab-container">
+        <button id="mobileLocateFab" title="Canlı GPS Konumunu Al" class="mobile-fab" aria-label="Canlı GPS Konumu">
+          🎯
+        </button>
+        <button id="mobileSheetFab" title="Çekmeceyi Aç / Kapat" class="mobile-fab" aria-label="Çekmeceyi Aç Kapat">
+          🧭
+        </button>
+      </div>
+
       <!-- Live Map Toast Notification -->
       <div id="mapToast" class="absolute bottom-5 right-5 bg-slate-900/90 backdrop-blur-md border border-slate-700 text-slate-200 text-xs px-3.5 py-2 rounded-xl shadow-2xl z-20 hidden flex items-center gap-2">
         <span class="pulse-dot bg-emerald-400"></span>
@@ -357,8 +379,17 @@
         if (map) map.invalidateSize();
       });
 
+      // Dismiss keyboard on map drag
+      map.on('dragstart', function() {
+        if (document.activeElement) document.activeElement.blur();
+      });
+
       // Interactive Map Click Context Menu
       map.on('click', function(e) {
+        if (document.activeElement) document.activeElement.blur();
+        if (window.innerWidth <= 768 && currentSheetState === 'full') {
+          setSheetSnap('peek');
+        }
         const lat = e.latlng.lat;
         const lon = e.latlng.lng;
         const popupContent = document.createElement('div');
@@ -498,6 +529,12 @@
       const dropdown = document.getElementById(dropdownId);
       let focusedIndex = -1;
 
+      input.addEventListener('focus', () => {
+        if (window.innerWidth <= 768) {
+          setSheetSnap('full');
+        }
+      });
+
       input.addEventListener('input', () => {
         clearTimeout(searchDebounceTimer);
         const q = input.value.trim();
@@ -599,17 +636,24 @@
         return;
       }
       const btn = document.getElementById('locateMeBtn');
-      const originalText = btn.innerHTML;
-      btn.innerHTML = `<span class="w-3 h-3 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></span> Konum alınıyor...`;
+      const locateFab = document.getElementById('mobileLocateFab');
+      const originalText = btn ? btn.innerHTML : '';
+      if (btn) btn.innerHTML = `<span class="w-3 h-3 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></span> Konum alınıyor...`;
+      if (locateFab) locateFab.innerHTML = `<span class="w-4 h-4 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin inline-block"></span>`;
 
       navigator.geolocation.getCurrentPosition(
         (pos) => {
-          btn.innerHTML = originalText;
+          if (btn) btn.innerHTML = originalText;
+          if (locateFab) locateFab.innerHTML = '🎯';
           selectOrigin(pos.coords.latitude, pos.coords.longitude, "Mevcut Konumum (Canlı GPS)");
+          if (map) {
+            map.flyTo([pos.coords.latitude, pos.coords.longitude], 15, { animate: true, duration: 1.2 });
+          }
           document.getElementById('toInput').focus();
         },
         (err) => {
-          btn.innerHTML = originalText;
+          if (btn) btn.innerHTML = originalText;
+          if (locateFab) locateFab.innerHTML = '🎯';
           alert("Konum alınamadı: " + err.message + ". Lütfen tarayıcı konum iznini onaylayın.");
         },
         { enableHighAccuracy: true, timeout: 8000 }
@@ -781,6 +825,10 @@
 
     // Render Itinerary Cards and Polyline on Leaflet
     function renderResults(data) {
+      if (window.innerWidth <= 768) {
+        setSheetSnap('half');
+      }
+
       const resultsArea = document.getElementById('resultsArea');
       resultsArea.innerHTML = '';
 
@@ -1172,6 +1220,23 @@
       });
     }
 
+    // Mobile Bottom Sheet State Manager (Peek, Half, Full)
+    let currentSheetState = 'half';
+
+    function setSheetSnap(state) {
+      const sidebar = document.getElementById('sidebar');
+      if (!sidebar) return;
+
+      sidebar.classList.remove('sheet-peek', 'sheet-half', 'sheet-full', 'collapsed');
+      sidebar.classList.add('sheet-' + state);
+      sidebar.style.transform = '';
+      currentSheetState = state;
+
+      if (map) {
+        setTimeout(() => map.invalidateSize(), 320);
+      }
+    }
+
     // Startup Initialization
     window.addEventListener('DOMContentLoaded', () => {
       initMap();
@@ -1179,23 +1244,133 @@
       setupAutocomplete('toInput', 'toDropdown', selectDestination);
       initTemporalPicker();
 
-      // Mobile drawer & handle toggle
       const sidebar = document.getElementById('sidebar');
       const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
       const sheetHandle = document.getElementById('sheetHandle');
+      const mobileLocateFab = document.getElementById('mobileLocateFab');
+      const mobileSheetFab = document.getElementById('mobileSheetFab');
 
-      if (toggleSidebarBtn) {
-        toggleSidebarBtn.addEventListener('click', () => {
-          sidebar.classList.toggle('collapsed');
-          if (map) map.invalidateSize();
+      // Set initial snap on mobile
+      if (window.innerWidth <= 768) {
+        setSheetSnap('half');
+      }
+
+      // 1. Mobile Bottom Sheet Touch Drag & Swipe Gestures
+      if (sheetHandle && sidebar) {
+        let startY = 0;
+        let currentY = 0;
+        let isDragging = false;
+        let startTime = 0;
+
+        sheetHandle.addEventListener('touchstart', (e) => {
+          isDragging = true;
+          startY = e.touches[0].clientY;
+          currentY = startY;
+          startTime = Date.now();
+          sidebar.classList.add('dragging');
+        }, { passive: true });
+
+        window.addEventListener('touchmove', (e) => {
+          if (!isDragging) return;
+          currentY = e.touches[0].clientY;
+          const deltaY = currentY - startY;
+
+          // Compute dynamic translation relative to active snap position
+          const screenH = window.innerHeight;
+          const totalSheetH = screenH * 0.88;
+          let baseTranslate = 0;
+          if (currentSheetState === 'peek') {
+            baseTranslate = totalSheetH - 84;
+          } else if (currentSheetState === 'half') {
+            baseTranslate = totalSheetH - (screenH * 0.46);
+          } else {
+            baseTranslate = 0; // full
+          }
+
+          const boundedTranslate = Math.max(0, Math.min(totalSheetH - 84, baseTranslate + deltaY));
+          sidebar.style.transform = `translateY(${boundedTranslate}px)`;
+        }, { passive: true });
+
+        window.addEventListener('touchend', () => {
+          if (!isDragging) return;
+          isDragging = false;
+          sidebar.classList.remove('dragging');
+          sidebar.style.transform = '';
+
+          const deltaY = currentY - startY;
+          const duration = Math.max(1, Date.now() - startTime);
+          const velocity = deltaY / duration;
+
+          // Quick swipe gesture check
+          if (velocity < -0.35) {
+            // Rapid flick UP
+            if (currentSheetState === 'peek') setSheetSnap('half');
+            else setSheetSnap('full');
+          } else if (velocity > 0.35) {
+            // Rapid flick DOWN
+            if (currentSheetState === 'full') setSheetSnap('half');
+            else setSheetSnap('peek');
+          } else {
+            // Distance-based position snapping
+            const rect = sidebar.getBoundingClientRect();
+            const visibleHeight = window.innerHeight - rect.top;
+            const screenH = window.innerHeight;
+
+            if (visibleHeight > screenH * 0.65) {
+              setSheetSnap('full');
+            } else if (visibleHeight > screenH * 0.25) {
+              setSheetSnap('half');
+            } else {
+              setSheetSnap('peek');
+            }
+          }
+        });
+
+        // Tap toggle on grab handle
+        sheetHandle.addEventListener('click', () => {
+          if (currentSheetState === 'peek') setSheetSnap('half');
+          else if (currentSheetState === 'half') setSheetSnap('full');
+          else setSheetSnap('half');
         });
       }
 
-      if (sheetHandle) {
-        sheetHandle.addEventListener('click', () => {
-          sidebar.classList.toggle('collapsed');
-          if (map) map.invalidateSize();
+      // 2. Header hamburger menu toggle
+      if (toggleSidebarBtn) {
+        toggleSidebarBtn.addEventListener('click', () => {
+          if (currentSheetState === 'peek') setSheetSnap('half');
+          else setSheetSnap('peek');
         });
+      }
+
+      // 3. Floating Action Buttons (FAB) over Map
+      if (mobileLocateFab) {
+        mobileLocateFab.addEventListener('click', () => {
+          triggerGeolocation();
+        });
+      }
+
+      if (mobileSheetFab) {
+        mobileSheetFab.addEventListener('click', () => {
+          if (currentSheetState === 'peek') setSheetSnap('half');
+          else setSheetSnap('peek');
+        });
+      }
+
+      // 4. URL Deep Action Query (e.g. /?action=locate)
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('action') === 'locate') {
+        setTimeout(() => triggerGeolocation(), 400);
+      }
+
+      // 5. PWA Service Worker Registration
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then((reg) => {
+            console.log('[PWA] Service Worker registered with scope:', reg.scope);
+          })
+          .catch((err) => {
+            console.warn('[PWA] Service Worker registration failed:', err);
+          });
       }
     });
   </script>
