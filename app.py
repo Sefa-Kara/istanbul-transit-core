@@ -170,10 +170,5 @@ for route in fastapi_app.routes:
         demo.app.routes.insert(0, route)
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 7860))
-    print(f"🚀 Starting Istanbul Transit Core on port {port}...")
-    demo.launch(
-        server_name="0.0.0.0",
-        server_port=port,
-        show_error=True
-    )
+    print("🚀 Starting Istanbul Transit Core on Hugging Face Spaces...")
+    demo.launch()
