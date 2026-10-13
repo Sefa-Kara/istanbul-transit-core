@@ -125,63 +125,34 @@ threading.Thread(target=start_background_otp, daemon=True).start()
 
 # Import Gradio and FastAPI dependencies
 import gradio as gr
-from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
-from starlette.routing import Route, Mount
 from src.api.main import app as fastapi_app
 
 # Define Gradio Blocks interface embedding the interactive Leaflet web UI
-with gr.Blocks(title="Istanbul Transit Core", fill_height=True, css="footer {visibility: hidden}") as demo:
+with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
     gr.HTML("""
-    <iframe src="/map" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
+    <iframe src="/" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
     """)
 
-os.environ["GRADIO_SSR_MODE"] = "False"
+# Mount Gradio onto our FastAPI application
+app = gr.mount_gradio_app(fastapi_app, demo, path="/gradio")
 
 if __name__ == "__main__":
+    import uvicorn
+    import socket
     port = int(os.environ.get("PORT", 7860))
-    print(f"🚀 Starting Istanbul Transit Core on 0.0.0.0:{port}...")
-    server_app, local_url, _ = demo.launch(
-        server_name="0.0.0.0",
-        server_port=port,
-        prevent_thread_lock=True,
-        show_error=True
-    )
+    print(f"🚀 Preparing Istanbul Transit Core Web Gateway on 0.0.0.0:{port}...")
 
-    # 1. Mount vendor, icons, and static assets directly onto the running server_app
-    server_app.routes.insert(0, Mount("/vendor", StaticFiles(directory=str(STATIC_DIR / "vendor")), name="vendor"))
-    server_app.routes.insert(0, Mount("/icons", StaticFiles(directory=str(STATIC_DIR / "icons")), name="icons"))
-    server_app.routes.insert(0, Mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static"))
+    # Ensure port is clean
+    for attempt in range(1, 6):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            try:
+                s.bind(("0.0.0.0", port))
+                break
+            except OSError:
+                print(f"⏳ Waiting for port {port} to clear (attempt {attempt}/5)...")
+                time.sleep(2)
 
-    # 2. Register all API endpoints from our core router at the front of the router
-    for route in reversed(fastapi_app.routes):
-        if getattr(route, "path", "").startswith("/api"):
-            server_app.routes.insert(0, route)
-
-    # 3. Serve the interactive map UI directly at /map and at root /, plus PWA entry points
-    async def serve_index(request):
-        return FileResponse(str(STATIC_DIR / "index.html"))
-
-    async def serve_manifest(request):
-        return FileResponse(str(STATIC_DIR / "manifest.json"), media_type="application/manifest+json")
-
-    async def serve_sw(request):
-        return FileResponse(
-            str(STATIC_DIR / "sw.js"),
-            media_type="application/javascript",
-            headers={"Service-Worker-Allowed": "/", "Cache-Control": "no-cache"}
-        )
-
-    server_app.routes.insert(0, Route("/manifest.json", serve_manifest))
-    server_app.routes.insert(0, Route("/sw.js", serve_sw))
-    server_app.routes.insert(0, Route("/map", serve_index))
-    server_app.routes.insert(0, Route("/", serve_index))
-
-    print("✔ All API routes, static assets, and Map UI bound successfully!")
-
-    # Keep main thread alive
-    try:
-        while True:
-            time.sleep(3600)
-    except (KeyboardInterrupt, SystemExit):
-        demo.close()
+    print(f"🚀 Starting Istanbul Transit Core Web Gateway on 0.0.0.0:{port}...")
+    uvicorn.run(app, host="0.0.0.0", port=port)
