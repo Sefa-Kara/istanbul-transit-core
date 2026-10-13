@@ -22,7 +22,8 @@ try:
         """Satisfies Hugging Face ZeroGPU startup probe."""
         return True
 except Exception:
-    pass
+    def _zerogpu_probe():
+        return True
 
 BASE_DIR = Path(__file__).resolve().parent
 if str(BASE_DIR) not in sys.path:
@@ -133,6 +134,8 @@ with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
     gr.HTML("""
     <iframe src="/" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
     """)
+    _probe_btn = gr.Button("ZeroGPU Probe", visible=False)
+    _probe_btn.click(fn=_zerogpu_probe)
 
 # Mount Gradio onto our FastAPI application
 app = gr.mount_gradio_app(fastapi_app, demo, path="/gradio")
