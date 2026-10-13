@@ -126,36 +126,54 @@ threading.Thread(target=start_background_otp, daemon=True).start()
 
 # Import Gradio and FastAPI dependencies
 import gradio as gr
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from src.api.main import app as fastapi_app
 
 # Define Gradio Blocks interface embedding the interactive Leaflet web UI
 with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
     gr.HTML("""
-    <iframe src="/" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
+    <iframe src="/map" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
     """)
     _probe_btn = gr.Button("ZeroGPU Probe", visible=False)
     _probe_btn.click(fn=_zerogpu_probe)
 
-# Mount Gradio onto our FastAPI application
-app = gr.mount_gradio_app(fastapi_app, demo, path="/gradio")
+# 1. Mount static and vendor assets directly on demo.app
+demo.app.mount("/vendor", StaticFiles(directory=str(STATIC_DIR / "vendor")), name="vendor")
+demo.app.mount("/icons", StaticFiles(directory=str(STATIC_DIR / "icons")), name="icons")
+demo.app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+
+# 2. Map & PWA endpoints
+@demo.app.get("/map")
+def get_map():
+    return FileResponse(str(STATIC_DIR / "index.html"))
+
+@demo.app.get("/")
+def get_root():
+    return FileResponse(str(STATIC_DIR / "index.html"))
+
+@demo.app.get("/manifest.json")
+def get_manifest():
+    return FileResponse(str(STATIC_DIR / "manifest.json"), media_type="application/manifest+json")
+
+@demo.app.get("/sw.js")
+def get_sw():
+    return FileResponse(
+        str(STATIC_DIR / "sw.js"),
+        media_type="application/javascript",
+        headers={"Service-Worker-Allowed": "/", "Cache-Control": "no-cache"}
+    )
+
+# 3. Forward core FastAPI routes into demo.app
+for route in fastapi_app.routes:
+    if getattr(route, "path", "").startswith("/api"):
+        demo.app.routes.insert(0, route)
 
 if __name__ == "__main__":
-    import uvicorn
-    import socket
     port = int(os.environ.get("PORT", 7860))
-    print(f"🚀 Preparing Istanbul Transit Core Web Gateway on 0.0.0.0:{port}...")
-
-    # Ensure port is clean
-    for attempt in range(1, 6):
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            try:
-                s.bind(("0.0.0.0", port))
-                break
-            except OSError:
-                print(f"⏳ Waiting for port {port} to clear (attempt {attempt}/5)...")
-                time.sleep(2)
-
-    print(f"🚀 Starting Istanbul Transit Core Web Gateway on 0.0.0.0:{port}...")
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    print(f"🚀 Starting Istanbul Transit Core on port {port}...")
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=port,
+        show_error=True
+    )
