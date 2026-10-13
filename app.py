@@ -126,6 +126,7 @@ threading.Thread(target=start_background_otp, daemon=True).start()
 
 # Import Gradio and FastAPI dependencies
 import gradio as gr
+from gradio import routes as gr_routes
 from fastapi.routing import APIRoute
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -150,35 +151,49 @@ except Exception:
 os.environ["no_proxy"] = "localhost,127.0.0.1,0.0.0.0"
 os.environ["NO_PROXY"] = "localhost,127.0.0.1,0.0.0.0"
 
-# Mount static and vendor assets directly on demo.app
-demo.app.mount("/vendor", StaticFiles(directory=str(STATIC_DIR / "vendor")), name="vendor")
-demo.app.mount("/icons", StaticFiles(directory=str(STATIC_DIR / "icons")), name="icons")
-demo.app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+# Hook App.create_app so that routes and mounts are attached to the actual active app created by launch()
+_orig_create_app = gr_routes.App.create_app
 
-# Handlers for root, map, manifest, and service worker
-def get_root():
-    return FileResponse(str(STATIC_DIR / "index.html"))
+def _custom_create_app(blocks, *args, **kwargs):
+    active_app = _orig_create_app(blocks, *args, **kwargs)
+    
+    # Fix Gradio body_css None bug in frontend template
+    if hasattr(blocks, "config") and isinstance(blocks.config, dict):
+        blocks.config["body_css"] = {}
 
-def get_manifest():
-    return FileResponse(str(STATIC_DIR / "manifest.json"), media_type="application/manifest+json")
+    # Mount static assets
+    active_app.mount("/vendor", StaticFiles(directory=str(STATIC_DIR / "vendor")), name="vendor")
+    active_app.mount("/icons", StaticFiles(directory=str(STATIC_DIR / "icons")), name="icons")
+    active_app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 
-def get_sw():
-    return FileResponse(
-        str(STATIC_DIR / "sw.js"),
-        media_type="application/javascript",
-        headers={"Service-Worker-Allowed": "/", "Cache-Control": "no-cache"}
-    )
+    # Handlers for root, map, manifest, and service worker
+    def get_root():
+        return FileResponse(str(STATIC_DIR / "index.html"))
 
-# Forward core FastAPI routes into demo.app at highest priority
-for route in reversed(fastapi_app.routes):
-    if getattr(route, "path", "").startswith("/api"):
-        demo.app.routes.insert(0, route)
+    def get_manifest():
+        return FileResponse(str(STATIC_DIR / "manifest.json"), media_type="application/manifest+json")
 
-# Insert root and PWA endpoints at index 0
-demo.app.routes.insert(0, APIRoute("/sw.js", get_sw, methods=["GET", "HEAD"]))
-demo.app.routes.insert(0, APIRoute("/manifest.json", get_manifest, methods=["GET", "HEAD"]))
-demo.app.routes.insert(0, APIRoute("/map", get_root, methods=["GET", "HEAD"]))
-demo.app.routes.insert(0, APIRoute("/", get_root, methods=["GET", "HEAD"]))
+    def get_sw():
+        return FileResponse(
+            str(STATIC_DIR / "sw.js"),
+            media_type="application/javascript",
+            headers={"Service-Worker-Allowed": "/", "Cache-Control": "no-cache"}
+        )
+
+    # Forward core FastAPI routes into active_app at highest priority
+    for route in reversed(fastapi_app.routes):
+        if getattr(route, "path", "").startswith("/api"):
+            active_app.routes.insert(0, route)
+
+    # Insert root and PWA endpoints at index 0
+    active_app.routes.insert(0, APIRoute("/sw.js", get_sw, methods=["GET", "HEAD"]))
+    active_app.routes.insert(0, APIRoute("/manifest.json", get_manifest, methods=["GET", "HEAD"]))
+    active_app.routes.insert(0, APIRoute("/map", get_root, methods=["GET", "HEAD"]))
+    active_app.routes.insert(0, APIRoute("/", get_root, methods=["GET", "HEAD"]))
+
+    return active_app
+
+gr_routes.App.create_app = _custom_create_app
 
 if __name__ == "__main__":
     print("🚀 Starting Istanbul Transit Core on Hugging Face Spaces (0.0.0.0:7860)...")
