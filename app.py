@@ -150,8 +150,9 @@ if __name__ == "__main__":
         css="footer {visibility: hidden}"
     )
 
-    # 1. Mount vendor and static assets directly onto the running server_app
+    # 1. Mount vendor, icons, and static assets directly onto the running server_app
     server_app.routes.insert(0, Mount("/vendor", StaticFiles(directory=str(STATIC_DIR / "vendor")), name="vendor"))
+    server_app.routes.insert(0, Mount("/icons", StaticFiles(directory=str(STATIC_DIR / "icons")), name="icons"))
     server_app.routes.insert(0, Mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static"))
 
     # 2. Register all API endpoints from our core router at the front of the router
@@ -159,10 +160,22 @@ if __name__ == "__main__":
         if getattr(route, "path", "").startswith("/api"):
             server_app.routes.insert(0, route)
 
-    # 3. Serve the interactive map UI directly at /map and at root /
+    # 3. Serve the interactive map UI directly at /map and at root /, plus PWA entry points
     async def serve_index(request):
         return FileResponse(str(STATIC_DIR / "index.html"))
 
+    async def serve_manifest(request):
+        return FileResponse(str(STATIC_DIR / "manifest.json"), media_type="application/manifest+json")
+
+    async def serve_sw(request):
+        return FileResponse(
+            str(STATIC_DIR / "sw.js"),
+            media_type="application/javascript",
+            headers={"Service-Worker-Allowed": "/", "Cache-Control": "no-cache"}
+        )
+
+    server_app.routes.insert(0, Route("/manifest.json", serve_manifest))
+    server_app.routes.insert(0, Route("/sw.js", serve_sw))
     server_app.routes.insert(0, Route("/map", serve_index))
     server_app.routes.insert(0, Route("/", serve_index))
 
