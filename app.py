@@ -126,56 +126,26 @@ threading.Thread(target=start_background_otp, daemon=True).start()
 
 # Import Gradio and FastAPI dependencies
 import gradio as gr
-from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from src.api.main import app as fastapi_app
 
-# Define Gradio Blocks interface embedding the interactive Leaflet web UI
+# Define Gradio Blocks interface (ZeroGPU probe / engine fallback)
 with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
-    gr.HTML("""
-    <iframe src="/map" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
-    """)
+    gr.Markdown("# 🚆 Istanbul Transit Core - Engine Online")
     _probe_btn = gr.Button("ZeroGPU Probe", visible=False)
     _probe_btn.click(fn=_zerogpu_probe)
 
-# Bypass Gradio's internal loopback probe (which triggers false ValueError in containerized HF Spaces)
-try:
-    import gradio.networking
-    gradio.networking.url_ok = lambda url: True
-except Exception:
-    pass
+# Remove default static mount from router so Gradio can cleanly register at /gradio
+fastapi_app.router.routes = [r for r in fastapi_app.router.routes if getattr(r, 'path', '') != '']
 
-# Ensure localhost bypasses any proxies for Gradio local URL check
-os.environ["no_proxy"] = "localhost,127.0.0.1,0.0.0.0"
-os.environ["NO_PROXY"] = "localhost,127.0.0.1,0.0.0.0"
+# Mount Gradio at /gradio
+app = gr.mount_gradio_app(fastapi_app, demo, path="/gradio")
 
-# 1. Mount static and vendor assets directly on demo.app
-demo.app.mount("/vendor", StaticFiles(directory=str(STATIC_DIR / "vendor")), name="vendor")
-demo.app.mount("/icons", StaticFiles(directory=str(STATIC_DIR / "icons")), name="icons")
-demo.app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
-
-# 2. Map & PWA endpoints
-@demo.app.get("/map")
-def get_map():
-    return FileResponse(str(STATIC_DIR / "index.html"))
-
-@demo.app.get("/manifest.json")
-def get_manifest():
-    return FileResponse(str(STATIC_DIR / "manifest.json"), media_type="application/manifest+json")
-
-@demo.app.get("/sw.js")
-def get_sw():
-    return FileResponse(
-        str(STATIC_DIR / "sw.js"),
-        media_type="application/javascript",
-        headers={"Service-Worker-Allowed": "/", "Cache-Control": "no-cache"}
-    )
-
-# 3. Forward core FastAPI routes into demo.app
-for route in fastapi_app.routes:
-    if getattr(route, "path", "").startswith("/api"):
-        demo.app.routes.insert(0, route)
+# Mount Static Web UI & PWA at "/" (Native zero-iframe Leaflet PWA with manifest.json & sw.js)
+app.mount("/", StaticFiles(directory=str(STATIC_DIR), html=True), name="static")
 
 if __name__ == "__main__":
-    print("🚀 Starting Istanbul Transit Core on Hugging Face Spaces...")
-    demo.launch(server_name="0.0.0.0", server_port=7860)
+    print("🚀 Starting Istanbul Transit Core on Hugging Face Spaces (0.0.0.0:7860)...")
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=7860)
+
