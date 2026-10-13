@@ -138,6 +138,13 @@ with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
     _probe_btn = gr.Button("ZeroGPU Probe", visible=False)
     _probe_btn.click(fn=_zerogpu_probe)
 
+# Bypass Gradio's internal loopback probe (which triggers false ValueError in containerized HF Spaces)
+try:
+    import gradio.networking
+    gradio.networking.url_ok = lambda url: True
+except Exception:
+    pass
+
 # Ensure localhost bypasses any proxies for Gradio local URL check
 os.environ["no_proxy"] = "localhost,127.0.0.1,0.0.0.0"
 os.environ["NO_PROXY"] = "localhost,127.0.0.1,0.0.0.0"
@@ -171,4 +178,4 @@ for route in fastapi_app.routes:
 
 if __name__ == "__main__":
     print("🚀 Starting Istanbul Transit Core on Hugging Face Spaces...")
-    demo.launch()
+    demo.launch(server_name="0.0.0.0", server_port=7860)
