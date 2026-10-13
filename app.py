@@ -131,7 +131,7 @@ from starlette.routing import Route, Mount
 from src.api.main import app as fastapi_app
 
 # Define Gradio Blocks interface embedding the interactive Leaflet web UI
-with gr.Blocks(title="Istanbul Transit Core", fill_height=True) as demo:
+with gr.Blocks(title="Istanbul Transit Core", fill_height=True, css="footer {visibility: hidden}") as demo:
     gr.HTML("""
     <iframe src="/map" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 9999;" allow="geolocation"></iframe>
     """)
@@ -145,8 +145,7 @@ if __name__ == "__main__":
         server_name="0.0.0.0",
         server_port=port,
         prevent_thread_lock=True,
-        show_error=True,
-        css="footer {visibility: hidden}"
+        show_error=True
     )
 
     # 1. Mount vendor, icons, and static assets directly onto the running server_app
